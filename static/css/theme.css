@@ -10,3 +10,23 @@
 .theme-white{
     color: white;
 }
+
+.theme-box-color {
+    background-color: #35D4BE;
+}
+.theme-box-dark {
+    background-color: #101B2B;
+}
+.theme-box-light {
+    background-color: #F2F2F2;
+}
+.theme-box-white{
+    background-color: white;
+}
+
+.theme-button {
+    border-radius: 0;
+}
+.theme-button:hover {
+    color:#35D4BE;
+}
