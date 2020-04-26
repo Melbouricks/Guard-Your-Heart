@@ -1,5 +1,35 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, jsonify, request
+import pickle
+from sklearn.preprocessing import normalize
+import requests, json
+import pandas as pd
+
 app = Flask(__name__)
+
+# #Sample Data
+# data_sample = {
+#     'age': 60,
+#     'gender': 1,
+#     'height': 168,
+#     'weight': 62,
+#     'ap_hi': 110,
+#     'ap_lo': 80,
+#     'cholestrol': 2,
+#     'gluc': 1,
+#     'smoke': 1,
+#     'alco': 0,
+#     'active': 1,
+#     'bmi': 18.45
+# }
+# data = json.dumps(data_sample)
+# url = 'http://127.0.0.1:5000/predict' 
+# send_request = requests.post(url,data)
+# print(send_request)
+
+# print(send_request.json())
+
+# load model
+model = pickle.load(open('logit_model.pkl','rb'))
 
 @app.route('/')
 @app.route('/home')
@@ -13,6 +43,28 @@ def assessment():
 @app.route('/results')
 def results():
     return render_template("results.html")
+
+@app.route("/predict", methods=['POST'])
+def predict():
+    # get data
+    data = request.get_json(force=True)
+
+    # convert data into dataframe
+    data.update((x, [y]) for x, y in data.items())
+    data_df = pd.DataFrame.from_dict(data)
+
+    # predictions
+    data_df = normalize(data_df)
+    result = list(model.predict_proba(data_df))[0][1]
+    print(result)
+
+    # send back to browser
+    output = {'results': result}
+    # print(int(result))
+    # return data
+    return jsonify(results=output)
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
