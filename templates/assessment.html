@@ -1,15 +1,199 @@
 {% extends "layout.html" %}
 
-{% block content %}
-<div class="jumbotron jumbotron-fluid mb-0">
-    <div class="container">
-        <h1 class="display-1">Assess Your CVD Risk</h1>
-    </div>
-</div>
-<div class="container-fluid">
-    <div>
-        <h1 class="display-4">How old are you?</h1>
-    </div>
-</div>
+{% block cssblock %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/radioinput.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/activitytable.css') }}">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+{% endblock %}
 
+{% block javascriptblock %}
+<script type="text/javascript" src="{{ url_for('static', filename='javascript/activity.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid mb-0 theme-box-light">
+    <div class="container">
+        <h1 class="display-1">Assess your CVD risk</h1>
+    </div>
+</div>
+<form action="/results.html" class="needs-validation" novalidate>
+    <div class="container-fluid">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
+            <h1 class="display-4 pb-4 text-center">How old are you?</h1>
+            <div class="row">
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="age"
+                    placeholder="Enter your age" name="age" required>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid theme-box-light py-1">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
+            <h1 class="display-4 pb-4 text-center">What is your height (in cms)?</h1>
+            <div class="row">
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="height"
+                    placeholder="Enter your height" name="height" required>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
+            <h1 class="display-4 pb-4 text-center">How much do you weigh (in kgs)?</h1>
+            <div class="row">
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="weight"
+                    placeholder="Enter your weight" name="weight" required>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid theme-box-light py-1">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
+            <h1 class="display-4 pb-4 text-center">What is your gender?</h1>
+            <div class="row mx-auto">
+                <div class="col-sm form-check">
+                    <label class="form-check-label radio-row" for="male">
+                        <input type="radio" class="form-check-input option-input" id="male" name="gender" value="2">Male
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="col-sm form-check">
+                    <label class="form-check-label radio-row" for="female">
+                        <input type="radio" class="form-check-input option-input" id="female" name="gender" value="1">Female
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
+            <h1 class="display-4 pb-4 text-center">How much is your blood pressure?</h1>
+            <div class="row mx-auto">
+                <div class="col-sm form-check text-center">
+                    <label for="systolicbp">Systolic Blood Pressure (top number)</label>
+                    <input class="form-control-lg theme-input mx-auto" type="number" id="systolicbp"
+                        placeholder="70 - 228 mmHg" name="systolicbp" required>
+                </div>
+                <div class="col-sm form-check text-center">
+                    <label for="diastolicbp">Diastolic Blood Pressure (bottom number)</label>
+                    <input class="form-control-lg theme-input mx-auto" type="number" id="diastolicbp"
+                        placeholder="50 - 150 mmHg" name="diastolicbp" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid theme-box-light py-1">
+        <div class="container-md my-5 py-5 d-flex flex-column justify-content-center">
+            <h1 class="display-4 pb-4 text-center">How much is your total cholesterol?</h1>
+            <div class="row">
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="totalcholes"
+                    placeholder="2 - 10.5 mmol/L" name="totalcholes" required>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container-md my-5 py-5 d-flex flex-column justify-content-center">
+            <h1 class="display-4 pb-4 text-center">What is your blood sugar (glucose) level?</h1>
+            <div class="row">
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="bloodsugar"
+                    placeholder="mmol/L" name="bloodsugar" required>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid theme-box-light py-1">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
+            <h1 class="display-4 pb-4 text-center">Do you smoke?</h1>
+            <div class="row mx-auto">
+                <div class="col-sm form-check">
+                    <label class="form-check-label radio-row" for="yes">
+                        <input type="radio" class="form-check-input option-input" id="yes" name="smoke" value="1">Yes
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="col-sm form-check">
+                    <label class="form-check-label radio-row" for="no">
+                        <input type="radio" class="form-check-input option-input" id="no" name="smoke" value="0">No
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
+            <h1 class="display-4 pb-4 text-center">Do you take alcohol?</h1>
+            <div class="row mx-auto">
+                <div class="col-sm form-check">
+                    <label class="form-check-label radio-row" for="alcoholyes">
+                        <input type="radio" class="form-check-input option-input" id="alcoholyes" name="alcohol"
+                            value="1">Yes
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="col-sm form-check">
+                    <label class="form-check-label radio-row" for="alcoholno">
+                        <input type="radio" class="form-check-input option-input" id="alcoholno" name="alcohol" value="0">No
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid theme-box-light py-1">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
+            <h1 class="display-4 pb-4 text-center">Do you do any physical activity?</h1>
+            <div class="row mx-auto">
+                <div class="col-sm form-check">
+                    <label class="form-check-label radio-row" for="activityyes">
+                        <input type="radio" class="form-check-input option-input" id="activityyes" name="activity" value="1"
+                            onclick="activityCheckFunction()">Yes
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="col-sm form-check">
+                    <label class="form-check-label radio-row" for="activityno">
+                        <input type="radio" class="form-check-input option-input" id="activityno" name="activity" value="0"
+                            onclick="activityCheckFunction()">No
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div id="activities" style="display:none">
+                <div class="container d-md-table w-100 my-5" id="activitytable">
+                    <div class="d-md-table-row d-none d-md-block theme-dark">
+
+                        <div class="d-md-table-cell activity-table-header">
+                            <h5>Activity</h5>
+                        </div>
+
+                        <div class="d-md-table-cell activity-table-header">
+                            <h5>Kms or Hours Per Day</h5>
+                        </div>
+
+                        <div class="d-md-table-cell activity-table-header">
+                            <h5>Days Per Week</h5>
+                        </div>
+
+                        <div class="d-md-table-cell activity-table-header">
+                            <h5>Delete</h5>
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <div class="row form-group">
+                        <input class="col-md-4 form-control-lg theme-input" type="text" id="activityname"
+                            placeholder="Enter an activity" name="activityname">
+
+                        <input class="col-md-4 form-control-lg theme-input" type="number" id="kmsorhours"
+                            placeholder="How many kms/hours?" name="kmsorhours">
+
+                        <input class="col-md-4 form-control-lg theme-input" type="number" id="daysperweek"
+                            placeholder="How many days a week?" name="daysperweek">
+                    </div>
+                    <button type="button" class="btn btn-block theme-box-dark theme-white theme-button col-sm-4 mx-auto" onclick="addFunction()">Add Activity</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-block my-5 py-4 btn-lg theme-box-color theme-white theme-button col-sm-4 mx-auto">Submit</button>
+</form>
 {% endblock %}

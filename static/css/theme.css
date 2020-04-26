@@ -30,3 +30,8 @@
 .theme-button:hover {
     color:#35D4BE;
 }
+
+.theme-input {
+    border-radius: 0;
+    border-color: #101B2B;
+}
