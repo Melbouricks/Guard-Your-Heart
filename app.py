@@ -65,17 +65,12 @@ def assessment():
 @app.route('/results', methods=['POST'])
 def results():
     if request.method == 'POST':
-<<<<<<< HEAD
         # Better way to access data than request.form['age']
         # to avoid getting an exception if null value is sent.
         # print(request.form.get('age')) 
         return render_template("results.html")
     else:
         return "Hello"
-=======
-        return "Deep"
-    else:
-        return render_template("results.html")
 
 @app.route("/predict", methods=['POST'])
 def predict():
@@ -98,7 +93,6 @@ def predict():
     return jsonify(results=output)
 
 
->>>>>>> 2c71d13a5b7fa2e3cdf7be8c57fc6260aac9a7cd
 
 if __name__ == "__main__":
     app.run(debug=True)
