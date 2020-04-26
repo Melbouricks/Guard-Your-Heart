@@ -17,7 +17,7 @@
         <h1 class="display-1">Assess your CVD risk</h1>
     </div>
 </div>
-<form action="/results.html" class="needs-validation" novalidate>
+<form action="{{ url_for('results') }}" method="post" class="needs-validation" novalidate>
     <div class="container-fluid">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center">How old are you?</h1>
@@ -57,7 +57,8 @@
                 </div>
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="female">
-                        <input type="radio" class="form-check-input option-input" id="female" name="gender" value="1">Female
+                        <input type="radio" class="form-check-input option-input" id="female" name="gender"
+                            value="1">Female
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -131,7 +132,8 @@
                 </div>
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="alcoholno">
-                        <input type="radio" class="form-check-input option-input" id="alcoholno" name="alcohol" value="0">No
+                        <input type="radio" class="form-check-input option-input" id="alcoholno" name="alcohol"
+                            value="0">No
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -144,15 +146,15 @@
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="activityyes">
-                        <input type="radio" class="form-check-input option-input" id="activityyes" name="activity" value="1"
-                            onclick="activityCheckFunction()">Yes
+                        <input type="radio" class="form-check-input option-input" id="activityyes" name="activity"
+                            value="1" onclick="activityCheckFunction()">Yes
                         <span class="checkmark"></span>
                     </label>
                 </div>
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="activityno">
-                        <input type="radio" class="form-check-input option-input" id="activityno" name="activity" value="0"
-                            onclick="activityCheckFunction()">No
+                        <input type="radio" class="form-check-input option-input" id="activityno" name="activity"
+                            value="0" onclick="activityCheckFunction()">No
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -178,22 +180,25 @@
                         </div>
                     </div>
                 </div>
-                <form>
-                    <div class="row form-group">
-                        <input class="col-md-4 form-control-lg theme-input" type="text" id="activityname"
-                            placeholder="Enter an activity" name="activityname">
+                <div class="row form-group">
+                    <input class="col-md-4 form-control-lg theme-input" type="text" id="activityname"
+                        placeholder="Enter an activity" name="activityname">
 
-                        <input class="col-md-4 form-control-lg theme-input" type="number" id="kmsorhours"
-                            placeholder="How many kms/hours?" name="kmsorhours">
+                    <input class="col-md-4 form-control-lg theme-input" type="number" id="kmsorhours"
+                        placeholder="How many kms/hours?" name="kmsorhours">
 
-                        <input class="col-md-4 form-control-lg theme-input" type="number" id="daysperweek"
-                            placeholder="How many days a week?" name="daysperweek">
-                    </div>
-                    <button type="button" class="btn btn-block theme-box-dark theme-white theme-dark-button col-sm-4 mx-auto" onclick="addFunction()">Add Activity</button>
-                </form>
+                    <input class="col-md-4 form-control-lg theme-input" type="number" id="daysperweek"
+                        placeholder="How many days a week?" name="daysperweek">
+                </div>
+                <button type="button"
+                    class="btn btn-block theme-box-dark theme-white theme-dark-button col-sm-4 mx-auto"
+                    onclick="addFunction()">Add Activity
+                </button>
             </div>
         </div>
     </div>
-    <button type="submit" class="btn btn-block my-5 py-4 btn-lg theme-box-color theme-white theme-color-button col-sm-4 mx-auto">Submit</button>
+    <input type="submit"
+        class="btn btn-block my-5 py-4 btn-lg theme-box-color theme-white theme-color-button col-sm-4 mx-auto"
+        value="Submit">
 </form>
 {% endblock %}
