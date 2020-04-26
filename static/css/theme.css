@@ -24,11 +24,18 @@
     background-color: white;
 }
 
-.theme-button {
+.theme-dark-button {
     border-radius: 0;
 }
-.theme-button:hover {
+.theme-dark-button:hover {
     color:#35D4BE;
+}
+
+.theme-color-button {
+    border-radius: 0;
+}
+.theme-color-button:hover {
+    color: #101B2B;
 }
 
 .theme-input {
