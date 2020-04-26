@@ -3,8 +3,30 @@ import pickle
 from sklearn.preprocessing import normalize
 import requests, json
 import pandas as pd
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+db = SQLAlchemy(app)
+
+class data_assessment(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    age = db.Column(db.Integer, nullable=False)
+    gender = db.Column(db.Integer, nullable=False)
+    height = db.Column(db.Integer, nullable=False)
+    weight = db.Column(db.Float, nullable=False)
+    ap_hi = db.Column(db.Integer, nullable=False)
+    ap_lo = db.Column(db.Integer, nullable=False)
+    cholestrol = db.Column(db.Integer, nullable=False)
+    gluc = db.Column(db.Integer, nullable=False)
+    smoke = db.Column(db.Integer, nullable=False)
+    alco = db.Column(db.Integer, nullable=False)
+    active = db.Column(db.Integer, nullable=False)
+    bmi  = db.Column(db.Float, nullable=False)
+
+    def __repr__(self):
+        return '<%r>' % self.id
+
 
 # #Sample Data
 # data_sample = {
@@ -40,9 +62,12 @@ def index():
 def assessment():
     return render_template("assessment.html")
 
-@app.route('/results')
+@app.route('/results', methods=['POST'])
 def results():
-    return render_template("results.html")
+    if request.method == 'POST':
+        return "Deep"
+    else:
+        return render_template("results.html")
 
 @app.route("/predict", methods=['POST'])
 def predict():
