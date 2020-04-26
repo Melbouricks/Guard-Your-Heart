@@ -40,14 +40,14 @@
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="male">
-                        <input type="radio" class="form-check-input option-input" id="male" name="gender" value="2">Male
+                        <input type="radio" class="form-check-input option-input" id="male" name="gender" value="1">Male
                         <span class="checkmark"></span>
                     </label>
                 </div>
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="female">
                         <input type="radio" class="form-check-input option-input" id="female" name="gender"
-                            value="1">Female
+                            value="0">Female
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -81,7 +81,7 @@
         <div class="container-md my-5 py-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center">What is your blood sugar (glucose) level?</h1>
             <div class="row">
-                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="bloodsugar" placeholder="mmol/L" name="bloodsugar" required>
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="bloodsugar" placeholder="1 - 17.4 mmol/L" name="bloodsugar" required>
             </div>
         </div>
     </div>
@@ -166,24 +166,17 @@
                     </div>
                 </div>
                 <div class="row form-group">
-                    <input class="col-md-4 form-control-lg theme-input" type="text" id="activityname"
-                        placeholder="Enter an activity" name="activityname">
+                    <input class="col-md-4 form-control-lg theme-input" type="text" id="activityname" placeholder="Enter an activity" name="activityname">
 
-                    <input class="col-md-4 form-control-lg theme-input" type="number" id="kmsorhours"
-                        placeholder="How many kms/hours?" name="kmsorhours">
+                    <input class="col-md-4 form-control-lg theme-input" type="number" id="kmsorhours" placeholder="How many kms/hours?" name="kmsorhours">
 
-                    <input class="col-md-4 form-control-lg theme-input" type="number" id="daysperweek"
-                        placeholder="How many days a week?" name="daysperweek">
+                    <input class="col-md-4 form-control-lg theme-input" type="number" id="daysperweek" placeholder="How many days a week?" name="daysperweek">
                 </div>
-                <button type="button"
-                    class="btn btn-block theme-box-dark theme-white theme-dark-button col-sm-4 mx-auto"
-                    onclick="addFunction()">Add Activity
+                <button type="button" class="btn btn-block theme-box-dark theme-white theme-dark-button col-sm-4 mx-auto" onclick="addFunction()">Add Activity
                 </button>
             </div>
         </div>
     </div>
-    <input type="submit"
-        class="btn btn-block my-5 py-4 btn-lg theme-box-color theme-white theme-color-button col-sm-4 mx-auto"
-        value="Submit">
+    <input type="submit" class="btn btn-block my-5 py-4 btn-lg theme-box-color theme-white theme-color-button col-sm-4 mx-auto" value="Submit">
 </form>
 {% endblock %}
