@@ -1,64 +1,53 @@
-{% extends "layout.html" %} 
+{% extends "layout.html" %} {% block cssblock %} {% endblock %} {% block content %}
 
-{% block cssblock %}
-{% endblock %}
+<div class="row ">
+    <span class="col-sm-3 col-md-3 col-lg-3">
+            </span>
+    <div class="col theme-light">
+        <div>
+            <!-- style="left: 380px; width: 310px; position: relative; pointer-events: none; top: 79px;" -->
+            <h3 class="display-3 theme-dark">Results</h3>
+        </div>
+        <div>
+            <!-- style="position: absolute; width: 789px; height: 144px; top: 230px; left: 580px;" -->
+            <h1 class="display-5 theme-dark" style="font-size: 30px; text-align: center;">
+                <span style="font-size: 30px;"></span>Your Cardiovascular Disease Risk </span>
+                <br>
+            </h1>
+        </div>
+        <div>
+            <div class="row" style="margin-left: 200px;">
+                <h1></h1>
+                <div class='progress' style="width: 400px; text-align: center;">
+                    {% if data.res
+                    < 33.33 %} <div class="progress-bar bg-success" style="width:{{ data.res }}%">
+                        Low
+                </div>
+                {% elif data.res
+                < 66.66 %} <div class="progress-bar bg-warning" style="width:{{ data.res }}%">
+                    Medium
+            </div>
+            {% else %}
+            <div class="progress-bar bg-danger" style="width:{{ data.res }}%">
+                high
+            </div>
+            {% endif %}
 
-{% block content %}
+        </div>
+        <br>
+        <br>
+    </div>
 
-<div class="container-fluid theme-box-light">
-    <div class="container">
-        <h1 class="display-1">Results</h1>
+    <div class="">
+        {% if data.res
+        < 33.33 %} <p class="display-5 theme-dark">You can still try to Control your risk by following a personalised diet, sleep and exercise plan. Scroll down...</p>
+            {% else %}
+            <p class="display-5 theme-dark">Do not worry, you can lower your risk by following a personalised diet, sleep and exercise plan. Scroll down...</p>
+            {% endif %}
     </div>
 </div>
-
-        <div class="row ">
-            <span class="col-sm-3 col-md-3 col-lg-3">
-            </span>
-            <div class="col theme-light">
-                <div>
-                    <!-- style="left: 380px; width: 310px; position: relative; pointer-events: none; top: 79px;" -->
-                    <h3 class="display-3 theme-dark">Results</h3>
-                </div>
-                <div>
-                    <!-- style="position: absolute; width: 789px; height: 144px; top: 230px; left: 580px;" -->
-                    <h1 class="display-5 theme-dark" style="font-size: 30px; text-align: center;">
-                        <span style="font-size: 30px;"></span>Your Cardiovascular Disease Risk </span>
-                        <br>
-                    </h1>
-                </div>
-                <div>
-                    <div class="row" style="margin-left: 130px;">
-                        <h1></h1>
-                        <div class='progress' style="width: 400px; text-align: center;">
-                            {% if data.res
-                            < 33.33 %} <div class="progress-bar bg-success" style="width:{{ data }}%">
-                                Low
-                        </div>
-                        {% elif data.res
-                        < 66.66 %} <div class="progress-bar bg-warning" style="width:{{ data }}%">
-                            Medium
-                    </div>
-                    {% else %}
-                    <div class="progress-bar bg-danger" style="width:{{ data }}%">
-                        high
-                    </div>
-                    {% endif %}
-
-                </div>
-                <br>
-                <br>
-            </div>
-
-            <div class="">
-                {% if data.res
-                < 33.33 %} <p class="display-5 theme-dark">You can still try to Control your risk by following a personalised diet, sleep and exercise plan. Scroll down...</p>
-                    {% else %}
-                    <p class="display-5 theme-dark">Do not worry, you can lower your risk by following a personalised diet, sleep and exercise plan. Scroll down...</p>
-                    {% endif %}
-            </div>
-        </div>
-    </div>
-    <span class="col-sm-2 col-md-2 col-lg-2">
+</div>
+<span class="col-sm-2 col-md-2 col-lg-2">
             </span>
 </div>
 <!-- Second Indicators and activity level -->
