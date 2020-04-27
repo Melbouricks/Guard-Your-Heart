@@ -116,6 +116,10 @@ def get_data(request):
     }
     return data_sample
 
+@app.route('/cardiovasculardisease')
+def cardiovasculardisease():
+    return render_template("cardiovasculardisease.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
