@@ -54,12 +54,18 @@ def results():
         # print(request.form.get('age'))
         data_sample = get_data(request)
         print(data_sample)
+        # activity_data = data_sample.pop('activityname')
+        # abc = get_activity_data(activity_data)
         result = predict_data(data_sample)
         print("\nChances of having CVD:", result)
         data_sample['res'] = result
         return render_template('results.html', data=data_sample)
     else:
         return render_template('home.html')
+
+def get_activity_data(activity_data):
+    print(activity_data)
+    print(type(activity_data))
 
 
 def predict_data(data_sample):
@@ -100,6 +106,8 @@ def get_data(request):
 
     bmi = weight/(height/100)**2
 
+    # activitytable = str(request.form.get('tabledata'))
+
     data_sample = {
         'age': age,
         'gender': gender,
@@ -113,9 +121,17 @@ def get_data(request):
         'alco': alco,
         'active': acti,
         'bmi': round(bmi,2)
+        # 'activityname' : activitytable
     }
     return data_sample
 
+@app.route('/diet')
+def diet():
+    return render_template("diet.html")
+    
+@app.route('/PA')
+def PA():
+    return render_template("PA.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

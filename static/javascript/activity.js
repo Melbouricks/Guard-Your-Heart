@@ -1,8 +1,7 @@
 function activityCheckFunction() {
     if (document.getElementById('activityyes').checked) {
         document.getElementById('activities').style.display = 'block';
-    }
-    else {
+    } else {
         document.getElementById('activities').style.display = 'none';
     }
 }
@@ -22,6 +21,13 @@ function addFunction() {
         if (validateKmsOrHours(kmsorhours) == true) {
 
             if (validateDaysPerWeek(daysperweek) == true) {
+                // t = [
+                //     activityname,
+                //     kmsorhours,
+                //     daysperweek
+                // ];
+                // console.log(t);
+                // activties[activties.length] = t;
 
                 var div = document.createElement("div");
                 div.className = "d-md-table-row activity-table-row";
@@ -85,18 +91,17 @@ function addFunction() {
                 div.appendChild(div4);
 
                 document.getElementById('activitytable').appendChild(div);
-            }
-            else {
+            } else {
                 alert("Invalid days per week!");
             }
-        }
-        else {
+        } else {
             alert("Invalid kms or hours!");
         }
-    }
-    else {
+    } else {
         alert("Invalid activity name");
     }
+    // console.log(activties);
+
 }
 
 function validateName(activityname) {
