@@ -1,0 +1,152 @@
+{% extends "layout.html" %} {% block content %}
+<style>
+    .center1 {
+        margin: 0 auto;
+    }
+</style>
+<div class="container-fluid">
+    <!-- heading -->
+    <div class="jumbotron jumbotron-fluid" style="background-color: white">
+        <div class="container">
+            <h1 class="display-1">Physical Activity</h1>
+            <p>Find out physical activity suggestions built for you below</p>
+        </div>
+    </div>
+    <!-- Current Activity -->
+    <div class="jumbotron jumbotron-fluid" style="background-color:whitesmoke">
+        <div class="container">
+            <h1 class="display-4">Your Current Activity Levels</h1>
+            <!-- heading-row -->
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Activity</h5>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Kms or Hours</h5>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Days per week</h5>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Calories Burnt</h5>
+                </div>
+            </div>
+            <!-- 1st row -->
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Walkings</h5>
+                    <p>Helps burn X calories per km</p>
+                </div>
+                <div class="col-sm-3">
+                    <h5>2</h5>
+                </div>
+                <div class="col-sm-3">
+                    <h5>4</h5>
+                </div>
+                <div class="col-sm-3">
+                    <h5>8X</h5>
+                </div>
+            </div>
+            <!-- 2nd row -->
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Running</h5>
+                    <p>Helps burn X calories per km</p>
+                </div>
+                <div class="col-sm-3">
+                    <h5>2</h5>
+                </div>
+                <div class="col-sm-3">
+                    <h5>4</h5>
+                </div>
+                <div class="col-sm-3">
+                    <h5>8X</h5>
+                </div>
+            </div>
+            <!-- 3rd row -->
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Badminton</h5>
+                    <p>Helps burn X calories per hour</p>
+                </div>
+                <div class="col-sm-3">
+                    <h5>1</h5>
+                </div>
+                <div class="col-sm-3">
+                    <h5>4</h5>
+                </div>
+                <div class="col-sm-3">
+                    <h5>4X</h5>
+                </div>
+            </div>
+            <!-- ending-row -->
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-3">
+                    <h2>Total</h2>
+                </div>
+                <div class="col-sm-3">
+                    <h2>Value</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Suggested Activity -->
+    <div class="jumbotron jumbotron-fluid" style="background-color:white">
+        <div class="container">
+            <h1 class="display-4">Suggested Activities</h1>
+            <!-- heading-row -->
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Activity</h5>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Kms or Hours</h5>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Days per week</h5>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Calories Burnt</h5>
+                </div>
+            </div>
+            <!-- 1st row -->
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Running</h5>
+                    <p>Helps burn X calories per km</p>
+                </div>
+                <div class="col-sm-3">
+                    <h5>3</h5>
+                </div>
+                <div class="col-sm-3">
+                    <h5>4</h5>
+                </div>
+                <div class="col-sm-3">
+                    <h5>12X</h5>
+                </div>
+            </div>
+            <!-- 2nd row -->
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Cycling</h5>
+                    <p>Helps burn X calories per km</p>
+                </div>
+                <div class="col-sm-3">
+                    <h5>2</h5>
+                </div>
+                <div class="col-sm-3">
+                    <h5>4</h5>
+                </div>
+                <div class="col-sm-3">
+                    <h5>8X</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,6 +1,10 @@
 {% extends "layout.html" %} {% block cssblock %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/radioinput.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/activitytable.css') }}">
+<!-- <script>
+    var activties = [];
+    console.log(activties);
+</script> -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> {% endblock %} {% block javascriptblock %}
 <script type="text/javascript" src="{{ url_for('static', filename='javascript/activity.js') }}"></script>
 {% endblock %} {% block content %}
@@ -132,20 +136,22 @@
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="activityyes">
                         <input type="radio" class="form-check-input option-input" id="activityyes" name="activity"
-                            value="1" onclick="activityCheckFunction()">Yes
+                            value="1" >Yes
                         <span class="checkmark"></span>
                     </label>
                 </div>
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="activityno">
                         <input type="radio" class="form-check-input option-input" id="activityno" name="activity"
-                            value="0" onclick="activityCheckFunction()">No
+                            value="0" >No
                         <span class="checkmark"></span>
                     </label>
                 </div>
             </div>
-            <div id="activities" style="display:none">
-                <div class="container d-md-table w-100 my-5" id="activitytable">
+            <!-- onclick="activityCheckFunction()" 
+            onclick="activityCheckFunction()" -->
+            <!-- <div id="activities" style="display:none">
+                <div class="container d-md-table w-100 my-5" id="activitytable" name="activitytable">
                     <div class="d-md-table-row d-none d-md-block theme-dark">
 
                         <div class="d-md-table-cell activity-table-header">
@@ -174,9 +180,14 @@
                 </div>
                 <button type="button" class="btn btn-block theme-box-dark theme-white theme-dark-button col-sm-4 mx-auto" onclick="addFunction()">Add Activity
                 </button>
-            </div>
+            </div> -->
         </div>
     </div>
+    <!-- <input type="hidden" id="tabledata" name="tabledata">
+    <script>
+        var tabledata = document.getElementById("tabledata");
+        tabledata.value = activties;
+    </script> -->
     <input type="submit" class="btn btn-block my-5 py-4 btn-lg theme-box-color theme-white theme-color-button col-sm-4 mx-auto" value="Submit">
 </form>
 {% endblock %}
