@@ -125,7 +125,6 @@ def get_data(request):
     }
     return data_sample
 
-<<<<<<< HEAD
 @app.route('/diet')
 def diet():
     return render_template("diet.html")
@@ -133,12 +132,11 @@ def diet():
 @app.route('/PA')
 def PA():
     return render_template("PA.html")
-=======
+    
 @app.route('/cardiovasculardisease')
 def cardiovasculardisease():
     return render_template("cardiovasculardisease.html")
 
->>>>>>> 0fc966418c4c2bd670ba8ec37514d2d4059db1ec
 
 if __name__ == "__main__":
     app.run(debug=True)
