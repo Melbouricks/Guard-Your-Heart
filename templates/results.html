@@ -31,15 +31,15 @@
                         <h1></h1>
                         <div class='progress' style="width: 400px; text-align: center;">
                             {% if data.res
-                            < 33.33 %} <div class="progress-bar bg-success" style="width:{{ data }}%">
+                            < 33.33 %} <div class="progress-bar bg-success" style="width: {{ data.res }} %">
                                 Low
                         </div>
                         {% elif data.res
-                        < 66.66 %} <div class="progress-bar bg-warning" style="width:{{ data }}%">
+                        < 66.66 %} <div class="progress-bar bg-warning" style="width:{{ data.res }}%">
                             Medium
                     </div>
                     {% else %}
-                    <div class="progress-bar bg-danger" style="width:{{ data }}%">
+                    <div class="progress-bar bg-danger" style="width:{{ data.res }}%">
                         high
                     </div>
                     {% endif %}
