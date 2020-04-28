@@ -13,12 +13,17 @@
         <h1 class="display-1">Assess your CVD risk</h1>
     </div>
 </div>
-<form action="{{ url_for('results') }}" method="post" class="needs-validation" novalidate>
+<!-- class="needs-validation"  -->
+<!-- onsubmit="checksubmit()" -->
+
+
+<form action="{{ url_for('results') }}" method="post">
     <div class="container-fluid">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center">How old are you?</h1>
             <div class="row">
-                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="age" placeholder="Enter your age" name="age" required>
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="age" placeholder="Enter your age" name="age" min="35" max="105" required>
+                <span id="error1"></span>
             </div>
         </div>
     </div>
@@ -26,7 +31,7 @@
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center">What is your height (in cms)?</h1>
             <div class="row">
-                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="height" placeholder="Enter your height" name="height" required>
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="height" placeholder="Enter your height" name="height" min="90" max="230" required>
             </div>
         </div>
     </div>
@@ -34,7 +39,7 @@
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center">How much do you weigh (in kgs)?</h1>
             <div class="row">
-                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="weight" placeholder="Enter your weight" name="weight" required>
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="weight" placeholder="Enter your weight" name="weight" min="40" max="230" required>
             </div>
         </div>
     </div>
@@ -44,7 +49,7 @@
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="male">
-                        <input type="radio" class="form-check-input option-input" id="male" name="gender" value="1">Male
+                        <input type="radio" class="form-check-input option-input" id="male" name="gender" value="1" checked>Male
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -64,11 +69,16 @@
             <div class="row mx-auto">
                 <div class="col-sm form-check text-center">
                     <label for="systolicbp">Systolic Blood Pressure (top number)</label>
-                    <input class="form-control-lg theme-input mx-auto" type="number" id="systolicbp" placeholder="70 - 228 mmHg" name="systolicbp" required>
+                    <input class="form-control-lg theme-input mx-auto" type="number" id="systolicbp"  min="70" max="228" name="systolicbp" required>
+                    <!-- placeholder="70 - 228 mmHg" -->
                 </div>
+            </div>
+
+            <div class="row mx-auto" style="margin-top: 20px;">
                 <div class="col-sm form-check text-center">
                     <label for="diastolicbp">Diastolic Blood Pressure (bottom number)</label>
-                    <input class="form-control-lg theme-input mx-auto" type="number" id="diastolicbp" placeholder="50 - 150 mmHg" name="diastolicbp" required>
+                    <input class="form-control-lg theme-input mx-auto" type="number" id="diastolicbp"  min="50" max="150" name="diastolicbp" required>
+                    <!-- placeholder="50 - 150 mmHg" -->
                 </div>
             </div>
         </div>
@@ -77,7 +87,7 @@
         <div class="container-md my-5 py-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center">How much is your total cholesterol?</h1>
             <div class="row">
-                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="totalcholes" placeholder="2 - 10.5 mmol/L" name="totalcholes" required>
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="totalcholes" placeholder="2 - 10.5 mmol/L" min="2" max="10.5" name="totalcholes" required>
             </div>
         </div>
     </div>
@@ -85,7 +95,7 @@
         <div class="container-md my-5 py-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center">What is your blood sugar (glucose) level?</h1>
             <div class="row">
-                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="bloodsugar" placeholder="1 - 17.4 mmol/L" name="bloodsugar" required>
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="bloodsugar" placeholder="1 - 17.4 mmol/L" name="bloodsugar" min="1" max="17.4" required>
             </div>
         </div>
     </div>
@@ -101,7 +111,7 @@
                 </div>
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="no">
-                        <input type="radio" class="form-check-input option-input" id="no" name="smoke" value="0">No
+                        <input type="radio" class="form-check-input option-input" id="no" name="smoke" value="0" checked>No
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -122,7 +132,7 @@
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="alcoholno">
                         <input type="radio" class="form-check-input option-input" id="alcoholno" name="alcohol"
-                            value="0">No
+                            value="0" checked>No
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -136,7 +146,7 @@
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="activityyes">
                         <input type="radio" class="form-check-input option-input" id="activityyes" name="activity"
-                            value="1" >Yes
+                            value="1" checked>Yes
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -148,6 +158,13 @@
                     </label>
                 </div>
             </div>
+           
+           
+           
+           
+           
+           
+           
             <!-- onclick="activityCheckFunction()" 
             onclick="activityCheckFunction()" -->
             <!-- <div id="activities" style="display:none">
@@ -183,11 +200,21 @@
             </div> -->
         </div>
     </div>
-    <!-- <input type="hidden" id="tabledata" name="tabledata">
-    <script>
-        var tabledata = document.getElementById("tabledata");
-        tabledata.value = activties;
-    </script> -->
     <input type="submit" class="btn btn-block my-5 py-4 btn-lg theme-box-color theme-white theme-color-button col-sm-4 mx-auto" value="Submit">
 </form>
+
+<!-- <script type="text/javascript"> -->
+
+// function checksubmit(){
+//     // alert("hkhkh");
+//     var age = document.getElementById("age");
+//     var error1 = document.getElementById("error1");
+//     if (age < 35 || age > 120){
+//         error1.innerHTML("invaid");
+//     }
+// }
+
+<!-- </script> -->
+
+
 {% endblock %}
