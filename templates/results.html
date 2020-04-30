@@ -1,17 +1,177 @@
-{% extends "layout.html" %} 
+{% extends "layout.html" %}
 
 {% block cssblock %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/progressbar.css') }}">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 {% endblock %}
 
 {% block content %}
 
-<div class="container-fluid theme-box-light">
+<div class="jumbotron jumbotron-fluid mb-0 theme-box-light">
     <div class="container">
         <h1 class="display-1">Results</h1>
     </div>
 </div>
+<div class="container-fluid">
+    <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
+        <h1 class="display-4 pb-4 text-center">Cardivascular Disease Risk</h1>
+        <div class="progress w-50 mx-auto">
+            <div class="progress-bar theme-box-color bar" style="width:80.5%">
+            </div>
+        </div>
+        <div class="row w-50 mx-auto">
+            <div class="col p-0 text-left">
+                <p>Low</p>
+            </div>
+            <div class="col p-0 text-center">
+                <p>Medium</p>
+            </div>
+            <div class="col p-0 text-right">
+                <p>High</p>
+            </div>
+        </div>
 
-        <div class="row ">
+        <!-- <div class="">
+            <p class="lead">You have a medium risk of developing a cardiovascular disease. But do not worry, you can
+                lower your risk by following a personalised diet, sleep and exercise plan. Scroll down...</p>
+        </div> -->
+    </div>
+</div>
+<div class="container-fluid theme-box-light">
+    <div class="container-md my-5 py-5 px-md-5">
+        <h1 class="display-4 pb-4 mb-5">
+            Indicators
+        </h1>
+        <div class="row d-flex align-items-baseline flex-wrap">
+            <div class="col-md-4 px-4">
+                <div class="d-flex flex-column text-right">
+                    <h3>Cholesterol</h3>
+                    <p>Causes blockage in arteries</p>
+                </div>
+            </div>
+            <div class="col-md-4 px-4">
+                <div class="progress">
+                    <div class="progress-bar theme-box-color bar" style="width:100%"></div>
+                </div>
+            </div>
+            <div class="col-md-4 px-4">
+                <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
+                <p class="lead d-inline">Under Control</p>
+            </div>
+        </div>
+        <div class="row d-flex align-items-baseline flex-wrap">
+            <div class="col-md-4 px-4">
+                <div class="d-flex flex-column text-right">
+                    <h3>Sugar</h3>
+                    <p>Causes blockage in arteries</p>
+                </div>
+            </div>
+            <div class="col-md-4 px-4">
+                <div class="progress">
+                    <div class="progress-bar theme-box-color bar" style="width:100%"></div>
+                </div>
+            </div>
+            <div class="col-md-4 px-4">
+                <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
+                <p class="lead d-inline">Under Control</p>
+            </div>
+        </div>
+        <div class="row d-flex align-items-baseline flex-wrap">
+            <div class="col-md-4 px-4">
+                <div class="d-flex flex-column text-right">
+                    <h3>Body Mass Index (BMI)</h3>
+                    <p>Causes blockage in arteries</p>
+                </div>
+            </div>
+            <div class="col-md-4 px-4">
+                <div class="progress">
+                    <div class="progress-bar theme-box-color bar" style="width:100%"></div>
+                </div>
+            </div>
+            <div class="col-md-4 px-4">
+                <i class="fa fa-exclamation-triangle d-inline pr-2" style="font-size:32px;"></i>
+                <p class="lead d-inline">High</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid theme-box-light">
+    <div class="container-md my-5 py-5 px-md-5">
+        <h1 class="display-4 pb-4 mb-5">
+            Indicators
+        </h1>
+        <div class="row d-flex align-items-baseline flex-wrap">
+            <div class="col-md-4 px-4">
+                <div class="d-flex flex-column text-right">
+                    <h3>Cholesterol</h3>
+                    <p>Causes blockage in arteries</p>
+                </div>
+            </div>
+            <div class="col-md-4 px-4">
+                <div class="progress">
+                    <div class="progress-bar theme-box-color bar" style="width:100%"></div>
+                </div>
+            </div>
+            <div class="col-md-4 px-4">
+                <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
+                <p class="lead d-inline">Under Control</p>
+            </div>
+        </div>
+        <div class="row d-flex align-items-baseline flex-wrap">
+            <div class="col-md-4 px-4">
+                <div class="d-flex flex-column text-right">
+                    <h3>Sugar</h3>
+                    <p>Causes blockage in arteries</p>
+                </div>
+            </div>
+            <div class="col-md-4 px-4">
+                <div class="progress">
+                    <div class="progress-bar theme-box-color bar" style="width:{{ data.res }}%"></div>
+                </div>
+            </div>
+            <div class="col-md-4 px-4">
+                <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
+                <p class="lead d-inline">Under Control</p>
+            </div>
+        </div>
+        <div class="row d-flex align-items-baseline flex-wrap">
+            <div class="col-md-4 px-4">
+                <div class="d-flex flex-column text-right">
+                    <h3>Body Mass Index (BMI)</h3>
+                    <p>Causes blockage in arteries</p>
+                </div>
+            </div>
+            <div class="col-md-4 px-4">
+                <div class="progress">
+                    <div class="progress-bar theme-box-color bar" style="width:100%"></div>
+                </div>
+            </div>
+            <div class="col-md-4 px-4">
+                <i class="fa fa-exclamation-triangle d-inline pr-2" style="font-size:32px;"></i>
+                <p class="lead d-inline">High</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="row ">
             <span class="col-sm-3 col-md-3 col-lg-3">
             </span>
             <div class="col theme-light">
@@ -20,7 +180,7 @@
                     <!-- <h3 class="display-3 theme-dark">Results</h3> -->
                 </div>
                 <div>
-                    <!-- style="position: absolute; width: 789px; height: 144px; top: 230px; left: 580px;" -->
+                    style="position: absolute; width: 789px; height: 144px; top: 230px; left: 580px;"
                     <h1 class="display-5 theme-dark" style="font-size: 30px; text-align: center;">
                         <span style="font-size: 30px;"></span>Your Cardiovascular Disease Risk </span>
                         <br>
@@ -61,9 +221,9 @@
     <span class="col-sm-2 col-md-2 col-lg-2">
             </span>
 </div>
-<!-- Second Indicators and activity level -->
+ Second Indicators and activity level
 <div class="p-3 mb-2 bg-light text-white">
-    <!-- Indicators -->
+     Indicators
     <div class="row p-3 mb-2 bg-light text-white">
         <span class="col-sm-3 col-md-3 col-lg-3 "></span>
         <div class="col ">
@@ -120,7 +280,7 @@
                                 {% endif %}</h4>
                         </span>
             </div>
-            <!-- <div class="row">
+             <div class="row">
                 <span class="col">
                             <h4 class="display-5 theme-dark">Calories</h4>
                         </span>
@@ -130,7 +290,7 @@
                 <span class="col">
                             <h4 class="display-5 theme-dark">10%</h4>
                         </span>
-            </div> -->
+            </div>
             <div class="row">
                 <span class="col">
                             <h4 class="display-5 theme-dark">BMI Level</h4>
@@ -146,8 +306,8 @@
         <span class="col-sm-2 col-md-2 col-lg-2"></span>
     </div>
     <br>
-    <!-- Current Activity Level -->
-    <!-- <div class="row">
+     Current Activity Level 
+     <div class="row">
         <span class="col-sm-3 col-md-3 col-lg-3"></span>
         <div class="col theme-dark">
             <div class="row">
@@ -210,11 +370,11 @@
                         </span>
             </div>
         </div>
-    </div> -->
+    </div>
 
 </div>
 
-<!-- Personalised Life style -->
+ Personalised Life style
 <div class="row">
     <span class="col-sm-3 col-md-3 col-lg-3">
             </span>
@@ -249,5 +409,5 @@
             </span>
 </div>
 </div>
-</div>
+</div> -->
 {% endblock content %}
