@@ -1,13 +1,21 @@
-{% extends "layout.html" %} {% block cssblock %}
+{% extends "layout.html" %} 
+
+{% block cssblock %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/radioinput.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/activitytable.css') }}">
 <!-- <script>
     var activties = [];
     console.log(activties);
 </script> -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> {% endblock %} {% block javascriptblock %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 
+
+{% endblock %} 
+
+{% block javascriptblock %}
 <script type="text/javascript" src="{{ url_for('static', filename='javascript/activity.js') }}"></script>
-{% endblock %} {% block content %}
+{% endblock %} 
+
+{% block content %}
 <div class="jumbotron jumbotron-fluid mb-0 theme-box-light">
     <div class="container">
         <h1 class="display-1">Assess your CVD risk</h1>
@@ -37,7 +45,7 @@
     </div>
     <div class="container-fluid">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
-            <h1 class="display-4 pb-4 text-center">How much do you weigh (in kgs)?</h1>
+            <h1 class="display-4 pb-4 text-center">What is your weight (in kgs)?</h1>
             <div class="row">
                 <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="weight" placeholder="Enter your weight" name="weight" min="40" max="230" required>
             </div>
@@ -66,19 +74,23 @@
     <div class="container-fluid">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center">How much is your blood pressure?</h1>
-            <div class="row mx-auto">
-                <div class="col-sm form-check text-center">
-                    <label for="systolicbp">Systolic Blood Pressure (top number)</label>
-                    <input class="form-control-lg theme-input mx-auto" type="number" id="systolicbp"  min="70" max="228" name="systolicbp" required>
-                    <!-- placeholder="70 - 228 mmHg" -->
+            <div class="row w-75 mx-auto my-3">
+                <div class="col-sm text-right">
+                    <p class="lead">Systolic Blood Pressure (top number)</p>
+                </div>
+                <div class="col-sm form-check my-auto">                    
+                    <input class="form-control-lg theme-input mx-auto w-100" type="number" id="systolicbp"  min="70" max="228" name="systolicbp" required
+                    placeholder="70 - 228 mmHg">
                 </div>
             </div>
 
-            <div class="row mx-auto" style="margin-top: 20px;">
-                <div class="col-sm form-check text-center">
-                    <label for="diastolicbp">Diastolic Blood Pressure (bottom number)</label>
-                    <input class="form-control-lg theme-input mx-auto" type="number" id="diastolicbp"  min="50" max="150" name="diastolicbp" required>
-                    <!-- placeholder="50 - 150 mmHg" -->
+            <div class="row w-75 mx-auto my-3" style="margin-top: 20px;">
+                <div class="col-sm text-right">
+                    <p class="lead">Diastolic Blood Pressure (bottom number)</p>
+                </div>
+                <div class="col-sm form-check my-auto">
+                    <input class="form-control-lg theme-input mx-auto w-100" type="number" id="diastolicbp"  min="50" max="150" name="diastolicbp" required
+                    placeholder="50 - 150 mmHg">
                 </div>
             </div>
         </div>
@@ -146,28 +158,19 @@
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="activityyes">
                         <input type="radio" class="form-check-input option-input" id="activityyes" name="activity"
-                            value="1" checked>Yes
+                            value="1" onclick="activityCheckFunction()">Yes
                         <span class="checkmark"></span>
                     </label>
                 </div>
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="activityno">
                         <input type="radio" class="form-check-input option-input" id="activityno" name="activity"
-                            value="0" >No
+                            value="0" onclick="activityCheckFunction()">No
                         <span class="checkmark"></span>
                     </label>
                 </div>
             </div>
-           
-           
-           
-           
-           
-           
-           
-            <!-- onclick="activityCheckFunction()" 
-            onclick="activityCheckFunction()" -->
-            <!-- <div id="activities" style="display:none">
+            <div id="activities" style="display:none">
                 <div class="container d-md-table w-100 my-5" id="activitytable" name="activitytable">
                     <div class="d-md-table-row d-none d-md-block theme-dark">
 
@@ -197,13 +200,13 @@
                 </div>
                 <button type="button" class="btn btn-block theme-box-dark theme-white theme-dark-button col-sm-4 mx-auto" onclick="addFunction()">Add Activity
                 </button>
-            </div> -->
+            </div>
         </div>
     </div>
     <input type="submit" class="btn btn-block my-5 py-4 btn-lg theme-box-color theme-white theme-color-button col-sm-4 mx-auto" value="Submit">
 </form>
 
-<!-- <script type="text/javascript"> -->
+<!-- <script type="text/javascript">
 
 // function checksubmit(){
 //     // alert("hkhkh");
@@ -214,7 +217,7 @@
 //     }
 // }
 
-<!-- </script> -->
+</script> -->
 
 
 {% endblock %}
