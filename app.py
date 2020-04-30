@@ -44,6 +44,42 @@ def index():
 def assessment():
     return render_template("assessment.html")
 
+@app.route('/option')
+def option():
+    df = pd.read_csv('met2.csv')
+    """ sub_list = []
+    head_list = []
+    head_dict = {}
+    k = df['heading'].iloc[0]
+
+    for i in range(len(df)):
+        temp_dict = {}
+        if df['heading'].iloc[i] == k:
+            temp_dict['activity'] = df['activities'].iloc[i]
+            temp_dict['intensity'] = df['intensity'].iloc[i]
+            temp_dict['met'] = df['met'].iloc[i]
+            sub_list.append(temp_dict)
+        else:
+            head_dict = {}
+            head_dict['heading'] = k
+            head_dict['activities'] = sub_list
+            head_list.append(head_dict)
+            k = df['heading'].iloc[i]
+            sub_list = []
+            temp_dict['activity'] = df['activities'].iloc[i]
+            temp_dict['intensity'] = df['intensity'].iloc[i]
+            temp_dict['met'] = df['met'].iloc[i]
+            sub_list.append(temp_dict) """
+    
+    list_of_headings = []
+    for heading in df.heading.unique():
+        list_of_activities = df[df.heading == heading].to_dict('records')
+        heading_dict = { "heading": heading, "activities": list_of_activities}
+        list_of_headings.append(heading_dict)
+
+    return render_template("option.html", activity_data = list_of_headings)
+
+
 
 @app.route('/results', methods=['POST'])
 def results():
