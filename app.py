@@ -173,6 +173,5 @@ def PA():
 def cardiovasculardisease():
     return render_template("cardiovasculardisease.html")
 
-
 if __name__ == "__main__":
     app.run(debug=True)
