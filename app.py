@@ -47,57 +47,28 @@ def assessment():
 @app.route('/test', methods=['POST'])
 def test():
     if request.method == 'POST':
-
-        # Better way to access data than request.form['age']
-        # to avoid getting an exception if null value is sent.
-        # print(request.form.get('age'))
         data_sample = get_data_option(request)
-        print(data_sample)
-        # activity_data = data_sample.pop('activityname')
-        # abc = get_activity_data(activity_data)
-        return render_template('test.html', data=data_sample)
-    else:
-        return render_template('home.html')
+    print(data_sample)
+    return render_template("test.html",data = data_sample)
+
 
 def get_data_option(request):
-    headings = request.args.get('headings')
-    subheading = request.args.get('subheading')
-
-    print(headings)
+    activityname = request.args.get('activityname')
+    minutes = int(request.form.get('kmsorhours'))
+    daysperweek = int(request.form.get('daysperweek'))
 
     data_sample = {
-        'headings': headings,
-        'subheading': subheading
+        'activityname': activityname,
+        'minutes' : minutes,
+        'daysperweek' : daysperweek
     }
     return data_sample
+
+
 
 @app.route('/option')
 def option():
     df = pd.read_csv('met2.csv')
-    """ sub_list = []
-    head_list = []
-    head_dict = {}
-    k = df['heading'].iloc[0]
-
-    for i in range(len(df)):
-        temp_dict = {}
-        if df['heading'].iloc[i] == k:
-            temp_dict['activity'] = df['activities'].iloc[i]
-            temp_dict['intensity'] = df['intensity'].iloc[i]
-            temp_dict['met'] = df['met'].iloc[i]
-            sub_list.append(temp_dict)
-        else:
-            head_dict = {}
-            head_dict['heading'] = k
-            head_dict['activities'] = sub_list
-            head_list.append(head_dict)
-            k = df['heading'].iloc[i]
-            sub_list = []
-            temp_dict['activity'] = df['activities'].iloc[i]
-            temp_dict['intensity'] = df['intensity'].iloc[i]
-            temp_dict['met'] = df['met'].iloc[i]
-            sub_list.append(temp_dict) """
-    
     list_of_headings = []
     for heading in df.heading.unique():
         list_of_activities = df[df.heading == heading].to_dict('records')

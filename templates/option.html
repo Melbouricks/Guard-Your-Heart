@@ -103,7 +103,9 @@
         $("#activityname").html("").selectpicker('refresh');
         var content_list = [];
         for (var i = 0; i < headings_array[val].activities.length; i++) {
-            // subheading.innerHTML += "<option>" + headings_array[val].activities[i].activity + "</option>";
+            if (i == 0){
+                content_list.push("<option>-Option-</option>");
+            }
             var content = "";
             content = "<option>" + headings_array[val].activities[i].activity + "</option>";
             content_list.push(content);
