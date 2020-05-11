@@ -37,6 +37,7 @@ function addFunction() {
                 var h31 = document.createElement("h3");
                 h31.className = "d-inline";
                 h31.innerHTML = activityname;
+                h31.name = "activities";
                 var p1 = document.createElement("p");
                 p1.className = "d-md-none d-inline";
                 p1.innerHTML = "activity";
@@ -50,6 +51,7 @@ function addFunction() {
                 var h32 = document.createElement("h3");
                 h32.className = "d-inline";
                 h32.innerHTML = kmsorhours;
+                h32.name = "minutes";
                 var p2 = document.createElement("p");
                 p2.className = "d-md-none d-inline";
                 p2.innerHTML = "kms or hours per day";
@@ -62,6 +64,7 @@ function addFunction() {
                 var h33 = document.createElement("h3");
                 h33.className = "d-inline";
                 h33.innerHTML = daysperweek;
+                h33.name = "days";
                 var p3 = document.createElement("p");
                 p3.className = "d-md-none d-inline";
                 p3.innerHTML = "days per week";

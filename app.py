@@ -53,14 +53,14 @@ def test():
 
 
 def get_data_option(request):
-    activityname = request.args.get('activityname')
-    minutes = int(request.form.get('kmsorhours'))
-    daysperweek = int(request.form.get('daysperweek'))
+    activities = request.form.getlist('activityname')
+    minutes = request.form.getlist('kmsorhours')
+    daysperweek = request.form.getlist('daysperweek')
 
     data_sample = {
-        'activityname': activityname,
-        'minutes' : minutes,
-        'daysperweek' : daysperweek
+        # 'activities': activities[0],
+        'minutes' : minutes[0],
+        'daysperweek' : daysperweek[0]
     }
     return data_sample
 

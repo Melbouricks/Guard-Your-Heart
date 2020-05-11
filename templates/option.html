@@ -16,46 +16,48 @@
 {% block content %}
 
 <form action="{{ url_for('test') }}" method="post">
+    <div id="activities">
+        <div class="container d-md-table w-100 my-5" id="activitytable" name="activitytable">
+            <div class="d-md-table-row d-none d-md-block theme-dark">
 
-<div id="activities">
-    <div class="container d-md-table w-100 my-5" id="activitytable" name="activitytable">
-        <div class="d-md-table-row d-none d-md-block theme-dark">
+                <div class="d-md-table-cell activity-table-header">
+                    <h5>Activity</h5>
+                </div>
 
-            <div class="d-md-table-cell activity-table-header">
-                <h5>Activity</h5>
-            </div>
+                <div class="d-md-table-cell activity-table-header">
+                    <h5>Minutes Per Day</h5>
+                </div>
 
-            <div class="d-md-table-cell activity-table-header">
-                <h5>Minutes Per Day</h5>
-            </div>
+                <div class="d-md-table-cell activity-table-header">
+                    <h5>Days Per Week</h5>
+                </div>
 
-            <div class="d-md-table-cell activity-table-header">
-                <h5>Days Per Week</h5>
-            </div>
-
-            <div class="d-md-table-cell activity-table-header">
-                <h5>Delete</h5>
+                <div class="d-md-table-cell activity-table-header">
+                    <h5>Delete</h5>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row form-group">
-    
-        <select class="form-control selectpicker col-md-4" id="headings" data-live-search="true" onchange="sub(this.value)">
-        </select>
-        <select class="form-control selectpicker col-md-4" data-live-search="true" id="activityname" onchange="act_col(this.value)">
-        </select>
+        <div class="row form-group">
 
-        <input class="col-md-2 form-control-lg theme-input" type="number" id="kmsorhours" placeholder="How many minute?"
-            name="kmsorhours">
+            <select class="form-control selectpicker col-md-4" id="headings" data-live-search="true"
+                onchange="sub(this.value)">
+            </select>
+            <select class="form-control selectpicker col-md-4" data-live-search="true" id="activityname">
+            </select>
 
-        <input class="col-md-2 form-control-lg theme-input" type="number" id="daysperweek" placeholder="days per week?"
-            name="daysperweek">
+            <input class="col-md-2 form-control-lg theme-input" type="number" id="kmsorhours"
+                placeholder="How many minute?" name="kmsorhours">
+
+            <input class="col-md-2 form-control-lg theme-input" type="number" id="daysperweek"
+                placeholder="days per week?" name="daysperweek">
+        </div>
+        <button type="button" class="btn btn-block theme-box-dark theme-white theme-dark-button col-sm-4 mx-auto"
+            onclick="addFunction()">Add Activity
+        </button>
     </div>
-    <button type="button" class="btn btn-block theme-box-dark theme-white theme-dark-button col-sm-4 mx-auto"
-        onclick="addFunction()">Add Activity
-    </button>
-</div>
-<input type="submit" class="btn btn-block my-5 py-4 btn-lg theme-box-color theme-white theme-color-button col-sm-4 mx-auto" value="Submit">
+    <input type="submit"
+        class="btn btn-block my-5 py-4 btn-lg theme-box-color theme-white theme-color-button col-sm-4 mx-auto"
+        value="Submit">
 </form>
 
 
@@ -89,7 +91,7 @@
     // var subheading = document.getElementById("subheading");
     for (var i = 0; i < headings_array.length; i++) {
         // console.log(headings_array[i].heading);
-        if(i == 0){ 
+        if (i == 0) {
             headings.innerHTML += "<option>-Option-</option>";
         }
         headings.innerHTML += "<option value=" + i + ">" + headings_array[i].heading + "</option>";
@@ -103,7 +105,7 @@
         $("#activityname").html("").selectpicker('refresh');
         var content_list = [];
         for (var i = 0; i < headings_array[val].activities.length; i++) {
-            if (i == 0){
+            if (i == 0) {
                 content_list.push("<option>-Option-</option>");
             }
             var content = "";
@@ -116,11 +118,11 @@
             .selectpicker('refresh');
     }
 
-    function act_col(temp) {
-        console.log(temp);
-        $("#activityname").val(temp);
-    }
-
+    // function act_col(temp) {
+    //     console.log(temp);
+    //     $("#activityname").val(temp);
+    // }
+    // onchange="act_col(this.value)"
 
 </script>
 {% endblock %}
