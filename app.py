@@ -44,6 +44,33 @@ def index():
 def assessment():
     return render_template("assessment.html")
 
+@app.route('/test', methods=['POST'])
+def test():
+    if request.method == 'POST':
+
+        # Better way to access data than request.form['age']
+        # to avoid getting an exception if null value is sent.
+        # print(request.form.get('age'))
+        data_sample = get_data_option(request)
+        print(data_sample)
+        # activity_data = data_sample.pop('activityname')
+        # abc = get_activity_data(activity_data)
+        return render_template('test.html', data=data_sample)
+    else:
+        return render_template('home.html')
+
+def get_data_option(request):
+    headings = request.args.get('headings')
+    subheading = request.args.get('subheading')
+
+    print(headings)
+
+    data_sample = {
+        'headings': headings,
+        'subheading': subheading
+    }
+    return data_sample
+
 @app.route('/option')
 def option():
     df = pd.read_csv('met2.csv')
