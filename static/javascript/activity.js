@@ -16,9 +16,18 @@ function addFunction() {
     var kmsorhours = document.getElementById('kmsorhours').value;
     var daysperweek = document.getElementById('daysperweek').value;
 
+    console.log(activityname);
+
     if (validateKmsOrHours(kmsorhours) == true) {
 
         if (validateDaysPerWeek(daysperweek) == true) {
+            // t = [
+            //     activityname,
+            //     kmsorhours,
+            //     daysperweek
+            // ];
+            // console.log(t);
+            // activties[activties.length] = t;
 
             var div = document.createElement("div");
             div.className = "d-md-table-row activity-table-row";
@@ -82,24 +91,22 @@ function addFunction() {
             div.appendChild(div4);
 
             document.getElementById('activitytable').appendChild(div);
-
         } else {
             alert("Invalid days per week!");
         }
     } else {
         alert("Invalid kms or hours!");
     }
-    
 
 }
-// console.log(activties);
 
 
 
-// function validateName(activityname) {
-//     var regex = /^([a-zA-Z]{1,20})$/;
-//     return regex.test(activityname);
-// }
+
+function validateName(activityname) {
+    var regex = /^([a-zA-Z]{1,20})$/;
+    return regex.test(activityname);
+}
 
 function validateKmsOrHours(kmsorhours) {
     var regex = /^([0-9]{1,2})$/;

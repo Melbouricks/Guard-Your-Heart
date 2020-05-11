@@ -89,6 +89,9 @@
     // var subheading = document.getElementById("subheading");
     for (var i = 0; i < headings_array.length; i++) {
         // console.log(headings_array[i].heading);
+        if(i == 0){ 
+            headings.innerHTML += "<option>-Option-</option>";
+        }
         headings.innerHTML += "<option value=" + i + ">" + headings_array[i].heading + "</option>";
         // headings.add(new Option(headings_array[i],heading, i));
     }
