@@ -1,3 +1,27 @@
+function bpCheckFunction() {
+    if (document.getElementById('bpyes').checked) {
+        document.getElementById('bloodpressure').style.display = 'block';
+    } else {
+        document.getElementById('bloodpressure').style.display = 'none';
+    }
+}
+
+function cholCheckFunction() {
+    if (document.getElementById('cholyes').checked) {
+        document.getElementById('cholestrol').style.display = 'block';
+    } else {
+        document.getElementById('cholestrol').style.display = 'none';
+    }
+}
+
+function sugarCheckFunction() {
+    if (document.getElementById('sugaryes').checked) {
+        document.getElementById('sugar').style.display = 'block';
+    } else {
+        document.getElementById('sugar').style.display = 'none';
+    }
+}
+
 function activityCheckFunction() {
     if (document.getElementById('activityyes').checked) {
         document.getElementById('activities').style.display = 'block';
