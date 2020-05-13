@@ -24,6 +24,7 @@ def assessment():
 @app.route('/option')
 def option():
     list_of_headings = Utill.metData()
+    print(list_of_headings)
     return render_template("option.html", activity_data=list_of_headings, route="option")
 
 
@@ -59,3 +60,7 @@ def PA():
 @app.route('/cardiovasculardisease')
 def cardiovasculardisease():
     return render_template("cardiovasculardisease.html", route="cardiovasculardisease")
+
+@app.route('/test',methods=['POST'])
+def test():
+    return render_template("test.html")

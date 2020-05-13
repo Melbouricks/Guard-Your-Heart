@@ -3,11 +3,10 @@
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/activitytable.css') }}">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> {% endblock %} {% block javascriptblock %}
-<script type="text/javascript" src="{{ url_for('Guard_Your_Heart/static', filename='javascript/activity.js') }}"></script>
+<script type="text/javascript" src="../static/javascript/activity.js"></script>
 {% endblock %} {% block content %}
 
-<form action="{{ url_for('option') }}" method="post">
-
+<form method="post" action="{{ url_for('test') }}">
     <div id="activities">
         <div class="container d-md-table w-100 my-5" id="activitytable" name="activitytable">
             <div class="d-md-table-row d-none d-md-block theme-dark">
@@ -33,7 +32,7 @@
 
             <select class="form-control selectpicker col-md-4" id="headings" data-live-search="true" onchange="sub(this.value)">
             </select>
-            <select class="form-control selectpicker col-md-4" data-live-search="true" id="activityname" onchange="act_col(this.value)">
+            <select class="form-control selectpicker col-md-4" data-live-search="true" id="activityname">
             </select>
 
             <input class="col-md-2 form-control-lg theme-input" type="number" id="kmsorhours" placeholder="How many minute?" name="kmsorhours">
@@ -53,13 +52,11 @@
     });
 
     var headings_array = [] { %
-        for (var activity_set in activity_data) %
+        for activity_set in activity_data %
     }
     var heading = "{{ activity_set.heading }}";
-    var activities_array = []
-
-    { %
-        for (activity_info in activity_set.activities) %
+    var activities_array = [] { %
+        for activity_info in activity_set.activities %
     }
     var activity = "{{ activity_info.activity }}";
     var intensity = {
@@ -72,7 +69,6 @@
             activity_info.met
         }
     };
-
     activities_array.push({
         "activity": activity,
         "intensity": intensity,
@@ -84,6 +80,7 @@
         "activities": activities_array
     }) { % endfor %
     }
+
     console.log(headings_array[0].heading);
 
     var headings = document.getElementById("headings");
@@ -104,7 +101,9 @@
         $("#activityname").html("").selectpicker('refresh');
         var content_list = [];
         for (var i = 0; i < headings_array[val].activities.length; i++) {
-            // subheading.innerHTML += "<option>" + headings_array[val].activities[i].activity + "</option>";
+            if (i == 0) {
+                content_list.push("<option>-Option-</option>");
+            }
             var content = "";
             content = "<option>" + headings_array[val].activities[i].activity + "</option>";
             content_list.push(content);
@@ -113,11 +112,6 @@
         $("#activityname")
             .html(content_all)
             .selectpicker('refresh');
-    }
-
-    function act_col(temp) {
-        console.log(temp);
-        $("#activityname").val(temp);
     }
 </script>
 {% endblock %}

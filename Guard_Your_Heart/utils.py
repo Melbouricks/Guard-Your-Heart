@@ -1,4 +1,4 @@
-import pickle
+import pickle, json
 from sklearn.preprocessing import normalize
 import pandas as pd
 
@@ -91,4 +91,4 @@ class Utill:
             heading_dict = {"heading": heading, "activities": list_of_activities}
             list_of_headings.append(heading_dict)
         # print(list_of_headings)
-        return list_of_headings
+        return json.dumps(list_of_headings)
