@@ -90,5 +90,5 @@ class Utill:
             list_of_activities = df[df.heading == heading].to_dict('records')
             heading_dict = {"heading": heading, "activities": list_of_activities}
             list_of_headings.append(heading_dict)
-            
+        # print(list_of_headings)
         return list_of_headings
