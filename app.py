@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, jsonify, request
+from flask import Flask, render_template, url_for, jsonify, request, make_response
 import pickle
 from sklearn.preprocessing import normalize
 import requests
@@ -49,20 +49,35 @@ def test():
     if request.method == 'POST':
         data_sample = get_data_option(request)
     print(data_sample)
-    return render_template("test.html",data = data_sample)
+    return render_template("test.html",activity_entered= data_sample)
 
 
 def get_data_option(request):
-    activities = request.form.getlist('activityname')
-    minutes = request.form.getlist('kmsorhours')
-    daysperweek = request.form.getlist('daysperweek')
+    activities = request.form.getlist('activities')
+    minutes = request.form.getlist('minutes')
+    daysperweek = request.form.getlist('days')
+    intensity = ""
+    df = pd.read_csv('met2.csv')
+   
+    data_list = []
+    for i in range(len(activities)):
+        intensity_int = df[df['activity']==activities[i]]['intensity'].item()
+        
+        if(intensity_int == 1):
+            intensity = "Light"      
+        elif(intensity_int == 2):
+            intensity = "Moderate"
+        elif(intensity_int == 3):
+            intensity = "Vigorous"
 
-    data_sample = {
-        # 'activities': activities[0],
-        'minutes' : minutes[0],
-        'daysperweek' : daysperweek[0]
-    }
-    return data_sample
+        data_temp = {
+            'heading': activities[i],
+            'minutes' : minutes[i],
+            'daysperweek' : daysperweek[i],
+            'intensity' : intensity
+        }
+        data_list.append(data_temp)
+    return data_list
 
 
 
@@ -170,6 +185,24 @@ def PA():
 @app.route('/cardiovasculardisease')
 def cardiovasculardisease():
     return render_template("cardiovasculardisease.html")
+
+@app.route('/_add_numbers')
+def add_numbers():
+    a = request.args.get('a', 0, type=int)
+    b = request.args.get('b', 0, type=int)
+    return jsonify(result=a + b)
+
+@app.route('/ajax')
+def ajax():
+    return render_template("ajax.html")
+
+# @app.route('/', methods=['POST'])
+# def index():
+#      data = request.form['keyword']
+#      resp = make_response(json.dumps(data))
+#      resp.status_code = 200
+#      resp.headers['Access-Control-Allow-Origin'] = '*'
+#      return resp
 
 if __name__ == "__main__":
     app.run(debug=True)

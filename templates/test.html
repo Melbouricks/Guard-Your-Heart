@@ -2,42 +2,205 @@
 
 {% block content %}
 
-
+<!-- show current activity -->
 <div class="jumbotron jumbotron-fluid" style="background-color:whitesmoke">
-    <div class="container">
+    <div class="container" id="current_pa">
         <h1 class="display-4">Your Current Activity Levels</h1>
         <!-- heading-row -->
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-6">
                 <h5>Activity</h5>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-2">
                 <h5>Minutes</h5>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-2">
                 <h5>Days per week</h5>
             </div>
-            <div class="col-sm-3">
-                <h5>Calories Burnt</h5>
-            </div>
-        </div>
-        <!-- 1st row -->
-        <div class="row">
-            <div class="col-sm-3">
-                <h5>Walkings</h5>
-            </div>
-            <div class="col-sm-3">
-                <h5>2</h5>
-            </div>
-            <div class="col-sm-3">
-                <h5>4</h5>
-            </div>
-            <div class="col-sm-3">
-                <h5>8X</h5>
+            <div class="col-sm-2">
+                <h5>Activity intensity</h5>
             </div>
         </div>
     </div>
 </div>
+
+<!-- give feedback -->
+<div class="jumbotron jumbotron-fluid" style="background-color:white">
+    <div class="container" id="feedback">
+        <div id="light" class="row">
+            <h5>The time you are taking light activities is:</h5>
+        </div>
+        <div id="moderate" class="row">
+            <h5>The time you are taking moderate activities is:</h5>
+        </div>
+        <div id="vigorous" class="row">
+            <h5>The time you are taking vigorous activities is:</h5>
+        </div>
+    </div>
+</div>
+
+<!-- show activities based on intensity -->
+<div class="jumbotron jumbotron-fluid" style="background-color:whitesmoke">
+    <div class="container" id="filterIntensity">
+        
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+
+    var current_pa = document.getElementById("current_pa");
+
+
+    var light_time = 0;
+    var moderate_time = 0;
+    var vigorous_time = 0;
+
+    var flag_duraion = 0;
+    var days_total = 0;
+
+    {% for activity_data in activity_entered %}
+    var heading = "{{ activity_data.heading }}";
+    var minutes = "{{ activity_data.minutes }}";
+    var days = "{{ activity_data.daysperweek }}";
+    var intensity = "{{ activity_data.intensity }}";
+
+    // console.log("yyyy  "+intensity);
+
+    var div_row = document.createElement("div");
+    div_row.className = "row";
+
+    // heading
+    var div_heading = document.createElement("div");
+    div_heading.className = "col-sm-6";
+    var h5_heading = document.createElement("h5");
+    h5_heading.innerHTML = heading;
+
+    div_heading.appendChild(h5_heading);
+    // minutes
+    var div_minutes = document.createElement("div");
+    div_minutes.className = "col-sm-2";
+    var h5_minutes = document.createElement("h5");
+    h5_minutes.innerHTML = minutes;
+
+    div_minutes.appendChild(h5_minutes);
+    // days
+    var div_days = document.createElement("div");
+    div_days.className = "col-sm-2";
+    var h5_days = document.createElement("h5");
+    h5_days.innerHTML = days;
+
+    div_days.appendChild(h5_days);
+
+    // intensity
+    var div_intensity = document.createElement("div");
+    div_intensity.className = "col-sm-2";
+    var h5_intensity = document.createElement("h5");
+    h5_intensity.innerHTML = intensity;
+
+    div_intensity.appendChild(h5_intensity);
+
+
+    div_row.appendChild(div_heading);
+    div_row.appendChild(div_minutes);
+    div_row.appendChild(div_days);
+    div_row.appendChild(div_intensity);
+
+    current_pa.appendChild(div_row);
+
+
+    // calculate total time
+    if (intensity == "Light") {
+        light_time += parseInt(minutes) * parseInt(days)
+    }
+    else if (intensity == "Moderate") {
+        moderate_time += parseInt(minutes) * parseInt(days)
+    }
+    else {
+        vigorous_time += parseInt(minutes) * parseInt(days)
+    }
+
+    // check duration < 10 minutes
+    if (parseInt(minutes) < 10) {
+        flag_duraion = 1;
+    }
+
+    // calculate days in total
+    days_total += parseInt(days);
+
+
+    {% endfor %}
+
+
+    var flag_total = 0;
+    // check total time
+    if (moderate_time >= 300 | vigorous_time >= 150 | moderate_time + vigorous_time * 2 >= 300) {
+        flag_total = 0;
+    }
+    else {
+        flag_total = 1;
+    }
+    var flag_days = 0;
+    // check total days
+    if (days_total < 3) {
+        flag_days = 1;
+    }
+
+    var msg_duration = "Aerobic activity should be performed in bouts of at least 10 minutes duration. You should extend time duration for doing the activity.";
+    var msg_total = "For additional health benefits, older adults should increase their moderate-intensity aerobic physical activity to 300 minutes per week," +
+        "or engage in 150 minutes of vigorous-intensity aerobic physical activity per week, or an equivalent combination of moderate-and vigorous-intensity activity." +
+        " For your own health, please increase the amount of physical activity.";
+    var msg_days = "You should perform physical activity on 3 or more days per week to enhance balance and prevent falls."
+    var msg_condition = "When you cannot do the recommended amounts of physical activity due to health conditions, " +
+        "you should be as physically active as your abilities and conditions allow."
+
+    if (flag_duraion == 1) {
+        addMsg(msg_duration);
+    }
+    if (flag_total == 1) {
+        addMsg(msg_total);
+    }
+    if (flag_days == 1) {
+        addMsg(msg_days);
+    }
+    addMsg(msg_condition);
+
+
+    function addMsg(msg) {
+        var feedback = document.getElementById("feedback");
+        var div_msg = document.createElement("div");
+        div_msg.className = "row";
+        var h5_msg = document.createElement("h5");
+        h5_msg.innerHTML = msg;
+        div_msg.appendChild(h5_msg);
+        feedback.appendChild(div_msg);
+    }
+
+
+
+    var h5_light = document.createElement("h5");
+    h5_light.innerHTML = light_time + " minutes.";
+    var light = document.getElementById("light");
+    light.appendChild(h5_light);
+
+    var h5_moderate = document.createElement("h5");
+    h5_moderate.innerHTML = moderate_time + " minutes.";
+    var moderate = document.getElementById("moderate");
+    moderate.appendChild(h5_moderate);
+
+    var h5_vigorous = document.createElement("h5");
+    h5_vigorous.innerHTML = vigorous_time + " minutes.";
+    var vigorous = document.getElementById("vigorous");
+    vigorous.appendChild(h5_vigorous);
+
+
+
+
+
+
+</script>
 
 
 
