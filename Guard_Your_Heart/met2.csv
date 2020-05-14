@@ -24,11 +24,15 @@
 22,15720,3.0,sports,"volleyball, non-competitive, 6 - 9 member team, general",2
 23,15731,7.0,sports,"wallyball, general",3
 24,17025,8.3,walking,"carrying load upstairs, general",3
-25,18220,3.0,water activities,"surfing, body or board, general",2
-26,18250,9.5,water activities,"swimming, backstroke, general, training or competition",3
-27,18260,10.3,water activities,"swimming, breaststroke, general, training or competition",3
-28,18270,13.8,water activities,"swimming, butterfly, general",3
-29,18310,6.0,water activities,"swimming, leisurely, not lap swimming, general",0
-30,18320,7.0,water activities,"swimming, sidestroke, general",3
-31,18352,2.3,water activities,"tubing, floating on a river, general",1
-32,19075,7.0,winter activities,"skiing, general",3
+25,17110,6.5,walking,"race walking",3			
+26,17165,3,walking,"walking the dog",2			
+27,17250,3.5,walking,"walking, for pleasure, work break",2
+28,17260,4.8,walking,"walking, grass track",2
+29,18220,3.0,water activities,"surfing, body or board, general",2
+30,18250,9.5,water activities,"swimming, backstroke, general, training or competition",3
+31,18260,10.3,water activities,"swimming, breaststroke, general, training or competition",3
+32,18270,13.8,water activities,"swimming, butterfly, general",3
+33,18310,6.0,water activities,"swimming, leisurely, not lap swimming, general",0
+34,18320,7.0,water activities,"swimming, sidestroke, general",3
+35,18352,2.3,water activities,"tubing, floating on a river, general",1
+36,19075,7.0,winter activities,"skiing, general",3
