@@ -1,7 +1,3 @@
-var activity_data = JSON.parse({
-    { activity_data | tojson }
-})
-
 function bpCheckFunction() {
     if (document.getElementById('bpyes').checked) {
         document.getElementById('bloodpressure').style.display = 'block';

@@ -53,7 +53,7 @@ def results():
             result = Utill.predict_data(data_sample)
             data_sample['res'] = result
             data_sample['indicator'] = [int(request.form.get("chol")),int(request.form.get("sugarradio"))]
-
+            session['indi'] = {'indicator':data_sample['indicator'],"cholestrol":data_sample['cholestrol'],"gluc":data_sample['gluc'],"bmi":data_sample['bmi']}
             return render_template('results.html', data=data_sample, route="result")
         else:
             return render_template('home.html', route="index")
@@ -63,7 +63,9 @@ def results():
 @app.route('/diet')
 def diet():
     if 'user' in session:
-        return render_template("diet.html", route="diet")
+        data = session['indi']
+        print(data)
+        return render_template("diet.html", route="diet", data = data)
     else:
         return redirect(url_for('initlogin'))
     

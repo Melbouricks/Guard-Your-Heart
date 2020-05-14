@@ -6,7 +6,7 @@
     console.log(activties);
 </script> -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> {% endblock %} {% block javascriptblock %}
-<script type="text/javascript" src="{{ url_for('static', filename='javascript/activity.js') }}"></script>
+<script type="text/javascript" src="../static/javascript/activity.js"></script>
 {% endblock %} {% block content %}
 <div class="jumbotron jumbotron-fluid mb-0 theme-box-light">
     <div class="container">
@@ -35,7 +35,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid">var activity_data = JSON.parse({ // { activity_data | tojson } // })
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center">What is your weight (in kgs)?</h1>
             <div class="row">
@@ -70,8 +70,7 @@
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="bpyes">
-                        <input type="radio" class="form-check-input option-input" id="bpyes" name="bp" value="1"
-                            onclick="bpCheckFunction()">Yes
+                        <input type="radio" class="form-check-input option-input" id="bpyes" name="bp" value="1" onclick="bpCheckFunction()">Yes
                         <span class="checkmark"></span>
                     </label>
                 </div>

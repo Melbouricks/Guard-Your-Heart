@@ -1,4 +1,6 @@
-{% extends "layout.html" %} {% block content %}
+{% extends "layout.html" %} {% block cssblock %}
+<link rel="stylesheet" type="text/css" href="../static/css/progressbar.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> {% endblock %} {% block content %}
 <style>
     .center1 {
         margin: 0 auto;
@@ -16,178 +18,292 @@
             <p>Find out dietary suggestions built for you below</p>
         </div>
     </div>
-    <!-- Healthy food -->
-    <div class="jumbotron jumbotron-fluid" style="background-color:whitesmoke">
-        <div class="container">
-            <h1 class="display-4">Healthy Food Choices</h1>
-            <!-- filter-row -->
-            <div class="row">
-                <!-- Allergens -->
-                <div class="btn-group drop1">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <!-- Indicators -->
+    <div class="container-fluid theme-box-light">
+        <div class="container-md my-5 py-5 px-md-5">
+            <h1 class="display-4 pb-4 mb-5">
+                Indicators
+            </h1>
+            <div class="row d-flex align-items-baseline flex-wrap">
+                <div class="col-md-4 px-4">
+                    <div class="d-flex flex-column text-right">
+                        <h3>Cholesterol</h3>
+                        <p>Causes blockage in arteries</p>
+                    </div>
+                </div>
+                <div class="col-md-4 px-4">
+                    <div class="progress">
+                        {% if data.indicator[0] == 0%}
+                        <div class="progress-bar theme-box-color bar" style="width:0%"></div>
+                        {% elif data.cholestrol
+                        <=2 %} <div class="progress-bar theme-box-color bar" style="width:40%"></div>
+                    {% else %}
+                    <div class="progress-bar theme-box-color bar" style="width:100%"></div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-4 px-4">
+                {% if data.indicator[0] == 0%}
+                <i class="fas fa-question-circle d-inline pr-2" style="font-size:32px;"></i>
+                <p class="lead d-inline">Do not know</p>
+                {% elif data.cholestrol
+                <=2 %} <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
+                    <p class="lead d-inline">Under Control</p>
+                    {% else %}
+                    <i class="fas fa-exclamation-circle d-inline pr-2" style="font-size:32px;"></i>
+                    <p class="lead d-inline">High</p>
+                    {% endif %}
+            </div>
+        </div>
+        <div class="row d-flex align-items-baseline flex-wrap">
+            <div class="col-md-4 px-4">
+                <div class="d-flex flex-column text-right">
+                    <h3>Sugar</h3>
+                    <p>Causes blockage in arteries</p>
+                </div>
+            </div>
+            <div class="col-md-4 px-4">
+                <div class="progress">
+                    {% if data.indicator[1] == 0%}
+                    <div class="progress-bar theme-box-color bar" style="width:0%"></div>
+                    {% elif data.gluc
+                    <=2 %} <div class="progress-bar theme-box-color bar" style="width:40%"></div>
+                {% else %}
+                <div class="progress-bar theme-box-color bar" style="width:100%"></div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-md-4 px-4">
+            {% if data.indicator[1] == 0%}
+            <i class="fas fa-question-circle d-inline pr-2" style="font-size:32px;"></i>
+            <p class="lead d-inline">Do not know</p>
+            {% elif data.gluc
+            <=2 %} <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
+                <p class="lead d-inline">Under Control</p>
+                {% else %}
+                <i class="fas fa-exclamation-circle d-inline pr-2" style="font-size:32px;"></i>
+                <p class="lead d-inline">High</p>
+                {% endif %}
+        </div>
+    </div>
+    <div class="row d-flex align-items-baseline flex-wrap">
+        <div class="col-md-4 px-4">
+            <div class="d-flex flex-column text-right">
+                <h3>Body Mass Index (BMI)</h3>
+                <p>Causes blockage in arteries</p>
+            </div>
+        </div>
+        <div class="col-md-4 px-4">
+            <div class="progress">
+                {% if data.bmi
+                < 18.5 %} <div class="progress-bar theme-box-color bar" style="width:15%">
+            </div>
+            {% elif data.bmi
+            < 24.9 %} <div class="progress-bar theme-box-color bar" style="width:35%">
+        </div>
+        {% elif data.bmi
+        < 29.9 %} <div class="progress-bar theme-box-color bar" style="width:60%">
+    </div>
+    {% else %}
+    <div class="progress-bar theme-box-color bar" style="width:90%"></div>
+    {% endif %}
+</div>
+</div>
+<div class="col-md-4 px-4">
+    {% if data.bmi
+    < 18.5 %} <i class="fa fa-exclamation-triangle d-inline pr-2" style="font-size:32px;"></18.5>
+        <p class="lead d-inline">Under Weight</p>
+        {% elif data.bmi
+        < 24.9 %} <i class="fa fa-check d-inline pr-2" style="font-size:32px;">
+            </i>
+            <p class="lead d-inline">Normal Weight</p>
+            {% elif data.bmi
+            < 29.9 %} <i class="fa fa-exclamation-triangle d-inline pr-2" style="font-size:32px;">
+                </i>
+                <p class="lead d-inline">Overweight</p>
+                {% else %}
+                <i class="fa fa-exclamation-triangle d-inline pr-2" style="font-size:32px;"></i>
+                <p class="lead d-inline">Obese</p>
+                {% endif %}
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Healthy food -->
+<div class="jumbotron jumbotron-fluid" style="background-color:whitesmoke">
+    <div class="container">
+        <h1 class="display-4">Healthy Food Choices</h1>
+        <!-- filter-row -->
+        <div class="row">
+            <!-- Allergens -->
+            <div class="btn-group drop1">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Allergens
                     </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Seafood</a>
-                        <a class="dropdown-item" href="#">Nuts</a>
-                        <a class="dropdown-item" href="#">Mango</a>
-                    </div>
-                </div>
-
-                <!-- Dietary -->
-                <div class="btn-group drop1">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dietary&Lifestyle
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Vegetarian</a>
-                    </div>
-                </div>
-                <!-- Type -->
-                <div class="btn-group drop1">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Type
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Italian</a>
-                        <a class="dropdown-item" href="#">Chinese</a>
-                        <a class="dropdown-item" href="#">Indian</a>
-                        <a class="dropdown-item" href="#">Thai</a>
-                        <a class="dropdown-item" href="#">Japanese</a>
-                    </div>
-                </div>
-                <!-- space -->
-                <div class="col-sm-3"></div>
-                <!-- search-bar -->
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="item" placeholder="Search an item">
-                    </div>
-                </div>
-                <!-- sorting -->
-                <div class="btn-group drop1">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Sort by
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Category</a>
-                        <a class="dropdown-item" href="#">A-Z</a>
-                        <a class="dropdown-item" href="#">Z-A</a>
-                    </div>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Seafood</a>
+                    <a class="dropdown-item" href="#">Nuts</a>
+                    <a class="dropdown-item" href="#">Mango</a>
                 </div>
             </div>
 
-            <!-- Pics -->
-            <div class="row">
-                <!-- fish -->
-                <div class="col-md-2 pr-md-3 py-5 theme-box-light">
-                    <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/fish.png')}}">
-                    <div class="text-center" style="background-color:lightgray;">Fish</div>
+            <!-- Dietary -->
+            <div class="btn-group drop1">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dietary&Lifestyle
+                    </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Vegetarian</a>
                 </div>
-                <!-- berry -->
-                <div class="col-md-2 pr-md-3 py-5 theme-box-light">
-                    <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/berry.png')}}">
-                    <div class="text-center" style="background-color:lightgray;">Berry</div>
+            </div>
+            <!-- Type -->
+            <div class="btn-group drop1">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Type
+                    </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Italian</a>
+                    <a class="dropdown-item" href="#">Chinese</a>
+                    <a class="dropdown-item" href="#">Indian</a>
+                    <a class="dropdown-item" href="#">Thai</a>
+                    <a class="dropdown-item" href="#">Japanese</a>
                 </div>
-                <!-- nuts -->
-                <div class="col-md-2 pr-md-3 py-5 theme-box-light">
-                    <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/nuts.png')}}">
-                    <div class="text-center" style="background-color:lightgray;">Nuts</div>
+            </div>
+            <!-- space -->
+            <div class="col-sm-3"></div>
+            <!-- search-bar -->
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="item" placeholder="Search an item">
                 </div>
-                <!-- seeds -->
-                <div class="col-md-2 pr-md-3 py-5 theme-box-light">
-                    <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/seeds.png')}}">
-                    <div class="text-center" style="background-color:lightgray;">Seeds</div>
-                </div>
-                <!-- oats -->
-                <div class="col-md-2 pr-md-3 py-5 theme-box-light">
-                    <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/oats.png')}}">
-                    <div class="text-center" style="background-color:lightgray;">Oats</div>
-                </div>
-                <!-- vegetable -->
-                <div class="col-md-2 pr-md-3 py-5 theme-box-light">
-                    <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/vegetable.png')}}">
-                    <div class="text-center" style="background-color:lightgray;">Green Vegetables</div>
+            </div>
+            <!-- sorting -->
+            <div class="btn-group drop1">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sort by
+                    </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Category</a>
+                    <a class="dropdown-item" href="#">A-Z</a>
+                    <a class="dropdown-item" href="#">Z-A</a>
                 </div>
             </div>
         </div>
-    </div>
 
-
-    <!-- Unealthy food -->
-    <div class="jumbotron jumbotron-fluid" style="background-color:white">
-        <div class="container">
-            <h1 class="display-4">Unhealthy Food Choices</h1>
-            <!-- filter-row -->
-            <div class="row">
-                <!-- Dietary -->
-                <div class="btn-group drop1">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dietary&Lifestyle
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Vegetarian</a>
-                    </div>
-                </div>
-                <!-- Type -->
-                <div class="btn-group drop1">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Type
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Italian</a>
-                        <a class="dropdown-item" href="#">Chinese</a>
-                        <a class="dropdown-item" href="#">Indian</a>
-                        <a class="dropdown-item" href="#">Thai</a>
-                        <a class="dropdown-item" href="#">Japanese</a>
-                    </div>
-                </div>
-                <!-- space -->
-                <div class="col-sm-4"></div>
-                <!-- search-bar -->
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="item" placeholder="Search an item">
-                    </div>
-                </div>
-                <!-- sorting -->
-                <div class="btn-group drop1">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Sort by
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Category</a>
-                        <a class="dropdown-item" href="#">A-Z</a>
-                        <a class="dropdown-item" href="#">Z-A</a>
-                    </div>
-                </div>
+        <!-- Pics -->
+        <div class="row">
+            <!-- fish -->
+            <div class="col-md-2 pr-md-3 py-5 theme-box-light">
+                <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/fish.png')}}">
+                <div class="text-center" style="background-color:lightgray;">Fish</div>
             </div>
-
-            <!-- Pics -->
-            <div class="row">
-                <!-- sugary -->
-                <div class="col-md-2 pr-md-3 py-5 theme-box-light">
-                    <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/sugary.png')}}">
-                    <div class="text-center" style="background-color:lightgray;">Sugary Items</div>
-                </div>
-                <!-- fat -->
-                <div class="col-md-2 pr-md-3 py-5 theme-box-light">
-                    <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/fat.png')}}">
-                    <div class="text-center" style="background-color:lightgray;">Fat Rich Items</div>
-                </div>
-                <!-- meat -->
-                <div class="col-md-2 pr-md-3 py-5 theme-box-light">
-                    <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/meat.png')}}">
-                    <div class="text-center" style="background-color:lightgray;">Processed Meat</div>
-                </div>
-                <!-- rice -->
-                <div class="col-md-2 pr-md-3 py-5 theme-box-light">
-                    <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/rice.png')}}">
-                    <div class="text-center" style="background-color:lightgray;">White Rice</div>
-                </div>
+            <!-- berry -->
+            <div class="col-md-2 pr-md-3 py-5 theme-box-light">
+                <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/berry.png')}}">
+                <div class="text-center" style="background-color:lightgray;">Berry</div>
+            </div>
+            <!-- nuts -->
+            <div class="col-md-2 pr-md-3 py-5 theme-box-light">
+                <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/nuts.png')}}">
+                <div class="text-center" style="background-color:lightgray;">Nuts</div>
+            </div>
+            <!-- seeds -->
+            <div class="col-md-2 pr-md-3 py-5 theme-box-light">
+                <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/seeds.png')}}">
+                <div class="text-center" style="background-color:lightgray;">Seeds</div>
+            </div>
+            <!-- oats -->
+            <div class="col-md-2 pr-md-3 py-5 theme-box-light">
+                <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/oats.png')}}">
+                <div class="text-center" style="background-color:lightgray;">Oats</div>
+            </div>
+            <!-- vegetable -->
+            <div class="col-md-2 pr-md-3 py-5 theme-box-light">
+                <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/vegetable.png')}}">
+                <div class="text-center" style="background-color:lightgray;">Green Vegetables</div>
             </div>
         </div>
     </div>
+</div>
+
+
+<!-- Unealthy food -->
+<div class="jumbotron jumbotron-fluid" style="background-color:white">
+    <div class="container">
+        <h1 class="display-4">Unhealthy Food Choices</h1>
+        <!-- filter-row -->
+        <div class="row">
+            <!-- Dietary -->
+            <div class="btn-group drop1">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dietary&Lifestyle
+                    </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Vegetarian</a>
+                </div>
+            </div>
+            <!-- Type -->
+            <div class="btn-group drop1">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Type
+                    </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Italian</a>
+                    <a class="dropdown-item" href="#">Chinese</a>
+                    <a class="dropdown-item" href="#">Indian</a>
+                    <a class="dropdown-item" href="#">Thai</a>
+                    <a class="dropdown-item" href="#">Japanese</a>
+                </div>
+            </div>
+            <!-- space -->
+            <div class="col-sm-4"></div>
+            <!-- search-bar -->
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="item" placeholder="Search an item">
+                </div>
+            </div>
+            <!-- sorting -->
+            <div class="btn-group drop1">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sort by
+                    </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Category</a>
+                    <a class="dropdown-item" href="#">A-Z</a>
+                    <a class="dropdown-item" href="#">Z-A</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pics -->
+        <div class="row">
+            <!-- sugary -->
+            <div class="col-md-2 pr-md-3 py-5 theme-box-light">
+                <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/sugary.png')}}">
+                <div class="text-center" style="background-color:lightgray;">Sugary Items</div>
+            </div>
+            <!-- fat -->
+            <div class="col-md-2 pr-md-3 py-5 theme-box-light">
+                <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/fat.png')}}">
+                <div class="text-center" style="background-color:lightgray;">Fat Rich Items</div>
+            </div>
+            <!-- meat -->
+            <div class="col-md-2 pr-md-3 py-5 theme-box-light">
+                <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/meat.png')}}">
+                <div class="text-center" style="background-color:lightgray;">Processed Meat</div>
+            </div>
+            <!-- rice -->
+            <div class="col-md-2 pr-md-3 py-5 theme-box-light">
+                <img class="img-fluid mx-auto d-block" src="{{url_for('static', filename='images/rice.png')}}">
+                <div class="text-center" style="background-color:lightgray;">White Rice</div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
 
