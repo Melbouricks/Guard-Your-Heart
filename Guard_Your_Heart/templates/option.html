@@ -69,16 +69,16 @@
     {% for activity_set in activity_data %}
     var heading = "{{ activity_set.heading }}";
     var activities_array = []
-    {% for activity_info in activity_set.activities %}
-    var activity = "{{ activity_info.activity }}";
-    var intensity = {{ activity_info.intensity }};
-    var met = {{ activity_info.met }};
-    activities_array.push({
-        "activity": activity,
-        "intensity": intensity,
-        "met": met
-    })
-    {% endfor %}
+        {% for activity_info in activity_set.activities %}
+            var activity = "{{ activity_info.activity }}";
+            var intensity = {{ activity_info.intensity }};
+            var met = {{ activity_info.met }};
+            activities_array.push({
+                "activity": activity,
+                "intensity": intensity,
+                "met": met
+            })
+        {% endfor %}
     headings_array.push({
         "heading": heading,
         "activities": activities_array
