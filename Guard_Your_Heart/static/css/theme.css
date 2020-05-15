@@ -1,0 +1,44 @@
+.theme-color {
+    color: #35D4BE;
+}
+.theme-dark {
+    color: #101B2B;
+}
+.theme-light {
+    color: #F2F2F2;
+}
+.theme-white{
+    color: white;
+}
+
+.theme-box-color {
+    background-color: #35D4BE;
+}
+.theme-box-dark {
+    background-color: #101B2B;
+}
+.theme-box-light {
+    background-color: #F2F2F2;
+}
+.theme-box-white{
+    background-color: white;
+}
+
+.theme-dark-button {
+    border-radius: 0;
+}
+.theme-dark-button:hover {
+    color:#35D4BE;
+}
+
+.theme-color-button {
+    border-radius: 0;
+}
+.theme-color-button:hover {
+    color: #101B2B;
+}
+
+.theme-input {
+    border-radius: 0;
+    border-color: #101B2B;
+}

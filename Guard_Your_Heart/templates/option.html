@@ -1,0 +1,127 @@
+{% extends "layout.html" %}
+
+{% block cssblock %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/radioinput.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/activitytable.css') }}">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+{% endblock %}
+
+{% block javascriptblock %}
+<script type="text/javascript" src="{{ url_for('static', filename='javascript/activity.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<form method="post" action="{{ url_for('test') }}">
+    <div id="activities">
+        <div class="container d-md-table w-100 my-5" id="activitytable" name="activitytable">
+            <div class="d-md-table-row d-none d-md-block theme-dark">
+
+                <div class="d-md-table-cell activity-table-header">
+                    <h5>Activity</h5>
+                </div>
+
+                <div class="d-md-table-cell activity-table-header">
+                    <h5>Minutes Per Day</h5>
+                </div>
+
+                <div class="d-md-table-cell activity-table-header">
+                    <h5>Days Per Week</h5>
+                </div>
+
+                <div class="d-md-table-cell activity-table-header">
+                    <h5>Delete</h5>
+                </div>
+            </div>
+        </div>
+        <div class="row form-group">
+
+            <select class="form-control selectpicker col-md-4" id="headings" data-live-search="true"
+                onchange="sub(this.value)">
+            </select>
+            <select class="form-control selectpicker col-md-4" data-live-search="true" id="activityname">
+            </select>
+
+            <input class="col-md-2 form-control-lg theme-input" type="number" id="kmsorhours"
+                placeholder="How many minute?" name="kmsorhours">
+
+            <input class="col-md-2 form-control-lg theme-input" type="number" id="daysperweek"
+                placeholder="days per week?" name="daysperweek">
+        </div>
+        <button type="button" class="btn btn-block theme-box-dark theme-white theme-dark-button col-sm-4 mx-auto"
+            onclick="addFunction()">Add Activity
+        </button>
+    </div>
+    <input type="submit"
+        class="btn btn-block my-5 py-4 btn-lg theme-box-color theme-white theme-color-button col-sm-4 mx-auto"
+        value="Submit">
+</form>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.my-select').selectpicker();
+    });
+
+    var headings_array = []
+    {% for activity_set in activity_data %}
+    var heading = "{{ activity_set.heading }}";
+    var activities_array = []
+        {% for activity_info in activity_set.activities %}
+            var activity = "{{ activity_info.activity }}";
+            var intensity = {{ activity_info.intensity }};
+            var met = {{ activity_info.met }};
+            activities_array.push({
+                "activity": activity,
+                "intensity": intensity,
+                "met": met
+            })
+        {% endfor %}
+    headings_array.push({
+        "heading": heading,
+        "activities": activities_array
+    })
+    {% endfor %}
+    console.log(headings_array[0].heading);
+
+    var headings = document.getElementById("headings");
+    // var subheading = document.getElementById("subheading");
+    for (var i = 0; i < headings_array.length; i++) {
+        // console.log(headings_array[i].heading);
+        if (i == 0) {
+            headings.innerHTML += "<option>-Option-</option>";
+        }
+        headings.innerHTML += "<option value=" + i + ">" + headings_array[i].heading + "</option>";
+        // headings.add(new Option(headings_array[i],heading, i));
+    }
+
+
+    function sub(val) {
+        // console.log(val);
+        //console.log(headings_array[val].activities);
+        $("#activityname").html("").selectpicker('refresh');
+        var content_list = [];
+        for (var i = 0; i < headings_array[val].activities.length; i++) {
+            if (i == 0) {
+                content_list.push("<option>-Option-</option>");
+            }
+            var content = "";
+            content = "<option>" + headings_array[val].activities[i].activity + "</option>";
+            content_list.push(content);
+        }
+        var content_all = content_list.toString();
+        $("#activityname")
+            .html(content_all)
+            .selectpicker('refresh');
+    }
+
+    // function act_col(temp) {
+    //     console.log(temp);
+    //     $("#activityname").val(temp);
+    // }
+    // onchange="act_col(this.value)"
+
+</script>
+{% endblock %}
