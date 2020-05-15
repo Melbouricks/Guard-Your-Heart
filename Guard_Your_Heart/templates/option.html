@@ -47,41 +47,30 @@
 
 
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('.my-select').selectpicker();
     });
 
-    var headings_array = [] { %
-        for activity_set in activity_data %
-    }
+    var headings_array = []
+    {% for activity_set in activity_data %}
     var heading = "{{ activity_set.heading }}";
-    var activities_array = [] { %
-        for activity_info in activity_set.activities %
-    }
+    var activities_array = []
+    {% for activity_info in activity_set.activities %}
     var activity = "{{ activity_info.activity }}";
-    var intensity = {
-        {
-            activity_info.intensity
-        }
-    };
-    var met = {
-        {
-            activity_info.met
-        }
-    };
+    var intensity = {{ activity_info.intensity }};
+    var met = {{ activity_info.met }};
     activities_array.push({
         "activity": activity,
         "intensity": intensity,
         "met": met
-    }) { % endfor %
-    }
+    })
+    {% endfor %}
     headings_array.push({
         "heading": heading,
         "activities": activities_array
-    }) { % endfor %
-    }
-
-    console.log(headings_array[0].heading);
+    })
+    {% endfor %}
+    // console.log(headings_array[0].heading);
 
     var headings = document.getElementById("headings");
     // var subheading = document.getElementById("subheading");
@@ -96,7 +85,7 @@
 
 
     function sub(val) {
-        console.log(val);
+        // console.log(val);
         //console.log(headings_array[val].activities);
         $("#activityname").html("").selectpicker('refresh');
         var content_list = [];

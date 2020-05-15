@@ -1,6 +1,7 @@
 from flask import render_template, url_for, request, session, redirect
 from Guard_Your_Heart import app
 from Guard_Your_Heart.utils import Utill 
+import random, string
 
 
 @app.route('/')
@@ -11,7 +12,7 @@ def initlogin():
 def checkLogin():
     if request.method == 'POST':
         session.permanent = True
-        session['user'] = request.form.get('username')
+        session['user'] = ''.join(random.choice(string.ascii_lowercase) for i in range(8))
         if request.form.get("password") == "teamb18":
             return redirect(url_for("index"))
     else:
@@ -39,7 +40,7 @@ def assessment():
 def option():
     if 'user' in session:
         list_of_headings = Utill.metData()
-        print(list_of_headings)
+        # print(list_of_headings)
         return render_template("option.html", activity_data=list_of_headings, route="option")
     else:
         return redirect(url_for('initlogin'))
