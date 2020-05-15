@@ -45,54 +45,63 @@ function addFunction() {
         if (validateKmsOrHours(kmsorhours) == true) {
 
             if (validateDaysPerWeek(daysperweek) == true) {
-                // t = [
-                //     activityname,
-                //     kmsorhours,
-                //     daysperweek
-                // ];
-                // console.log(t);
-                // activties[activties.length] = t;
 
                 var div = document.createElement("div");
                 div.className = "d-md-table-row activity-table-row";
 
                 var div1 = document.createElement("div");
                 div1.className = "d-md-table-cell activity-table-cell";
+                var input1 = document.createElement("input");
+                input1.setAttribute("name","activities");
+                input1.type = "hidden";
+                input1.value = activityname;
                 var h31 = document.createElement("h3");
                 h31.className = "d-inline";
                 h31.innerHTML = activityname;
-                h31.name = "activities";
+                console.log(input1);
                 var p1 = document.createElement("p");
                 p1.className = "d-md-none d-inline";
                 p1.innerHTML = "activity";
 
+                div1.appendChild(input1);
                 div1.appendChild(h31);
                 div1.appendChild(p1);
 
 
                 var div2 = document.createElement("div");
                 div2.className = "d-md-table-cell activity-table-cell";
+                var input2 = document.createElement("input");
+                input2.setAttribute("name","minutes");
+                input2.type = "hidden";
+                input2.value = kmsorhours;
                 var h32 = document.createElement("h3");
                 h32.className = "d-inline";
                 h32.innerHTML = kmsorhours;
-                h32.name = "minutes";
+                h32.setAttribute("name","minutes");
                 var p2 = document.createElement("p");
                 p2.className = "d-md-none d-inline";
                 p2.innerHTML = "kms or hours per day";
 
+                div2.appendChild(input2);
                 div2.appendChild(h32);
                 div2.appendChild(p2);
 
                 var div3 = document.createElement("div");
                 div3.className = "d-md-table-cell activity-table-cell";
+                var input3 = document.createElement("input");
+                input3.setAttribute("name","days");
+                input3.type = "hidden";
+                input3.value = daysperweek;
                 var h33 = document.createElement("h3");
                 h33.className = "d-inline";
                 h33.innerHTML = daysperweek;
-                h33.name = "days";
+                // h33.name = "days";
+                h33.setAttribute("name","days");
                 var p3 = document.createElement("p");
                 p3.className = "d-md-none d-inline";
                 p3.innerHTML = "days per week";
 
+                div3.appendChild(input3);
                 div3.appendChild(h33);
                 div3.appendChild(p3);
 
@@ -149,4 +158,35 @@ function validateKmsOrHours(kmsorhours) {
 function validateDaysPerWeek(daysperweek) {
     var regex = /^([0-7])$/;
     return regex.test(daysperweek);
+}
+
+function formSubmit(){
+
+    var activitiesTable = document.getElementById('activitytable');
+    var rows = activitiesTable.children;
+
+    var activityList = [];
+    for (i = 1; i < rows.length; i++) {
+        row = rows[i];
+
+        var activityObject = {};
+        
+        var columns = row.children;
+        activityObject.name = columns[0].firstChild.innerHTML;
+        activityObject.duration = columns[1].firstChild.innerHTML;
+        activityObject.days = columns[2].firstChild.innerHTML;
+        activityList.push(activityObject);
+    }
+    console.log(activityList);
+
+    var formData = new FormData();
+    var blob = new Blob([JSON.stringify(activityList, null, 2)], {type : 'application/json'});
+    formData.append('activities', blob);
+
+    console.log(formData)
+
+    // var request = new XMLHttpRequest();
+    //request.open('POST', '{{ url_for("test") }}');
+    //request.open('POST', "test.html");
+    // request.send(formData);
 }
