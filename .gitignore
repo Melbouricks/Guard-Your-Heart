@@ -1,0 +1,5 @@
+# virtual environment folder
+env/
+
+# contains vs code settings.json
+.vscode/
