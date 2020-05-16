@@ -6,7 +6,7 @@
     console.log(activties);
 </script> -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> {% endblock %} {% block javascriptblock %}
-<script type="text/javascript" src="../static/javascript/activity.js"></script>
+<script type="text/javascript" src="../static/javascript/activity.js?211"></script>
 {% endblock %} {% block content %}
 <div class="jumbotron jumbotron-fluid mb-0 theme-box-light">
     <div class="container">
@@ -39,7 +39,7 @@
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center">What is your weight (in kgs)?</h1>
             <div class="row">
-                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="weight" placeholder="Enter your weight" name="weight" min="40" max="230" required>
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" step=".01" id="weight" placeholder="Enter your weight" name="weight" min="40" max="230" required>
             </div>
         </div>
     </div>
@@ -90,7 +90,7 @@
                             <p class="lead">Systolic Blood Pressure (top number)</p>
                         </div>
                         <div class="col-sm form-check my-auto">
-                            <input class="form-control-lg theme-input mx-auto w-100" type="number" id="systolicbp" min="70" max="228" name="systolicbp" placeholder="70 - 228 mmHg">
+                            <input class="form-control-lg theme-input mx-auto w-100" type="number" id="systolicbp" min="70" max="228" name="systolicbp" placeholder="70 - 228 mmHg" >
                         </div>
                     </div>
 
@@ -130,7 +130,7 @@
                     <div class="row w-75 mx-auto my-3">
                         <div class="col-sm form-check my-auto">
                             <div class="row">
-                                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="totalcholes" placeholder="2 - 10.5 mmol/L" min="2" max="10.5" name="totalcholes">
+                                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" step=".01" id="totalcholes" placeholder="2 - 10.5 mmol/L" min="2" max="10.5" name="totalcholes">
                             </div>
 
                         </div>
@@ -163,7 +163,7 @@
                     <div class="row w-75 mx-auto my-3">
                         <div class="col-sm form-check my-auto">
                             <div class="row">
-                                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="bloodsugar" placeholder="1 - 17.4 mmol/L" name="bloodsugar" min="1" max="17.4">
+                                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" step=".01" id="bloodsugar" placeholder="1 - 17.4 mmol/L" name="bloodsugar" min="1" max="17.4">
                             </div>
                         </div>
                     </div>

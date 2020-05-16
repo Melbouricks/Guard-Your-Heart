@@ -58,7 +58,7 @@ def results():
             data_sample['res'] = result
             data_sample['indicator'] = [int(request.form.get("chol")),int(request.form.get("sugarradio"))]
             session['data'] = [data_sample,data_activity]
-            session['indi'] = {'indicator':data_sample['indicator'],"cholestrol":data_sample['cholestrol'],"gluc":data_sample['gluc'],"bmi":data_sample['bmi']}
+            session['indi'] = {'indicator':data_sample['indicator'],"cholestrol":data_sample['cholestrol'],"gluc":data_sample['gluc'],"bmi":data_sample['bmi'], 'bloodpressure':[data_sample['ap_hi'],data_sample['ap_lo']]}
             return render_template('results.html', data=data_sample, activity_entered=data_activity, route="result")
         else:
             if "data" in session:
