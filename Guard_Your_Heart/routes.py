@@ -1,6 +1,7 @@
 from flask import render_template, url_for, request, session, redirect
 from Guard_Your_Heart import app
 from Guard_Your_Heart.utils import Utill 
+import json
 import random, string
 
 
@@ -31,7 +32,8 @@ def index():
 @app.route('/assessment')
 def assessment():
     if 'user' in session:
-        return render_template("assessment.html", route="assessment")
+        list_of_headings = Utill.metData()
+        return render_template("assessment.html", activity_data=list_of_headings, route="assessment")
     else:
         return redirect(url_for('initlogin'))
 
@@ -51,11 +53,12 @@ def results():
     if 'user' in session:
         if request.method == 'POST':
             data_sample = Utill.get_data(request)
+            data_activity = Utill.get_data_option(request)
             result = Utill.predict_data(data_sample)
             data_sample['res'] = result
             data_sample['indicator'] = [int(request.form.get("chol")),int(request.form.get("sugarradio"))]
             session['indi'] = {'indicator':data_sample['indicator'],"cholestrol":data_sample['cholestrol'],"gluc":data_sample['gluc'],"bmi":data_sample['bmi']}
-            return render_template('results.html', data=data_sample, route="result")
+            return render_template('results.html', data=data_sample, activity_entered=data_activity, route="result")
         else:
             return render_template('index.html', route="index")
     else:
@@ -70,10 +73,12 @@ def diet():
     else:
         return redirect(url_for('initlogin'))
     
-@app.route('/PA')
+@app.route('/PA',methods=['POST'])
 def PA():
     if 'user' in session:
-        return render_template("PA.html", route="PA")
+        data = Utill.get_data_option(request)
+        print
+        return render_template("PA.html", activity_entered=data, route="PA")
     else:
         return redirect(url_for('intilogin'))
     
@@ -84,9 +89,23 @@ def cardiovasculardisease():
     else:
         return redirect(url_for('initlogin'))
 
-@app.route('/test',methods=['POST'])
-def test():
-    if 'user' in session:
-        return render_template("test.html")
-    else:
-        return redirect(url_for('initlogin'))
+# @app.route('/test',methods=['POST'])
+# def test():
+#     if 'user' in session:
+#         data_sample = Utill.get_data_option(request)
+#         print(data_sample)
+#         return render_template("test.html",activity_entered=data_sample)
+#     else:
+#         return redirect(url_for('initlogin'))
+
+# @app.route('/test',methods=['POST'])
+# def test():
+#     data_activity = Utill.get_data_option(request)
+# #         print(data_sample)
+#     return render_template("test.html",activity_entered=data_activity)
+
+@app.route('/tableAjax',methods=['GET'])
+def tableAjax ():
+    data_sample = Utill.metData()
+    # print(data_sample)
+    return json.dumps(data_sample)

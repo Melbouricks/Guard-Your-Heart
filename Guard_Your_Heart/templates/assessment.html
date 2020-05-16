@@ -70,7 +70,8 @@
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="bpyes">
-                        <input type="radio" class="form-check-input option-input" id="bpyes" name="bp" value="1" onclick="bpCheckFunction()">Yes
+                        <input type="radio" class="form-check-input option-input" id="bpyes" name="bp" value="1"
+                            onclick="bpCheckFunction()">Yes
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -184,17 +185,16 @@
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="yes">
-                            <input type="radio" class="form-check-input option-input" id="yes" name="smoke"
-                                value="1">Yes
-                            <span class="checkmark"></span>
-                        </label>
+                        <input type="radio" class="form-check-input option-input" id="yes" name="smoke" value="1">Yes
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="no">
-                            <input type="radio" class="form-check-input option-input" id="no" name="smoke" value="0"
-                                checked>No
-                            <span class="checkmark"></span>
-                        </label>
+                        <input type="radio" class="form-check-input option-input" id="no" name="smoke" value="0"
+                            checked>No
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
             </div>
         </div>
@@ -205,17 +205,17 @@
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="alcoholyes">
-                            <input type="radio" class="form-check-input option-input" id="alcoholyes" name="alcohol"
-                                value="1">Yes
-                            <span class="checkmark"></span>
-                        </label>
+                        <input type="radio" class="form-check-input option-input" id="alcoholyes" name="alcohol"
+                            value="1">Yes
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="alcoholno">
-                            <input type="radio" class="form-check-input option-input" id="alcoholno" name="alcohol"
-                                value="0" checked>No
-                            <span class="checkmark"></span>
-                        </label>
+                        <input type="radio" class="form-check-input option-input" id="alcoholno" name="alcohol"
+                            value="0" checked>No
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
             </div>
         </div>
@@ -226,17 +226,17 @@
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="activityyes">
-                            <input type="radio" class="form-check-input option-input" id="activityyes" name="activity"
-                                value="1" onclick="activityCheckFunction()">Yes
-                            <span class="checkmark"></span>
-                        </label>
+                        <input type="radio" class="form-check-input option-input" id="activityyes" name="activity"
+                            value="1" onclick="activityCheckFunction()">Yes
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="activityno">
                         <input type="radio" class="form-check-input option-input" id="activityno" name="activity"
                             value="0" onclick="activityCheckFunction()" checked>No
-                            <span class="checkmark"></span>
-                        </label>
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
             </div>
             <div id="activities" style="display:none">
@@ -248,7 +248,7 @@
                         </div>
 
                         <div class="d-md-table-cell activity-table-header">
-                            <h5>Kms or Hours Per Day</h5>
+                            <h5>Minutes Per Day</h5>
                         </div>
 
                         <div class="d-md-table-cell activity-table-header">
@@ -261,32 +261,89 @@
                     </div>
                 </div>
                 <div class="row form-group">
-                    <input class="col-md-4 form-control-lg theme-input" type="text" id="activityname" placeholder="Enter an activity" name="activityname">
+                    <select class="form-control selectpicker col-md-4" id="headings" data-live-search="true" onchange="sub(this.value)">
+                    </select>
+                    <select class="form-control selectpicker col-md-4" data-live-search="true" id="activityname">
+                    </select>
 
-                    <input class="col-md-4 form-control-lg theme-input" type="number" id="kmsorhours" placeholder="How many kms/hours?" name="kmsorhours">
+                    <input class="col-md-2 form-control-lg theme-input" type="number" id="kmsorhours" placeholder="Minute?" name="kmsorhours">
 
-                    <input class="col-md-4 form-control-lg theme-input" type="number" id="daysperweek" placeholder="How many days a week?" name="daysperweek">
+                    <input class="col-md-2 form-control-lg theme-input" type="number" id="daysperweek" placeholder="Days/Week" name="daysperweek">
                 </div>
                 <button type="button" class="btn btn-block theme-box-dark theme-white theme-dark-button col-sm-4 mx-auto" onclick="addFunction()">Add Activity
-                    </button>
+                </button>
             </div>
         </div>
     </div>
     <input type="submit" class="btn btn-block my-5 py-4 btn-lg theme-box-color theme-white theme-color-button col-sm-4 mx-auto" value="Submit">
 </form>
 
-<!-- <script type="text/javascript">
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.my-select').selectpicker();
+    });
 
-// function checksubmit(){
-//     // alert("hkhkh");
-//     var age = document.getElementById("age");
-//     var error1 = document.getElementById("error1");
-//     if (age < 35 || age > 120){
-//         error1.innerHTML("invaid");
-//     }
-// }
+    var headings_array = [] { %
+        for activity_set in activity_data %
+    }
+    var heading = "{{ activity_set.heading }}";
+    var activities_array = [] { %
+        for activity_info in activity_set.activities %
+    }
+    var activity = "{{ activity_info.activity }}";
+    var intensity = {
+        {
+            activity_info.intensity
+        }
+    };
+    var met = {
+        {
+            activity_info.met
+        }
+    };
+    activities_array.push({
+        "activity": activity,
+        "intensity": intensity,
+        "met": met
+    }) { % endfor %
+    }
+    headings_array.push({
+        "heading": heading,
+        "activities": activities_array
+    }) { % endfor %
+    }
+    console.log(headings_array[0].heading);
 
-</script> -->
+    var headings = document.getElementById("headings");
+    // var subheading = document.getElementById("subheading");
+    for (var i = 0; i < headings_array.length; i++) {
+        // console.log(headings_array[i].heading);
+        if (i == 0) {
+            headings.innerHTML += "<option>-Option-</option>";
+        }
+        headings.innerHTML += "<option value=" + i + ">" + headings_array[i].heading + "</option>";
+        // headings.add(new Option(headings_array[i],heading, i));
+    }
+
+    function sub(val) {
+        console.log(val);
+        //console.log(headings_array[val].activities);
+        $("#activityname").html("").selectpicker('refresh');
+        var content_list = [];
+        for (var i = 0; i < headings_array[val].activities.length; i++) {
+            if (i == 0) {
+                content_list.push("<option>-Option-</option>");
+            }
+            var content = "";
+            content = "<option>" + headings_array[val].activities[i].activity + "</option>";
+            content_list.push(content);
+        }
+        var content_all = content_list.toString();
+        $("#activityname")
+            .html(content_all)
+            .selectpicker('refresh');
+    }
+</script>
 
 
 {% endblock %}

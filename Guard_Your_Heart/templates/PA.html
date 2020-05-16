@@ -1,4 +1,10 @@
-{% extends "layout.html" %} {% block content %}
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% block javascriptblock %}
+<script type="text/javascript" src="{{ url_for('static', filename='javascript/activity.js') }}"></script>
+{% endblock %}
 <style>
     .center1 {
         margin: 0 auto;
@@ -8,145 +14,313 @@
     <!-- heading -->
     <div class="jumbotron jumbotron-fluid" style="background-color: white">
         <div class="container">
-            <h1 class="display-1">Physical Activity</h1>
+            <h1 class="display-3">Physical Activity</h1>
             <p>Find out physical activity suggestions built for you below</p>
         </div>
     </div>
-    <!-- Current Activity -->
+
+
+
+    <!-- show current activity -->
     <div class="jumbotron jumbotron-fluid" style="background-color:whitesmoke">
-        <div class="container">
-            <h1 class="display-4">Your Current Activity Levels</h1>
+        <div class="container" id="current_pa">
+            <h1 class="display-4 mb-3">Your Current Activities</h1>
             <!-- heading-row -->
-            <div class="row">
-                <div class="col-sm-3">
+            <div class="row" id="row_heading">
+                <div class="col-sm-6">
                     <h5>Activity</h5>
                 </div>
-                <div class="col-sm-3">
-                    <h5>Kms or Hours</h5>
+                <div class="col-sm-2">
+                    <h5>Minutes</h5>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                     <h5>Days per week</h5>
                 </div>
-                <div class="col-sm-3">
-                    <h5>Calories Burnt</h5>
-                </div>
-            </div>
-            <!-- 1st row -->
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5>Walkings</h5>
-                    <p>Helps burn X calories per km</p>
-                </div>
-                <div class="col-sm-3">
-                    <h5>2</h5>
-                </div>
-                <div class="col-sm-3">
-                    <h5>4</h5>
-                </div>
-                <div class="col-sm-3">
-                    <h5>8X</h5>
-                </div>
-            </div>
-            <!-- 2nd row -->
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5>Running</h5>
-                    <p>Helps burn X calories per km</p>
-                </div>
-                <div class="col-sm-3">
-                    <h5>2</h5>
-                </div>
-                <div class="col-sm-3">
-                    <h5>4</h5>
-                </div>
-                <div class="col-sm-3">
-                    <h5>8X</h5>
-                </div>
-            </div>
-            <!-- 3rd row -->
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5>Badminton</h5>
-                    <p>Helps burn X calories per hour</p>
-                </div>
-                <div class="col-sm-3">
-                    <h5>1</h5>
-                </div>
-                <div class="col-sm-3">
-                    <h5>4</h5>
-                </div>
-                <div class="col-sm-3">
-                    <h5>4X</h5>
-                </div>
-            </div>
-            <!-- ending-row -->
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <div class="col-sm-3"></div>
-                <div class="col-sm-3">
-                    <h2>Total</h2>
-                </div>
-                <div class="col-sm-3">
-                    <h2>Value</h2>
+                <div class="col-sm-2">
+                    <h5>Activity intensity</h5>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Suggested Activity -->
+    <!-- give feedback -->
     <div class="jumbotron jumbotron-fluid" style="background-color:white">
+        <div class="container" id="feedback">
+            <div class="row mb-3">
+                <div id="light" class="col-sm-4">
+                    <h4>Light activities:</h4>
+                </div>
+                <div id="moderate" class="col-sm-4">
+                    <h4>Moderate activities:</h4>
+                </div>
+                <div id="vigorous" class="col-sm-4">
+                    <h4>Vigorous activities:</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- show activities based on intensity -->
+    <div class="jumbotron jumbotron-fluid" style="background-color:whitesmoke">
         <div class="container">
-            <h1 class="display-4">Suggested Activities</h1>
-            <!-- heading-row -->
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5>Activity</h5>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Kms or Hours</h5>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Days per week</h5>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Calories Burnt</h5>
-                </div>
-            </div>
-            <!-- 1st row -->
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5>Running</h5>
-                    <p>Helps burn X calories per km</p>
-                </div>
-                <div class="col-sm-3">
-                    <h5>3</h5>
-                </div>
-                <div class="col-sm-3">
-                    <h5>4</h5>
-                </div>
-                <div class="col-sm-3">
-                    <h5>12X</h5>
-                </div>
-            </div>
-            <!-- 2nd row -->
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5>Cycling</h5>
-                    <p>Helps burn X calories per km</p>
-                </div>
-                <div class="col-sm-3">
-                    <h5>2</h5>
-                </div>
-                <div class="col-sm-3">
-                    <h5>4</h5>
-                </div>
-                <div class="col-sm-3">
-                    <h5>8X</h5>
-                </div>
+            <h1 class="display-4 mb-3">Physical Activity Suggestions</h1>
+            <button type="button" class="btn btn-info mb-3" onclick="tableAjax()" id="myButton">Click here to see all
+                activities</button>
+            <div id="activityTable" style="display: none;">
+                <input class="form-control" id="myInput" type="text" placeholder="Search..">
+                <br>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Heading</th>
+                            <th>Activity</th>
+                            <th>Intensity</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myTable">
+
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
 </div>
 
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+
+    });
+
+
+    // display table
+    function tableAjax() {
+        var myButton = document.getElementById("myButton");
+        var activityTable = document.getElementById("activityTable");
+        var style = activityTable.style;
+        if (style.display == "none") {
+            activityTable.style = "";
+            $.ajax({
+                url: "{{ url_for('tableAjax') }}",
+                type: "get",
+                success: function (data) {
+                    var result = JSON.parse(data)
+                    
+                    for (var i = 0; i < result.length; i++) {
+                        var heading = result[i].heading;
+                        for (var j = 0; j < result[i].activities.length; j++) {
+                            var tr = document.createElement("tr");
+                            var td1 = document.createElement("td");
+                            var td2 = document.createElement("td");
+                            var td3 = document.createElement("td");
+
+                            td1.innerHTML = heading;
+                            td2.innerHTML = result[i].activities[j].activity;
+
+                            var intensity = result[i].activities[j].intensity;
+
+                            if (parseInt(intensity) == 1) {
+                                td3.innerHTML = "Light";
+                            }
+                            else if (parseInt(intensity) == 2) {
+                                td3.innerHTML = "Moderate";
+                            }
+                            else {
+                                td3.innerHTML = "Vigorous";
+                            }
+
+                            tr.appendChild(td1);
+                            tr.appendChild(td2);
+                            tr.appendChild(td3);
+
+                            var myTable = document.getElementById("myTable");
+                            myTable.appendChild(tr);
+
+                        }
+
+                    }
+                    myButton.innerHTML = "Close the table";
+                },
+                error: function (e) {
+                    alert("error");
+                }
+            })
+        }
+        else {
+            myButton.innerHTML = "Click here to see all activities";
+            activityTable.style = "display: none";
+        }
+
+    }
+
+
+    var current_pa = document.getElementById("current_pa");
+    var actGet = "{{activity_entered}}";
+    if (actGet.length == 2) {
+        var row_heading = document.getElementById("row_heading");
+        row_heading.style = "display:none"
+        var msg = document.createElement("h3");
+        msg.innerHTML = "You are not doing any physical activities."
+        var msg2 = document.createElement("h3");
+        msg2.innerHTML = "Scoll down to view Physical Activity suggestions."
+        current_pa.appendChild(msg);
+        current_pa.appendChild(msg2);
+    }
+
+    var light_time = 0;
+    var moderate_time = 0;
+    var vigorous_time = 0;
+
+    var flag_duraion = 0;
+    var days_total = 0;
+
+    {% for activity_data in activity_entered %}
+    var heading = "{{ activity_data.heading }}";
+    var minutes = "{{ activity_data.minutes }}";
+    var days = "{{ activity_data.daysperweek }}";
+    var intensity = "{{ activity_data.intensity }}";
+
+    // console.log("yyyy  "+intensity);
+
+    var div_row = document.createElement("div");
+    div_row.className = "row";
+
+    // heading
+    var div_heading = document.createElement("div");
+    div_heading.className = "col-sm-6";
+    var h5_heading = document.createElement("h5");
+    h5_heading.innerHTML = heading;
+
+    div_heading.appendChild(h5_heading);
+    // minutes
+    var div_minutes = document.createElement("div");
+    div_minutes.className = "col-sm-2";
+    var h5_minutes = document.createElement("h5");
+    h5_minutes.innerHTML = minutes;
+
+    div_minutes.appendChild(h5_minutes);
+    // days
+    var div_days = document.createElement("div");
+    div_days.className = "col-sm-2";
+    var h5_days = document.createElement("h5");
+    h5_days.innerHTML = days;
+
+    div_days.appendChild(h5_days);
+
+    // intensity
+    var div_intensity = document.createElement("div");
+    div_intensity.className = "col-sm-2";
+    var h5_intensity = document.createElement("h5");
+    h5_intensity.innerHTML = intensity;
+
+    div_intensity.appendChild(h5_intensity);
+
+
+    div_row.appendChild(div_heading);
+    div_row.appendChild(div_minutes);
+    div_row.appendChild(div_days);
+    div_row.appendChild(div_intensity);
+
+    current_pa.appendChild(div_row);
+
+
+    // calculate total time
+    if (intensity == "Light") {
+        light_time += parseInt(minutes) * parseInt(days)
+    }
+    else if (intensity == "Moderate") {
+        moderate_time += parseInt(minutes) * parseInt(days)
+    }
+    else {
+        vigorous_time += parseInt(minutes) * parseInt(days)
+    }
+
+    // check duration < 10 minutes
+    if (parseInt(minutes) < 10) {
+        flag_duraion = 1;
+    }
+
+    // calculate days in total
+    days_total += parseInt(days);
+
+
+    {% endfor %}
+
+
+    var flag_total = 0;
+    // check total time
+    if (moderate_time >= 300 | vigorous_time >= 150 | moderate_time + vigorous_time * 2 >= 300) {
+        flag_total = 0;
+    }
+    else {
+        flag_total = 1;
+    }
+    var flag_days = 0;
+    // check total days
+    if (days_total < 3) {
+        flag_days = 1;
+    }
+
+    var msg_duration = "Aerobic activity should be performed in bouts of at least 10 minutes duration. You should extend time duration for doing the activity.";
+    var msg_total = "For additional health benefits, older adults should increase their moderate-intensity aerobic physical activity to 300 minutes per week," +
+        "or engage in 150 minutes of vigorous-intensity aerobic physical activity per week, or an equivalent combination of moderate-and vigorous-intensity activity." +
+        " For your own health, please increase the amount of physical activity.";
+    var msg_days = "You should perform physical activity on 3 or more days per week to enhance balance and prevent falls."
+    var msg_condition = "When you cannot do the recommended amounts of physical activity due to health conditions, " +
+        "you should be as physically active as your abilities and conditions allow."
+    var msg_congratulation = "Congratulations! You are doing physical activities very well! Please keep on it."
+
+    if (flag_duraion == 1 | flag_total == 1 | flag_days == 1) {
+        if (flag_duraion == 1) {
+            addMsg(msg_duration);
+        }
+        if (flag_total == 1) {
+            addMsg(msg_total);
+        }
+        if (flag_days == 1) {
+            addMsg(msg_days);
+        }
+        addMsg(msg_condition);
+    }
+    else {
+        addMsg(msg_congratulation);
+    }
+
+
+
+
+
+    function addMsg(msg) {
+        var feedback = document.getElementById("feedback");
+        var div_msg = document.createElement("div");
+        div_msg.className = "row";
+        var h5_msg = document.createElement("h4");
+        h5_msg.innerHTML = msg;
+        div_msg.appendChild(h5_msg);
+        feedback.appendChild(div_msg);
+    }
+
+    var h5_light = document.createElement("h5");
+    h5_light.innerHTML = light_time + " minutes.";
+    var light = document.getElementById("light");
+    light.appendChild(h5_light);
+
+    var h5_moderate = document.createElement("h5");
+    h5_moderate.innerHTML = moderate_time + " minutes.";
+    var moderate = document.getElementById("moderate");
+    moderate.appendChild(h5_moderate);
+
+    var h5_vigorous = document.createElement("h5");
+    h5_vigorous.innerHTML = vigorous_time + " minutes.";
+    var vigorous = document.getElementById("vigorous");
+    vigorous.appendChild(h5_vigorous);
+
+</script>
 
 {% endblock %}

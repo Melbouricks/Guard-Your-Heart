@@ -132,7 +132,7 @@ function addFunction() {
                 alert("Invalid days per week!");
             }
         } else {
-            alert("Invalid kms or hours!");
+            alert("Invalid Minutes!");
         }
     } else {
         alert("Invalid activity name");
@@ -141,9 +141,6 @@ function addFunction() {
 }
 
 function validateName(activityname) {
-    // var regex = /^([a-zA-Z]{1,20})$/;
-    // return regex.test(activityname);
-    // alert("valid name checking!");
     if (activityname == null | activityname == "" | activityname == "-Option-") {
         return false;
     }
@@ -184,9 +181,4 @@ function formSubmit(){
     formData.append('activities', blob);
 
     console.log(formData)
-
-    // var request = new XMLHttpRequest();
-    //request.open('POST', '{{ url_for("test") }}');
-    //request.open('POST', "test.html");
-    // request.send(formData);
 }

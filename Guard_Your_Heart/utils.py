@@ -82,6 +82,7 @@ class Utill:
         }
         return data_sample
 
+    
     def metData():
         df = pd.read_csv('Guard_Your_Heart/met2.csv')
 
@@ -92,3 +93,31 @@ class Utill:
             list_of_headings.append(heading_dict)
         # print(list_of_headings)
         return list_of_headings
+   
+   
+    def get_data_option(request):
+        activities = request.form.getlist('activities')
+        minutes = request.form.getlist('minutes')
+        daysperweek = request.form.getlist('days')
+        intensity = ""
+        df = pd.read_csv('Guard_Your_Heart/met2.csv')
+    
+        data_list = []
+        for i in range(len(activities)):
+            intensity_int = df[df['activity']==activities[i]]['intensity'].item()
+            
+            if(intensity_int == 1):
+                intensity = "Light"      
+            elif(intensity_int == 2):
+                intensity = "Moderate"
+            elif(intensity_int == 3):
+                intensity = "Vigorous"
+
+            data_temp = {
+                'heading': activities[i],
+                'minutes' : minutes[i],
+                'daysperweek' : daysperweek[i],
+                'intensity' : intensity
+            }
+            data_list.append(data_temp)
+        return data_list
