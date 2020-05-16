@@ -57,7 +57,7 @@ def results():
             session['indi'] = {'indicator':data_sample['indicator'],"cholestrol":data_sample['cholestrol'],"gluc":data_sample['gluc'],"bmi":data_sample['bmi']}
             return render_template('results.html', data=data_sample, route="result")
         else:
-            return render_template('home.html', route="index")
+            return render_template('index.html', route="index")
     else:
         return redirect(url_for('initlogin'))
 
