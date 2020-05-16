@@ -93,6 +93,35 @@ class Utill:
             list_of_headings.append(heading_dict)
         # print(list_of_headings)
         return list_of_headings
+
+    def filterData(request):
+        filterData = request.form.get("butId")
+        # print(filterData)
+        df = pd.read_csv('Guard_Your_Heart/met2.csv')
+        list_of_headings = []
+        
+        for heading in df.heading.unique():
+            list_of_activities = df[df.heading == heading].to_dict('records')
+            # print(list_of_activities)
+            filterActivity = []
+            if(filterData == "myButton1"):
+                for activity in list_of_activities:
+                    # print(activity['intensity'])
+                    if (activity['intensity'] == 1):
+                        filterActivity.append(activity)
+            elif(filterData == "myButton2"):
+                for activity in list_of_activities:
+                    if (activity['intensity'] == 2):
+                        filterActivity.append(activity)
+            elif(filterData == "myButton3"):
+                for activity in list_of_activities:
+                    if (activity['intensity'] == 3):
+                        filterActivity.append(activity)
+
+            heading_dict = {"heading": heading, "activities": filterActivity}
+            list_of_headings.append(heading_dict)
+        # print(list_of_headings)
+        return list_of_headings
    
    
     def get_data_option(request):

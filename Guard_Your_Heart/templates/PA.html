@@ -1,6 +1,9 @@
 {% extends "layout.html" %}
 
 {% block content %}
+{% block cssblock %}
+<link rel="stylesheet" type="text/css" href="../static/css/ball.css">
+{% endblock %}
 
 {% block javascriptblock %}
 <script type="text/javascript" src="{{ url_for('static', filename='javascript/activity.js') }}"></script>
@@ -12,19 +15,17 @@
 </style>
 <div class="container-fluid">
     <!-- heading -->
-    <div class="jumbotron jumbotron-fluid" style="background-color: white">
+    <div class="jumbotron jumbotron-fluid theme-box-light">
         <div class="container">
-            <h1 class="display-3">Physical Activity</h1>
+            <h1 class="display-3 theme-title1">Physical Activity</h1>
             <p>Find out physical activity suggestions built for you below</p>
         </div>
     </div>
 
-
-
     <!-- show current activity -->
-    <div class="jumbotron jumbotron-fluid" style="background-color:whitesmoke">
+    <div class="jumbotron jumbotron-fluid" style="background-color: white;">
         <div class="container" id="current_pa">
-            <h1 class="display-4 mb-3">Your Current Activities</h1>
+            <h1 class="display-4 mb-3 theme-title2">Your Current Activities</h1>
             <!-- heading-row -->
             <div class="row" id="row_heading">
                 <div class="col-sm-6">
@@ -44,28 +45,41 @@
     </div>
 
     <!-- give feedback -->
-    <div class="jumbotron jumbotron-fluid" style="background-color:white">
+    <div class="jumbotron jumbotron-fluid theme-box-light">
         <div class="container" id="feedback">
             <div class="row mb-3">
                 <div id="light" class="col-sm-4">
-                    <h4>Light activities:</h4>
+                    <h4 class="theme-title1">Light activities:</h4>
                 </div>
                 <div id="moderate" class="col-sm-4">
-                    <h4>Moderate activities:</h4>
+                    <h4 class="theme-title1">Moderate activities:</h4>
                 </div>
                 <div id="vigorous" class="col-sm-4">
-                    <h4>Vigorous activities:</h4>
+                    <h4 class="theme-title1">Vigorous activities:</h4>
                 </div>
             </div>
+            <h1 class="display-4 mb-3 theme-title1 py-2">Feedback</h1>
         </div>
     </div>
 
     <!-- show activities based on intensity -->
-    <div class="jumbotron jumbotron-fluid" style="background-color:whitesmoke">
+    <div class="jumbotron jumbotron-fluid" style="background-color:white">
         <div class="container">
-            <h1 class="display-4 mb-3">Physical Activity Suggestions</h1>
-            <button type="button" class="btn btn-info mb-3" onclick="tableAjax()" id="myButton">Click here to see all
-                activities</button>
+            <h1 class="display-4 mb-3 theme-title2">Physical Activity Suggestions</h1>
+            <div class="row">
+                <button type="button" class="btn btn-info mb-3 col-sm-3 mr-5" onclick="tableAjax(this)"
+                    id="myButton1">See
+                    light activities here</button>
+
+                <button type="button" class="btn btn-info mb-3 col-sm-3 mr-5" onclick="tableAjax(this)"
+                    id="myButton2">See
+                    moderate
+                    activities here</button>
+                <button type="button" class="btn btn-info mb-3 col-sm-3" onclick="tableAjax(this)" id="myButton3">See
+                    vigorous
+                    activities here</button>
+            </div>
+
             <div id="activityTable" style="display: none;">
                 <input class="form-control" id="myInput" type="text" placeholder="Search..">
                 <br>
@@ -100,63 +114,84 @@
 
 
     // display table
-    function tableAjax() {
-        var myButton = document.getElementById("myButton");
+    function tableAjax(temp) {
         var activityTable = document.getElementById("activityTable");
         var style = activityTable.style;
-        if (style.display == "none") {
+        $("#myTable > tr").remove();
+
+        var butId = temp.id;
+        var msg1 = "See light activities here";
+        var msg2 = "See moderate activities here";
+        var msg3 = "See vigorous activities here";
+        var msg4 = "Close the table";
+
+
+        
+        if (temp.innerHTML != msg4) {
+            $("#myButton1").html(msg1);
+            $("#myButton2").html(msg2);
+            $("#myButton3").html(msg3);
+            temp.innerHTML = msg4;
             activityTable.style = "";
-            $.ajax({
-                url: "{{ url_for('tableAjax') }}",
-                type: "get",
-                success: function (data) {
-                    var result = JSON.parse(data)
-                    
-                    for (var i = 0; i < result.length; i++) {
-                        var heading = result[i].heading;
-                        for (var j = 0; j < result[i].activities.length; j++) {
-                            var tr = document.createElement("tr");
-                            var td1 = document.createElement("td");
-                            var td2 = document.createElement("td");
-                            var td3 = document.createElement("td");
-
-                            td1.innerHTML = heading;
-                            td2.innerHTML = result[i].activities[j].activity;
-
-                            var intensity = result[i].activities[j].intensity;
-
-                            if (parseInt(intensity) == 1) {
-                                td3.innerHTML = "Light";
-                            }
-                            else if (parseInt(intensity) == 2) {
-                                td3.innerHTML = "Moderate";
-                            }
-                            else {
-                                td3.innerHTML = "Vigorous";
-                            }
-
-                            tr.appendChild(td1);
-                            tr.appendChild(td2);
-                            tr.appendChild(td3);
-
-                            var myTable = document.getElementById("myTable");
-                            myTable.appendChild(tr);
-
-                        }
-
-                    }
-                    myButton.innerHTML = "Close the table";
-                },
-                error: function (e) {
-                    alert("error");
-                }
-            })
+            callAjax(butId);
         }
-        else {
-            myButton.innerHTML = "Click here to see all activities";
+        else{
+            $("#myButton1").html(msg1);
+            $("#myButton2").html(msg2);
+            $("#myButton3").html(msg3);
             activityTable.style = "display: none";
         }
 
+    }
+
+    function callAjax(butId) {
+        $.ajax({
+            url: "{{ url_for('tableAjax') }}",
+            type: "post",
+            data: { "butId": butId },
+            async: false,
+            success: function (data) {
+                var result = JSON.parse(data)
+
+                for (var i = 0; i < result.length; i++) {
+                    var heading = result[i].heading;
+                    for (var j = 0; j < result[i].activities.length; j++) {
+                        var tr = document.createElement("tr");
+                        var td1 = document.createElement("td");
+                        var td2 = document.createElement("td");
+                        var td3 = document.createElement("td");
+
+                        td1.innerHTML = heading;
+                        td2.innerHTML = result[i].activities[j].activity;
+
+                        var intensity = result[i].activities[j].intensity;
+
+                        if (parseInt(intensity) == 1) {
+                            td3.innerHTML = "Light";
+                        }
+                        else if (parseInt(intensity) == 2) {
+                            td3.innerHTML = "Moderate";
+                        }
+                        else {
+                            td3.innerHTML = "Vigorous";
+                        }
+
+                        tr.appendChild(td1);
+                        tr.appendChild(td2);
+                        tr.appendChild(td3);
+
+                        var myTable = document.getElementById("myTable");
+                        myTable.appendChild(tr);
+
+                    }
+
+                }
+                // temp.innerHTML = "Close the table";
+            },
+            error: function (e) {
+                alert("error");
+            }
+        })
     }
 
 
@@ -165,10 +200,12 @@
     if (actGet.length == 2) {
         var row_heading = document.getElementById("row_heading");
         row_heading.style = "display:none"
-        var msg = document.createElement("h3");
+        var msg = document.createElement("p");
         msg.innerHTML = "You are not doing any physical activities."
-        var msg2 = document.createElement("h3");
-        msg2.innerHTML = "Scoll down to view Physical Activity suggestions."
+        msg.className = "lead text-justify py-2";
+        var msg2 = document.createElement("p");
+        msg2.innerHTML = "Scroll down to view Physical Activity suggestions."
+        msg2.className = "lead text-justify py-2";
         current_pa.appendChild(msg);
         current_pa.appendChild(msg2);
     }
@@ -300,9 +337,10 @@
         var feedback = document.getElementById("feedback");
         var div_msg = document.createElement("div");
         div_msg.className = "row";
-        var h5_msg = document.createElement("h4");
-        h5_msg.innerHTML = msg;
-        div_msg.appendChild(h5_msg);
+        var p_msg = document.createElement("p");
+        p_msg.innerHTML = msg;
+        p_msg.className = "lead text-justify py-2";
+        div_msg.appendChild(p_msg);
         feedback.appendChild(div_msg);
     }
 

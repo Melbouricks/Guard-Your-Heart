@@ -1,4 +1,5 @@
 {% extends "layout.html" %} {% block cssblock %}
+<link rel="stylesheet" type="text/css" href="../static/css/dotnav.css">
 <link rel="stylesheet" type="text/css" href="../static/css/progressbar.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -8,14 +9,14 @@
 <script type="text/javascript" src="{{ url_for('static', filename='javascript/activity.js') }}"></script>
 {% endblock %}
 
-<div class="jumbotron jumbotron-fluid mb-0 theme-box-light">
+<div class="jumbotron jumbotron-fluid mb-0 theme-box-light" id="res">
     <div class="container">
-        <h1 class="display-3">Results</h1>
+        <h1 class="display-3 theme-title1">Results</h1>
     </div>
 </div>
 <div class="container-fluid">
-    <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
-        <h1 class="display-4 pb-4 text-center">Cardivascular Disease Risk</h1>
+    <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center" id="risk" >
+        <h1 class="display-4 pb-4 text-center theme-title2">Cardivascular Disease Risk</h1>
         <div class="progress w-50 mx-auto">
             <div class="progress-bar theme-box-color bar" style="width:{{ data.res }}%">
             </div>
@@ -37,9 +38,9 @@
         </div> -->
     </div>
 </div>
-<div class="container-fluid theme-box-light">
+<div class="container-fluid theme-box-light" id="indi">
     <div class="container-md my-5 py-5 px-md-5">
-        <h1 class="display-4 pb-4 mb-5">
+        <h1 class="display-4 pb-4 mb-5 theme-title1">
             Indicators
         </h1>
         <div class="row d-flex align-items-baseline flex-wrap">
@@ -53,8 +54,8 @@
                 <div class="progress">
                     {% if data.indicator[0] == 0%}
                     <div class="progress-bar theme-box-color bar" style="width:0%"></div>
-                    {% elif data.cholestrol
-                    <=2 %} <div class="progress-bar theme-box-color bar" style="width:40%"></div>
+                    {% elif data.cholestrol <=2 %}
+                    <div class="progress-bar theme-box-color bar" style="width:40%"></div>
                     {% else %}
                     <div class="progress-bar theme-box-color bar" style="width:100%"></div>
                     {% endif %}
@@ -64,8 +65,8 @@
                 {% if data.indicator[0] == 0%}
                 <i class="fas fa-question-circle d-inline pr-2" style="font-size:32px;"></i>
                 <p class="lead d-inline">Do not know</p>
-                {% elif data.cholestrol
-            <=2 %} <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
+                {% elif data.cholestrol <=2 %} 
+                <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
                 <p class="lead d-inline">Under Control</p>
                 {% else %}
                 <i class="fas fa-exclamation-circle d-inline pr-2" style="font-size:32px;"></i>
@@ -84,8 +85,8 @@
                 <div class="progress">
                     {% if data.indicator[1] == 0%}
                     <div class="progress-bar theme-box-color bar" style="width:0%"></div>
-                    {% elif data.gluc
-                <=2 %} <div class="progress-bar theme-box-color bar" style="width:40%"></div>
+                    {% elif data.gluc <=2 %}
+                    <div class="progress-bar theme-box-color bar" style="width:40%"></div>
                     {% else %}
                     <div class="progress-bar theme-box-color bar" style="width:100%"></div>
                     {% endif %}
@@ -95,8 +96,8 @@
                 {% if data.indicator[1] == 0%}
                 <i class="fas fa-question-circle d-inline pr-2" style="font-size:32px;"></i>
                 <p class="lead d-inline">Do not know</p>
-                {% elif data.gluc
-        <=2 %} <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
+                {% elif data.gluc <=2 %}
+                <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
                 <p class="lead d-inline">Under Control</p>
                 {% else %}
                 <i class="fas fa-exclamation-circle d-inline pr-2" style="font-size:32px;"></i>
@@ -113,14 +114,14 @@
             </div>
             <div class="col-md-4 px-4">
                 <div class="progress">
-                    {% if data.bmi
-            < 18.5 %} <div class="progress-bar theme-box-color bar" style="width:15%">
+                    {% if data.bmi< 18.5 %} 
+                    <div class="progress-bar theme-box-color bar" style="width:15%">
                     </div>
-                    {% elif data.bmi
-        < 24.9 %} <div class="progress-bar theme-box-color bar" style="width:35%">
+                    {% elif data.bmi< 24.9 %}
+                    <div class="progress-bar theme-box-color bar" style="width:35%">
                     </div>
-                    {% elif data.bmi
-    < 29.9 %} <div class="progress-bar theme-box-color bar" style="width:60%">
+                    {% elif data.bmi< 29.9 %} 
+                    <div class="progress-bar theme-box-color bar" style="width:60%">
                     </div>
                     {% else %}
                     <div class="progress-bar theme-box-color bar" style="width:90%"></div>
@@ -128,15 +129,15 @@
                 </div>
             </div>
             <div class="col-md-4 px-4">
-                {% if data.bmi
-    < 18.5 %} <i class="fa fa-exclamation-triangle d-inline pr-2" style="font-size:32px;"></18.5>
+                    {% if data.bmi< 18.5 %} 
+                    <i class="fa fa-exclamation-triangle d-inline pr-2" style="font-size:32px;"></i>
                     <p class="lead d-inline">Under Weight</p>
-                    {% elif data.bmi
-        < 24.9 %} <i class="fa fa-check d-inline pr-2" style="font-size:32px;">
+                    {% elif data.bmi< 24.9 %}
+                    <i class="fa fa-check d-inline pr-2" style="font-size:32px;">
                     </i>
                     <p class="lead d-inline">Normal Weight</p>
-                    {% elif data.bmi
-            < 29.9 %} <i class="fa fa-exclamation-triangle d-inline pr-2" style="font-size:32px;">
+                    {% elif data.bmi < 29.9 %}
+                    <i class="fa fa-exclamation-triangle d-inline pr-2" style="font-size:32px;">
                     </i>
                     <p class="lead d-inline">Overweight</p>
                     {% else %}
@@ -151,10 +152,10 @@
 </div>
 
 <!-- show current activity -->
-<div class="jumbotron jumbotron-fluid" style="background-color:whitesmoke">
+<div class="jumbotron jumbotron-fluid" style="background-color: white;" id="act">
     <form id="paForm" action="{{ url_for('PA') }}" method="POST">
         <div class="container" id="current_pa">
-            <h1 class="display-4 pb-4">Your Current Activity</h1>
+            <h1 class="display-4 pb-4 theme-title2">Your Current Activity</h1>
             <!-- heading-row -->
             <div class="row" id="row_heading">
                 <div class="col-sm-6">
@@ -174,9 +175,9 @@
     </form>
 </div>
 
-<div class="container-fluid theme-box-light">
+<div class="container-fluid theme-box-light" id="style">
     <div class="container-md my-5 py-5 px-md-5">
-        <h1 class="display-4 pb-4 mb-5">
+        <h1 class="display-4 pb-4 mb-5 theme-title1">
             Personalised Life style
         </h1>
         <div class="row d-flex align-items-baseline flex-wrap">
@@ -207,7 +208,27 @@
 </div>
 </div>
 
+<div class="side-nav">
+    <ul class="nav-side-nav">
+        <li><a href="#res" class="tooltip-side-nav default"></a></li>
+        <li><a href="#risk" class="tooltip-side-nav default"></a></li>
+        <li><a href="#indi" class="tooltip-side-nav default"></a></li>
+        <li><a href="#act" class="tooltip-side-nav default"></a></li>
+        <li><a href="#style" class="tooltip-side-nav default"></a></li>
+    </ul>
+</div>
+
 <script type="text/javascript">
+
+$(document).ready(function () {
+        
+
+    });
+    // $(".tooltip-side-nav").click(function () {
+    //     $(this).addClass("select").parent().siblings().children().removeClass("select");
+    //     console.log($(".tooltip-side-nav"));
+    //     $(this).removeClass("default").parent().siblings().children().addClass("default");
+    // })
 
     var current_pa = document.getElementById("current_pa");
 
@@ -215,10 +236,12 @@
     if (actGet.length == 2) {
         var row_heading = document.getElementById("row_heading");
         row_heading.style = "display:none"
-        var msg = document.createElement("h3");
+        var msg = document.createElement("p");
         msg.innerHTML = "You are not doing any physical activities."
-        var msg2 = document.createElement("h3");
-        msg2.innerHTML = "Scoll down to view Physical Activity suggestions."
+        msg.className = "lead text-justify py-2";
+        var msg2 = document.createElement("p");
+        msg2.innerHTML = "Scroll down to view Physical Activity suggestions."
+        msg2.className = "lead text-justify py-2";
         current_pa.appendChild(msg);
         current_pa.appendChild(msg2);
     }
