@@ -26,8 +26,7 @@
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center theme-title2">How old are you?</h1>
             <div class="row">
-                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="age"
-                    placeholder="Enter your age" name="age" min="35" max="105" required>
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="age" placeholder="Enter your age" name="age" min="35" max="105" required>
                 <span id="error1"></span>
             </div>
         </div>
@@ -36,8 +35,7 @@
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center theme-title1 twopage">What is your height (in cms)?</h1>
             <div class="row">
-                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="height"
-                    placeholder="Enter your height" name="height" min="90" max="230" required>
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="height" placeholder="Enter your height" name="height" min="90" max="230" required>
             </div>
         </div>
     </div>
@@ -45,8 +43,7 @@
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center theme-title2">What is your weight (in kgs)?</h1>
             <div class="row">
-                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="weight"
-                    placeholder="Enter your weight" name="weight" min="40" max="230" required>
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" step=".01" id="weight" placeholder="Enter your weight" name="weight" min="40" max="230" required>
             </div>
         </div>
     </div>
@@ -280,17 +277,14 @@
                     </div>
                 </div>
                 <div class="row form-group">
-                    <select class="form-control selectpicker col-md-4" id="headings" data-live-search="true"
-                        onchange="sub(this.value)">
+                    <select class="form-control selectpicker col-md-4" id="headings" data-live-search="true" onchange="sub(this.value)">
                     </select>
                     <select class="form-control selectpicker col-md-4" data-live-search="true" id="activityname">
                     </select>
 
-                    <input class="col-md-2 form-control-lg theme-input" type="number" id="kmsorhours"
-                        placeholder="Minute?" name="kmsorhours">
+                    <input class="col-md-2 form-control-lg theme-input" type="number" id="kmsorhours" placeholder="Minute?" name="kmsorhours">
 
-                    <input class="col-md-2 form-control-lg theme-input" type="number" id="daysperweek"
-                        placeholder="Days/Week" name="daysperweek">
+                    <input class="col-md-2 form-control-lg theme-input" type="number" id="daysperweek" placeholder="Days/Week" name="daysperweek">
                 </div>
                 <button type="button" class="btn btn-block theme-button-back theme-white theme-dark-button col-sm-4 mx-auto"
                     onclick="addFunction()">Add Activity
@@ -320,7 +314,7 @@
 
 
 <script type="text/javascript">
-    $(document).ready(function () {
+    $(document).ready(function() {
         $('.my-select').selectpicker();
         // $(window).scroll(function () {
         //     topDistance();
@@ -374,7 +368,7 @@
     // };
     
 
-    var headings_array = []
+    var headings_array = [] 
     {% for activity_set in activity_data %}
     var heading = "{{ activity_set.heading }}";
     var activities_array = []
@@ -391,7 +385,7 @@
     headings_array.push({
         "heading": heading,
         "activities": activities_array
-    })
+    }) 
     {% endfor %}
     console.log(headings_array[0].heading);
 
@@ -424,7 +418,6 @@
             .html(content_all)
             .selectpicker('refresh');
     }
-
 </script>
 
 

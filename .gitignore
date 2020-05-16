@@ -3,3 +3,6 @@ env/
 
 # contains vs code settings.json
 .vscode/
+
+# python interpreter cached
+__pycache__/

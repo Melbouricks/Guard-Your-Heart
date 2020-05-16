@@ -48,9 +48,9 @@ class Utill:
             chol = 1
 
         if int(request.form.get("sugarradio")) == 1:
-            if int(request.form.get('bloodsugar')) < 6:
+            if float(request.form.get('bloodsugar')) < 6.00:
                 gluc = 1
-            elif int(request.form.get('bloodsugar')) < 11:
+            elif float(request.form.get('bloodsugar')) < 11.00:
                 gluc = 2
             else:
                 gluc = 3
