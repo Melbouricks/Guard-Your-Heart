@@ -5,7 +5,7 @@
 {% endblock %} {% block content %}
 
 {% block javascriptblock %}
-<script type="text/javascript" src="{{ url_for('static', filename='javascript/activity.js') }}"></script>
+<script type="text/javascript" src="../static/javascript/activity.js"></script>
 {% endblock %}
 
 <div class="jumbotron jumbotron-fluid mb-0 theme-box-light">
@@ -31,12 +31,9 @@
                 <p>High</p>
             </div>
         </div>
-        <!-- <div class="">
-            <p class="lead">You have a medium risk of developing a cardiovascular disease. But do not worry, you can
-                lower your risk by following a personalised diet, sleep and exercise plan. Scroll down...</p>
-        </div> -->
     </div>
 </div>
+
 <div class="container-fluid theme-box-light">
     <div class="container-md my-5 py-5 px-md-5">
         <h1 class="display-4 pb-4 mb-5">
@@ -51,25 +48,25 @@
             </div>
             <div class="col-md-4 px-4">
                 <div class="progress">
-                    {% if data.indicator[0] == 0%}
-                    <div class="progress-bar theme-box-color bar" style="width:0%"></div>
-                    {% elif data.cholestrol
-                    <=2 %} <div class="progress-bar theme-box-color bar" style="width:40%"></div>
+                    {% if data.indicator[0] == 0 %}
+                        <div class="progress-bar theme-box-color bar" style="width:0%"></div>
+                    {% elif data.cholestrol <=2 %} 
+                        <div class="progress-bar theme-box-color bar" style="width:40%"></div>
                     {% else %}
-                    <div class="progress-bar theme-box-color bar" style="width:100%"></div>
+                        <div class="progress-bar theme-box-color bar" style="width:100%"></div>
                     {% endif %}
                 </div>
             </div>
             <div class="col-md-4 px-4">
-                {% if data.indicator[0] == 0%}
-                <i class="fas fa-question-circle d-inline pr-2" style="font-size:32px;"></i>
-                <p class="lead d-inline">Do not know</p>
-                {% elif data.cholestrol
-            <=2 %} <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
-                <p class="lead d-inline">Under Control</p>
+                {% if data.indicator[0] == 0 %}
+                    <i class="fas fa-question-circle d-inline pr-2" style="font-size:32px;"></i>
+                    <p class="lead d-inline">Do not know</p>
+                {% elif data.cholestrol <=2 %} 
+                    <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
+                    <p class="lead d-inline">Under Control</p>
                 {% else %}
-                <i class="fas fa-exclamation-circle d-inline pr-2" style="font-size:32px;"></i>
-                <p class="lead d-inline">High</p>
+                    <i class="fas fa-exclamation-circle d-inline pr-2" style="font-size:32px;"></i>
+                    <p class="lead d-inline">High</p>
                 {% endif %}
             </div>
         </div>
@@ -82,25 +79,25 @@
             </div>
             <div class="col-md-4 px-4">
                 <div class="progress">
-                    {% if data.indicator[1] == 0%}
-                    <div class="progress-bar theme-box-color bar" style="width:0%"></div>
-                    {% elif data.gluc
-                <=2 %} <div class="progress-bar theme-box-color bar" style="width:40%"></div>
+                    {% if data.indicator[1] == 0 %}
+                        <div class="progress-bar theme-box-color bar" style="width:0%"></div>
+                    {% elif data.gluc <=2 %} 
+                        <div class="progress-bar theme-box-color bar" style="width:40%"></div>
                     {% else %}
-                    <div class="progress-bar theme-box-color bar" style="width:100%"></div>
+                        <div class="progress-bar theme-box-color bar" style="width:100%"></div>
                     {% endif %}
                 </div>
             </div>
             <div class="col-md-4 px-4">
-                {% if data.indicator[1] == 0%}
-                <i class="fas fa-question-circle d-inline pr-2" style="font-size:32px;"></i>
-                <p class="lead d-inline">Do not know</p>
-                {% elif data.gluc
-        <=2 %} <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
-                <p class="lead d-inline">Under Control</p>
+                {% if data.indicator[1] == 0 %}
+                    <i class="fas fa-question-circle d-inline pr-2" style="font-size:32px;"></i>
+                    <p class="lead d-inline">Do not know</p>
+                {% elif data.gluc <=2 %} 
+                    <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
+                    <p class="lead d-inline">Under Control</p>
                 {% else %}
-                <i class="fas fa-exclamation-circle d-inline pr-2" style="font-size:32px;"></i>
-                <p class="lead d-inline">High</p>
+                    <i class="fas fa-exclamation-circle d-inline pr-2" style="font-size:32px;"></i>
+                    <p class="lead d-inline">High</p>
                 {% endif %}
             </div>
         </div>
@@ -113,37 +110,31 @@
             </div>
             <div class="col-md-4 px-4">
                 <div class="progress">
-                    {% if data.bmi
-            < 18.5 %} <div class="progress-bar theme-box-color bar" style="width:15%">
-                    </div>
-                    {% elif data.bmi
-        < 24.9 %} <div class="progress-bar theme-box-color bar" style="width:35%">
-                    </div>
-                    {% elif data.bmi
-    < 29.9 %} <div class="progress-bar theme-box-color bar" style="width:60%">
-                    </div>
+                    {% if data.bmi < 18.5 %} 
+                        <div class="progress-bar theme-box-color bar" style="width:15%"></div>
+                    {% elif data.bmi < 24.9 %} 
+                        <div class="progress-bar theme-box-color bar" style="width:35%"></div>
+                    {% elif data.bmi < 29.9 %} 
+                        <div class="progress-bar theme-box-color bar" style="width:60%"></div>
                     {% else %}
-                    <div class="progress-bar theme-box-color bar" style="width:90%"></div>
+                        <div class="progress-bar theme-box-color bar" style="width:90%"></div>
                     {% endif %}
                 </div>
             </div>
             <div class="col-md-4 px-4">
-                {% if data.bmi
-    < 18.5 %} <i class="fa fa-exclamation-triangle d-inline pr-2" style="font-size:32px;"></18.5>
+                {% if data.bmi < 18.5 %} 
+                    <i class="fa fa-exclamation-triangle d-inline pr-2" style="font-size:32px;"></18.5>
                     <p class="lead d-inline">Under Weight</p>
-                    {% elif data.bmi
-        < 24.9 %} <i class="fa fa-check d-inline pr-2" style="font-size:32px;">
-                    </i>
+                {% elif data.bmi < 24.9 %} 
+                    <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
                     <p class="lead d-inline">Normal Weight</p>
-                    {% elif data.bmi
-            < 29.9 %} <i class="fa fa-exclamation-triangle d-inline pr-2" style="font-size:32px;">
-                    </i>
+                {% elif data.bmi < 29.9 %} 
+                    <i class="fa fa-exclamation-triangle d-inline pr-2" style="font-size:32px;"></i>
                     <p class="lead d-inline">Overweight</p>
-                    {% else %}
+                {% else %}
                     <i class="fa fa-exclamation-triangle d-inline pr-2" style="font-size:32px;"></i>
                     <p class="lead d-inline">Obese</p>
-                    {% endif %}
-
+                {% endif %}
             </div>
         </div>
     </div>
@@ -186,7 +177,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Diet</h5>
                         <p class="card-text">Healthy and Un-Healthy diet choices which can help you ... </p>
-                        <a href="{{ url_for('diet')}}" class="btn btn-primary">Read here</a>
+                        <a href="{{ url_for('diet')}}" class="btn btn-info">Read here</a>
                     </div>
                 </div>
             </div>
@@ -197,7 +188,7 @@
                         <h5 class="card-title">Physical Activity</h5>
                         <p class="card-text">Physical activities which and help you ...</p>
                         <!-- <a href="{{ url_for('PA')}}" class="btn btn-primary">Read here</a> -->
-                        <button type="button" class="btn btn-primary"
+                        <button type="button" class="btn btn-info"
                             onclick="document.getElementById('paForm').submit()">Read here</button>
                     </div>
                 </div>
@@ -216,9 +207,9 @@
         var row_heading = document.getElementById("row_heading");
         row_heading.style = "display:none"
         var msg = document.createElement("h3");
-        msg.innerHTML = "You are not doing any physical activities."
+        msg.innerHTML = "You have not added any physical activities."
         var msg2 = document.createElement("h3");
-        msg2.innerHTML = "Scoll down to view Physical Activity suggestions."
+        msg2.innerHTML = "Please visit the Physical Activity suggestions page."
         current_pa.appendChild(msg);
         current_pa.appendChild(msg2);
     }

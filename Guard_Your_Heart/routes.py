@@ -57,10 +57,16 @@ def results():
             result = Utill.predict_data(data_sample)
             data_sample['res'] = result
             data_sample['indicator'] = [int(request.form.get("chol")),int(request.form.get("sugarradio"))]
+            session['data'] = [data_sample,data_activity]
             session['indi'] = {'indicator':data_sample['indicator'],"cholestrol":data_sample['cholestrol'],"gluc":data_sample['gluc'],"bmi":data_sample['bmi']}
             return render_template('results.html', data=data_sample, activity_entered=data_activity, route="result")
         else:
-            return render_template('index.html', route="index")
+            if "data" in session:
+                data_sample = session['data'][0]
+                data_activity = session['data'][1]
+                return render_template('results.html', data=data_sample, activity_entered=data_activity, route="result")
+            else:
+                return render_template('index.html', route="index")
     else:
         return redirect(url_for('initlogin'))
 
@@ -73,14 +79,16 @@ def diet():
     else:
         return redirect(url_for('initlogin'))
     
-@app.route('/PA',methods=['POST'])
+@app.route('/PA',methods=['POST','GET'])
 def PA():
     if 'user' in session:
-        data = Utill.get_data_option(request)
-        print
-        return render_template("PA.html", activity_entered=data, route="PA")
+        if "data" in session:
+            data = session['data'][1]
+            return render_template("PA.html", activity_entered=data, route="PA")
+        else:
+            return render_template('index.html', route="index")
     else:
-        return redirect(url_for('intilogin'))
+        return redirect(url_for('initlogin'))
     
 @app.route('/cardiovasculardisease')
 def cardiovasculardisease():
