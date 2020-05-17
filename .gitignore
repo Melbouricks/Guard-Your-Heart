@@ -3,3 +3,7 @@ env/
 
 # contains vs code settings.json
 .vscode/
+
+# Interpreter cached
+__pycache__
+Guard_Your_Heart/__pycache__/
