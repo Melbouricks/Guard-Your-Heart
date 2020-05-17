@@ -2,6 +2,7 @@
 {% block cssblock %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/radioinput.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/activitytable.css') }}">
+<link rel="stylesheet" type="text/css" href="../static/css/assessment.css">
 <!-- <script>
     var activties = [];
     console.log(activties);
@@ -25,32 +26,53 @@
 
 
 <form action="{{ url_for('results') }}" method="post">
-    <div class="container-fluid">
+    <div class="container-fluid" id="age_que" style="display: block; background-image:url(../static/images/back1.jpg); background-size: contain;">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center theme-title2">How old are you?</h1>
             <div class="row">
                 <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="age" placeholder="Enter your age" name="age" min="35" max="105" required>
                 <span id="error1"></span>
             </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-6"><button class="button-prev-next" type="button" disabled>previous</button></div>
+                <div class="col-6"><button class="button-prev-next" type="button" style="float: right;" onclick="nextQue('age')">next</button></div>
+            </div>
         </div>
     </div>
-    <div class="container-fluid theme-box-light py-1">
+    <div class="container-fluid" id="height_que" style="display: none;">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center theme-title1 twopage">What is your height (in cms)?</h1>
             <div class="row">
                 <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="height" placeholder="Enter your height" name="height" min="90" max="230" required>
             </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-6"><button class="button-prev-next" type="button" onclick="prevQue('height')">previous</button></div>
+                <div class="col-6"><button class="button-prev-next" type="button" style="float: right;" onclick="nextQue('height')">next</button></div>
+            </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" id="weight_que" style="display: none;">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center theme-title2">What is your weight (in kgs)?</h1>
             <div class="row">
                 <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" step=".01" id="weight" placeholder="Enter your weight" name="weight" min="40" max="230" required>
             </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-6"><button class="button-prev-next" type="button" onclick="prevQue('weight')">previous</button></div>
+                <div class="col-6"><button class="button-prev-next" type="button" style="float: right;" onclick="nextQue('weight')">next</button></div>
+            </div>
         </div>
     </div>
-    <div class="container-fluid theme-box-light py-1">
+    <div class="container-fluid" id="gender_que" style="display: none;">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center theme-title1" id="gender">What is your gender?</h1>
             <div class="row mx-auto">
@@ -69,15 +91,22 @@
                     </label>
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-6"><button class="button-prev-next" type="button" onclick="prevQue('gender')">previous</button></div>
+                <div class="col-6"><button class="button-prev-next" type="button" style="float: right;" onclick="nextQue('age')">next</button></div>
+            </div>
         </div>
     </div>
 
-    <div class="onepage" id="onepage"></div>  
+    <!-- <div class="onepage" id="onepage"></div>  
     <div class="twopage" id="twopage"></div>  
     <div class="threepage" id="threepage"></div>  
-    <div class="fourpage" id="fourpage"></div>
+    <div class="fourpage" id="fourpage"></div> -->
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="bp_que" style="display: none;">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center theme-title2" id="bPressure">Do you know your Blood Pressure?</h1>
             <div class="row mx-auto">
@@ -119,11 +148,18 @@
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-6"><button class="button-prev-next" type="button" onclick="prevQue('bp')">previous</button></div>
+                <div class="col-6"><button class="button-prev-next" type="button" style="float: right;" onclick="nextQue('age')">next</button></div>
+            </div>
         </div>
     </div>
-    <div class="container-fluid theme-box-light py-1">
+    <div class="container-fluid " id="chol_que" style="display: none;">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
-            <h1 class="display-4 pb-4 text-center theme-title1">Do you know your Cholestrol?</h1>
+            <h1 class="display-4 pb-4 text-center theme-title2">Do you know your Cholestrol?</h1>
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="cholyes">
@@ -154,9 +190,16 @@
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-6"><button class="button-prev-next" type="button" onclick="prevQue('chol')">previous</button></div>
+                <div class="col-6"><button class="button-prev-next" type="button" style="float: right;" onclick="nextQue('age')">next</button></div>
+            </div>
         </div>
     </div>
-    <div class="container-fluid" id="su">
+    <div class="container-fluid" id="sugar_que" style="display: none;">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center theme-title2">Do you know your Sugar?</h1>
             <div class="row mx-auto">
@@ -188,11 +231,18 @@
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-6"><button class="button-prev-next" type="button" onclick="prevQue('sugar')">previous</button></div>
+                <div class="col-6"><button class="button-prev-next" type="button" style="float: right;" onclick="nextQue('age')">next</button></div>
+            </div>
         </div>
     </div>
-    <div class="container-fluid theme-box-light py-1">
+    <div class="container-fluid" id="smoke_que" style="display: none;">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
-            <h1 class="display-4 pb-4 text-center theme-title1" id="smo">Do you smoke?</h1>
+            <h1 class="display-4 pb-4 text-center theme-title2" id="smo">Do you smoke?</h1>
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="yes">
@@ -208,9 +258,16 @@
                     </label>
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-6"><button class="button-prev-next" type="button" onclick="prevQue('smoke')">previous</button></div>
+                <div class="col-6"><button class="button-prev-next" type="button" style="float: right;" onclick="nextQue('age')">next</button></div>
+            </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" id="alco_que" style="display: none;">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center" id="alco">
             <h1 class="display-4 pb-4 text-center theme-title2">Do you take alcohol?</h1>
             <div class="row mx-auto">
@@ -229,11 +286,18 @@
                     </label>
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-6"><button class="button-prev-next" type="button" onclick="prevQue('alco')">previous</button></div>
+                <div class="col-6"><button class="button-prev-next" type="button" style="float: right;" onclick="nextQue('age')">next</button></div>
+            </div>
         </div>
     </div>
-    <div class="container-fluid theme-box-light py-1 fourpage">
+    <div class="container-fluid fourpage" id="pa_que" style="display: none;">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center" id="pa">
-            <h1 class="display-4 pb-4 text-center theme-title1">Do you do any physical activity?</h1>
+            <h1 class="display-4 pb-4 text-center theme-title2">Do you do any physical activity?</h1>
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="activityyes">
@@ -285,14 +349,22 @@
                     onclick="addFunction()">Add Activity
                 </button>
             </div>
+            <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-6"><button class="button-prev-next" type="button" onclick="prevQue('pa')">Previous</button></div>
+            <div class="col-6"><button class="button-prev-next" type="button" style="float: right;" disabled>Next</button></div>
+        </div>
         </div>
     </div>
+    <!-- <input type="button" class="btn" value="Preview" id="preview" style="display: none;" onclick="preview()"> -->
     <input type="submit"
         class="btn btn-block my-5 py-4 btn-lg theme-box-color theme-button-back theme-white theme-dark-button col-sm-4 mx-auto"
-        value="Submit">
+        value="Submit" id="submit_final" style="display: none;">
 </form>
 
-<div class="side-nav">
+<!-- <div class="side-nav">
     <ul class="nav-side-nav">
         <li><a href="#heart" class="tooltip-side-nav default one"></a></li>
         <li><a href="#age" class="tooltip-side-nav default two"></a></li>
@@ -301,11 +373,11 @@
         <li><a href="#gender" class="tooltip-side-nav default four"></a></li>
         <li><a href="#bPressure" class="tooltip-side-nav default five"></a></li>
         <li><a href="#su" class="tooltip-side-nav default"></a></li>
-        <!-- <li><a href="#smo" class="tooltip-side-nav default"></a></li> -->
+        <li><a href="#smo" class="tooltip-side-nav default"></a></li>
         <li><a href="#alco" class="tooltip-side-nav default"></a></li>
         <li><a href="#pa" class="tooltip-side-nav default"></a></li>
     </ul>
-</div>
+</div> -->
 
 
 <script type="text/javascript">

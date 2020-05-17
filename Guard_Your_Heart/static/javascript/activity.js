@@ -1,3 +1,87 @@
+function nextQue(abc) {
+    console.log(abc);
+    if (document.getElementById('age_que').style.display == 'block') {
+        document.getElementById('age_que').style.display = 'none'
+        document.getElementById('height_que').style.display = 'block'
+    } else if (document.getElementById('height_que').style.display == 'block') {
+        document.getElementById('height_que').style.display = 'none'
+        document.getElementById('weight_que').style.display = 'block'
+    } else if (document.getElementById('weight_que').style.display == 'block') {
+        document.getElementById('weight_que').style.display = 'none'
+        document.getElementById('gender_que').style.display = 'block'
+    } else if (document.getElementById('gender_que').style.display == 'block') {
+        document.getElementById('gender_que').style.display = 'none'
+        document.getElementById('bp_que').style.display = 'block'
+    } else if (document.getElementById('bp_que').style.display == 'block') {
+        document.getElementById('bp_que').style.display = 'none'
+        document.getElementById('chol_que').style.display = 'block'
+    } else if (document.getElementById('chol_que').style.display == 'block') {
+        document.getElementById('chol_que').style.display = 'none'
+        document.getElementById('sugar_que').style.display = 'block'
+    } else if (document.getElementById('sugar_que').style.display == 'block') {
+        document.getElementById('sugar_que').style.display = 'none'
+        document.getElementById('smoke_que').style.display = 'block'
+    } else if (document.getElementById('smoke_que').style.display == 'block') {
+        document.getElementById('smoke_que').style.display = 'none'
+        document.getElementById('alco_que').style.display = 'block'
+    } else if (document.getElementById('alco_que').style.display == 'block') {
+        document.getElementById('alco_que').style.display = 'none'
+        document.getElementById('pa_que').style.display = 'block'
+        document.getElementById('submit_final').style.display = 'block'
+            // document.getElementById('preview').style.display = 'block'
+    }
+}
+
+function prevQue(abc) {
+    console.log(abc);
+    if (document.getElementById('height_que').style.display == 'block') {
+        document.getElementById('height_que').style.display = 'none'
+        document.getElementById('age_que').style.display = 'block'
+    } else if (document.getElementById('weight_que').style.display == 'block') {
+        document.getElementById('height_que').style.display = 'block'
+        document.getElementById('weight_que').style.display = 'none'
+    } else if (document.getElementById('gender_que').style.display == 'block') {
+        document.getElementById('weight_que').style.display = 'block'
+        document.getElementById('gender_que').style.display = 'none'
+    } else if (document.getElementById('bp_que').style.display == 'block') {
+        document.getElementById('gender_que').style.display = 'block'
+        document.getElementById('bp_que').style.display = 'none'
+    } else if (document.getElementById('chol_que').style.display == 'block') {
+        document.getElementById('bp_que').style.display = 'block'
+        document.getElementById('chol_que').style.display = 'none'
+    } else if (document.getElementById('sugar_que').style.display == 'block') {
+        document.getElementById('chol_que').style.display = 'block'
+        document.getElementById('sugar_que').style.display = 'none'
+    } else if (document.getElementById('smoke_que').style.display == 'block') {
+        document.getElementById('sugar_que').style.display = 'block'
+        document.getElementById('smoke_que').style.display = 'none'
+    } else if (document.getElementById('alco_que').style.display == 'block') {
+        document.getElementById('smoke_que').style.display = 'block'
+        document.getElementById('alco_que').style.display = 'none'
+    } else if (document.getElementById('pa_que').style.display == 'block') {
+        document.getElementById('alco_que').style.display = 'block'
+        document.getElementById('pa_que').style.display = 'none'
+        document.getElementById('submit_final').style.display = 'none'
+            // document.getElementById('preview').style.display = 'none'
+    }
+}
+
+// function preview() {
+//     console.log("preview");
+//     document.getElementById('age_que').style.display = 'block'
+//     document.getElementById('height_que').style.display = 'block'
+//     document.getElementById('weight_que').style.display = 'block'
+//     document.getElementById('gender_que').style.display = 'block'
+//     document.getElementById('bp_que').style.display = 'block'
+//     document.getElementById('chol_que').style.display = 'block'
+//     document.getElementById('sugar_que').style.display = 'block'
+//     document.getElementById('smoke_que').style.display = 'block'
+//     document.getElementById('alco_que').style.display = 'block'
+//     document.getElementById('pa_que').style.display = 'block'
+//     document.getElementById('submit_final').style.display = 'block'
+//     document.getElementById('preview').style.display = 'none'
+// }
+
 function bpCheckFunction() {
     if (document.getElementById('bpyes').checked) {
         document.getElementById('bloodpressure').style.display = 'block';
@@ -159,10 +243,9 @@ function validateName(activityname) {
 }
 
 function validateKmsOrHours(kmsorhours) {
-    if(parseInt(kmsorhours) <= 400 && parseInt(kmsorhours) > 0 ){
+    if (parseInt(kmsorhours) <= 400 && parseInt(kmsorhours) > 0) {
         return true;
-    }
-    else{
+    } else {
         return false;
     }
     // var regex = /^([0-9]{1,2})$/;
