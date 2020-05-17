@@ -13,11 +13,22 @@
         margin: 0 auto;
     }
 </style>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+        <li class="breadcrumb-item"><a href="{{ url_for('assessment')}}">Assessment</a></li>
+        <li class="breadcrumb-item"><a href="{{ url_for('results')}}">results</a></li>
+        <li class="breadcrumb-item active" aria-current="page">PhysicalActivity</li>
+    </ol>
+</nav>
 <div class="container-fluid">
     <!-- heading -->
     <div class="jumbotron jumbotron-fluid theme-box-light">
         <div class="container">
-            <h1 class="display-3 theme-title1">Physical Activity</h1>
+            <div class="row mb-2">
+                <div id="heart"></div>
+                <h1 class="display-3 theme-title1">Physical Activity</h1>
+            </div>
             <p>Find out physical activity suggestions built for you below</p>
         </div>
     </div>
@@ -103,7 +114,7 @@
 <div class="container-fluid theme-box-light">
     <div class="container-md my-5 py-5">
         <div class="row">
-            <div class="col-6"><a href="{{ url_for('results')}}" class="btn btn-info">Result</a></div>
+            <div class="col-6"><a href="{{ url_for('results')}}" class="btn btn-info">Results</a></div>
             <div class="col-6"><a href="{{ url_for('diet')}}" class="btn btn-info" style="float: right;">Diet</a></div>
         </div>
     </div>

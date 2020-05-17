@@ -11,22 +11,32 @@
 {% endblock %} {% block javascriptblock %}
 <script type="text/javascript" src="../static/javascript/activity.js"></script>
 {% endblock %} {% block content %}
-<div class="jumbotron jumbotron-fluid mb-0 theme-box-light">
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Assessment</li>
+    </ol>
+</nav>
+<!-- <div class="jumbotron jumbotron-fluid mb-0 theme-box-light">
     <div class="container">
-        <div id="heart"></div>
-        <h1 class="display-3 theme-title1 inline onepage">Assess your CVD risk</h1>
+        <div class="row">
+            <div id="heart"></div>
+            <h1 class="display-3 theme-title1 inline onepage">Assess your CVD risk</h1>
+        </div>
     </div>
-</div>
+</div> -->
 <!-- class="needs-validation"  -->
 <!-- onsubmit="checksubmit()" -->
 
 
 <form action="{{ url_for('results') }}" method="post">
-    <div class="container-fluid">
+    <div class="container-fluid tryBack" style="height: 500px;">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
-            <h1 class="display-4 pb-4 text-center theme-title2">How old are you?</h1>
+            <h1 class="display-4 pb-4 text-center theme-title2" style="color: white;">How old are you?</h1>
             <div class="row">
-                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="age" placeholder="Enter your age" name="age" min="35" max="105" required>
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="age"
+                    placeholder="Enter your age" name="age" min="35" max="105" required>
                 <span id="error1"></span>
             </div>
         </div>
@@ -35,7 +45,8 @@
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center theme-title1 twopage">What is your height (in cms)?</h1>
             <div class="row">
-                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="height" placeholder="Enter your height" name="height" min="90" max="230" required>
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="height"
+                    placeholder="Enter your height" name="height" min="90" max="230" required>
             </div>
         </div>
     </div>
@@ -43,7 +54,8 @@
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
             <h1 class="display-4 pb-4 text-center theme-title2">What is your weight (in kgs)?</h1>
             <div class="row">
-                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" step=".01" id="weight" placeholder="Enter your weight" name="weight" min="40" max="230" required>
+                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" step=".01" id="weight"
+                    placeholder="Enter your weight" name="weight" min="40" max="230" required>
             </div>
         </div>
     </div>
@@ -69,9 +81,9 @@
         </div>
     </div>
 
-    <div class="onepage" id="onepage"></div>  
-    <div class="twopage" id="twopage"></div>  
-    <div class="threepage" id="threepage"></div>  
+    <div class="onepage" id="onepage"></div>
+    <div class="twopage" id="twopage"></div>
+    <div class="threepage" id="threepage"></div>
     <div class="fourpage" id="fourpage"></div>
 
     <div class="container-fluid">
@@ -277,16 +289,20 @@
                     </div>
                 </div>
                 <div class="row form-group">
-                    <select class="form-control selectpicker col-md-4" id="headings" data-live-search="true" onchange="sub(this.value)">
+                    <select class="form-control selectpicker col-md-4" id="headings" data-live-search="true"
+                        onchange="sub(this.value)">
                     </select>
                     <select class="form-control selectpicker col-md-4" data-live-search="true" id="activityname">
                     </select>
 
-                    <input class="col-md-2 form-control-lg theme-input" type="number" id="kmsorhours" placeholder="Minute?" name="kmsorhours">
+                    <input class="col-md-2 form-control-lg theme-input" type="number" id="kmsorhours"
+                        placeholder="Minute?" name="kmsorhours">
 
-                    <input class="col-md-2 form-control-lg theme-input" type="number" id="daysperweek" placeholder="Days/Week" name="daysperweek">
+                    <input class="col-md-2 form-control-lg theme-input" type="number" id="daysperweek"
+                        placeholder="Days/Week" name="daysperweek">
                 </div>
-                <button type="button" class="btn btn-block theme-button-back theme-white theme-dark-button col-sm-4 mx-auto"
+                <button type="button"
+                    class="btn btn-block theme-button-back theme-white theme-dark-button col-sm-4 mx-auto"
                     onclick="addFunction()">Add Activity
                 </button>
             </div>
@@ -314,7 +330,7 @@
 
 
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('.my-select').selectpicker();
         // $(window).scroll(function () {
         //     topDistance();
@@ -346,7 +362,7 @@
 
     //     var this_scrollTop = parseInt($(this).scrollTop());
     //     console.log(this_scrollTop);
-       
+
 
     //     if (this_scrollTop > two && this_scrollTop < three) {
     //         $(".two").addClass("select").parent().siblings().children().removeClass("select");
@@ -366,9 +382,9 @@
     //         $(".five").removeClass("default").parent().siblings().children().addClass("default");
     //     }
     // };
-    
 
-    var headings_array = [] 
+
+    var headings_array = []
     {% for activity_set in activity_data %}
     var heading = "{{ activity_set.heading }}";
     var activities_array = []
@@ -385,7 +401,7 @@
     headings_array.push({
         "heading": heading,
         "activities": activities_array
-    }) 
+    })
     {% endfor %}
     console.log(headings_array[0].heading);
 

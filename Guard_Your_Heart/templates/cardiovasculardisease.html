@@ -1,99 +1,124 @@
 {% extends 'layout.html' %}
 
 {% block content%}
+{% block cssblock %}
+<link rel="stylesheet" type="text/css" href="../static/css/sidebar.css">
+{% endblock %}
 <div class="jumbotron jumbotron-fluid mb-0 theme-box-light">
     <div class="container">
-        <h1 class="display-3 theme-title1">Cardiovascular Disease</h1>
+        <div class="row">
+            <div id="heart"></div>
+            <h1 class="display-3 theme-title1">Cardiovascular Disease</h1>
+        </div>
     </div>
 </div>
-<div class="container-fluid">
-    <div class="container-md my-5 px-md-5">
-        <h1 class="display-4 pb-4 theme-title2">Some statistics...</h1>
-        <blockquote class="blockquote">
-            <p class="lead text-justify">Cardiovascular Diseases (CVDs) are the no. 1 cause of death
-                globally &#x2015; more people die annually from them than from any other cause.</p>
-            <footer class="blockquote-footer float-right">World Health Organization</footer>
-        </blockquote>
 
-        <p class="lead text-justify my-5 py-2"> <br>
-            In 2014-15, approximately 4.2 million Australian adults (18.3%) reported having a disease of the
-            circulatory system, including around 1.2 million people with cardiovascular conditions such as
-            stroke and heart disease. Approximately 2.6 million Australians reported having hypertension
-            (high blood pressure) and 430,000 indicated that they had experienced a heart attack at some
-            point in their life.<sup>1</sup>
-            Cardiovascular disease is the leading
-            cause of death in Australia. In 2017, 43,000 (27%) of deaths had an underlying cause of
-            cardiovascular disease.<sup>2</sup>
-        </p>
-    </div>
-</div>
-<div class="container-fluid theme-box-light">
-    <div class="container-md my-5 py-5 px-md-5">
-        <h1 class="display-4 pb-4 theme-title1">
-            What is Cardiovascular Disease?
-        </h1>
-        <p class="lead">
-            Cardiovascular disease (CVD) is a collective term for diseases of the heart and blood vessels.
-            The term commonly includes diseases such as coronary heart disease, heart failure, cardiomyopathy,
-            congenital heart disease, peripheral vascular disease and stroke. Many of these conditions can be
-            life-threatening.
-        </p>
-    </div>
-</div>
 <div class="container-fluid">
-    <div class="container-md my-5 px-md-5">
-        <h1 class="display-4 pb-4 mb-5 theme-title2">
-            Types of CVDs
-        </h1>
-        <h1 class="theme-title2">Coronary Heart Disease</h1>
-        <p class="lead">
-            Coronary heart disease (CHD) develops when the coronary arteries become too narrow.
-            The coronary arteries are the blood vessels that supply oxygen and blood to the heart.
-            Coronary heart disease can cause angina pectoris and can also cause shortness of breath.
-            According to statistics, an estimated 580,300 Australians aged 18 and over
-            (3% of the adult population) reported having coronary heart disease. Of the people
-            with coronary heart disease, 227,300 have experienced angina.<sup>3</sup>
-        </p>
-        <h1 class="theme-title2">Stroke</h1>
-        <p class="lead">
-            Stroke is usually an acute event, mainly caused by a blockage that prevents blood from
-            flowing to the heart or brain, or it may be caused by bleeding from blood vessels or
-            blood clots in the brain. According to a statistic, in 2015, approximately 394,000
-            Australians (1.7% of the population) experienced a stroke in their lives. It is more
-            common in the elderly population — over two in three (67%) people who had a stroke were
-            aged 65 and over. According to hospital and mortality data, there were an estimated
-            37,800 strokes in Australia in 2016, more than 100 per day.<sup>2</sup>
-        </p>
-        <h1 class="theme-title2">Heart Failure</h1>
-        <p class="lead">
-            Heart failure is sometimes called congestive heart failure, meaning the heart cannot pump
-            blood properly around the body. It usually occurs because the heart becomes too weak or stiff.
-            It can happen at any age, but it is most common in the elderly.
-        </p>
-        <h1 class="theme-title2">Congenital Heart Disease</h1>
-        <p class="lead">
-            Congenital heart disease is a general term for a range of birth defects that affect the
-            normal way the heart works. The latest data show that more than 2,000 babies suffer from
-            congenital heart disease every year — 8 in every 1,000 live births.<sup>2</sup> Among
-            babies born in Australia (excluding the Northern Territory) in 2003, there were 1675
-            cases of congenital heart disease most frequently reported.<sup>4</sup>
-        </p>
+    <div class="row">
+        <div class="col-lg-1">
+            <div class="sidenav">
+                <a href="#heart" class="btn btn-warning my-2">Statistics</a>
+                <a href="#msg2" class="btn btn-warning my-2">What is CVD</a>
+                <a href="#type" class="btn btn-warning my-2">CVD Type</a>
+            </div>
+        </div>
+        <div class="col-lg-11">
+            <div class="container-fluid">
+                <div class="container-md my-5 px-md-5" id="statistics" style="background-color: white;">
+                    <h1 class="display-4 pb-4 theme-title2">Some statistics...</h1>
+                    <blockquote class="blockquote">
+                        <p class="lead text-justify">Cardiovascular Diseases (CVDs) are the no. 1 cause of death
+                            globally &#x2015; more people die annually from them than from any other cause.</p>
+                        <footer class="blockquote-footer float-right">World Health Organization</footer>
+                    </blockquote>
+            
+                    <p class="lead text-justify my-5 py-2"> <br>
+                        In 2014-15, approximately 4.2 million Australian adults (18.3%) reported having a disease of the
+                        circulatory system, including around 1.2 million people with cardiovascular conditions such as
+                        stroke and heart disease. Approximately 2.6 million Australians reported having hypertension
+                        (high blood pressure) and 430,000 indicated that they had experienced a heart attack at some
+                        point in their life.<sup>1</sup>
+                        Cardiovascular disease is the leading
+                        cause of death in Australia. In 2017, 43,000 (27%) of deaths had an underlying cause of
+                        cardiovascular disease.<sup>2</sup>
+                    </p>
+                </div>
+            </div>
+            <div class="container-fluid theme-box-light">
+                <div class="container-md my-5 py-5 px-md-5" id="msg2">
+                    <h1 class="display-4 pb-4 theme-title1">
+                        What is Cardiovascular Disease?
+                    </h1>
+                    <p class="lead">
+                        Cardiovascular disease (CVD) is a collective term for diseases of the heart and blood vessels.
+                        The term commonly includes diseases such as coronary heart disease, heart failure, cardiomyopathy,
+                        congenital heart disease, peripheral vascular disease and stroke. Many of these conditions can be
+                        life-threatening.
+                    </p>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container-md my-5 px-md-5">
+                    <h1 class="display-4 pb-4 theme-title2" id="type">
+                        Types of CVDs
+                    </h1>
+                    <h1 class="theme-title2">Coronary Heart Disease</h1>
+                    <p class="lead">
+                        Coronary heart disease (CHD) develops when the coronary arteries become too narrow.
+                        The coronary arteries are the blood vessels that supply oxygen and blood to the heart.
+                        Coronary heart disease can cause angina pectoris and can also cause shortness of breath.
+                        According to statistics, an estimated 580,300 Australians aged 18 and over
+                        (3% of the adult population) reported having coronary heart disease. Of the people
+                        with coronary heart disease, 227,300 have experienced angina.<sup>3</sup>
+                    </p>
+                    <h1 class="theme-title2">Stroke</h1>
+                    <p class="lead">
+                        Stroke is usually an acute event, mainly caused by a blockage that prevents blood from
+                        flowing to the heart or brain, or it may be caused by bleeding from blood vessels or
+                        blood clots in the brain. According to a statistic, in 2015, approximately 394,000
+                        Australians (1.7% of the population) experienced a stroke in their lives. It is more
+                        common in the elderly population — over two in three (67%) people who had a stroke were
+                        aged 65 and over. According to hospital and mortality data, there were an estimated
+                        37,800 strokes in Australia in 2016, more than 100 per day.<sup>2</sup>
+                    </p>
+                    <h1 class="theme-title2">Heart Failure</h1>
+                    <p class="lead">
+                        Heart failure is sometimes called congestive heart failure, meaning the heart cannot pump
+                        blood properly around the body. It usually occurs because the heart becomes too weak or stiff.
+                        It can happen at any age, but it is most common in the elderly.
+                    </p>
+                    <h1 class="theme-title2">Congenital Heart Disease</h1>
+                    <p class="lead">
+                        Congenital heart disease is a general term for a range of birth defects that affect the
+                        normal way the heart works. The latest data show that more than 2,000 babies suffer from
+                        congenital heart disease every year — 8 in every 1,000 live births.<sup>2</sup> Among
+                        babies born in Australia (excluding the Northern Territory) in 2003, there were 1675
+                        cases of congenital heart disease most frequently reported.<sup>4</sup>
+                    </p>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container-md my-5 py-5 px-md-5">
+                    <h4 class="theme-title2">Sources</h4>
+                    <p><small>1. Australian Bureau of Statistics 2015. <a
+                                href="https://www.abs.gov.au/ausstats/abs@.nsf/PrimaryMainFeatures/4364.0.55.001?OpenDocument">4364.0.55.001
+                                - National Health Survey: First Results, 2014-15.</a></small></p>
+                    <p><small>2. Australian Institute of Health and Welfare, Australian Government - <a
+                                href="https://www.aihw.gov.au/reports/heart-stroke-vascular-diseases/cardiovascular-health-compendium/contents/what-is-cardiovascular-disease">Cardiovascular
+                                disease</a></small></p>
+                    <p><small>3.<a href="https://www.abs.gov.au/ausstats/abs@.nsf/mf/4364.0.55.001">&nbsp;4364.0.55.001 - National
+                                Health
+                                Survey: First Results, 2017-18.</a></small></p>
+                    <p><small>4. Abeywardana S & Sullivan EA 2008. Congenital anomalies in Australia 2002–2003.
+                            Birth anomalies series no. 3 Cat. no. PER 41. Sydney: AIHW National Perinatal Statistics
+                            Unit.</p>
+                </div>
+
+        </div>
     </div>
+
+
 </div>
-<div class="container-fluid">
-    <div class="container-md my-5 py-5 px-md-5">
-        <h4 class="theme-title2">Sources</h4>
-        <p><small>1. Australian Bureau of Statistics 2015. <a
-                    href="https://www.abs.gov.au/ausstats/abs@.nsf/PrimaryMainFeatures/4364.0.55.001?OpenDocument">4364.0.55.001
-                    - National Health Survey: First Results, 2014-15.</a></small></p>
-        <p><small>2. Australian Institute of Health and Welfare, Australian Government - <a
-                    href="https://www.aihw.gov.au/reports/heart-stroke-vascular-diseases/cardiovascular-health-compendium/contents/what-is-cardiovascular-disease">Cardiovascular
-                    disease</a></small></p>
-        <p><small>3.<a href="https://www.abs.gov.au/ausstats/abs@.nsf/mf/4364.0.55.001">&nbsp;4364.0.55.001 - National Health
-                    Survey: First Results, 2017-18.</a></small></p>
-        <p><small>4. Abeywardana S & Sullivan EA 2008. Congenital anomalies in Australia 2002–2003.
-                Birth anomalies series no. 3 Cat. no. PER 41. Sydney: AIHW National Perinatal Statistics
-                Unit.</p>
-    </div>
-    </>
+
+
     {% endblock %}

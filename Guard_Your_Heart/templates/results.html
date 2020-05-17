@@ -8,10 +8,20 @@
 {% block javascriptblock %}
 <script type="text/javascript" src="../static/javascript/activity.js"></script>
 {% endblock %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+        <li class="breadcrumb-item"><a href="{{ url_for('assessment')}}">Assessment</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Results</li>
+    </ol>
+</nav>
 
 <div class="jumbotron jumbotron-fluid mb-0 theme-box-light" id="res">
     <div class="container">
-        <h1 class="display-3 theme-title1">Results</h1>
+        <div class="row">
+            <div id="heart"></div>
+            <h1 class="display-3 theme-title1">Results</h1>
+        </div>
     </div>
 </div>
 <div class="container-fluid">

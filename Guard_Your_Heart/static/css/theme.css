@@ -64,3 +64,27 @@
     margin-left: 130px;
     margin-right: 80px;
 }
+
+.breadcrumb >.active {
+    color: rgb(223, 88, 55);
+ }
+ .breadcrumb >.active a {
+    color: rgb(223, 88, 55);
+ }
+ .breadcrumb {
+    background-color: white;
+ }
+
+ .logo {
+     height: 50px;
+     width: 50px;
+     background-image: url("../images/logo.png");
+     background-size: contain;
+     margin-left: 20px;
+     margin-top: 10px;
+ }
+
+ .tryBack {
+     background-color: rgb(223, 88, 55);
+     ;
+ }
