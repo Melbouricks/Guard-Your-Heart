@@ -1,7 +1,7 @@
 from Guard_Your_Heart import db
 from datetime import datetime
 
-class data_assessment(db.Model):
+class Assessment(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     age = db.Column(db.Integer, nullable=False)
     gender = db.Column(db.Integer, nullable=False)
@@ -18,3 +18,8 @@ class data_assessment(db.Model):
 
     def __repr__(self):
         return '<%r>' % self.id
+
+    def addData(test):
+        db.session.add(test)
+        db.session.commit()
+        return 'done'

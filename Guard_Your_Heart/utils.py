@@ -1,6 +1,7 @@
 import pickle, json
 from sklearn.preprocessing import normalize
 import pandas as pd
+from Guard_Your_Heart.models import Assessment
 
 class Utill:
 
@@ -80,9 +81,24 @@ class Utill:
             'bmi': round(bmi,2)
             # 'activityname' : activitytable
         }
+        da = Assessment(
+            age=data_sample['age'],
+            gender=data_sample['gender'],
+            height=data_sample['height'],
+            weight=data_sample['weight'],
+            ap_hi=data_sample['ap_hi'],
+            ap_lo=data_sample['ap_lo'],
+            cholestrol=data_sample['cholestrol'],
+            gluc=data_sample['gluc'],
+            smoke=data_sample['smoke'],
+            alco=data_sample['alco'],
+            active=data_sample['active'],
+            bmi=data_sample['bmi']
+        )
+        print(Assessment.addData(da))
         return data_sample
 
-    
+
     def metData():
         df = pd.read_csv('Guard_Your_Heart/met2.csv')
 
