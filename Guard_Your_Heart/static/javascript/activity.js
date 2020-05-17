@@ -1,24 +1,35 @@
 function bpCheckFunction() {
     if (document.getElementById('bpyes').checked) {
         document.getElementById('bloodpressure').style.display = 'block';
+        console.log("bp")
+        document.getElementById('systolicbp').required = true
+        document.getElementById('diastolicbp').required = true
     } else {
         document.getElementById('bloodpressure').style.display = 'none';
+        document.getElementById('systolicbp').required = false
+        document.getElementById('diastolicbp').required = false
     }
 }
 
 function cholCheckFunction() {
     if (document.getElementById('cholyes').checked) {
         document.getElementById('cholestrol').style.display = 'block';
+        console.log('chol')
+        document.getElementById("totalcholes").required = true
     } else {
         document.getElementById('cholestrol').style.display = 'none';
+        document.getElementById("totalcholes").required = false
     }
 }
 
 function sugarCheckFunction() {
     if (document.getElementById('sugaryes').checked) {
         document.getElementById('sugar').style.display = 'block';
+        console.log('gluc')
+        document.getElementById('bloodsugar').required = true
     } else {
         document.getElementById('sugar').style.display = 'none';
+        document.getElementById('bloodsugar').required = true
     }
 }
 
@@ -52,7 +63,7 @@ function addFunction() {
                 var div1 = document.createElement("div");
                 div1.className = "d-md-table-cell activity-table-cell";
                 var input1 = document.createElement("input");
-                input1.setAttribute("name","activities");
+                input1.setAttribute("name", "activities");
                 input1.type = "hidden";
                 input1.value = activityname;
                 var h31 = document.createElement("h3");
@@ -71,16 +82,16 @@ function addFunction() {
                 var div2 = document.createElement("div");
                 div2.className = "d-md-table-cell activity-table-cell";
                 var input2 = document.createElement("input");
-                input2.setAttribute("name","minutes");
+                input2.setAttribute("name", "minutes");
                 input2.type = "hidden";
                 input2.value = kmsorhours;
                 var h32 = document.createElement("h3");
                 h32.className = "d-inline";
                 h32.innerHTML = kmsorhours;
-                h32.setAttribute("name","minutes");
+                h32.setAttribute("name", "minutes");
                 var p2 = document.createElement("p");
                 p2.className = "d-md-none d-inline";
-                p2.innerHTML = "kms or hours per day";
+                p2.innerHTML = "minutes per day";
 
                 div2.appendChild(input2);
                 div2.appendChild(h32);
@@ -89,14 +100,14 @@ function addFunction() {
                 var div3 = document.createElement("div");
                 div3.className = "d-md-table-cell activity-table-cell";
                 var input3 = document.createElement("input");
-                input3.setAttribute("name","days");
+                input3.setAttribute("name", "days");
                 input3.type = "hidden";
                 input3.value = daysperweek;
                 var h33 = document.createElement("h3");
                 h33.className = "d-inline";
                 h33.innerHTML = daysperweek;
                 // h33.name = "days";
-                h33.setAttribute("name","days");
+                h33.setAttribute("name", "days");
                 var p3 = document.createElement("p");
                 p3.className = "d-md-none d-inline";
                 p3.innerHTML = "days per week";
@@ -148,8 +159,14 @@ function validateName(activityname) {
 }
 
 function validateKmsOrHours(kmsorhours) {
-    var regex = /^([0-9]{1,2})$/;
-    return regex.test(kmsorhours);
+    if(parseInt(kmsorhours) <= 400 && parseInt(kmsorhours) > 0 ){
+        return true;
+    }
+    else{
+        return false;
+    }
+    // var regex = /^([0-9]{1,2})$/;
+    // return regex.test(kmsorhours);
 }
 
 function validateDaysPerWeek(daysperweek) {
@@ -157,7 +174,7 @@ function validateDaysPerWeek(daysperweek) {
     return regex.test(daysperweek);
 }
 
-function formSubmit(){
+function formSubmit() {
 
     var activitiesTable = document.getElementById('activitytable');
     var rows = activitiesTable.children;
@@ -167,7 +184,7 @@ function formSubmit(){
         row = rows[i];
 
         var activityObject = {};
-        
+
         var columns = row.children;
         activityObject.name = columns[0].firstChild.innerHTML;
         activityObject.duration = columns[1].firstChild.innerHTML;
@@ -177,7 +194,7 @@ function formSubmit(){
     console.log(activityList);
 
     var formData = new FormData();
-    var blob = new Blob([JSON.stringify(activityList, null, 2)], {type : 'application/json'});
+    var blob = new Blob([JSON.stringify(activityList, null, 2)], { type: 'application/json' });
     formData.append('activities', blob);
 
     console.log(formData)
