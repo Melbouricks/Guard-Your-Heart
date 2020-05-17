@@ -5,12 +5,16 @@
     var activties = [];
     console.log(activties);
 </script> -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> {% endblock %} {% block javascriptblock %}
-<script type="text/javascript" src="../static/javascript/activity.js?211"></script>
+<link rel="stylesheet" type="text/css" href="../static/css/dotnav.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+{% endblock %} {% block javascriptblock %}
+<script type="text/javascript" src="../static/javascript/activity.js"></script>
 {% endblock %} {% block content %}
 <div class="jumbotron jumbotron-fluid mb-0 theme-box-light">
     <div class="container">
-        <h1 class="display-1">Assess your CVD risk</h1>
+        <div id="heart"></div>
+        <h1 class="display-3 theme-title1 inline onepage">Assess your CVD risk</h1>
     </div>
 </div>
 <!-- class="needs-validation"  -->
@@ -20,7 +24,7 @@
 <form action="{{ url_for('results') }}" method="post">
     <div class="container-fluid">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
-            <h1 class="display-4 pb-4 text-center">How old are you?</h1>
+            <h1 class="display-4 pb-4 text-center theme-title2">How old are you?</h1>
             <div class="row">
                 <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="age" placeholder="Enter your age" name="age" min="35" max="105" required>
                 <span id="error1"></span>
@@ -29,7 +33,7 @@
     </div>
     <div class="container-fluid theme-box-light py-1">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
-            <h1 class="display-4 pb-4 text-center">What is your height (in cms)?</h1>
+            <h1 class="display-4 pb-4 text-center theme-title1 twopage">What is your height (in cms)?</h1>
             <div class="row">
                 <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" id="height" placeholder="Enter your height" name="height" min="90" max="230" required>
             </div>
@@ -37,7 +41,7 @@
     </div>
     <div class="container-fluid">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
-            <h1 class="display-4 pb-4 text-center">What is your weight (in kgs)?</h1>
+            <h1 class="display-4 pb-4 text-center theme-title2">What is your weight (in kgs)?</h1>
             <div class="row">
                 <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" step=".01" id="weight" placeholder="Enter your weight" name="weight" min="40" max="230" required>
             </div>
@@ -45,7 +49,7 @@
     </div>
     <div class="container-fluid theme-box-light py-1">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
-            <h1 class="display-4 pb-4 text-center">What is your gender?</h1>
+            <h1 class="display-4 pb-4 text-center theme-title1" id="gender">What is your gender?</h1>
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="male">
@@ -64,9 +68,15 @@
             </div>
         </div>
     </div>
+
+    <div class="onepage" id="onepage"></div>  
+    <div class="twopage" id="twopage"></div>  
+    <div class="threepage" id="threepage"></div>  
+    <div class="fourpage" id="fourpage"></div>
+
     <div class="container-fluid">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
-            <h1 class="display-4 pb-4 text-center">Do you know your Blood Pressure?</h1>
+            <h1 class="display-4 pb-4 text-center theme-title2" id="bPressure">Do you know your Blood Pressure?</h1>
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="bpyes">
@@ -90,7 +100,12 @@
                             <p class="lead">Systolic Blood Pressure (top number)</p>
                         </div>
                         <div class="col-sm form-check my-auto">
+<<<<<<< HEAD
                             <input class="form-control-lg theme-input mx-auto w-100" type="number" id="systolicbp" min="70" max="228" name="systolicbp" placeholder="70 - 228 mmHg" >
+=======
+                            <input class="form-control-lg theme-input mx-auto w-100" type="number" id="systolicbp"
+                                min="70" max="228" name="systolicbp" placeholder="70 - 228 mmHg" step="0.1">
+>>>>>>> 087d569cb074b3b11cfdaafad0828bef2417339b
                         </div>
                     </div>
 
@@ -99,7 +114,12 @@
                             <p class="lead">Diastolic Blood Pressure (bottom number)</p>
                         </div>
                         <div class="col-sm form-check my-auto">
+<<<<<<< HEAD
                             <input class="form-control-lg theme-input mx-auto w-100" type="number" id="diastolicbp" min="50" max="150" name="diastolicbp" placeholder="50 - 150 mmHg">
+=======
+                            <input class="form-control-lg theme-input mx-auto w-100" type="number" id="diastolicbp"
+                                min="50" max="150" name="diastolicbp" placeholder="50 - 150 mmHg" step="0.1">
+>>>>>>> 087d569cb074b3b11cfdaafad0828bef2417339b
                         </div>
                     </div>
                 </div>
@@ -108,7 +128,7 @@
     </div>
     <div class="container-fluid theme-box-light py-1">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
-            <h1 class="display-4 pb-4 text-center">Do you know your Cholestrol?</h1>
+            <h1 class="display-4 pb-4 text-center theme-title1">Do you know your Cholestrol?</h1>
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="cholyes">
@@ -130,7 +150,13 @@
                     <div class="row w-75 mx-auto my-3">
                         <div class="col-sm form-check my-auto">
                             <div class="row">
+<<<<<<< HEAD
                                 <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" step=".01" id="totalcholes" placeholder="2 - 10.5 mmol/L" min="2" max="10.5" name="totalcholes">
+=======
+                                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number"
+                                    id="totalcholes" placeholder="2 - 10.5 mmol/L" min="2" max="10.5" name="totalcholes"
+                                    step="0.1">
+>>>>>>> 087d569cb074b3b11cfdaafad0828bef2417339b
                             </div>
 
                         </div>
@@ -139,9 +165,9 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" id="su">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
-            <h1 class="display-4 pb-4 text-center">Do you know your Sugar?</h1>
+            <h1 class="display-4 pb-4 text-center theme-title2">Do you know your Sugar?</h1>
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="sugaryes">
@@ -163,7 +189,13 @@
                     <div class="row w-75 mx-auto my-3">
                         <div class="col-sm form-check my-auto">
                             <div class="row">
+<<<<<<< HEAD
                                 <input class="col-md-4 form-control-lg theme-input mx-auto" type="number" step=".01" id="bloodsugar" placeholder="1 - 17.4 mmol/L" name="bloodsugar" min="1" max="17.4">
+=======
+                                <input class="col-md-4 form-control-lg theme-input mx-auto" type="number"
+                                    id="bloodsugar" placeholder="1 - 17.4 mmol/L" name="bloodsugar" min="1" max="17.4"
+                                    step="0.1">
+>>>>>>> 087d569cb074b3b11cfdaafad0828bef2417339b
                             </div>
                         </div>
                     </div>
@@ -181,7 +213,7 @@
             </div> -->
     <div class="container-fluid theme-box-light py-1">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
-            <h1 class="display-4 pb-4 text-center">Do you smoke?</h1>
+            <h1 class="display-4 pb-4 text-center theme-title1" id="smo">Do you smoke?</h1>
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="yes">
@@ -200,8 +232,8 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
-            <h1 class="display-4 pb-4 text-center">Do you take alcohol?</h1>
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center" id="alco">
+            <h1 class="display-4 pb-4 text-center theme-title2">Do you take alcohol?</h1>
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="alcoholyes">
@@ -220,9 +252,9 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid theme-box-light py-1">
-        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center">
-            <h1 class="display-4 pb-4 text-center">Do you do any physical activity?</h1>
+    <div class="container-fluid theme-box-light py-1 fourpage">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center" id="pa">
+            <h1 class="display-4 pb-4 text-center theme-title1">Do you do any physical activity?</h1>
             <div class="row mx-auto">
                 <div class="col-sm form-check">
                     <label class="form-check-label radio-row" for="activityyes">
@@ -270,19 +302,64 @@
 
                     <input class="col-md-2 form-control-lg theme-input" type="number" id="daysperweek" placeholder="Days/Week" name="daysperweek">
                 </div>
+<<<<<<< HEAD
                 <button type="button" class="btn btn-block theme-box-dark theme-white theme-dark-button col-sm-4 mx-auto" onclick="addFunction()">Add Activity
+=======
+                <button type="button" class="btn btn-block theme-button-back theme-white theme-dark-button col-sm-4 mx-auto"
+                    onclick="addFunction()">Add Activity
+>>>>>>> 087d569cb074b3b11cfdaafad0828bef2417339b
                 </button>
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     <input type="submit" class="btn btn-block my-5 py-4 btn-lg theme-box-color theme-white theme-color-button col-sm-4 mx-auto" value="Submit">
+=======
+    <input type="submit"
+        class="btn btn-block my-5 py-4 btn-lg theme-box-color theme-button-back theme-white theme-dark-button col-sm-4 mx-auto"
+        value="Submit">
+>>>>>>> 087d569cb074b3b11cfdaafad0828bef2417339b
 </form>
+
+<div class="side-nav">
+    <ul class="nav-side-nav">
+        <li><a href="#heart" class="tooltip-side-nav default one"></a></li>
+        <li><a href="#age" class="tooltip-side-nav default two"></a></li>
+        <li><a href="#height" class="tooltip-side-nav default"></a></li>
+        <li><a href="#weight" class="tooltip-side-nav default three"></a></li>
+        <li><a href="#gender" class="tooltip-side-nav default four"></a></li>
+        <li><a href="#bPressure" class="tooltip-side-nav default five"></a></li>
+        <li><a href="#su" class="tooltip-side-nav default"></a></li>
+        <!-- <li><a href="#smo" class="tooltip-side-nav default"></a></li> -->
+        <li><a href="#alco" class="tooltip-side-nav default"></a></li>
+        <li><a href="#pa" class="tooltip-side-nav default"></a></li>
+    </ul>
+</div>
+
 
 <script type="text/javascript">
     $(document).ready(function() {
         $('.my-select').selectpicker();
-    });
+        // $(window).scroll(function () {
+        //     topDistance();
+        // });
 
+    });
+    // function clickNav(temp) {
+    //     temp.addClass("select").parent().siblings().children().removeClass("select");
+    //     console.log(temp);
+    //     temp.removeClass("default").parent().siblings().children().addClass("default");
+    // }
+
+    // // $(function () {
+    // var two = $(".twopage").offsetTop;
+    // // console.log(two);
+    // var three = $(".threepage").offsetTop;
+    // var four = $(".fourpage").offsetTop;
+    // var five = $(".fivepage").offsetTop;
+
+
+<<<<<<< HEAD
     var headings_array = [] 
     {% for activity_set in activity_data %}
     var heading = "{{ activity_set.heading }}";
@@ -291,11 +368,58 @@
     var activity = "{{ activity_info.activity }}";
     var intensity = {{ activity_info.intensity }};
     var met = {{ activity_info.met}};
+=======
+    // function topDistance() {
+    //     if ($(".navbar").length) {
+    //         var two = $("#twopage").offsetTop;
+    //         var three = $("#threepage").offsetTop;
+    //         var four = $("#fourpage").offsetTop;
+    //         var five = $("#fivepage").offsetTop;
+    //         console.log(five);
+    //     }
+
+    //     var this_scrollTop = parseInt($(this).scrollTop());
+    //     console.log(this_scrollTop);
+       
+
+    //     if (this_scrollTop > two && this_scrollTop < three) {
+    //         $(".two").addClass("select").parent().siblings().children().removeClass("select");
+
+    //         $(".two").removeClass("default").parent().siblings().children().addClass("default");
+    //     } else if (this_scrollTop > three && this_scrollTop < four) {
+    //         $(".three").addClass("select").parent().siblings().children().removeClass("select");
+
+    //         $(".three").removeClass("default").parent().siblings().children().addClass("default");
+    //     } else if (this_scrollTop > four && this_scrollTop < five) {
+    //         $(".four").addClass("select").parent().siblings().children().removeClass("select");
+
+    //         $(".four").removeClass("default").parent().siblings().children().addClass("default");
+    //     } else if (this_scrollTop > five) {
+    //         $(".five").addClass("select").parent().siblings().children().removeClass("select");
+
+    //         $(".five").removeClass("default").parent().siblings().children().addClass("default");
+    //     }
+    // };
+    
+
+    var headings_array = [] 
+    {% for activity_set in activity_data %}
+    var heading = "{{ activity_set.heading }}";
+    var activities_array = []
+    {% for activity_info in activity_set.activities %}
+    var activity = "{{ activity_info.activity }}";
+    var intensity = {{ activity_info.intensity }};
+    var met = {{ activity_info.met }};
+>>>>>>> 087d569cb074b3b11cfdaafad0828bef2417339b
     activities_array.push({
         "activity": activity,
         "intensity": intensity,
         "met": met
+<<<<<<< HEAD
     }) 
+=======
+    })
+>>>>>>> 087d569cb074b3b11cfdaafad0828bef2417339b
     {% endfor %}
     headings_array.push({
         "heading": heading,

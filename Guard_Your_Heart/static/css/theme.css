@@ -1,5 +1,6 @@
 .theme-color {
-    color: #35D4BE;
+    /* color: #F7882F; */
+    color: rgb(223, 88, 55);
 }
 .theme-dark {
     color: #101B2B;
@@ -12,33 +13,54 @@
 }
 
 .theme-box-color {
-    background-color: #35D4BE;
+    /* background-color: #F7882F ; */
+    background-color: rgb(223, 88, 55) ;
+    
 }
 .theme-box-dark {
-    background-color: #101B2B;
+    /* dcc7aa */
+    background-color: #ebd4b5;
 }
 .theme-box-light {
-    background-color: #F2F2F2;
+    background-color: #f3e8d9;
 }
 .theme-box-white{
     background-color: white;
 }
-
+.theme-button-back{
+    /* background-color: #F7882F ; */
+    background-color: rgb(223, 88, 55) ;
+}
 .theme-dark-button {
     border-radius: 0;
 }
 .theme-dark-button:hover {
-    color:#35D4BE;
+    color:#F7C331;
 }
-
 .theme-color-button {
     border-radius: 0;
 }
 .theme-color-button:hover {
     color: #101B2B;
 }
-
 .theme-input {
     border-radius: 0;
     border-color: #101B2B;
+}
+.theme-title1 {
+    color:rgb(223, 88, 55);
+}
+.theme-title2 {
+    color:#e5bd95;
+}
+.navheading {
+    color: rgb(223, 88, 55);
+    /* margin: 0 auto; */
+    /* padding-left: 2000; */
+
+    
+}
+.navimg{
+    margin-left: 130px;
+    margin-right: 80px;
 }

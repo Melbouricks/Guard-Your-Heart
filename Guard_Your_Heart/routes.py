@@ -36,17 +36,15 @@ def assessment():
         return render_template("assessment.html", activity_data=list_of_headings, route="assessment")
     else:
         return redirect(url_for('initlogin'))
-
-
-@app.route('/option')
-def option():
-    if 'user' in session:
-        list_of_headings = Utill.metData()
-        # print(list_of_headings)
-        return render_template("option.html", activity_data=list_of_headings, route="option")
-    else:
-        return redirect(url_for('initlogin'))
-
+        
+# @app.route('/option')
+# def option():
+#     if 'user' in session:
+#         list_of_headings = Utill.metData()
+#         # print(list_of_headings)
+#         return render_template("option.html", activity_data=list_of_headings, route="option")
+#     else:
+#         return redirect(url_for('initlogin'))
 
 @app.route('/results', methods=['POST','GET'])
 def results():
@@ -90,6 +88,7 @@ def PA():
     else:
         return redirect(url_for('initlogin'))
     
+
 @app.route('/cardiovasculardisease')
 def cardiovasculardisease():
     if 'user' in session:
@@ -112,8 +111,9 @@ def cardiovasculardisease():
 # #         print(data_sample)
 #     return render_template("test.html",activity_entered=data_activity)
 
-@app.route('/tableAjax',methods=['GET'])
-def tableAjax ():
-    data_sample = Utill.metData()
+@app.route('/tableAjax',methods=['POST'])
+def tableAjax():
+    # data_sample = Utill.metData()
+    data_sample = Utill.filterData(request)
     # print(data_sample)
     return json.dumps(data_sample)

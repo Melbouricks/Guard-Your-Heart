@@ -91,7 +91,7 @@ function addFunction() {
                 h32.setAttribute("name", "minutes");
                 var p2 = document.createElement("p");
                 p2.className = "d-md-none d-inline";
-                p2.innerHTML = "kms or hours per day";
+                p2.innerHTML = "minutes per day";
 
                 div2.appendChild(input2);
                 div2.appendChild(h32);
@@ -159,8 +159,14 @@ function validateName(activityname) {
 }
 
 function validateKmsOrHours(kmsorhours) {
-    var regex = /^([0-9]{1,2})$/;
-    return regex.test(kmsorhours);
+    if(parseInt(kmsorhours) <= 400 && parseInt(kmsorhours) > 0 ){
+        return true;
+    }
+    else{
+        return false;
+    }
+    // var regex = /^([0-9]{1,2})$/;
+    // return regex.test(kmsorhours);
 }
 
 function validateDaysPerWeek(daysperweek) {
