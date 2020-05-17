@@ -46,7 +46,7 @@ def assessment():
 #     else:
 #         return redirect(url_for('initlogin'))
 
-@app.route('/results', methods=['POST','GET'])
+@app.route('/results', methods=['POST','GET','PUT'])
 def results():
     if 'user' in session:
         if request.method == 'POST':
@@ -82,6 +82,7 @@ def PA():
     if 'user' in session:
         if "data" in session:
             data = session['data'][1]
+            print(data)
             return render_template("PA.html", activity_entered=data, route="PA")
         else:
             return render_template('index.html', route="index")

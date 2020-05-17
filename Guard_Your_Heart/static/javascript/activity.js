@@ -1,3 +1,184 @@
+function nextQue(abc) {
+    console.log(abc);
+    var regex = /^\d+(\.\d{1})?$/;
+    var reg_age = /^\d+$/;
+    if (document.getElementById('age_que').style.display == 'block') {
+        var age = document.getElementById("age").value;
+
+        if (age == null | age == "" | reg_age.test(age) == false) {
+            alert("Age should be integer");
+        }
+        else if (age < 35 || age > 105) {
+            alert("Age can only be between 35 and 105")
+        } else {
+            document.getElementById('age_que').style.display = 'none'
+            document.getElementById('height_que').style.display = 'block'
+        }
+
+    } else if (document.getElementById('height_que').style.display == 'block') {
+        // min="90" max="230"
+        var height = document.getElementById("height").value;
+        if (height == null | height == "" | reg_age.test(height) == false) {
+            alert("Height should be integer");
+        }
+        else if (height < 90 || height > 230) {
+            alert("Height can only be between 90 and 230")
+        }
+        else {
+            document.getElementById('height_que').style.display = 'none'
+            document.getElementById('weight_que').style.display = 'block'
+        }
+    } else if (document.getElementById('weight_que').style.display == 'block') {
+        // min="40" max="230"
+        var weight = document.getElementById("weight").value;
+        console.log(weight)
+        if (weight == null | weight == "") {
+            alert("Weight should be integer");
+        }
+        else if (weight < 40 || weight > 230) {
+            alert("Weight can only be between 40 and 230")
+        }
+        else if (regex.test(weight) == false) {
+            alert("Weight should be integer or decimal step by 0.1")
+        }
+        else {
+            document.getElementById('weight_que').style.display = 'none'
+            document.getElementById('gender_que').style.display = 'block'
+        }
+
+    } else if (document.getElementById('gender_que').style.display == 'block') {
+        document.getElementById('gender_que').style.display = 'none'
+        document.getElementById('bp_que').style.display = 'block'
+    } else if (document.getElementById('bp_que').style.display == 'block') {
+        if (document.getElementById("bloodpressure").style.display == 'block') {
+            // 70 - 228 mmHg
+            var systolicbp = document.getElementById("systolicbp").value;
+            // min="50" max="150"
+            var diastolicbp = document.getElementById("diastolicbp").value;
+
+            // console.log(regex.test(systolicbp))
+            if (regex.test(systolicbp) == false) {
+                alert("Systolic Blood Pressure should be integer or decimal step by 0.1");
+            }
+            else if (systolicbp < 70 || systolicbp > 228) {
+                alert("Systolic Blood Pressure should be between 70 and 228");
+            }
+            else if (regex.test(diastolicbp) == false) {
+                alert("Diastolic Blood Pressure should be integer or decimal step by 0.1");
+            }
+            else if (diastolicbp < 50 || diastolicbp > 150) {
+                alert("Diastolic Blood Pressure should be between 50 and 150");
+            }
+            else {
+                document.getElementById('bp_que').style.display = 'none'
+                document.getElementById('chol_que').style.display = 'block'
+            }
+        }
+        else {
+            document.getElementById('bp_que').style.display = 'none'
+            document.getElementById('chol_que').style.display = 'block'
+        }
+
+    } else if (document.getElementById('chol_que').style.display == 'block') {
+        if (document.getElementById("cholestrol").style.display == 'block') {
+            var totalcholes = document.getElementById("totalcholes").value;
+            // min="2" max="10.5"
+            if (regex.test(totalcholes) == false) {
+                alert("Cholestrol should be integer or decimal step by 0.1");
+            }
+            else if (totalcholes < 2 || totalcholes > 10.5) {
+                alert("Cholestrol should be between 2 and 10.5");
+            }
+            else {
+                document.getElementById('chol_que').style.display = 'none'
+                document.getElementById('sugar_que').style.display = 'block'
+            }
+        }
+        else {
+            document.getElementById('chol_que').style.display = 'none'
+            document.getElementById('sugar_que').style.display = 'block'
+        }
+    } else if (document.getElementById('sugar_que').style.display == 'block') {
+        if (document.getElementById("sugar").style.display == 'block') {
+            var bloodsugar = document.getElementById("bloodsugar").value;
+            // min="1" max="17.4"
+            if (regex.test(bloodsugar) == false) {
+                alert("Sugar should be integer or decimal step by 0.1");
+            }
+            else if (bloodsugar < 1 || bloodsugar > 17.4) {
+                alert("Sugar should be between 1 and 17.4");
+            }
+            else {
+                document.getElementById('sugar_que').style.display = 'none'
+                document.getElementById('smoke_que').style.display = 'block'
+            }
+        }
+        else {
+            document.getElementById('sugar_que').style.display = 'none'
+            document.getElementById('smoke_que').style.display = 'block'
+        }
+
+    } else if (document.getElementById('smoke_que').style.display == 'block') {
+        document.getElementById('smoke_que').style.display = 'none'
+        document.getElementById('alco_que').style.display = 'block'
+    } else if (document.getElementById('alco_que').style.display == 'block') {
+        document.getElementById('alco_que').style.display = 'none'
+        document.getElementById('pa_que').style.display = 'block'
+        document.getElementById('submit_final').style.display = 'block'
+        // document.getElementById('preview').style.display = 'block'
+    }
+}
+
+function prevQue(abc) {
+    console.log(abc);
+    if (document.getElementById('height_que').style.display == 'block') {
+        document.getElementById('height_que').style.display = 'none'
+        document.getElementById('age_que').style.display = 'block'
+    } else if (document.getElementById('weight_que').style.display == 'block') {
+        document.getElementById('height_que').style.display = 'block'
+        document.getElementById('weight_que').style.display = 'none'
+    } else if (document.getElementById('gender_que').style.display == 'block') {
+        document.getElementById('weight_que').style.display = 'block'
+        document.getElementById('gender_que').style.display = 'none'
+    } else if (document.getElementById('bp_que').style.display == 'block') {
+        document.getElementById('gender_que').style.display = 'block'
+        document.getElementById('bp_que').style.display = 'none'
+    } else if (document.getElementById('chol_que').style.display == 'block') {
+        document.getElementById('bp_que').style.display = 'block'
+        document.getElementById('chol_que').style.display = 'none'
+    } else if (document.getElementById('sugar_que').style.display == 'block') {
+        document.getElementById('chol_que').style.display = 'block'
+        document.getElementById('sugar_que').style.display = 'none'
+    } else if (document.getElementById('smoke_que').style.display == 'block') {
+        document.getElementById('sugar_que').style.display = 'block'
+        document.getElementById('smoke_que').style.display = 'none'
+    } else if (document.getElementById('alco_que').style.display == 'block') {
+        document.getElementById('smoke_que').style.display = 'block'
+        document.getElementById('alco_que').style.display = 'none'
+    } else if (document.getElementById('pa_que').style.display == 'block') {
+        document.getElementById('alco_que').style.display = 'block'
+        document.getElementById('pa_que').style.display = 'none'
+        document.getElementById('submit_final').style.display = 'none'
+        // document.getElementById('preview').style.display = 'none'
+    }
+}
+
+// function preview() {
+//     console.log("preview");
+//     document.getElementById('age_que').style.display = 'block'
+//     document.getElementById('height_que').style.display = 'block'
+//     document.getElementById('weight_que').style.display = 'block'
+//     document.getElementById('gender_que').style.display = 'block'
+//     document.getElementById('bp_que').style.display = 'block'
+//     document.getElementById('chol_que').style.display = 'block'
+//     document.getElementById('sugar_que').style.display = 'block'
+//     document.getElementById('smoke_que').style.display = 'block'
+//     document.getElementById('alco_que').style.display = 'block'
+//     document.getElementById('pa_que').style.display = 'block'
+//     document.getElementById('submit_final').style.display = 'block'
+//     document.getElementById('preview').style.display = 'none'
+// }
+
 function bpCheckFunction() {
     if (document.getElementById('bpyes').checked) {
         document.getElementById('bloodpressure').style.display = 'block';
@@ -121,7 +302,7 @@ function addFunction() {
 
                 var div41 = document.createElement("div");
                 div41.className = "d-flex w-25";
-                div41.onclick = function() { deleteFunction(div41); }
+                div41.onclick = function () { deleteFunction(div41); }
                 var itag = document.createElement("i");
                 itag.className = "fas fa-trash";
                 itag.style.fontSize = "30px";
@@ -159,10 +340,9 @@ function validateName(activityname) {
 }
 
 function validateKmsOrHours(kmsorhours) {
-    if(parseInt(kmsorhours) <= 400 && parseInt(kmsorhours) > 0 ){
+    if (parseInt(kmsorhours) <= 400 && parseInt(kmsorhours) > 0) {
         return true;
-    }
-    else{
+    } else {
         return false;
     }
     // var regex = /^([0-9]{1,2})$/;

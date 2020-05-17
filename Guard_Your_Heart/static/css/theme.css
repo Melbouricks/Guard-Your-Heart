@@ -54,11 +54,7 @@
     color:#e5bd95;
 }
 .navheading {
-    color: rgb(223, 88, 55);
-    /* margin: 0 auto; */
-    /* padding-left: 2000; */
-
-    
+    color: rgb(223, 88, 55);  
 }
 .navimg{
     margin-left: 130px;
@@ -82,9 +78,20 @@
      background-size: contain;
      margin-left: 20px;
      margin-top: 10px;
+     border-radius: 10px;
  }
 
  .tryBack {
      background-color: rgb(223, 88, 55);
      ;
  }
+
+ /* .moveButton {
+     border-radius: 10px;
+     background-color: white;
+ } */
+ /* .formBack {
+     background-color: rgb(223, 88, 55);
+     height: 500px;
+ } */
+ 

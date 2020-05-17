@@ -31,8 +31,8 @@ class Utill:
         weight = float(request.form.get('weight'))
         
         if int(request.form.get("bp")) == 1:
-            ap_hi = int(request.form.get('systolicbp'))
-            ap_lo = int(request.form.get('diastolicbp'))
+            ap_hi = float(request.form.get('systolicbp'))
+            ap_lo = float(request.form.get('diastolicbp'))
         else:
             ap_hi = 120
             ap_lo = 80

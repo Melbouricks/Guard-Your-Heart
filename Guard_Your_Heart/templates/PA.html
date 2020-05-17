@@ -21,104 +21,128 @@
         <li class="breadcrumb-item active" aria-current="page">PhysicalActivity</li>
     </ol>
 </nav>
+<!-- <div class="jumbotron jumbotron-fluid theme-box-light"> -->
+
+<!-- </div> -->
 <div class="container-fluid">
-    <!-- heading -->
-    <div class="jumbotron jumbotron-fluid theme-box-light">
-        <div class="container">
-            <div class="row mb-2">
-                <div id="heart"></div>
-                <h1 class="display-3 theme-title1">Physical Activity</h1>
-            </div>
-            <p>Find out physical activity suggestions built for you below</p>
-        </div>
-    </div>
-
-    <!-- show current activity -->
-    <div class="jumbotron jumbotron-fluid" style="background-color: white;">
-        <div class="container" id="current_pa">
-            <h1 class="display-4 mb-3 theme-title2">Your Current Activities</h1>
-            <!-- heading-row -->
-            <div class="row" id="row_heading">
-                <div class="col-sm-6">
-                    <h5>Activity</h5>
-                </div>
-                <div class="col-sm-2">
-                    <h5>Minutes</h5>
-                </div>
-                <div class="col-sm-2">
-                    <h5>Days per week</h5>
-                </div>
-                <div class="col-sm-2">
-                    <h5>Activity intensity</h5>
-                </div>
+    <div class="row">
+        <div class="col-lg-1">
+            <div class="sidenav">
+                <a href="#heart" class="btn btn-warning my-2">Current Activity</a>
+                <a href="#feedbackContain" class="btn btn-warning my-2" id="feed">Feedback</a>
+                <a href="#sug" class="btn btn-warning my-2">Suggestion</a>
             </div>
         </div>
-    </div>
+        <div class="col-lg-11">
+            <div class="container-fluid">
+                <div class="container-md my-5 px-md-5">
+                    <div class="container mt-0 theme-box-light" style="border-radius: 10px;">
+                        <div class="row pt-5">
+                            <div id="heart"></div>
+                            <h1 class="display-4 theme-title1">Physical Activity</h1>
+                        </div>
+                        <div class="row" style="margin-left: 85px;">
+                            <p>Find out physical activity suggestions built for you below</p>
+                        </div>
+                    </div>
 
-    <!-- give feedback -->
-    <div class="jumbotron jumbotron-fluid theme-box-light">
-        <div class="container" id="feedback">
-            <div class="row mb-3">
-                <div id="light" class="col-sm-4">
-                    <h4 class="theme-title1">Light activities:</h4>
+
+                    <!-- show current activity -->
+                    <div class="container-fluid mt-5" style="background-color: white;">
+                        <div class="container" id="current_pa">
+                            <h1 class="display-4 mb-3 theme-title2">Your Current Activities</h1>
+                            <!-- heading-row -->
+                            <div class="row" id="row_heading">
+                                <div class="col-sm-6">
+                                    <h5>Activity</h5>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h5>Minutes</h5>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h5>Days per week</h5>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h5>Intensity</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- give feedback -->
+                    <div class="jumbotron jumbotron-fluid theme-box-light mt-5" id="feedbackContain" style="border-radius: 10px;">
+                        <div class="container" id="feedback">
+                            <h1 class="display-4 mb-5 theme-title1">Feedback</h1>
+                            <div class="row mb-3">
+                                <div id="light" class="col-sm-4">
+                                    <h4 class="theme-title1">Light activities:</h4>
+                                </div>
+                                <div id="moderate" class="col-sm-4">
+                                    <h4 class="theme-title1">Moderate activities:</h4>
+                                </div>
+                                <div id="vigorous" class="col-sm-4">
+                                    <h4 class="theme-title1">Vigorous activities:</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- show activities based on intensity -->
+                    <div class="jumbotron jumbotron-fluid" style="background-color:white" id="sug">
+                        <div class="container">
+                            <h1 class="display-4 mb-3 theme-title2">Physical Activity Suggestions</h1>
+                            <div class="row">
+                                <button type="button" class="btn btn-info mb-3 col-sm-3 mr-5" onclick="tableAjax(this)"
+                                    id="myButton1">See
+                                    light activities here</button>
+
+                                <button type="button" class="btn btn-info mb-3 col-sm-3 mr-5" onclick="tableAjax(this)"
+                                    id="myButton2">See
+                                    moderate
+                                    activities here</button>
+                                <button type="button" class="btn btn-info mb-3 col-sm-3" onclick="tableAjax(this)"
+                                    id="myButton3">See
+                                    vigorous
+                                    activities here</button>
+                            </div>
+
+                            <div id="activityTable" style="display: none;">
+                                <input class="form-control" id="myInput" type="text" placeholder="Search..">
+                                <br>
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Heading</th>
+                                            <th>Activity</th>
+                                            <th>Intensity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="myTable">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="container-fluid theme-box-light" style="border-radius: 10px;">
+                        <div class="container-md my-5 py-5">
+                            <div class="row">
+                                <div class="col-6"><a href="{{ url_for('results')}}" class="btn btn-info">Results</a>
+                                </div>
+                                <div class="col-6"><a href="{{ url_for('diet')}}" class="btn btn-info"
+                                        style="float: right;">Diet</a></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="moderate" class="col-sm-4">
-                    <h4 class="theme-title1">Moderate activities:</h4>
-                </div>
-                <div id="vigorous" class="col-sm-4">
-                    <h4 class="theme-title1">Vigorous activities:</h4>
-                </div>
-            </div>
-            <h1 class="display-4 mb-3 theme-title1 py-2">Feedback</h1>
-        </div>
-    </div>
-
-    <!-- show activities based on intensity -->
-    <div class="jumbotron jumbotron-fluid" style="background-color:white">
-        <div class="container">
-            <h1 class="display-4 mb-3 theme-title2">Physical Activity Suggestions</h1>
-            <div class="row">
-                <button type="button" class="btn btn-info mb-3 col-sm-3 mr-5" onclick="tableAjax(this)"
-                    id="myButton1">See
-                    light activities here</button>
-
-                <button type="button" class="btn btn-info mb-3 col-sm-3 mr-5" onclick="tableAjax(this)"
-                    id="myButton2">See
-                    moderate
-                    activities here</button>
-                <button type="button" class="btn btn-info mb-3 col-sm-3" onclick="tableAjax(this)" id="myButton3">See
-                    vigorous
-                    activities here</button>
-            </div>
-
-            <div id="activityTable" style="display: none;">
-                <input class="form-control" id="myInput" type="text" placeholder="Search..">
-                <br>
-                <table class="table table-bordered table-striped">
-                    <thead>
-                        <tr>
-                            <th>Heading</th>
-                            <th>Activity</th>
-                            <th>Intensity</th>
-                        </tr>
-                    </thead>
-                    <tbody id="myTable">
-
-                    </tbody>
-                </table>
             </div>
         </div>
     </div>
 </div>
+<!-- heading -->
 
-<div class="container-fluid theme-box-light">
-    <div class="container-md my-5 py-5">
-        <div class="row">
-            <div class="col-6"><a href="{{ url_for('results')}}" class="btn btn-info">Results</a></div>
-            <div class="col-6"><a href="{{ url_for('diet')}}" class="btn btn-info" style="float: right;">Diet</a></div>
-        </div>
-    </div>
-</div>
 
 <script type="text/javascript">
     $(document).ready(function () {
@@ -144,8 +168,6 @@
         var msg3 = "See vigorous activities here";
         var msg4 = "Close the table";
 
-
-        
         if (temp.innerHTML != msg4) {
             $("#myButton1").html(msg1);
             $("#myButton2").html(msg2);
@@ -154,7 +176,7 @@
             activityTable.style = "";
             callAjax(butId);
         }
-        else{
+        else {
             $("#myButton1").html(msg1);
             $("#myButton2").html(msg2);
             $("#myButton3").html(msg3);
@@ -220,11 +242,13 @@
         var row_heading = document.getElementById("row_heading");
         row_heading.style = "display:none"
         var msg = document.createElement("p");
-        msg.innerHTML = "You are not doing any physical activities."
-        msg.className = "lead text-justify py-2";
+        msg.className = "lead text-justify"
+        msg.innerHTML = "You have not added any physical activities."
         var msg2 = document.createElement("p");
-        msg2.innerHTML = "Scroll down to view Physical Activity suggestions."
-        msg2.className = "lead text-justify py-2";
+        msg2.className = "lead text-justify"
+        msg2.innerHTML = "We found some activities you may interested in, please scroll down and check."
+        document.getElementById("feedbackContain").style.display = "none";
+        document.getElementById("feed").style.display = "none";
         current_pa.appendChild(msg);
         current_pa.appendChild(msg2);
     }
