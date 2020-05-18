@@ -1,5 +1,5 @@
 from flask import render_template, url_for, request, session, redirect
-from Guard_Your_Heart import app
+from Guard_Your_Heart import app, df
 from Guard_Your_Heart.utils import Utill 
 import json
 import random, string
@@ -73,7 +73,47 @@ def diet():
     if 'user' in session:
         data = session['indi']
         print(data)
-        return render_template("diet.html", route="diet", data = data)
+        if data['cholestrol'] <= 2:
+            # Normal Cholesterol
+            if data['gluc'] <= 2:
+                # Normal Glucose
+                # Get items for CVD only
+                hdf = df[df['CVD'] == 2]
+                dict1 = hdf.groupby('Sub_Category')['Name'].apply(list).to_dict()
+
+                hdf = df[df['CVD'] == 1]
+                dict2 = hdf.groupby('Sub_Category')['Name'].apply(list).to_dict()
+
+            else:
+                # High Glucose
+                # Get items for High Sugar and CVD
+                hdf = df[(df['CVD'] == 2) & (df['High_Sugar'] == 2)]
+                dict1 = hdf.groupby('Sub_Category')['Name'].apply(list).to_dict()
+
+                hdf = df[(df['CVD'] == 1) & (df['High_Sugar'] == 1)]
+                dict2 = hdf.groupby('Sub_Category')['Name'].apply(list).to_dict()
+
+        else:
+            # High Cholesterol
+            if data['gluc'] <= 2:
+                # Normal Glucose
+                # Get items for High Cholesterol and CVD
+                hdf = df[(df['CVD'] == 2) & (df['High_Cholesterol'] == 2)]
+                dict1 = hdf.groupby('Sub_Category')['Name'].apply(list).to_dict()
+
+                hdf = df[(df['CVD'] == 1) & (df['High_Cholesterol'] == 1)]
+                dict2 = hdf.groupby('Sub_Category')['Name'].apply(list).to_dict()
+
+            else:
+                # High Glucose
+                # Get items for CVD, High Sugar and High Cholesterol
+                hdf = df[(df['CVD'] == 2) & (df['High_Cholesterol'] == 2) & (df['High_Sugar'] == 2)]
+                dict1 = hdf.groupby('Sub_Category')['Name'].apply(list).to_dict()
+
+                hdf = df[(df['CVD'] == 1) & (df['High_Cholesterol'] == 1) & (df['High_Sugar'] == 1)]
+                dict2 = hdf.groupby('Sub_Category')['Name'].apply(list).to_dict()
+
+        return render_template("diet.html", route="diet", data=data, data1=dict1, data2=dict2)
     else:
         return redirect(url_for('initlogin'))
     

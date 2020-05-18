@@ -18,8 +18,7 @@
     <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center" id="risk" >
         <h1 class="display-4 pb-4 text-center theme-title2">Cardivascular Disease Risk</h1>
         <div class="progress w-50 mx-auto">
-            <div class="progress-bar theme-box-color bar" style="width:{{ data.res }}%">
-            </div>
+            <div class="progress-bar theme-box-color bar" style="width:{{ data.res }}%"></div>
         </div>
         <div class="row w-50 mx-auto">
             <div class="col p-0 text-left">
@@ -59,8 +58,8 @@
             </div>
             <div class="col-md-4 px-4">
                 {% if data.indicator[0] == 0 %}
-                    <i class="fas fa-question-circle d-inline pr-2" style="font-size:32px;"></i>
-                    <p class="lead d-inline">Do not know</p>
+                    <i class="fas fa-exclamation-circle d-inline pr-2" style="font-size:32px;"></i>
+                    <p class="lead d-inline">Unknown</p>
                 {% elif data.cholestrol <=2 %} 
                     <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
                     <p class="lead d-inline">Under Control</p>
@@ -74,7 +73,7 @@
             <div class="col-md-4 px-4">
                 <div class="d-flex flex-column text-right">
                     <h3>Sugar</h3>
-                    <p>Causes blockage in arteries</p>
+                    <p>Causes weight gain</p>
                 </div>
             </div>
             <div class="col-md-4 px-4">
@@ -90,7 +89,7 @@
             </div>
             <div class="col-md-4 px-4">
                 {% if data.indicator[1] == 0 %}
-                    <i class="fas fa-question-circle d-inline pr-2" style="font-size:32px;"></i>
+                    <i class="fas fa-exclamation-circle d-inline pr-2" style="font-size:32px;"></i>
                     <p class="lead d-inline">Do not know</p>
                 {% elif data.gluc <=2 %} 
                     <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
@@ -105,7 +104,7 @@
             <div class="col-md-4 px-4">
                 <div class="d-flex flex-column text-right">
                     <h3>Body Mass Index (BMI)</h3>
-                    <p>Causes blockage in arteries</p>
+                    <p>High BMI increases CVD risk</p>
                 </div>
             </div>
             <div class="col-md-4 px-4">
@@ -123,24 +122,21 @@
             </div>
             <div class="col-md-4 px-4">
                 {% if data.bmi< 18.5 %} 
-                    <i class="fa fa-exclamation-triangle d-inline pr-2" style="font-size:32px;"></i>
+                    <i class="fa fa-exclamation-circle d-inline pr-2" style="font-size:32px;"></i>
                     <p class="lead d-inline">Under Weight</p>
                 {% elif data.bmi< 24.9 %}
-                    <i class="fa fa-check d-inline pr-2" style="font-size:32px;">
-                    </i>
+                    <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
                     <p class="lead d-inline">Normal Weight</p>
                 {% elif data.bmi < 29.9 %}
-                    <i class="fa fa-exclamation-triangle d-inline pr-2" style="font-size:32px;">
-                    </i>
+                    <i class="fa fa-exclamation-circle d-inline pr-2" style="font-size:32px;"></i>
                     <p class="lead d-inline">Overweight</p>
                 {% else %}
-                    <i class="fa fa-exclamation-triangle d-inline pr-2" style="font-size:32px;"></i>
+                    <i class="fa fa-exclamation-circle d-inline pr-2" style="font-size:32px;"></i>
                     <p class="lead d-inline">Obese</p>
                 {% endif %}
             </div>
         </div>
     </div>
-</div>
 </div>
 
 <!-- show current activity -->
@@ -197,7 +193,6 @@
             </div>
         </div>
     </div>
-</div>
 </div>
 
 <div class="side-nav">
