@@ -20,6 +20,6 @@ class Assessment(db.Model):
         return '<%r>' % self.id
 
     def addData(test):
-        db.session.add(test)
-        db.session.commit()
+        # db.session.add(test)
+        # db.session.commit()
         return 'done'
