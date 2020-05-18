@@ -1,0 +1,1422 @@
+Public Food Key,Classification,Name,Energy_kCal,Total_fibre_g,Has_High_Fibre,Category,Sub_Category,High_Cholesterol,High_Sugar,CVD
+F004220,12103,"Gluten, from wheat (vital wheat gluten)",360.1816443594646,0.6,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F008831,24102,"Starch, potato",318.35564053537286,5.9,True,Potato Fries,Potato Fries,0,0,0
+F000996,29101,"Beer, high alcohol (5% v/v & above)",42.06500956022944,0,False,Alcohol,Alcohol,0,1,1
+F000994,29101,"Beer, full strength (alcohol 4-4.9% v/v)",36.5678776290631,0,False,Alcohol,Alcohol,0,1,1
+F000995,29101,"Beer, full strength (alcohol 4-4.9% v/v), carbohydrate modified",30.353728489483746,0,False,Alcohol,Alcohol,0,1,1
+F001006,29102,"Beer, mid-strength (alcohol 3-3.9% v/v)",30.83173996175908,0,False,Alcohol,Alcohol,0,1,1
+F001004,29102,"Beer, light (alcohol 1- less than 3% v/v)",24.1395793499044,0,False,Alcohol,Alcohol,0,1,1
+F000051,29301,"Alcoholic beverage, spirit, approximately 40% v/v, all (Brandy, Gin, Rum, Vodka and Whisky)",204.82791586998087,0,False,Alcohol,Alcohol,0,1,1
+F000050,29301,"Alcoholic beverage, spirit, approximately 30% v/v, all (Brandy, Gin, Rum, Vodka and Whisky), cooked",69.31166347992351,0,False,Alcohol,Alcohol,0,1,1
+F009572,29201,"Wine, red, cabernet sauvignon",78.63288718929255,0,False,Alcohol,Alcohol,0,1,1
+F009574,29201,"Wine, red, merlot",77.91586998087953,0,False,Alcohol,Alcohol,0,1,1
+F009575,29201,"Wine, red, pinot noir",76.0038240917782,0,False,Alcohol,Alcohol,0,1,1
+F009577,29201,"Wine, red, shiraz",80.78393881453155,0,False,Alcohol,Alcohol,0,1,1
+F009571,29201,"Wine, red",79.34990439770554,0,False,Alcohol,Alcohol,0,1,1
+F009573,29201,"Wine, red, cooked",29.15869980879541,0,False,Alcohol,Alcohol,0,1,1
+F009578,29201,"Wine, red, sparkling",80.78393881453155,0,False,Alcohol,Alcohol,0,1,1
+F009579,29201,"Wine, rose",69.07265774378585,0,False,Alcohol,Alcohol,0,1,1
+F009583,29202,"Wine, white, sauvignon blanc",70.02868068833652,0,False,Alcohol,Alcohol,0,1,1
+F009584,29202,"Wine, white, semillon",63.81453154875717,0,False,Alcohol,Alcohol,0,1,1
+F009582,29202,"Wine, white, chardonnay",73.37476099426387,0,False,Alcohol,Alcohol,0,1,1
+F009586,29202,"Wine, white, riesling",69.78967495219885,0,False,Alcohol,Alcohol,0,1,1
+F009581,29202,"Wine, white",71.94072657743786,0,False,Alcohol,Alcohol,0,1,1
+F009580,29202,"Wine, white, cooked",25.5736137667304,0,False,Alcohol,Alcohol,0,1,1
+F009590,29202,"Wine, white, sparkling",73.1357552581262,0,False,Alcohol,Alcohol,0,1,1
+F009592,29202,"Wine, white, sweet dessert style",123.56596558317399,0,False,Alcohol,Alcohol,0,1,1
+F009566,29203,"Wine, fortified, port",149.13957934990438,0,False,Alcohol,Alcohol,0,1,1
+F009567,29203,"Wine, fortified, sherry, dry style (approximately 1% sugars)",103.0114722753346,0,False,Alcohol,Alcohol,0,1,1
+F009568,29203,"Wine, fortified, sherry, sweet style (approximately 11% sugars)",141.96940726577438,0,False,Alcohol,Alcohol,0,1,1
+F002980,11804,Cocoa powder,312.3804971319312,27.7,True,Flavoured Beverage,Flavoured Beverage,0,1,0
+F001029,11802,"Beverage base, chocolate flavour, added vitamins A, B1, B2, C & D, Ca & Fe (Milo)",398.1835564053537,9.1,True,Flavoured Beverage,Flavoured Beverage,0,1,0
+F001068,11801,"Beverage, chocolate flavour, from Milo powder, with regular fat cows milk",99.66539196940727,0.8,False,Flavoured Beverage,Flavoured Beverage,0,1,0
+F001036,11804,"Beverage base, drinking chocolate, unfortified",360.4206500956023,1.5,False,Flavoured Beverage,Flavoured Beverage,0,1,0
+F001064,11803,"Beverage, chocolate flavour, from drinking chocolate, with regular fat cows milk",90.10516252390057,0.1,False,Flavoured Beverage,Flavoured Beverage,0,1,0
+F003060,11205,"Coffee, instant, dry powder or granules",140.53537284894836,20.6,True,Coffee,Coffee,0,0,2
+F003017,11201,"Coffee, black, from instant coffee powder",1.1950286806883366,0.2,True,Coffee,Coffee,0,0,2
+F003061,11205,"Coffee, instant, dry powder or granules, decaffeinated",124.76099426386233,20.6,True,Coffee,Coffee,0,0,2
+F003018,11203,"Coffee, black, from instant coffee powder, decaffeinated",1.1950286806883366,0.2,True,Coffee,Coffee,0,0,2
+F003041,11201,"Coffee, espresso, from ground coffee beans",9.560229445506693,0,False,Coffee,Coffee,0,0,2
+F003036,11202,"Coffee, cappuccino, from ground coffee beans, with regular fat cows milk",54.73231357552581,0,False,Coffee,Coffee,0,0,2
+F003048,11202,"Coffee, flat white or latte, from ground coffee beans, with regular fat cows milk",55.927342256214146,0,False,Coffee,Coffee,0,0,2
+F003065,11201,"Coffee, long black, from ground coffee beans",1.9120458891013383,0,False,Coffee,Coffee,0,0,2
+F003130,11403,"Cordial base, 25% citrus fruit juice, regular",176.62523900573612,0,False,Cordial,Cordial,0,1,0
+F003158,11401,"Cordial, 25% citrus fruit juice, regular, recommended dilution",35.61185468451243,0,False,Cordial,Cordial,0,1,0
+F003135,11403,"Cordial base, 40% citrus fruit juice, regular",192.1606118546845,0,False,Cordial,Cordial,0,1,0
+F003160,11401,"Cordial, 40% citrus fruit juice, regular, recommended dilution",38.718929254302104,0,False,Cordial,Cordial,0,1,0
+F003128,11403,"Cordial base, 5% blackcurrant juice, regular",269.12045889101336,0,False,Cordial,Cordial,0,1,0
+F003156,11401,"Cordial, 25% blackcurrant juice, regular, recommended dilution",47.801147227533455,0,False,Cordial,Cordial,0,1,0
+F004099,11307,"Fruit drink, apple juice",40.152963671128106,0,False,Fruit Juice,Fruit Juice,1,1,1
+F004102,11307,"Fruit drink, cranberry",45.172084130019115,0.1,False,Fruit Juice,Fruit Juice,1,1,1
+F004114,11307,"Fruit drink, orange juice",43.977055449330784,0.1,False,Fruit Juice,Fruit Juice,1,1,1
+F004663,11301,"Juice, apple, commercial, added vitamin C",30.353728489483746,0.2,False,Fruit Juice,Fruit Juice,1,1,1
+F004656,11301,"Juice, apple & blackcurrant, commercial",40.86998087954111,0,False,Fruit Juice,Fruit Juice,1,1,1
+F004726,11301,"Juice, lemon",28.680688336520074,2.6,True,Fruit Juice,Fruit Juice,1,1,1
+F004729,11301,"Juice, lime",30.592734225621413,4.3,True,Fruit Juice,Fruit Juice,1,1,1
+F004739,11301,"Juice, orange, commercial",27.963671128107073,0.3,False,Fruit Juice,Fruit Juice,1,1,1
+F004731,11301,"Juice, orange & mango, commercial",36.32887189292543,0.2,False,Fruit Juice,Fruit Juice,1,1,1
+F008402,11503,"Soft drink, cola flavour",51.1472275334608,0,False,Soft Drink,Soft Drink,1,1,1
+F008403,11503,"Soft drink, cola flavour, decaffeinated",51.1472275334608,0,False,Soft Drink,Soft Drink,1,1,1
+F008421,11603,"Soft drink, energy drink, Red Bull",45.650095602294456,0,False,Soft Drink,Soft Drink,1,1,1
+F008424,11603,"Soft drink, energy drink, V",45.650095602294456,0,False,Soft Drink,Soft Drink,1,1,1
+F008438,11501,"Soft drink, lemonade and fruit flavours",35.37284894837476,0,False,Soft Drink,Soft Drink,1,1,1
+F008439,11502,"Soft drink, lemonade and fruit flavours, intense sweetened or diet",0.2390057361376673,0,False,Soft Drink,Soft Drink,1,1,1
+F008460,11501,"Soft drink, tonic water",34.894837476099426,0,False,Soft Drink,Soft Drink,1,1,1
+F008461,11502,"Soft drink, tonic water, intense sweetened or diet",0.2390057361376673,0,False,Soft Drink,Soft Drink,1,1,1
+F009117,11101,"Tea, green, plain, without milk",1.6730401529636711,0,False,Tea,Green Tea,0,0,2
+F009125,11101,"Tea, regular, black, brewed from leaf or teabags, without milk",0.4780114722753346,0,False,Tea,Tea,0,0,0
+F009115,11103,"Tea, decaffeinated, black, brewed from leaf or teabags, without milk",1.4340344168260037,0,False,Tea,Tea,0,0,0
+F001152,13204,"Biscuit, savoury, rice cracker, plain",376.9120458891013,1.6,False,Savoury Biscuit,Savoury Biscuit,1,1,0
+F001153,13204,"Biscuit, savoury, rice cracker, seaweed flavoured",358.50860420650093,1.6,False,Savoury Biscuit,Savoury Biscuit,1,1,0
+F001151,13204,"Biscuit, savoury, rice cracker, flavoured (excluding cheese or seaweed)",430.4493307839388,2,False,Savoury Biscuit,Savoury Biscuit,1,1,0
+F001122,13202,"Biscuit, savoury, from white wheat flour, cheese-flavoured",498.565965583174,2.9,False,Savoury Biscuit,Savoury Biscuit,1,1,0
+F001125,13202,"Biscuit, savoury, from white wheat flour, flavoured (excluding cheese)",501.43403441682597,2,False,Savoury Biscuit,Savoury Biscuit,1,1,0
+F001126,13202,"Biscuit, savoury, from white wheat flour, plain snack cracker style",490.4397705544933,3.4,False,Savoury Biscuit,Savoury Biscuit,1,1,0
+F001123,13202,"Biscuit, savoury, from white wheat flour, flaky cracker style",490.2007648183556,3,False,Savoury Biscuit,Savoury Biscuit,1,1,0
+F001133,13201,"Biscuit, savoury, from white wheat flour, water cracker style",426.8642447418738,2.8,False,Savoury Biscuit,Savoury Biscuit,1,1,0
+F001137,13201,"Biscuit, savoury, from wholemeal wheat flour, crispbread",395.5544933078394,9.1,True,Savoury Biscuit,Savoury Biscuit,1,1,0
+F001135,13201,"Biscuit, savoury, from wholemeal wheat flour & rye flour, crispbread, puffed",381.2141491395793,7.6,True,Savoury Biscuit,Savoury Biscuit,1,1,0
+F001165,13101,"Biscuit, sweet, Anzac style, homemade from basic ingredients",470.36328871892925,3.1,False,Sweet Biscuit,Sweet Biscuit,1,1,0
+F001168,13106,"Biscuit, sweet, biscuit base, mint filling, chocolate-coated",521.2715105162524,0.6,False,Sweet Biscuit,Sweet Biscuit,1,1,0
+F001170,13105,"Biscuit, sweet, chocolate chip",471.3193116634799,1.6,False,Sweet Biscuit,Sweet Biscuit,1,1,0
+F001215,13101,"Biscuit, sweet, plain",435.4684512428298,2,False,Sweet Biscuit,Sweet Biscuit,1,1,0
+F001234,13106,"Biscuit, sweet, sandwich, cream filling, chocolate-coated",502.62906309751435,1.4,False,Sweet Biscuit,Sweet Biscuit,1,1,0
+F001233,13104,"Biscuit, sweet, sandwich, cream & jam filling",472.7533460803059,1.8,False,Sweet Biscuit,Sweet Biscuit,1,1,0
+F001251,13101,"Biscuit, sweet, wheatmeal",412.0458891013384,5.6,False,Sweet Biscuit,Sweet Biscuit,1,1,0
+F003095,13101,"Cone, wafer style, for ice cream",352.2944550669216,3.2,False,Sweet Biscuit,Sweet Biscuit,1,1,0
+F001683,12201,"Breadcrumbs, white",364.4837476099426,4.3,False,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001387,12203,"Bread, damper, from white flour, homemade",259.08221797323137,3.3,False,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001420,12302,"Bread, flat, white, commercial",263.3843212237094,3.7,True,"Muffins, Flat, Savoury or Sweet Bread","Muffins, Flat, Savoury or Sweet Bread",1,1,0
+F001404,12302,"Bread, flat (pita or Lebanese), wholemeal, commercial",256.69216061185466,6.4,True,"Muffins, Flat, Savoury or Sweet Bread","Muffins, Flat, Savoury or Sweet Bread",1,1,0
+F001463,12201,"Bread, from white flour",239.0057361376673,2.9,False,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001541,12201,"Bread, from white flour, toasted",284.4168260038241,3.5,False,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001466,12202,"Bread, from white flour, added calcium",239.0057361376673,2.9,False,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001467,12202,"Bread, from white flour, added calcium, toasted",277.9636711281071,3.4,False,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001468,12202,"Bread, from white flour, added fibre",245.45889101338432,6.4,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001479,12202,"Bread, from white flour, added fibre, toasted",292.06500956022944,7.7,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001482,12202,"Bread, from white flour, added iron",239.0057361376673,2.9,False,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001483,12202,"Bread, from white flour, added iron, toasted",277.9636711281071,3.4,False,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001484,12202,"Bread, from white flour, added omega-3 polyunsaturates",251.19502868068832,3.1,False,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001485,12202,"Bread, from white flour, added omega-3 polyunsaturates, toasted",292.06500956022944,3.6,False,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001543,12202,"Bread, from white Jackaroo flour, added fibre and vitamins B1 & folate & Fe",251.434034416826,6.5,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001544,12202,"Bread, from white Jackaroo flour, added fibre and vitamins B1 & folate & Fe, toasted",295.8891013384321,7.6,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001528,12201,"Bread, from white flour, Italian-style, commercial",255.736137667304,3.9,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001529,12201,"Bread, from white flour, Italian-style, commercial, toasted",304.49330783938814,4.6,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001353,12201,"Bread roll, from white flour",252.868068833652,3,False,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001358,12201,"Bread roll, from white flour, toasted",293.97705544933075,3.5,False,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001372,12304,"Bread roll, topped with cheese",281.78776290630975,2.4,False,"Muffins, Flat, Savoury or Sweet Bread","Muffins, Flat, Savoury or Sweet Bread",1,1,0
+F001373,12304,"Bread roll, topped with cheese & bacon",281.3097514340344,1.8,False,"Muffins, Flat, Savoury or Sweet Bread","Muffins, Flat, Savoury or Sweet Bread",1,1,0
+F001553,12207,"Bread, from wholemeal flour",232.07456978967494,6.2,True,Regular Bread or Bread Rolls,Wholemeal Bread,0,2,2
+F001597,12207,"Bread, from wholemeal flour, toasted",272.944550669216,7.3,True,Regular Bread or Bread Rolls,Wholemeal Bread,0,2,2
+F001573,12207,"Bread, from wholemeal flour, extra grainy & seeds",254.302103250478,7.1,True,Regular Bread or Bread Rolls,Wholemeal Bread,0,2,2
+F001576,12207,"Bread, from wholemeal flour, extra grainy & seeds, toasted",298.9961759082218,8.4,True,Regular Bread or Bread Rolls,Wholemeal Bread,0,2,2
+F001360,12207,"Bread roll, from wholemeal flour",261.7112810707457,5.8,True,Regular Bread or Bread Rolls,Wholemeal Bread,0,2,2
+F001364,12207,"Bread roll, from wholemeal flour, toasted",307.83938814531547,6.9,True,Regular Bread or Bread Rolls,Wholemeal Bread,0,2,2
+F001545,12203,"Bread, from white or wholemeal flour, organic",247.13193116634798,5.6,True,Regular Bread or Bread Rolls,Wholemeal Bread,0,2,2
+F001548,12203,"Bread, from white or wholemeal flour, organic, toasted",290.6309751434034,6.6,True,Regular Bread or Bread Rolls,Wholemeal Bread,0,2,2
+F001621,12204,"Bread, mixed grain",250.23900573613767,5.8,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001644,12204,"Bread, mixed grain, toasted",294.4550669216061,6.9,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001513,12204,"Bread, from white flour, extra grainy & seeds",266.25239005736137,5.3,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001514,12204,"Bread, from white flour, extra grainy & seeds, toasted",313.09751434034416,6.2,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001365,12204,"Bread roll, mixed grain",245.45889101338432,5.6,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001368,12204,"Bread roll, mixed grain, toasted",288.95793499043975,6.6,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001671,12201,"Bread, from white flour, Turkish",247.37093690248565,3.6,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001672,12201,"Bread, from white flour, Turkish, toasted",294.6940726577438,4.3,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001457,12305,"Bread, from white flour, added dried fruit",275.09560229445503,2.8,False,"Muffins, Flat, Savoury or Sweet Bread","Muffins, Flat, Savoury or Sweet Bread",1,1,0
+F001458,12305,"Bread, from wheat flour, added dried fruit, toasted",305.68833652007646,3.1,False,"Muffins, Flat, Savoury or Sweet Bread","Muffins, Flat, Savoury or Sweet Bread",1,1,0
+F001600,12307,"Bread, garlic or herb, commercial, cooked",334.84703632887187,3.2,False,"Muffins, Flat, Savoury or Sweet Bread","Muffins, Flat, Savoury or Sweet Bread",1,1,0
+F001601,12307,"Bread, garlic or herb, homemade, cooked",309.0344168260038,3.6,False,"Muffins, Flat, Savoury or Sweet Bread","Muffins, Flat, Savoury or Sweet Bread",1,1,0
+F001603,12213,"Bread, gluten free",212.23709369024857,3.9,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001609,12213,"Bread, gluten free, toasted",252.62906309751432,4.6,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001450,12210,"Bread, from rye flour, sour dough",234.22562141491395,5.2,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001451,12210,"Bread, from rye flour, sour dough, toasted",275.5736137667304,6.1,True,Regular Bread or Bread Rolls,Regular Bread or Bread Rolls,0,0,0
+F001940,12305,"Bun, sweet, with dried fruit, uniced",284.65583173996174,3.4,False,"Muffins, Flat, Savoury or Sweet Bread","Muffins, Flat, Savoury or Sweet Bread",1,1,0
+F001939,12306,"Bun, sweet, with dried fruit, iced",285.3728489483747,1.9,False,"Muffins, Flat, Savoury or Sweet Bread","Muffins, Flat, Savoury or Sweet Bread",1,1,0
+F003313,13606,"Crumpet, from white flour, toasted",203.39388145315488,2.5,False,"Doughnuts, Pancakes & Pikelets","Doughnuts, Pancakes & Pikelets",0,1,0
+F005896,12301,"Muffin, English style, from white flour",224.18738049713193,3.2,True,"Muffins, Flat, Savoury or Sweet Bread","Muffins, Flat, Savoury or Sweet Bread",1,1,0
+F005898,12301,"Muffin, English style, from white flour, toasted",243.54684512428298,3.4,False,"Muffins, Flat, Savoury or Sweet Bread","Muffins, Flat, Savoury or Sweet Bread",1,1,0
+F005897,12301,"Muffin, English style, from white flour, added dried fruit, toasted",247.848948374761,3.6,True,"Muffins, Flat, Savoury or Sweet Bread","Muffins, Flat, Savoury or Sweet Bread",1,1,0
+F001688,11805,"Breakfast cereal, beverage, non-chocolate flavours, added vitamins A, B1, B2, B3, B6, B12, C & folate & Ca",78.63288718929255,0.8,False,,,0,0,0
+F001708,12501,"Breakfast cereal, flakes of corn, unfortified",371.17590822179733,4,False,,,0,0,0
+F001701,12502,"Breakfast cereal, flakes of corn, added vitamins B1, B2, B3, C & folate, Fe & Zn",374.0439770554493,3.2,False,,,0,0,0
+F001720,12512,"Breakfast cereal, mixed grain (rice & wheat), flakes, added vitamins B1, B2, B3, B6 & folate, Ca, Fe & Zn",398.9005736137667,2.7,False,,,0,0,0
+F001733,12515,"Breakfast cereal, mixed grain (wheat & oat), flakes, apricot & sultana, added vitamins B1, B2, B3 & folate & Fe",350.8604206500956,8.2,True,,,0,0,0
+F001767,12513,"Breakfast cereal, mixed grain (wheat, oat & corn), extruded, added vitamins B1, B2, B3, B6, C & folate, Ca & Fe",370.697896749522,2.5,False,,,0,0,0
+F001788,12511,"Breakfast cereal, mixed grain (wheat, rice & oat), flakes, honey, unfortified",355.64053537284894,12.5,True,,,0,0,0
+F001811,12503,"Breakfast cereal, puffed or popped rice, no added sugar or salt, unfortified",384.321223709369,2.8,False,,,0,0,0
+F001803,12504,"Breakfast cereal, puffed or popped rice, added vitamins B1, B2, B3, C & folate, Fe & Zn",372.6099426386233,2.1,False,,,0,0,0
+F001807,12504,"Breakfast cereal, puffed or popped rice, cocoa coating, added vitamins B1, B2, B3, C & folate, Ca, Fe & Zn",384.79923518164435,2.6,False,,,0,0,0
+F001823,12509,"Breakfast cereal, wheat bran, flakes, sultanas, added vitamins B1, B2, B3, B6 & folate, Fe & Zn",332.4569789674952,14.8,True,,,0,0,0
+F001829,12506,"Breakfast cereal, wheat bran, pellets, added vitamins B1, B2 & folate",314.5315487571702,27.5,True,,,0,0,0
+F001849,12505,"Breakfast cereal, whole wheat, biscuit, no added sugar, unfortified",348.9483747609942,11.5,True,,,0,0,0
+F001844,12506,"Breakfast cereal, whole wheat, biscuit, added vitamins B1, B2, B3 & folate, Fe & Zn",346.7973231357552,11.1,True,,,0,0,0
+F001845,12506,"Breakfast cereal, whole wheat, biscuit, bran, added vitamins B1, B2, B3 & folate & Fe",356.3575525812619,17,True,,,0,0,0
+F001862,12509,"Breakfast cereal, whole wheat, flakes, dried fruit & nuts, added fibre, vitamins B1, B2, B3 & folate, Ca & Fe",359.4646271510516,15.5,True,,,0,0,0
+F001871,12505,"Breakfast cereal, whole wheat, puffed, no added sugar or salt, unfortified",337.95411089866155,9.2,True,,,0,0,0
+F005856,12514,"Muesli, toasted, added dried fruit & nuts, unfortified",401.52963671128106,11.4,True,,,0,0,0
+F005857,12514,"Muesli, untoasted or natural style, added dried fruit, unfortified",393.4034416826004,9.4,True,,,0,0,0
+F001374,13303,"Bread, banana",292.5430210325048,1.5,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F008273,13306,"Slice, brownie, chocolate, without nuts, commercial",414.67495219885274,2.6,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F008272,13306,"Slice, brownie, chocolate, with nuts, homemade",458.65200764818354,1.9,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F002021,13303,"Cake mix, plain, dry powder",383.1261950286807,1.4,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F002100,13303,"Cake, carrot, commercial, iced",400.33460803059273,1.5,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F002102,13303,"Cake, carrot, homemade, uniced",333.1739961759082,2.2,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F002101,13303,"Cake, carrot, homemade, iced",336.9980879541109,1.8,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F002112,13301,"Cake, chocolate, homemade, uniced",371.17590822179733,2.9,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F002111,13301,"Cake, chocolate, homemade, iced",370.93690248565963,2.6,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F002150,13303,"Cake, fruit, homemade, uniced",291.34799235181646,3,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F002159,13302,"Cake, lamington, unfilled",294.6940726577438,2.4,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F002163,13301,"Cake, mud, dark chocolate, commercial, chocolate ganache icing",338.1931166347992,2.6,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F002165,13301,"Cake, mud, dark chocolate, homemade, uniced",452.9158699808795,0.5,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F002164,13301,"Cake, mud, dark chocolate, homemade, chocolate ganache icing",458.1739961759082,0.6,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F002169,13303,"Cake, plain butter cake, commercial, uniced",355.40152963671125,1.3,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F002168,13303,"Cake, plain butter cake, commercial, iced",371.65391969407267,1.4,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F002171,13303,"Cake, plain butter cake, homemade, uniced",379.302103250478,0.9,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F002170,13303,"Cake, plain butter cake, homemade, iced",373.8049713193117,0.7,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F002178,13302,"Cake, sponge, plain, commercial, uniced, unfilled",327.43785850860417,1.2,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F002177,13302,"Cake, sponge, plain, commercial, uniced, filled with jam & cream",364.24474187380497,1.2,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F003575,13605,"Doughnut, jam filled, sugar coated",366.8738049713193,1.9,False,"Doughnuts, Pancakes & Pikelets","Doughnuts, Pancakes & Pikelets",0,1,0
+F003573,13605,"Doughnut, dusted with cinnamon & sugar",378.34608030592733,2,False,"Doughnuts, Pancakes & Pikelets","Doughnuts, Pancakes & Pikelets",0,1,0
+F003574,13605,"Doughnut, iced",362.5717017208413,1.7,False,"Doughnuts, Pancakes & Pikelets","Doughnuts, Pancakes & Pikelets",0,1,0
+F005877,13304,"Muffin, cake-style, berry, commercial",337.4760994263862,1.9,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F005882,13304,"Muffin, cake-style, chocolate chip, commercial",374.52198852772466,1.4,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F006298,13601,"Pancake, plain, homemade",222.99235181644357,0.8,False,"Doughnuts, Pancakes & Pikelets","Doughnuts, Pancakes & Pikelets",0,1,0
+F006700,13602,"Pikelet or pancake, sweet, commercial",217.97323135755258,2.1,False,"Doughnuts, Pancakes & Pikelets","Doughnuts, Pancakes & Pikelets",0,1,0
+F006701,13602,"Pikelet, plain, homemade",277.24665391969404,1.7,False,"Doughnuts, Pancakes & Pikelets","Doughnuts, Pancakes & Pikelets",0,1,0
+F007507,13305,"Pudding, chocolate, homemade",184.99043977055447,1.1,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F007512,13305,"Pudding, plum, steamed or boiled, homemade",319.5506692160612,2.5,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F007529,13305,"Pudding, sticky date, homemade",350.38240917782025,1.6,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F008173,13307,"Scone, plain, commercial",334.3690248565965,2.1,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F008174,13307,"Scone, plain, homemade",323.6137667304015,1.4,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F008172,13307,"Scone, fruit, commercial",319.07265774378584,2.6,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F008176,13307,"Scone, pumpkin, homemade",292.06500956022944,1.6,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F008278,13306,"Slice, caramel",441.4435946462715,0.8,False,"Cakes, Muffins or Scones","Cakes, Muffins or Scones",1,1,0
+F001918,12101,"Buckwheat groats, cooked in water, no added salt",70.50669216061185,1.1,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F007156,12601,"Porridge, rolled oats, prepared with regular fat cows milk",125.47801147227533,1.6,False,,,0,0,0
+F000061,12101,"Amaranth, grain, whole, uncooked",364.96175908221795,11.1,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F000379,12101,"Barley, pearl, uncooked",341.3001912045889,13.1,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F000378,12101,"Barley, pearl, boiled, no added fat or salt",141.49139579349904,5.4,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F001919,12101,"Buckwheat groats, uncooked",331.0229445506692,5,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F001929,12101,"Bulgur, uncooked",342.7342256214149,7.8,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F001928,12101,"Bulgur, soaked in water, no added fat or salt",158.6998087954111,7.3,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F003230,12101,"Cornmeal (polenta), uncooked",316.4435946462715,2.9,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F003227,12101,"Cornmeal (polenta), boiled, no added fat or salt",100.62141491395793,0.9,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F003239,12103,"Couscous, uncooked",364.00573613766727,4.2,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F003235,12103,"Couscous, boiled, no added fat or salt",161.80688336520075,1.9,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F005692,12101,"Millet, uncooked",358.50860420650093,3.7,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F005690,12101,"Millet, boiled, no added fat or salt",117.82982791586997,1.2,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F005279,12101,"Maize, grits, uncooked",352.2944550669216,2.7,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F006136,12101,"Oats, hulled, uncooked",376.43403441682597,8.6,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F006143,12101,"Oats, rolled, uncooked",355.8795411089866,9.5,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F007164,12601,"Porridge, rolled oats, prepared with water",65.96558317399618,1.8,True,,,0,0,0
+F006141,12601,"Oats, rolled, mixed with sugar or honey & other flavours, uncooked",389.34034416826,7.5,True,,,0,0,0
+F007502,22102,"Psyllium, uncooked",197.4187380497132,88.7,True,Nut,Unsalted Nuts & Seeds,2,2,2
+F007593,12101,"Quinoa, black, uncooked",347.7533460803059,16.1,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F007597,12101,"Quinoa, red, uncooked",367.5908221797323,13.8,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F007599,12101,"Quinoa, white, uncooked",375.717017208413,10.5,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F007598,12101,"Quinoa, uncooked",370.4588910133843,12,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F007596,12101,"Quinoa, cooked in water, no added salt",103.25047801147227,3.4,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F007722,12101,"Rye, grain, whole, uncooked",310.70745697896746,17.3,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F007724,12101,"Rye, rolled, uncooked",305.4493307839388,17.3,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F008474,12101,"Sorghum, grain, uncooked",349.1873804971319,8.6,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F009260,12101,"Triticale, grain, uncooked",325.2868068833652,14.4,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F008222,12103,"Semolina, uncooked",310.4684512428298,3.2,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F008220,12103,"Semolina, boiled, no added fat or salt",98.7093690248566,1,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F008745,12101,"Spelt, uncooked",332.93499043977056,8.8,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F008744,12101,"Spelt, boiled, no added fat or salt",137.90630975143404,3.6,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F009090,12103,"Tapioca, pearl or seed style, uncooked",324.8087954110899,0,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F009089,12103,"Tapioca, pearl or seed style, boiled, no added fat or salt",47.08413001912046,0,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F009537,12101,"Wheat, whole, uncooked",326.7208413001912,11.4,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F009535,12101,"Wheat bran, unprocessed, uncooked",267.4474187380497,41.8,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F009536,12101,Wheat germ,307.1223709369025,20.1,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F007682,12102,"Rice, white, uncooked",341.06118546845124,0.8,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F007661,12102,"Rice, white, boiled or rice cooker, no added salt",162.2848948374761,0.8,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F007678,12102,"Rice, white, purchased as 'instant', microwaved",153.68068833652006,1,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F007666,13511,"Rice, white, fried with bacon or ham, egg, prawns & vegetables",219.8852772466539,1,False,,,0,0,0
+F007648,12102,"Rice, brown, uncooked",348.47036328871894,3.5,False,Flour or Cereal Grain,Flour or Cereal Grain,0,2,0
+F007641,12102,"Rice, brown, boiled, no added salt",165.63097514340345,1.7,False,Flour or Cereal Grain,Flour or Cereal Grain,0,2,0
+F007684,12101,"Rice, wild, uncooked",359.70363288718926,6.2,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F007683,12101,"Rice, wild, boiled, no added salt",101.81644359464627,1.8,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F007639,12103,"Rice paper wrapper, soaked in water",155.1147227533461,1,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F003983,12103,"Flour, arrowroot",329.34990439770553,3.4,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F003988,12103,"Flour, cornflour, from maize starch",348.47036328871894,0,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F003989,12103,"Flour, cornflour, from maize & wheat starch",350.38240917782025,0.5,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F003986,25201,"Flour, chickpea (besan)",328.1548757170172,20.8,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F003998,12103,"Flour, rice",344.6462715105162,2.2,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F004000,12103,"Flour, rye",322.1797323135755,17.3,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F004002,25201,"Flour, soya",368.7858508604206,16,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F004004,12103,"Flour, spelt",349.66539196940727,7.4,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F004007,12103,"Flour, wheat, white, plain",353.48948374760994,2.2,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F004008,12104,"Flour, wheat, white, plain, added vitamins B1, B2, B3, B6, E & folate & Fe, Mg & Zn (Jackaroo)",338.67112810707454,3.8,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F004009,12103,"Flour, wheat, white, self-raising",353.48948374760994,2.2,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F004013,12104,"Flour, wheat, white, self-raising, added vitamins B1, B2, B3, B6, E & folate & Fe, Mg & Zn (Jackaroo)",328.39388145315485,3.7,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F004006,12104,"Flour, wheat, white, high protein or bread making flour",349.9043977055449,2.5,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F004014,12103,"Flour, wheat, wholemeal, plain",327.1988527724665,11.2,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F003990,12103,"Flour, gluten free, plain",353.7284894837476,1.7,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F004015,12103,"Flour, wheat, wholemeal, self-raising",348.47036328871894,11.3,True,Flour or Cereal Grain,High Fibre Flour or Cereal Grains,2,2,2
+F004358,13506,"Hamburger, white roll, beef patty, with cheese, onion, pickles & sauce, fast food chain",261.95028680688335,1.7,False,Hamburger,Hamburger,1,0,0
+F004362,13505,"Hamburger, white roll, beef patty, with salad, independent takeaway outlet",207.93499043977056,2.6,False,Hamburger,Hamburger,1,0,0
+F004389,13503,"Hot dog, bread roll, frankfurt & sauce filling",230.87954110898661,2.3,False,,,0,0,0
+F006725,13501,"Pizza, cheese & tomato, commercial",285.3728489483747,2.8,False,Pizza,Pizza,1,1,0
+F006761,13501,"Pizza, ham & pineapple, purchased frozen, baked",229.68451242829826,3.1,False,Pizza,Pizza,1,1,0
+F006762,13501,"Pizza, ham & pineapple, takeaway style",224.4263862332696,3.1,False,Pizza,Pizza,1,1,0
+F006797,13501,"Pizza, supreme, purchased frozen, baked",272.944550669216,3.2,False,Pizza,Pizza,1,1,0
+F006795,13501,"Pizza, supreme, fast food chain",249.52198852772466,2.5,False,Pizza,Pizza,1,1,0
+F006799,13501,"Pizza, supreme, takeaway style",228.0114722753346,3,False,Pizza,Pizza,1,1,0
+F006805,13501,"Pizza, vegetable, fast food chain",206.26195028680687,2.8,False,Pizza,Pizza,1,1,0
+F006043,12403,"Noodle, soba, dry",359.2256214149139,5.3,True,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006042,12403,"Noodle, soba, boiled, drained",108.74760994263862,1.6,True,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006048,12401,"Noodle, wheat, fresh, soaked, drained",145.3154875717017,1.7,False,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006055,12402,"Noodle, wheat, instant, flavoured, dry, uncooked",438.3365200764818,3.7,False,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006053,12402,"Noodle, wheat, instant, flavoured, boiled, drained",142.92543021032503,1.2,False,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006054,12402,"Noodle, wheat, instant, flavoured, boiled, undrained",53.77629063097514,0.4,False,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006038,12403,"Noodle, rice stick, boiled, drained",119.02485659655831,0.7,False,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006429,12403,"Pasta, gluten free, boiled from dry, no added salt",152.7246653919694,1.2,False,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006433,12403,"Pasta, maize flour (corn) based, dry",347.0363288718929,11,True,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006431,12403,"Pasta, maize flour (corn) based, boiled from dry, no added salt",120.21988527724665,4.8,True,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006458,12401,"Pasta, white wheat flour, dry",348.47036328871894,3.2,False,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006456,12401,"Pasta, white wheat flour, boiled from dry, no added salt",123.56596558317399,2,True,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006460,12401,"Pasta, white wheat flour, fresh, uncooked",275.33460803059273,3.3,False,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006459,12401,"Pasta, white wheat flour, fresh, boiled, no added salt",163.0019120458891,2.7,True,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006445,12401,"Pasta, white wheat flour & egg, dry",363.7667304015296,2.2,False,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006444,12401,"Pasta, white wheat flour & egg, boiled from dry, no added salt",143.64244741873804,1.9,False,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006453,12401,"Pasta, white wheat flour & spinach, dry",364.4837476099426,4.4,False,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006451,12401,"Pasta, white wheat flour & spinach, boiled from dry, no added salt",132.40917782026767,1.4,False,Noodle or Pasta,Noodle or Pasta,0,0,0
+F006465,12401,"Pasta, wholemeal wheat flour, dry",335.5640535372849,9.9,True,Noodle or Pasta,Wholemeal Pasta,0,2,2
+F006464,12401,"Pasta, wholemeal wheat flour, boiled from dry, no added salt",138.38432122370935,5.7,True,Noodle or Pasta,Wholemeal Pasta,0,2,2
+F005145,13509,"Lasagne, beef, commercial, purchased frozen, baked",136.71128107074568,2.1,True,,,0,0,0
+F005146,13509,"Lasagne, beef, homemade",174.4741873804971,1.1,False,,,0,0,0
+F005259,13509,"Macaroni & cheese, homemade, cooked unfilled pasta, homemade cheese sauce",157.2657743785851,1.6,False,"Creamy Pasta, Macaroni or Spaghetti Dishes","Creamy Pasta, Macaroni or Spaghetti Dishes",1,0,0
+F006409,13509,"Pasta in cream based sauce, dry mix",369.26386233269596,4,False,"Creamy Pasta, Macaroni or Spaghetti Dishes","Creamy Pasta, Macaroni or Spaghetti Dishes",1,0,0
+F006410,13509,"Pasta in cream based sauce, prepared from dry mix with regular fat milk cows & margarine spread",113.52772466539197,0.9,False,"Creamy Pasta, Macaroni or Spaghetti Dishes","Creamy Pasta, Macaroni or Spaghetti Dishes",1,0,0
+F008737,13509,"Spaghetti in tomato & cheese sauce, canned",54.254302103250474,0.8,True,"Creamy Pasta, Macaroni or Spaghetti Dishes","Creamy Pasta, Macaroni or Spaghetti Dishes",1,0,0
+F008738,13509,"Spaghetti in tomato & cheese sauce, canned, reduced salt",54.254302103250474,0.8,True,"Creamy Pasta, Macaroni or Spaghetti Dishes","Creamy Pasta, Macaroni or Spaghetti Dishes",1,0,0
+F003305,13401,"Croissant, plain",359.70363288718926,2.7,False,Pastries,Croissants,1,1,1
+F006497,13401,"Pastry, filo, commercial, raw",305.2103250478011,2.5,False,Pastries,Pastries,1,1,1
+F006496,13401,"Pastry, filo, commercial, baked",389.81835564053534,4.3,False,Pastries,Pastries,1,1,1
+F006505,13401,"Pastry, puff, with butter, commercial, raw",330.54493307839385,3.4,False,Pastries,Pastries,1,1,1
+F006504,13401,"Pastry, puff, with butter, commercial, baked",429.49330783938814,4.4,False,Pastries,Pastries,1,1,1
+F006503,13401,"Pastry, puff, vegetable oil, commercial, raw",315.7265774378585,3.4,False,Pastries,Pastries,1,1,1
+F006502,13401,"Pastry, puff, vegetable oil, commercial, baked",404.8757170172084,4.4,False,Pastries,Pastries,1,1,1
+F006507,13401,"Pastry, shortcrust style, commercial, raw",402.7246653919694,0.8,False,Pastries,Pastries,1,1,1
+F006506,13401,"Pastry, shortcrust style, commercial, baked",497.13193116634795,1.8,False,Pastries,Pastries,1,1,1
+F006493,13405,"Pastry, filled with spinach & cheese, purchased frozen, baked",290.3919694072658,2.5,False,Pastries,Pastries,1,1,1
+F006665,13405,"Pie, savoury, meat, commercial, ready to eat",225.38240917782025,2.4,False,Pastries,Pies,1,1,1
+F006667,13405,"Pie, savoury, meat, purchased frozen, baked",217.49521988527724,2,False,Pastries,Pies,1,1,1
+F008098,13405,"Sausage roll, commercial, ready to eat",281.78776290630975,3,False,Pastries,Sausage Rolls,1,1,1
+F008101,13405,"Sausage roll, purchased frozen, baked",267.20841300191205,3,False,Pastries,Sausage Rolls,1,1,1
+F008794,13406,"Spring roll, meat & vegetable filling, commercial, deep fried",250.23900573613767,2.8,False,Pastries,Deep Fried Foods,1,0,1
+F006679,13402,"Pie, sweet, apple, commercial",253.10707456978966,1.3,False,Pastries,Pies,1,1,1
+F009102,13403,"Tart, custard, commercial",242.5908221797323,1,False,Pastries,Pastries,0,0,0
+F005702,25201,"Paste, soybean",183.07839388145314,4.3,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F006476,15504,"Paste, shrimp",94.16826003824092,0,False,Seafood,Seafood,0,0,0
+F008032,18701,"Sauce, pasta, bolognese, homemade using beef mince & homemade tomato based sauce",82.93499043977054,0.9,False,,,0,0,0
+F006577,22202,"Peanut butter, smooth & crunchy, added sugar & salt",596.3193116634799,5.8,False,Nut,Nut,0,2,0
+F006579,22202,"Peanut butter, smooth & crunchy, no added sugar or salt",628.1070745697897,6.5,False,Nut,Nut,0,2,0
+F008783,31102,"Spread, yeast, marmite",148.90057361376674,11.8,True,,,0,0,0
+F008785,31102,"Spread, yeast, vegemite",162.2848948374761,6.5,True,,,0,0,0
+F002405,19401,"Cheese, blue vein",375.47801147227534,0,False,Milk,Milk,0,0,0
+F002407,19405,"Cheese, brie",358.9866156787763,0,False,Milk,Milk,0,0,0
+F002408,19405,"Cheese, camembert",299.7131931166348,0,False,Milk,Milk,0,0,0
+F002414,19401,"Cheese, cheddar, natural, regular fat",397.4665391969407,0,False,Milk,Full Fat Milk Products,1,1,1
+F002413,19402,"Cheese, cheddar, natural, reduced fat (approximately 25%)",326.9598470363289,0,False,Milk,Low Fat Milk Products,2,2,2
+F002412,19402,"Cheese, cheddar, natural, reduced fat (approximately 15%)",265.05736137667304,0,False,Milk,Low Fat Milk Products,2,2,2
+F002428,19406,"Cheese, cheddar, processed, regular fat",299.7131931166348,0,False,Milk,Full Fat Milk Products,1,1,1
+F002425,19407,"Cheese, cheddar, processed, reduced fat (approximately 15%), added vitamin D",251.91204588910134,0,False,Milk,Low Fat Milk Products,2,2,2
+F002435,19403,"Cheese, cottage",126.434034416826,0,False,Milk,Milk,0,0,0
+F002444,19403,"Cheese, cream, plain",339.3881453154876,0,False,Milk,Milk,0,0,0
+F002448,19401,"Cheese, edam",360.89866156787764,0,False,Milk,Milk,0,0,0
+F002452,19401,"Cheese, fetta (feta)",271.51051625239006,0,False,Milk,Milk,0,0,0
+F002462,19401,"Cheese, goat, firm",358.9866156787763,0,False,Milk,Milk,0,0,0
+F002463,19401,"Cheese, goat, soft",285.3728489483747,0,False,Milk,Milk,0,0,0
+F002466,19401,"Cheese, haloumi",250.95602294455065,0,False,Milk,Milk,0,0,0
+F002472,19401,"Cheese, mozzarella",289.91395793499044,0,False,Milk,Milk,0,0,0
+F002478,19401,"Cheese, parmesan, dried, finely grated",465.82217973231354,0,False,Milk,Milk,0,0,0
+F002479,19401,"Cheese, parmesan, fresh",403.9196940726577,0,False,Milk,Milk,0,0,0
+F002488,19403,"Cheese, ricotta",158.93881453154876,0,False,Milk,Milk,0,0,0
+F002494,20301,"Cheese, soy",295.8891013384321,0.6,False,,,0,0,0
+F003270,19301,"Cream, thickened, regular fat (approximately 35%)",346.7973231357552,0,False,Milk,Full Fat Milk Products,1,1,1
+F003255,19305,"Cream, imitation (non-dairy)",267.4474187380497,0,False,Milk,Milk,0,0,0
+F003269,19303,"Cream, sour, regular fat",331.2619502868069,0,False,Milk,Full Fat Milk Products,1,1,1
+F003267,19304,"Cream, sour, light (approximately 18% fat)",211.75908221797323,0,False,Milk,Milk,0,0,0
+F004508,19501,"Ice cream, vanilla flavour, regular fat",103.48948374760994,0,False,Milk,Full Fat Milk Products,1,1,1
+F004419,19505,"Ice confection, stick, milk-based, various flavours",134.56022944550668,0.2,False,Milk,Milk,0,0,0
+F004421,27303,"Ice confection, stick, water-based, various flavours",66.92160611854685,0,False,,,0,0,0
+F004415,27303,"Ice confection, stick or tub, fruit juice or fruit flavoured",73.1357552581262,0,False,,,0,0,0
+F005634,19101,"Milk, cow, fluid, regular fat (3.5% fat)",69.31166347992351,0,False,Milk,Full Fat Milk Products,1,1,1
+F005635,19102,"Milk, cow, fluid, regular fat (3.5% fat), added omega 3 polyunsaturates",62.380497131931165,0,False,Milk,Full Fat Milk Products,1,1,1
+F005614,19103,"Milk, cow, fluid, reduced fat (1% fat)",47.32313575525812,0,False,Milk,Low Fat Milk Products,2,2,2
+F005621,19104,"Milk, cow, fluid, reduced fat (1.5% fat), added omega 3 polyunsaturates",53.05927342256214,0,False,Milk,Low Fat Milk Products,2,2,2
+F005637,19105,"Milk, cow, fluid, skim (0.15% fat)",36.32887189292543,0,False,Milk,Low Fat Milk Products,2,2,2
+F005638,19105,"Milk, cow, fluid, skim (0.15% fat), added milk solids",43.021032504780116,0,False,Milk,Low Fat Milk Products,2,2,2
+F005599,19101,"Milk, cow, fluid, lactose free, regular fat (3.5% fat)",61.185468451242826,0.1,False,Milk,Full Fat Milk Products,1,1,1
+F005598,19103,"Milk, cow, fluid, lactose free, reduced fat (1% fat)",45.650095602294456,0.1,False,Milk,Low Fat Milk Products,2,2,2
+F005581,19106,"Milk, cow, canned, evaporated, regular",152.48565965583174,0,False,Milk,Milk,0,0,0
+F005580,19106,"Milk, cow, canned, evaporated, reduced fat (approximately 2% fat)",98.47036328871893,0,False,Milk,Low Fat Milk Products,2,2,2
+F005582,19106,"Milk, cow, canned, sweetened, condensed, regular",419.6940726577438,0,False,Milk,Milk,0,0,0
+F005650,19107,"Milk, powder, cow, regular fat, unfortified",508.3652007648183,0,False,Milk,Full Fat Milk Products,1,1,1
+F005649,19107,"Milk, powder, cow, regular fat, added vitamins A & D",508.3652007648183,0,False,Milk,Full Fat Milk Products,1,1,1
+F005652,19107,"Milk, powder, cow, skim",363.04971319311665,0,False,Milk,Low Fat Milk Products,2,2,2
+F003442,19602,"Custard, vanilla, regular fat",104.92351816443595,0,False,Milk,Full Fat Milk Products,1,1,1
+F003426,12103,"Custard powder, vanilla, dry mix",337.95411089866155,0.5,False,Flour or Cereal Grain,Flour or Cereal Grain,0,0,0
+F003441,19602,"Custard, vanilla, prepared from dry mix",118.06883365200764,0,False,Milk,Milk,0,0,0
+F003488,19701,"Dairy or yoghurt dessert, chocolate, regular fat",132.64818355640534,1.5,False,Milk,Full Fat Milk Products,1,1,1
+F009694,19201,"Yoghurt, natural, regular fat (3% fat)",76.0038240917782,0.1,False,Milk,Full Fat Milk Products,1,1,1
+F009608,19205,"Yoghurt, apricot pieces or flavoured, regular fat (3% fat)",96.08030592734225,0.1,False,Milk,Full Fat Milk Products,1,1,1
+F009741,19205,"Yoghurt, strawberry pieces or flavoured, regular fat (3% fat)",99.66539196940727,0.1,False,Milk,Full Fat Milk Products,1,1,1
+F009749,19205,"Yoghurt, vanilla flavoured, (2% fat)",101.5774378585086,0.2,False,Milk,Milk,0,0,0
+F009752,19208,"Yoghurt, vanilla flavoured, low fat (?0.5% fat)",91.30019120458891,0.2,False,Milk,Low Fat Milk Products,2,2,2
+F006132,20106,"Oat beverage, fluid, unfortified",56.40535372848948,0.3,False,,,0,0,0
+F006131,20106,"Oat beverage, fluid, added calcium",56.40535372848948,0.3,False,,,0,0,0
+F007632,20106,"Rice beverage, fluid, added calcium",64.05353728489483,0,False,,,0,0,0
+F008721,20101,"Soy beverage, regular fat (3% fat), unfortified",60.46845124282983,0.6,False,,,0,0,0
+F008719,20102,"Soy beverage, regular fat (3% fat), added Ca",60.46845124282983,0.6,False,,,0,0,0
+F008720,20102,"Soy beverage, regular fat (3% fat), added Ca & vitamins A, B1, B2 & B12",61.90248565965583,0.6,False,,,0,0,0
+F008704,20104,"Soy beverage, reduced fat (1% fat), added Ca & vitamins A, B1, B2 & B12",46.12810707456979,0.6,False,,,0,0,0
+F008155,20601,"Sausage, vegetarian style, unfortified, raw",192.87762906309752,1.5,False,,,0,0,0
+F008151,20601,"Sausage, vegetarian style, added Fe, Zn and vitamin B12, raw",192.87762906309752,1.5,False,,,0,0,0
+F008153,20601,"Sausage, vegetarian style, fried, no added fat",202.91586998087953,1.6,False,,,0,0,0
+F009176,20601,"Tofu (soy bean curd), firm, as purchased",119.98087954110898,3.5,True,,,0,0,0
+F009738,20501,"Yoghurt, soy based, berry flavoured, regular fat (3% fat)",103.48948374760994,0.2,False,,,0,0,0
+F009739,20502,"Yoghurt, soy based, vanilla flavoured, reduced fat (1% fat)",76.7208413001912,0.2,False,,,0,0,0
+F001973,14101,"Butter, plain, salted",723.4703632887189,0,False,Butter,Butter,1,1,1
+F001971,14101,"Butter, plain, no added salt",723.4703632887189,0,False,Butter,Butter,1,1,1
+F004205,14102,"Ghee, clarified butter",884.5602294455067,0,False,Butter,Butter,1,1,1
+F003466,14201,"Dairy blend, butter & edible oil spread (approximately 80% fat), sodium 600 mg/100 g",696.7017208413001,0,False,,,0,0,0
+F003464,14201,"Dairy blend, butter & edible oil spread (approximately 80% fat), reduced salt (sodium 400 mg/100 g)",696.7017208413001,0,False,,,0,0,0
+F005370,14301,"Margarine spread, polyunsaturated (70% fat)",609.942638623327,0,False,Margarine,Margarine,0,0,2
+F005373,14301,"Margarine spread, polyunsaturated (70% fat), reduced salt (sodium 280 mg/100 g)",630.0191204588909,0,False,Margarine,Margarine,0,0,2
+F005322,14303,"Margarine spread, monounsaturated (80% fat), rice bran oil, unfortified",717.7342256214149,0,False,Margarine,Margarine,0,0,2
+F005319,14306,"Margarine spread, monounsaturated (70% fat), reduced salt (sodium 350 mg/100 g), added phytosterols",673.9961759082217,0,False,Margarine,Margarine,0,0,2
+F005309,14303,"Margarine spread, monounsaturated (greater than 65% fat)",597.5143403441682,0,False,Margarine,Margarine,0,0,2
+F005310,14303,"Margarine spread, monounsaturated (greater than 65% fat), reduced salt (sodium 360 mg/100 g)",613.0497131931166,0,False,Margarine,Margarine,0,0,2
+F005352,14304,"Margarine spread, monounsaturated, reduced fat (55% fat) & salt (sodium 380 mg/100 g)",459.3690248565965,0,False,Margarine,Margarine,0,0,2
+F005345,14304,"Margarine spread, monounsaturated, reduced fat (less than 65% fat)",559.7514340344168,0,False,Margarine,Margarine,0,0,2
+F005361,14304,"Margarine spread, olive oil blend (65% fat), reduced salt (sodium 360mg/100 g)",575.2868068833652,0,False,Margarine,Olive Oil Margarine Spread,2,2,2
+F006154,14402,"Oil, almond",813.5755258126195,0,False,Plant Oil,Plant Oil,0,0,0
+F006155,14402,"Oil, blend of monounsaturated vegetable oils",813.5755258126195,0,False,Plant Oil,Plant Oil,0,0,0
+F006156,14401,"Oil, blend of polyunsaturated vegetable oils",813.5755258126195,0,False,Plant Oil,Plant Oil,0,0,0
+F006159,14402,"Oil, canola",813.5755258126195,0,False,Plant Oil,Healthy Plant Oils,2,2,2
+F006166,14401,"Oil, cottonseed",813.5755258126195,0,False,Plant Oil,Plant Oil,0,0,0
+F006165,14502,"Oil, copha",813.5755258126195,0,False,,,0,0,0
+F006167,14401,"Oil, grapeseed",813.5755258126195,0,False,Plant Oil,Plant Oil,0,0,0
+F006168,14401,"Oil, linseed or flaxseed",813.3365200764817,0,False,Plant Oil,Plant Oil,0,0,0
+F006172,14402,"Oil, mustard seed",813.5755258126195,0,False,Plant Oil,Plant Oil,0,0,0
+F006169,14402,"Oil, macadamia",813.5755258126195,0,False,Plant Oil,Plant Oil,0,0,0
+F006177,14402,"Oil, olive",812.3804971319312,0,False,Plant Oil,Healthy Plant Oils,2,2,2
+F006181,14402,"Oil, palm",813.5755258126195,0,False,Plant Oil,Plant Oil,0,0,0
+F006183,14402,"Oil, peanut",813.5755258126195,0,False,Plant Oil,Healthy Plant Oils,2,2,2
+F006185,14402,"Oil, rice bran",813.5755258126195,0,False,Plant Oil,Plant Oil,0,0,0
+F006188,14401,"Oil, soybean",813.5755258126195,0,False,Plant Oil,Healthy Plant Oils,2,2,2
+F006189,14401,"Oil, sunflower",813.5755258126195,0,False,Plant Oil,Healthy Plant Oils,2,2,2
+F006191,14401,"Oil, vegetable",813.5755258126195,0,False,Plant Oil,Plant Oil,0,0,0
+F003627,14501,"Dripping, beef",885.038240917782,0,False,,,0,0,0
+F003817,14502,"Fat, solid, vegetable oil based",884.7992351816443,0,False,,,0,0,0
+F003729,17101,"Egg, chicken, whole, raw",127.39005736137666,0,False,Egg,Egg,0,2,2
+F003721,17101,"Egg, chicken, whole, hard-boiled",137.18929254302103,0,False,Egg,Egg,0,2,2
+F003725,17101,"Egg, chicken, whole, poached",132.887189292543,0,False,Egg,Egg,0,2,2
+F003718,17101,"Egg, chicken, whole, fried, no fat added",144.83747609942637,0,False,Egg,Egg,0,2,2
+F003724,17102,"Egg, chicken, whole, omega-3 polyunsaturate enriched, raw",133.12619502868068,0,False,Egg,Egg,0,2,2
+F003723,17102,"Egg, chicken, whole, omega-3 polyunsaturate enriched, boiled",135.75525812619503,0,False,Egg,Egg,0,2,2
+F003706,17101,"Egg, chicken, white (albumen), raw",47.08413001912046,0,False,Egg,Egg,0,2,2
+F003705,17101,"Egg, chicken, white (albumen), hard-boiled",48.75717017208413,0,False,Egg,Egg,0,2,2
+F003737,17101,"Egg, chicken, yolk, raw",313.3365200764818,0,False,Egg,Egg,0,2,2
+F003736,17101,"Egg, chicken, yolk, hard-boiled",346.5583173996176,0,False,Egg,Egg,0,2,2
+F000086,16101,"Apple, bonza, unpeeled, raw",58.31739961759082,3.2,True,Fruit,Fruit,2,2,2
+F000089,16802,"Apple, dried",294.4550669216061,9.1,True,Fruit,Fruit,2,2,2
+F000091,16101,"Apple, fuji, unpeeled, raw",58.556405353728486,2.4,True,Fruit,Fruit,2,2,2
+F000092,16101,"Apple, golden delicious, unpeeled, raw",48.2791586998088,2.5,True,Fruit,Fruit,2,2,2
+F000095,16101,"Apple, granny-smith, unpeeled, raw",48.2791586998088,2.3,True,Fruit,Fruit,2,2,2
+F000099,16101,"Apple, jonathon, unpeeled, raw",54.01529636711281,2.3,True,Fruit,Fruit,2,2,2
+F000105,16101,"Apple, pink lady, unpeeled, raw",58.07839388145315,3,True,Fruit,Fruit,2,2,2
+F000107,16101,"Apple, red delicious, unpeeled, raw",59.27342256214149,2.3,True,Fruit,Fruit,2,2,2
+F000111,16101,"Apple, royal gala, unpeeled, raw",53.05927342256214,2.1,True,Fruit,Fruit,2,2,2
+F000110,16101,"Apple, red skin, unpeeled, raw",57.36137667304015,2.7,True,Fruit,Fruit,2,2,2
+F000134,16403,"Apricot, raw",40.86998087954111,2.5,True,Fruit,Fruit,2,2,2
+F000130,16802,"Apricot, dried",211.75908221797323,8.4,True,Fruit,Fruit,2,2,2
+F000122,16404,"Apricot, canned in pear juice",45.88910133843212,1.8,True,Fruit,Fruit,2,2,2
+F000123,16404,"Apricot, canned in pear juice, drained",46.84512428298279,3.1,True,Fruit,Fruit,2,2,2
+F000124,16404,"Apricot, canned in pear juice, juice only",46.84512428298279,0,False,Fruit,Fruit,2,2,2
+F000262,16501,"Banana, cavendish, peeled, raw",94.16826003824092,2.2,True,Fruit,Fruit,2,2,2
+F000267,16501,"Banana, lady finger or sugar, peeled, raw",113.2887189292543,3.7,True,Fruit,Fruit,2,2,2
+F001267,16201,"Blackberry, raw",50.4302103250478,6.1,True,Fruit,Fruit,2,2,2
+F001290,16201,"Blueberry, raw",46.367112810707454,3.5,True,Fruit,Fruit,2,2,2
+F001289,16201,"Blueberry, purchased frozen",47.56214149139579,3.6,True,Fruit,Fruit,2,2,2
+F002522,16403,"Cherry, raw",59.751434034416825,1.5,True,Fruit,Fruit,2,2,2
+F002513,16702,"Cherry, black, canned in syrup",71.46271510516252,0.9,False,Fruit,Fruit,2,2,2
+F002514,16702,"Cherry, black, canned in syrup, drained",74.09177820267686,1.7,True,Fruit,Fruit,2,2,2
+F002517,16404,"Cherry, black, canned in syrup, syrup only",71.46271510516252,0,False,Fruit,Fruit,2,2,2
+F003328,16303,"Cumquat (kumquat), raw",63.5755258126195,6.5,True,Fruit,Fruit,2,2,2
+F003249,16201,"Cranberry, raw",31.309751434034414,3.6,True,Fruit,Fruit,2,2,2
+F003248,16802,"Cranberry, dried, sweetened",318.11663479923516,5.3,True,Fruit,Fruit,2,2,2
+F003331,16801,"Currant, dried",278.9196940726577,6,True,Fruit,Fruit,2,2,2
+F003423,16504,"Custard apple, African pride, peeled, raw",77.91586998087953,2.5,True,Fruit,Fruit,2,2,2
+F003496,16802,"Date, dried",289.67495219885274,9.7,True,Fruit,Fruit,2,2,2
+F003818,16504,"Feijoa, raw",42.06500956022944,3,True,Fruit,Fruit,2,2,2
+F003832,16802,"Fig, dried",258.604206500956,14.3,True,Fruit,Fruit,2,2,2
+F003834,16503,"Fig, fresh, unpeeled, raw",46.606118546845124,3.3,True,Fruit,Fruit,2,2,2
+F004141,16702,"Fruit salad, canned in fruit juice",47.801147227533455,1.4,True,Fruit,Fruit,2,2,2
+F004142,16702,"Fruit salad, canned in fruit juice, drained",49.47418738049713,2.3,True,Fruit,Fruit,2,2,2
+F004143,16702,"Fruit salad, canned in fruit juice, juice only",47.32313575525812,0.2,False,Fruit,Fruit,2,2,2
+F004244,16802,"Goji berry, dried",326.0038240917782,13,True,Fruit,Fruit,2,2,2
+F004253,16601,"Grape, black muscatel/muscat, raw",83.41300191204589,2.7,True,Fruit,Fruit,2,2,2
+F004254,16601,"Grape, black sultana, raw",66.4435946462715,3.3,True,Fruit,Fruit,2,2,2
+F004256,16601,"Grape, cornichon, raw",61.4244741873805,2.5,True,Fruit,Fruit,2,2,2
+F004259,16601,"Grape, red globe, raw",76.95984703632887,3.5,True,Fruit,Fruit,2,2,2
+F004260,16601,"Grape, thompson seedless or sultana, raw",65.96558317399618,2.3,True,Fruit,Fruit,2,2,2
+F004261,16601,"Grape, waltham cross, raw",67.1606118546845,3.5,True,Fruit,Fruit,2,2,2
+F004262,16303,"Grapefruit, peeled, raw",29.875717017208412,1.7,True,Fruit,Fruit,2,2,2
+F004286,16504,"Guava, Hawaiian, raw",34.41682600382409,5.4,True,Fruit,Fruit,2,2,2
+F004594,16504,"Jackfruit, peeled, raw",82.93499043977054,3,True,Fruit,Fruit,2,2,2
+F004816,16601,"Kiwifruit, green (hayward), peeled, raw",54.97131931166348,3,True,Fruit,Fruit,2,2,2
+F004815,16601,"Kiwifruit, gold, peeled, raw",58.31739961759082,1.8,True,Fruit,Fruit,2,2,2
+F005174,16302,"Lemon, peeled, raw",27.48565965583174,2.5,True,Fruit,Fruit,2,2,2
+F005172,16302,"Lemon peel, raw",28.91969407265774,10.6,True,Fruit,Fruit,2,2,2
+F005175,16804,"Lemon, preserved",24.378585086042065,3.5,True,Fruit,Fruit,2,2,2
+F005199,16302,"Lime, peeled, raw",29.15869980879541,4.1,True,Fruit,Fruit,2,2,2
+F005244,16105,"Loquat, peeled, raw",29.15869980879541,1.7,True,Fruit,Fruit,2,2,2
+F005255,16504,"Lychee, peeled, raw",70.74569789674952,1.3,True,Fruit,Fruit,2,2,2
+F005293,16303,"Mandarin, peeled, raw",46.606118546845124,1.6,True,Fruit,Fruit,2,2,2
+F005288,16304,"Mandarin, canned in syrup",57.60038240917782,0.6,False,Fruit,Fruit,2,2,2
+F005289,16304,"Mandarin, canned in syrup, drained",60.70745697896749,1.1,True,Fruit,Fruit,2,2,2
+F005292,16304,"Mandarin, canned in syrup, syrup only",55.44933078393881,0,False,Fruit,Fruit,2,2,2
+F005299,16504,"Mango, peeled, raw",56.64435946462715,1.3,True,Fruit,Fruit,2,2,2
+F005300,16505,"Mango, pulped, canned",61.90248565965583,1.2,True,Fruit,Fruit,2,2,2
+F005516,16601,"Melon, honey dew, white skin, peeled, raw",35.61185468451243,1,True,Fruit,Fruit,2,2,2
+F005517,16601,"Melon, honey dew, yellow skin, peeled, raw",25.5736137667304,0.9,True,Fruit,Fruit,2,2,2
+F005519,16601,"Melon, rockmelon, peeled, raw",23.66156787762906,1,True,Fruit,Fruit,2,2,2
+F005520,16601,"Melon, watermelon, peeled, raw",31.78776290630975,0.4,False,Fruit,Fruit,2,2,2
+F005712,16802,Mixed dried fruit,273.42256214149137,3.7,False,Fruit,Fruit,2,2,2
+F005916,16201,"Mulberry, raw",33.22179732313575,2.2,True,Fruit,Fruit,2,2,2
+F006021,16401,"Nectarine, yellow, unpeeled, raw",43.26003824091778,2,True,Fruit,Fruit,2,2,2
+F006277,16301,"Orange, peeled, raw",41.82600382409178,2.4,True,Fruit,Fruit,2,2,2
+F006276,16301,"Orange, navel, peeled, raw",41.58699808795411,2.4,True,Fruit,Fruit,2,2,2
+F006279,16301,"Orange, valencia, peeled, raw",41.82600382409178,2.4,True,Fruit,Fruit,2,2,2
+F006333,16504,"Passionfruit, raw",72.65774378585085,13.9,True,Fruit,Fruit,2,2,2
+F006332,16505,"Passionfruit, pulp, canned",101.33843212237093,7,True,Fruit,Fruit,2,2,2
+F006528,16504,"Pawpaw (papaya), peeled, raw",33.93881453154876,2.3,True,Fruit,Fruit,2,2,2
+F006573,16401,"Peach, yellow, unpeeled, raw",40.152963671128106,1.9,True,Fruit,Fruit,2,2,2
+F006553,16402,"Peach, canned in pear juice",43.977055449330784,1.3,True,Fruit,Fruit,2,2,2
+F006554,16402,"Peach, canned in pear juice, drained",45.650095602294456,2,True,Fruit,Fruit,2,2,2
+F006555,16402,"Peach, canned in pear juice, juice only",44.45506692160612,0.3,False,Fruit,Fruit,2,2,2
+F006606,16103,"Pear, Packham's triumph, unpeeled, raw",55.21032504780114,3,True,Fruit,Fruit,2,2,2
+F006612,16103,"Pear, William Bartlett, unpeeled, raw",54.493307839388144,3.7,True,Fruit,Fruit,2,2,2
+F006601,16103,"Pear, green skin, unpeeled, raw",66.4435946462715,3,True,Fruit,Fruit,2,2,2
+F006585,16103,"Pear, brown skin, unpeeled, raw",63.09751434034417,3.4,True,Fruit,Fruit,2,2,2
+F006593,16104,"Pear, canned in pear juice",46.367112810707454,1.7,True,Fruit,Fruit,2,2,2
+F006594,16104,"Pear, canned in pear juice, drained",47.801147227533455,2.8,True,Fruit,Fruit,2,2,2
+F006595,16104,"Pear, canned in pear juice, juice only",47.32313575525812,0.2,False,Fruit,Fruit,2,2,2
+F006604,16103,"Pear, nashi, unpeeled, raw",49.95219885277246,2.1,True,Fruit,Fruit,2,2,2
+F006628,16503,"Persimmon, peeled, raw",71.22370936902486,2.6,True,Fruit,Fruit,2,2,2
+F006702,16502,"Pineapple (cayenne), peeled, raw",42.543021032504775,1.8,True,Fruit,Fruit,2,2,2
+F006707,16505,"Pineapple, canned in pineapple juice",56.40535372848948,0.8,True,Fruit,Fruit,2,2,2
+F006708,16505,"Pineapple, canned in pineapple juice, drained",49.235181644359464,1.9,True,Fruit,Fruit,2,2,2
+F006710,16505,"Pineapple, canned in pineapple juice, juice only",47.801147227533455,0,False,Fruit,Fruit,2,2,2
+F006711,16505,"Pineapple, canned in syrup",86.04206500956023,0.7,False,Fruit,Fruit,2,2,2
+F006712,16505,"Pineapple, canned in syrup, drained",82.45697896749522,1.4,True,Fruit,Fruit,2,2,2
+F006713,16505,"Pineapple, canned in syrup, syrup only",122.848948374761,0,False,Fruit,Fruit,2,2,2
+F006832,16403,"Plum, unpeeled, raw",38.718929254302104,2,True,Fruit,Fruit,2,2,2
+F006825,16404,"Plum, dark, canned in syrup",88.4321223709369,1,False,Fruit,Fruit,2,2,2
+F006826,16404,"Plum, dark, canned in syrup, drained",92.01720841300191,2,True,Fruit,Fruit,2,2,2
+F006827,16404,"Plum, dark, canned in syrup, syrup only",117.35181644359464,0,False,Fruit,Fruit,2,2,2
+F006842,16504,"Pomegranate, peeled, raw",78.63288718929255,6.4,True,Fruit,Fruit,2,2,2
+F007457,16504,"Prickly pear, peeled, raw",48.75717017208413,4.6,True,Fruit,Fruit,2,2,2
+F007494,16802,Prune (dried plum),201.0038240917782,7.8,True,Fruit,Fruit,2,2,2
+F007571,16601,"Quandong, fruit, flesh",49.235181644359464,4.2,True,Fruit,Fruit,2,2,2
+F007591,16105,"Quince, peeled, raw",57.83938814531548,5.2,True,Fruit,Fruit,2,2,2
+F007610,16801,Raisin,289.19694072657745,2.8,False,Fruit,Fruit,2,2,2
+F007612,16504,"Rambutan, raw",74.56978967495219,2.8,True,Fruit,Fruit,2,2,2
+F007619,16201,"Raspberry, raw",48.51816443594646,5.6,True,Fruit,Fruit,2,2,2
+F007618,16201,"Raspberry, purchased frozen",48.51816443594646,5.6,True,Fruit,Fruit,2,2,2
+F007614,16202,"Raspberry, canned in syrup",75.2868068833652,2.5,True,Fruit,Fruit,2,2,2
+F007615,16202,"Raspberry, canned in syrup, drained",81.97896749521988,6,True,Fruit,Fruit,2,2,2
+F007616,16202,"Raspberry, canned in syrup, syrup only",98.23135755258126,0,False,Fruit,Fruit,2,2,2
+F007628,16601,"Rhubarb, stalk, raw",22.466539196940726,2.2,True,Fruit,Fruit,2,2,2
+F008952,16201,"Strawberry, raw",26.051625239005734,2.5,True,Fruit,Fruit,2,2,2
+F008951,16201,"Strawberry, purchased frozen",26.051625239005734,2.5,True,Fruit,Fruit,2,2,2
+F008945,16202,"Strawberry, canned in syrup",80.06692160611854,1.5,True,Fruit,Fruit,2,2,2
+F008946,16202,"Strawberry, canned in syrup, drained",84.36902485659655,3.5,True,Fruit,Fruit,2,2,2
+F008947,16202,"Strawberry, canned in syrup, syrup only",106.59655831739961,0,False,Fruit,Fruit,2,2,2
+F008983,16801,Sultana,255.25812619502867,3.3,False,Fruit,Fruit,2,2,2
+F009080,16503,"Tamarillo, peeled, raw",35.85086042065009,4.7,True,Fruit,Fruit,2,2,2
+F009087,16303,"Tangelo, peeled, raw",41.10898661567877,2,True,Fruit,Fruit,2,2,2
+F009088,16303,"Tangerine or tangor, peeled, raw",43.021032504780116,1.5,True,Fruit,Fruit,2,2,2
+F009534,16503,"Wax jambu, raw",26.051625239005734,1.9,True,Fruit,Fruit,2,2,2
+F005198,16302,"Lime, native, fruit",32.74378585086042,3.6,True,Fruit,Fruit,2,2,2
+F006828,16601,"Plum, davidson (native), flesh",66.92160611854685,2,True,Fruit,Fruit,2,2,2
+F006830,16804,"Plum, salted",204.82791586998087,9.3,True,Fruit,Fruit,2,2,2
+F000243,25201,"Baked beans, canned in tomato sauce",79.82791586998087,4.8,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F000244,25201,"Baked beans, canned in tomato sauce, reduced salt",84.60803059273422,4.8,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F000416,24502,"Bean, broad, dried",310.70745697896746,18.6,True,Vegetable,Vegetable,2,0,2
+F000436,25101,"Bean, haricot, dried",291.5869980879541,18.5,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F000437,25101,"Bean, haricot, dried, boiled, drained",110.89866156787762,8.8,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F000441,25101,"Bean, lima, dried",310.4684512428298,17.7,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F000442,25101,"Bean, lima, dried, boiled, drained",84.8470363288719,5.3,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F000446,24502,"Bean, mung, whole, dried, uncooked",315.4875717017208,13.7,True,Vegetable,Vegetable,2,2,2
+F000449,25101,"Bean, red kidney, dried",298.9961759082218,21.5,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F000451,25101,"Bean, red kidney, dried, boiled, drained",91.30019120458891,7.2,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F000453,24502,"Bean, red kidney, fresh, raw",134.08221797323137,9.1,True,Vegetable,Vegetable,2,0,2
+F000452,24502,"Bean, red kidney, fresh, boiled, drained",144.35946462715106,9.8,True,Vegetable,Vegetable,2,0,2
+F000448,25102,"Bean, red kidney, canned, drained",105.40152963671127,6.5,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F002881,25101,"Chickpea, dried",328.1548757170172,20.8,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F002882,25101,"Chickpea, desi, dried, boiled, drained",119.26386233269598,7.6,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F002880,25102,"Chickpea, canned, drained",113.2887189292543,5.7,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F005178,25101,"Lentil, French, hulled, dry",323.37476099426385,15,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F005181,25101,"Lentil, green, hulled, dry",317.8776290630975,14.6,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F005184,25101,"Lentil, red, hulled, dry",326.0038240917782,13.7,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F005182,25101,"Lentil, hulled, dry",322.41873804971317,14.4,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F005177,25101,"Lentil, dried, boiled, drained",92.01720841300191,4.1,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F005249,25101,"Lupin, dehulled, splits, uncooked",329.82791586998087,27.8,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F005248,25101,"Lupin, dehulled, flakes, uncooked",323.6137667304015,27,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F005250,25101,"Lupin, whole, uncooked",293.49904397705546,41.5,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F006543,25101,"Pea, split, dried",341.06118546845124,10.1,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F006544,25101,"Pea, split, dried, boiled, drained",86.9980879541109,8.3,True,Legumes & Pulses,Legumes & Pulses,2,0,2
+F006541,24501,"Pea, green, whole, dried",318.8336520076482,16.8,True,Vegetable,Vegetable,2,0,2
+F006545,24501,"Pea, yellow, whole, dried",338.91013384321224,17.7,True,Vegetable,Vegetable,2,0,2
+F000473,18101,"Beef, all cuts, separable fat, raw",592.2562141491395,0,False,Beef,Beef,0,0,0
+F000472,18101,"Beef, all cuts, separable fat, cooked, no added fat",553.7762906309752,0,False,Beef,Beef,0,0,0
+F000514,18101,"Beef, casserole meat, boneless or bone-in, shin, lean, raw",94.16826003824092,0,False,Beef,Lean Meat,2,2,2
+F000513,18101,"Beef, casserole meat, boneless or bone-in, shin, lean, casseroled, no added fat",163.0019120458891,0.5,False,Beef,Lean Meat,2,2,2
+F000516,18101,"Beef, casserole meat, boneless or bone-in, shin, semi-trimmed, raw",109.22562141491396,0,False,Beef,Beef,0,0,0
+F000515,18101,"Beef, casserole meat, boneless or bone-in, shin, semi-trimmed, casseroled, no added fat",182.60038240917783,0.5,False,Beef,Beef,0,0,0
+F000517,18101,"Beef, casserole meat, boneless or bone-in, shin, untrimmed, casseroled, no added fat",229.4455066921606,0.4,False,Beef,Beef,0,0,0
+F000518,18101,"Beef, casserole meat, boneless or bone-in, shin, untrimmed, raw",124.04397705544933,0,False,Beef,Beef,0,0,0
+F000504,18101,"Beef, boneless dice or strips, lean, raw",132.64818355640534,0,False,Beef,Lean Meat,2,2,2
+F000505,18101,"Beef, boneless dice or strips, lean, stir-fried, no added fat",154.87571701720842,0,False,Beef,Lean Meat,2,2,2
+F000503,18101,"Beef, boneless dice or strips, lean, casseroled, no added fat",178.05927342256214,0,False,Beef,Lean Meat,2,2,2
+F000507,18101,"Beef, boneless dice or strips, untrimmed, raw",140.2963671128107,0,False,Beef,Beef,0,0,0
+F000508,18101,"Beef, boneless dice or strips, untrimmed, stir-fried, no added fat",159.4168260038241,0,False,Beef,Beef,0,0,0
+F000506,18101,"Beef, boneless dice or strips, untrimmed, casseroled, no added fat",182.36137667304016,0,False,Beef,Beef,0,0,0
+F000826,18101,"Beef, steak, boneless or bone-in, blade, lean, raw",113.2887189292543,0,False,Beef,Lean Meat,2,2,2
+F000877,18101,"Beef, steak, boneless or bone-in, blade, lean, grilled, no added fat",155.35372848948373,0,False,Beef,Lean Meat,2,2,2
+F000519,18101,"Beef, casserole meat, boneless or bone-in, blade, lean, casseroled",156.07074569789674,0,False,Beef,Lean Meat,2,2,2
+F000827,18101,"Beef, steak, boneless or bone-in, blade, semi-trimmed, raw",142.92543021032503,0,False,Beef,Beef,0,0,0
+F000878,18101,"Beef, steak, boneless or bone-in, blade, semi-trimmed, grilled, no added fat",176.8642447418738,0,False,Beef,Beef,0,0,0
+F000520,18101,"Beef, casserole meat, boneless, blade, semi-trimmed, casseroled",177.82026768642447,0,False,Beef,Beef,0,0,0
+F000828,18101,"Beef, steak, boneless or bone-in, blade, untrimmed, raw",168.97705544933078,0,False,Beef,Beef,0,0,0
+F000879,18101,"Beef, steak, with bone, blade, untrimmed, grilled, no added fat",189.05353728489484,0,False,Beef,Beef,0,0,0
+F000521,18101,"Beef, casserole meat, boneless, blade, untrimmed, casseroled",190.0095602294455,0,False,Beef,Beef,0,0,0
+F009782,18101,"Beef, casserole meat, boneless, blade or chuck, lean, raw",118.30783938814531,0,False,Beef,Lean Meat,2,2,2
+F009785,18101,"Beef, casserole meat, boneless, blade or chuck, lean, casseroled, no added fat",191.92160611854683,0,False,Beef,Lean Meat,2,2,2
+F009783,18101,"Beef, casserole meat, boneless, blade or chuck, semi-trimmed, raw",154.39770554493307,0,False,Beef,Beef,0,0,0
+F009786,18101,"Beef, casserole meat, boneless, blade or chuck, semi-trimmed, casseroled",215.82217973231357,0,False,Beef,Beef,0,0,0
+F009784,18101,"Beef, casserole meat, boneless, blade or chuck, untrimmed, raw",174.71319311663478,0,False,Beef,Beef,0,0,0
+F009787,18101,"Beef, casserole meat, boneless, blade or chuck, untrimmed, casseroled, no added fat",225.14340344168258,0,False,Beef,Beef,0,0,0
+F000523,18101,"Beef, casserole meat, boneless, chuck, lean, raw",123.56596558317399,0,False,Beef,Lean Meat,2,2,2
+F000522,18101,"Beef, casserole meat, boneless, chuck, lean, casseroled, no added fat",227.77246653919693,0,False,Beef,Lean Meat,2,2,2
+F000525,18101,"Beef, casserole meat, boneless, chuck, semi-trimmed, raw",165.63097514340345,0,False,Beef,Beef,0,0,0
+F000524,18101,"Beef, casserole meat, boneless, chuck, semi-trimmed, casseroled",253.82409177820267,0,False,Beef,Beef,0,0,0
+F000527,18101,"Beef, casserole meat, boneless, chuck, untrimmed, raw",180.44933078393882,0,False,Beef,Beef,0,0,0
+F000526,18101,"Beef, casserole meat, boneless, chuck, untrimmed, casseroled, no added fat",260.2772466539197,0,False,Beef,Beef,0,0,0
+F000561,18101,"Beef, diced, lean, raw",137.18929254302103,0,False,Beef,Lean Meat,2,2,2
+F000560,18101,"Beef, diced, lean, dry-fried, no added fat",156.07074569789674,0,False,Beef,Lean Meat,2,2,2
+F000559,18101,"Beef, diced, lean, casseroled, no added fat",179.49330783938814,0,False,Beef,Lean Meat,2,2,2
+F000564,18101,"Beef, diced, untrimmed, raw",146.74952198852773,0,False,Beef,Beef,0,0,0
+F000563,18101,"Beef, diced, untrimmed, dry-fried, no added fat",162.04588910133842,0,False,Beef,Beef,0,0,0
+F000562,18101,"Beef, diced, untrimmed, casseroled, no added fat",184.99043977055447,0,False,Beef,Beef,0,0,0
+F000836,18101,"Beef, steak, boneless, fillet or tenderloin, lean, raw",136.23326959847037,0,False,Beef,Lean Meat,2,2,2
+F000835,18101,"Beef, steak, boneless, fillet or tenderloin, lean, grilled, no added fat",178.2982791586998,0,False,Beef,Lean Meat,2,2,2
+F009781,18101,"Beef, steak, boneless, fillet or tenderloin, semi-trimmed, raw",158.93881453154876,0,False,Beef,Beef,0,0,0
+F000837,18101,"Beef, steak, boneless, fillet or tenderloin, semi-trimmed, grilled, no added fat",187.14149139579348,0,False,Beef,Beef,0,0,0
+F000839,18101,"Beef, steak, boneless, fillet or tenderloin, untrimmed, raw",169.6940726577438,0,False,Beef,Beef,0,0,0
+F000838,18101,"Beef, steak, boneless, fillet or tenderloin, untrimmed, grilled, no added fat",202.91586998087953,0,False,Beef,Beef,0,0,0
+F000666,18101,"Beef, mince, lower fat, raw",129.302103250478,0,False,Beef,Beef,0,0,0
+F000667,18101,"Beef, mince, lower fat, stir-fried, no added fat",202.91586998087953,0,False,Beef,Beef,0,0,0
+F000665,18101,"Beef, mince, lower fat, casseroled, no added fat",161.5678776290631,0,False,Beef,Beef,0,0,0
+F000678,18101,"Beef, mince, regular fat, raw",169.6940726577438,0,False,Beef,Beef,0,0,0
+F000679,18101,"Beef, mince, regular fat, stir-fried, no added fat",264.81835564053534,0,False,Beef,Beef,0,0,0
+F000655,18101,"Beef, mince, higher fat, raw",183.3173996175908,0,False,Beef,Beef,0,0,0
+F000656,18101,"Beef, mince, higher fat, stir-fried, no added fat",231.35755258126193,0,False,Beef,Beef,0,0,0
+F000704,18101,"Beef, roasting piece, silverside or topside, lean, raw",125.717017208413,0,False,Beef,Lean Meat,2,2,2
+F000705,18101,"Beef, roasting piece, silverside or topside, lean, roasted, no added fat",158.22179732313575,0,False,Beef,Lean Meat,2,2,2
+F000706,18101,"Beef, roasting piece, silverside or topside, semi-trimmed, raw",134.56022944550668,0,False,Beef,Beef,0,0,0
+F000707,18101,"Beef, roasting piece, silverside or topside, semi-trimmed, roasted, no added fat",169.93307839388146,0,False,Beef,Beef,0,0,0
+F000708,18101,"Beef, roasting piece, silverside or topside, untrimmed, raw",166.34799235181643,0,False,Beef,Beef,0,0,0
+F000709,18101,"Beef, roasting piece, silverside or topside, untrimmed, roasted, no added fat",190.0095602294455,0,False,Beef,Beef,0,0,0
+F000841,18101,"Beef, steak, boneless, round, lean, raw",100.38240917782026,0,False,Beef,Lean Meat,2,2,2
+F000840,18101,"Beef, steak, boneless, round, lean, grilled, no added fat",146.98852772466537,0,False,Beef,Lean Meat,2,2,2
+F000843,18101,"Beef, steak, boneless, round, semi-trimmed, raw",125.47801147227533,0,False,Beef,Beef,0,0,0
+F000842,18101,"Beef, steak, boneless, round, semi-trimmed, grilled, no added fat",156.78776290630975,0,False,Beef,Beef,0,0,0
+F000845,18101,"Beef, steak, boneless, round, untrimmed, raw",135.75525812619503,0,False,Beef,Beef,0,0,0
+F000844,18101,"Beef, steak, boneless, round, untrimmed, grilled, no added fat",166.5869980879541,0,False,Beef,Beef,0,0,0
+F000739,18101,"Beef, rump steak, lean, raw",107.55258126195028,0,False,Beef,Lean Meat,2,2,2
+F000738,18101,"Beef, rump steak, lean, grilled, no added fat",169.6940726577438,0,False,Beef,Lean Meat,2,2,2
+F000752,18101,"Beef, rump steak, semi-trimmed, raw",130.49713193116634,0,False,Beef,Beef,0,0,0
+F000751,18101,"Beef, rump steak, semi-trimmed, grilled, no added fat",192.1606118546845,0,False,Beef,Beef,0,0,0
+F000765,18101,"Beef, rump steak, untrimmed, raw",194.78967495219885,0,False,Beef,Beef,0,0,0
+F000764,18101,"Beef, rump steak, untrimmed, grilled, no added fat",217.49521988527724,0,False,Beef,Beef,0,0,0
+F000847,18101,"Beef, steak, boneless, scotch fillet, lean, raw",121.41491395793498,0,False,Beef,Lean Meat,2,2,2
+F000846,18101,"Beef, steak, boneless, scotch fillet, lean, grilled, no added fat",168.97705544933078,0,False,Beef,Lean Meat,2,2,2
+F000830,18101,"Beef, steak, boneless rump or sirloin, lean, raw",111.1376673040153,0,False,Beef,Lean Meat,2,2,2
+F000829,18101,"Beef, steak, boneless rump or sirloin, lean, grilled, no added fat",163.47992351816444,0,False,Beef,Lean Meat,2,2,2
+F000832,18101,"Beef, steak, boneless rump or sirloin, semi-trimmed, raw",136.95028680688335,0,False,Beef,Beef,0,0,0
+F000831,18101,"Beef, steak, boneless rump or sirloin, semi-trimmed, grilled, no added fat",185.22944550669214,0,False,Beef,Beef,0,0,0
+F000834,18101,"Beef, steak, boneless rump or sirloin, untrimmed, raw",208.41300191204587,0,False,Beef,Beef,0,0,0
+F000833,18101,"Beef, steak, boneless rump or sirloin, untrimmed, grilled, no added fat",229.20650095602292,0,False,Beef,Beef,0,0,0
+F000849,18101,"Beef, steak, boneless, scotch fillet, semi-trimmed, raw",179.49330783938814,0,False,Beef,Beef,0,0,0
+F000848,18101,"Beef, steak, boneless, scotch fillet, semi-trimmed, grilled, no added fat",206.26195028680687,0,False,Beef,Beef,0,0,0
+F000851,18101,"Beef, steak, boneless, scotch fillet, untrimmed, raw",211.04206500956022,0,False,Beef,Beef,0,0,0
+F000850,18101,"Beef, steak, boneless, scotch fillet, untrimmed, grilled, no added fat",227.77246653919693,0,False,Beef,Beef,0,0,0
+F000792,18101,"Beef, silverside roast, lean, raw",118.30783938814531,0,False,Beef,Lean Meat,2,2,2
+F000793,18101,"Beef, silverside roast, lean, roasted, no added fat",158.6998087954111,0,False,Beef,Lean Meat,2,2,2
+F000795,18101,"Beef, silverside roast, semi-trimmed, raw",135.75525812619503,0,False,Beef,Beef,0,0,0
+F000796,18101,"Beef, silverside roast, semi-trimmed, roasted, no added fat",168.26003824091777,0,False,Beef,Beef,0,0,0
+F000798,18101,"Beef, silverside roast, untrimmed, raw",169.93307839388146,0,False,Beef,Beef,0,0,0
+F000799,18101,"Beef, silverside roast, untrimmed, roasted, no added fat",190.48757170172084,0,False,Beef,Beef,0,0,0
+F000810,18101,"Beef, sirloin steak, lean, raw",114.7227533460803,0,False,Beef,Lean Meat,2,2,2
+F000809,18101,"Beef, sirloin steak, lean, grilled, no added fat",157.50478011472273,0,False,Beef,Lean Meat,2,2,2
+F000818,18101,"Beef, sirloin steak, semi-trimmed, raw",143.1644359464627,0,False,Beef,Beef,0,0,0
+F000817,18101,"Beef, sirloin steak, semi-trimmed, grilled, no added fat",178.2982791586998,0,False,Beef,Beef,0,0,0
+F000825,18101,"Beef, sirloin steak, untrimmed, raw",222.2753346080306,0,False,Beef,Beef,0,0,0
+F000824,18101,"Beef, sirloin steak, untrimmed, grilled, no added fat",240.67877629063096,0,False,Beef,Beef,0,0,0
+F000931,18101,"Beef, stir-fry strips, lean, raw",128.10707456978966,0,False,Beef,Lean Meat,2,2,2
+F000929,18101,"Beef, stir-fry strips, lean, dry-fried, no added fat",153.91969407265773,0,False,Beef,Lean Meat,2,2,2
+F000934,18101,"Beef, strips, lean, casseroled, no added fat",176.8642447418738,0,False,Beef,Lean Meat,2,2,2
+F000933,18101,"Beef, stir-fry strips, untrimmed, raw",133.60420650095602,0,False,Beef,Beef,0,0,0
+F000932,18101,"Beef, stir-fry strips, untrimmed, dry-fried, no added fat",157.02676864244742,0,False,Beef,Beef,0,0,0
+F000935,18101,"Beef, strips, untrimmed, casseroled, no added fat",179.7323135755258,0,False,Beef,Beef,0,0,0
+F000881,18101,"Beef, steak, with bone, T-bone or blade, lean, raw",114.7227533460803,0,False,Beef,Lean Meat,2,2,2
+F000880,18101,"Beef, steak, with bone, T-bone or blade, lean, grilled, no added fat",153.68068833652006,0,False,Beef,Lean Meat,2,2,2
+F000883,18101,"Beef, steak, with bone, T-bone or blade, semi-trimmed, raw",159.65583173996174,0,False,Beef,Beef,0,0,0
+F000882,18101,"Beef, steak, with bone, T-bone or blade, semi-trimmed, grilled, no added fat",188.5755258126195,0,False,Beef,Beef,0,0,0
+F000885,18101,"Beef, steak, with bone, T-bone or blade, untrimmed, raw",202.67686424474186,0,False,Beef,Beef,0,0,0
+F000884,18101,"Beef, steak, with bone, T-bone or blade, untrimmed, grilled, no added fat",212.23709369024857,0,False,Beef,Beef,0,0,0
+F000887,18101,"Beef, steak, with bone, T-bone, lean, raw",116.39579349904398,0,False,Beef,Lean Meat,2,2,2
+F000886,18101,"Beef, steak, with bone, T-bone, lean, grilled, no added fat",152.24665391969407,0,False,Beef,Lean Meat,2,2,2
+F000889,18101,"Beef, steak, with bone, T-bone, semi-trimmed, raw",176.38623326959848,0,False,Beef,Beef,0,0,0
+F000888,18101,"Beef, steak, with bone, T-bone, semi-trimmed, grilled, no added fat",200.04780114722752,0,False,Beef,Beef,0,0,0
+F000891,18101,"Beef, steak, with bone, T-bone, untrimmed, raw",236.13766730401528,0,False,Beef,Beef,0,0,0
+F000890,18101,"Beef, steak, with bone, T-bone, untrimmed, grilled, no added fat",235.18164435946463,0,False,Beef,Beef,0,0,0
+F000961,18101,"Beef, topside roast, lean, raw",117.11281070745697,0,False,Beef,Lean Meat,2,2,2
+F000962,18101,"Beef, topside roast, lean, roasted, no added fat",157.7437858508604,0,False,Beef,Lean Meat,2,2,2
+F000963,18101,"Beef, topside roast, semi-trimmed, raw",133.36520076481835,0,False,Beef,Beef,0,0,0
+F000964,18101,"Beef, topside roast, semi-trimmed, roasted, no added fat",171.8451242829828,0,False,Beef,Beef,0,0,0
+F000966,18101,"Beef, topside roast, untrimmed, raw",162.76290630975143,0,False,Beef,Beef,0,0,0
+F000967,18101,"Beef, topside roast, untrimmed, roasted, no added fat",189.53154875717016,0,False,Beef,Beef,0,0,0
+F009360,18104,"Veal, all cuts, separable fat, raw",335.3250478011472,0,False,Veal,Veal,0,0,0
+F009359,18104,"Veal, all cuts, separable fat, cooked",375.9560229445507,0,False,Veal,Veal,0,0,0
+F009361,18104,"Veal, boneless dice or strips, lean, raw",117.59082217973231,0,False,Veal,Lean Meat,2,2,2
+F009362,18104,"Veal, boneless dice or strips, lean, stir-fried, no added fat",151.2906309751434,0,False,Veal,Lean Meat,2,2,2
+F009363,18104,"Veal, boneless dice or strips, untrimmed, raw",121.41491395793498,0,False,Veal,Veal,0,0,0
+F009364,18104,"Veal, boneless dice or strips, untrimmed, stir-fried, no added fat",155.5927342256214,0,False,Veal,Veal,0,0,0
+F009370,18104,"Veal, cutlet, with bone, lean, raw",109.70363288718929,0,False,Veal,Lean Meat,2,2,2
+F009369,18104,"Veal, cutlet, with bone, lean, grilled, no added fat",131.93116634799236,0,False,Veal,Lean Meat,2,2,2
+F009372,18104,"Veal, cutlet, with bone, semi-trimmed, raw",122.37093690248565,0,False,Veal,Veal,0,0,0
+F009371,18104,"Veal, cutlet, with bone, semi-trimmed, grilled, no added fat",149.37858508604205,0,False,Veal,Veal,0,0,0
+F009374,18104,"Veal, cutlet, with bone, untrimmed, raw",125.0,0,False,Veal,Veal,0,0,0
+F009373,18104,"Veal, cutlet, with bone, untrimmed, grilled, no added fat",151.05162523900572,0,False,Veal,Veal,0,0,0
+F009379,18104,"Veal, diced, lean, raw",107.07456978967495,0,False,Veal,Lean Meat,2,2,2
+F009380,18104,"Veal, diced, lean, stir-fried, no added fat",156.07074569789674,0,False,Veal,Lean Meat,2,2,2
+F009381,18104,"Veal, diced, untrimmed, raw",111.37667304015297,0,False,Veal,Veal,0,0,0
+F009382,18104,"Veal, diced, untrimmed, stir-fried, no added fat",162.2848948374761,0,False,Veal,Veal,0,0,0
+F009433,18104,"Veal, steak, boneless, leg, lean, raw",112.33269598470363,0,False,Veal,Lean Meat,2,2,2
+F009432,18104,"Veal, steak, boneless, leg, lean, grilled, no added fat",156.54875717017208,0,False,Veal,Lean Meat,2,2,2
+F009435,18104,"Veal, steak, boneless, leg, untrimmed, raw",115.20076481835564,0,False,Veal,Veal,0,0,0
+F009434,18104,"Veal, steak, boneless, leg, untrimmed, grilled, no added fat",161.32887189292543,0,False,Veal,Veal,0,0,0
+F009438,18104,"Veal, stir-fry strips, lean, raw",128.10707456978966,0,False,Veal,Lean Meat,2,2,2
+F009439,18104,"Veal, stir-fry strips, lean, stir-fried, no added fat",146.74952198852773,0,False,Veal,Lean Meat,2,2,2
+F009440,18104,"Veal, stir-fry strips, untrimmed, raw",131.6921606118547,0,False,Veal,Veal,0,0,0
+F009441,18104,"Veal, stir-fry strips, untrimmed, stir-fried, no added fat",148.90057361376674,0,False,Veal,Veal,0,0,0
+F004831,18102,"Lamb, all cuts, separable fat, raw",553.2982791586998,0,False,Lamb,Lamb,0,0,0
+F004830,18102,"Lamb, all cuts, separable fat, cooked",538.0019120458891,0,False,Lamb,Lamb,0,0,0
+F004846,18102,"Lamb, boneless, fillet or loin, untrimmed, raw",134.79923518164435,0,False,Lamb,Lamb,0,0,0
+F004845,18102,"Lamb, boneless, fillet or loin, untrimmed, grilled, no added fat",167.06500956022944,0,False,Lamb,Lamb,0,0,0
+F004844,18102,"Lamb, boneless, fillet or loin, lean, raw",117.35181644359464,0,False,Lamb,Lean Meat,2,2,2
+F004843,18102,"Lamb, boneless, fillet or loin, lean, grilled, no added fat",159.4168260038241,0,False,Lamb,Lean Meat,2,2,2
+F004890,18102,"Lamb, chop, with bone, loin or chump, lean, raw",144.83747609942637,0,False,Lamb,Lean Meat,2,2,2
+F004889,18102,"Lamb, chop, with bone, loin or chump, lean, grilled, no added fat",215.10516252390056,0,False,Lamb,Lean Meat,2,2,2
+F004892,18102,"Lamb, chop, with bone, loin or chump, semi-trimmed, raw",192.1606118546845,0,False,Lamb,Lamb,0,0,0
+F004891,18102,"Lamb, chop, with bone, loin or chump, semi-trimmed, grilled, no added fat",249.04397705544932,0,False,Lamb,Lamb,0,0,0
+F004894,18102,"Lamb, chop, with bone, loin or chump, untrimmed, raw",269.8374760994264,0,False,Lamb,Lamb,0,0,0
+F004893,18102,"Lamb, chop, with bone, loin or chump, untrimmed, grilled, no added fat",287.2848948374761,0,False,Lamb,Lamb,0,0,0
+F004899,18102,"Lamb, chop, with bone, chump, lean, raw",129.54110898661568,0,False,Lamb,Lean Meat,2,2,2
+F004898,18102,"Lamb, chop, with bone, chump, lean, grilled, no added fat",228.7284894837476,0,False,Lamb,Lean Meat,2,2,2
+F004908,18102,"Lamb, chop, with bone, chump, semi-trimmed, raw",179.97131931166348,0,False,Lamb,Lamb,0,0,0
+F004907,18102,"Lamb, chop, with bone, chump, semi-trimmed, grilled, no added fat",270.5544933078394,0,False,Lamb,Lamb,0,0,0
+F004911,18102,"Lamb, chop, with bone, chump, untrimmed, raw",234.46462715105162,0,False,Lamb,Lamb,0,0,0
+F004910,18102,"Lamb, chop, with bone, chump, untrimmed, grilled, no added fat",298.9961759082218,0,False,Lamb,Lamb,0,0,0
+F004928,18102,"Lamb, diced, lean, raw",132.40917782026767,0,False,Lamb,Lean Meat,2,2,2
+F004929,18102,"Lamb, diced, lean, stir-fried, no added fat",184.75143403441683,0,False,Lamb,Lean Meat,2,2,2
+F004927,18102,"Lamb, diced, lean, casseroled, no added fat",185.46845124282981,0,False,Lamb,Lean Meat,2,2,2
+F004931,18102,"Lamb, diced, untrimmed, raw",140.53537284894836,0,False,Lamb,Lamb,0,0,0
+F004932,18102,"Lamb, diced, untrimmed, stir-fried, no added fat",192.63862332695984,0,False,Lamb,Lamb,0,0,0
+F004930,18102,"Lamb, diced, untrimmed, casseroled, no added fat",193.35564053537283,0,False,Lamb,Lamb,0,0,0
+F004838,18102,"Lamb, boneless dice or strips, lean, raw",129.302103250478,0,False,Lamb,Lean Meat,2,2,2
+F004839,18102,"Lamb, boneless dice or strips, lean, stir-fried, no added fat",183.55640535372848,0,False,Lamb,Lean Meat,2,2,2
+F004837,18102,"Lamb, boneless dice or strips, lean, casseroled, no added fat",185.46845124282981,0,False,Lamb,Lean Meat,2,2,2
+F004841,18102,"Lamb, boneless dice or strips, untrimmed, raw",139.34034416826003,0,False,Lamb,Lamb,0,0,0
+F004842,18102,"Lamb, boneless dice or strips, untrimmed, stir-fried, no added fat",189.53154875717016,0,False,Lamb,Lamb,0,0,0
+F004840,18102,"Lamb, boneless dice or strips, untrimmed, casseroled, no added fat",191.68260038240916,0,False,Lamb,Lamb,0,0,0
+F004948,18102,"Lamb, eye of loin, lean, raw",119.02485659655831,0,False,Lamb,Lean Meat,2,2,2
+F004947,18102,"Lamb, eye of loin, lean, microwaved, no added fat",158.46080305927342,0,False,Lamb,Lean Meat,2,2,2
+F004951,18102,"Lamb, eye of loin, untrimmed, raw",130.25812619502867,0,False,Lamb,Lamb,0,0,0
+F004950,18102,"Lamb, eye of loin, untrimmed, microwaved, no added fat",165.1529636711281,0,False,Lamb,Lamb,0,0,0
+F005074,18102,"Lamb, roasting piece, shoulder, lean, raw",111.85468451242829,0,False,Lamb,Lean Meat,2,2,2
+F005067,18102,"Lamb, roasting piece, shoulder, lean, roasted, no added fat",168.0210325047801,0,False,Lamb,Lean Meat,2,2,2
+F005075,18102,"Lamb, roasting piece, shoulder, semi-trimmed, raw",166.10898661567876,0,False,Lamb,Lamb,0,0,0
+F005076,18102,"Lamb, roasting piece, shoulder, semi-trimmed, roasted, no added fat",205.3059273422562,0,False,Lamb,Lamb,0,0,0
+F005077,18102,"Lamb, roasting piece, shoulder, untrimmed, raw",213.67112810707457,0,False,Lamb,Lamb,0,0,0
+F005078,18102,"Lamb, roasting piece, shoulder, untrimmed, roasted, no added fat",261.7112810707457,0,False,Lamb,Lamb,0,0,0
+F004885,18102,"Lamb, chop, with bone, forequarter, lean, raw",133.60420650095602,0,False,Lamb,Lean Meat,2,2,2
+F004884,18102,"Lamb, chop, with bone, forequarter, lean, grilled, no added fat",214.62715105162522,0,False,Lamb,Lean Meat,2,2,2
+F004887,18102,"Lamb, chop, with bone, forequarter, semi-trimmed, raw",232.07456978967494,0,False,Lamb,Lamb,0,0,0
+F004886,18102,"Lamb, chop, with bone, forequarter, semi-trimmed, grilled, no added fat",264.81835564053534,0,False,Lamb,Lamb,0,0,0
+F004888,18102,"Lamb, chop, with bone, forequarter, untrimmed, raw",269.12045889101336,0,False,Lamb,Lamb,0,0,0
+F004883,18102,"Lamb, chop, with bone, forequarter, grilled, no added fat",280.35372848948373,0,False,Lamb,Lamb,0,0,0
+F004919,18102,"Lamb, cutlet or frenched cutlet, with bone, lean, raw",139.81835564053537,0,False,Lamb,Lean Meat,2,2,2
+F004918,18102,"Lamb, cutlet or frenched cutlet, with bone, lean, grilled, no added fat",200.04780114722752,0,False,Lamb,Lean Meat,2,2,2
+F004921,18102,"Lamb, cutlet or frenched cutlet, with bone, semi-trimmed, raw",212.71510516252388,0,False,Lamb,Lamb,0,0,0
+F004920,18102,"Lamb, cutlet or frenched cutlet, with bone, semi-trimmed, grilled, no added fat",264.5793499043977,0,False,Lamb,Lamb,0,0,0
+F004923,18102,"Lamb, cutlet or frenched cutlet, with bone, untrimmed, raw",233.50860420650093,0,False,Lamb,Lamb,0,0,0
+F004922,18102,"Lamb, cutlet or frenched cutlet, with bone, untrimmed, grilled, no added fat",277.9636711281071,0,False,Lamb,Lamb,0,0,0
+F004954,18102,"Lamb, fillet, lean, raw",115.91778202676863,0,False,Lamb,Lean Meat,2,2,2
+F004953,18102,"Lamb, fillet, lean, grilled, no added fat",160.37284894837475,0,False,Lamb,Lean Meat,2,2,2
+F004956,18102,"Lamb, fillet, untrimmed, raw",139.5793499043977,0,False,Lamb,Lamb,0,0,0
+F004955,18102,"Lamb, fillet, untrimmed, grilled, no added fat",168.97705544933078,0,False,Lamb,Lamb,0,0,0
+F005013,18102,"Lamb, leg roast, lean, raw",114.0057361376673,0,False,Lamb,Lean Meat,2,2,2
+F005014,18102,"Lamb, leg roast, lean, roasted, no added fat",177.34225621414913,0,False,Lamb,Lean Meat,2,2,2
+F005015,18102,"Lamb, leg roast, semi-trimmed, raw",144.35946462715106,0,False,Lamb,Lamb,0,0,0
+F005016,18102,"Lamb, leg roast, semi-trimmed, roasted, no added fat",200.76481835564053,0,False,Lamb,Lamb,0,0,0
+F005017,18102,"Lamb, leg roast, untrimmed, raw",187.8585086042065,0,False,Lamb,Lamb,0,0,0
+F005018,18102,"Lamb, leg roast, untrimmed, roasted, no added fat",229.20650095602292,0,False,Lamb,Lamb,0,0,0
+F005027,18102,"Lamb, loin chop, lean, raw",160.37284894837475,0,False,Lamb,Lean Meat,2,2,2
+F005026,18102,"Lamb, loin chop, lean, grilled, no added fat",201.48183556405354,0,False,Lamb,Lean Meat,2,2,2
+F005037,18102,"Lamb, loin chop, semi-trimmed, raw",204.5889101338432,0,False,Lamb,Lamb,0,0,0
+F005036,18102,"Lamb, loin chop, semi-trimmed, grilled, no added fat",227.77246653919693,0,False,Lamb,Lamb,0,0,0
+F005044,18102,"Lamb, loin chop, untrimmed, raw",304.9713193116635,0,False,Lamb,Lamb,0,0,0
+F005043,18102,"Lamb, loin chop, untrimmed, grilled, no added fat",275.8126195028681,0,False,Lamb,Lamb,0,0,0
+F005049,18102,"Lamb, mince, raw",143.88145315487571,0,False,Lamb,Lamb,0,0,0
+F005050,18102,"Lamb, mince, stir-fried, no added fat",174.23518164435947,0,False,Lamb,Lamb,0,0,0
+F005053,18102,"Lamb, mini roast, lean, roasted, no added fat",162.52390057361376,0,False,Lamb,Lean Meat,2,2,2
+F005054,18102,"Lamb, mini roast, semi-trimmed, roasted, no added fat",186.18546845124283,0,False,Lamb,Lamb,0,0,0
+F005055,18102,"Lamb, mini roast, untrimmed, roasted, no added fat",205.06692160611854,0,False,Lamb,Lamb,0,0,0
+F005068,18102,"Lamb, roasting piece, leg or mini roast, lean, raw",122.37093690248565,0,False,Lamb,Lean Meat,2,2,2
+F005069,18102,"Lamb, roasting piece, leg or mini roast, lean, roasted, no added fat",169.93307839388146,0,False,Lamb,Lean Meat,2,2,2
+F005070,18102,"Lamb, roasting piece, leg or mini roast, semi-trimmed, raw",151.2906309751434,0,False,Lamb,Lamb,0,0,0
+F005071,18102,"Lamb, roasting piece, leg or mini roast, semi-trimmed, roasted, no added fat",193.5946462715105,0,False,Lamb,Lamb,0,0,0
+F005072,18102,"Lamb, roasting piece, leg or mini roast, untrimmed, raw",187.38049713193115,0,False,Lamb,Lamb,0,0,0
+F005073,18102,"Lamb, roasting piece, leg or mini roast, untrimmed, roasted, no added fat",217.0172084130019,0,False,Lamb,Lamb,0,0,0
+F005095,18102,"Lamb, steak, boneless, lean, raw",130.49713193116634,0,False,Lamb,Lean Meat,2,2,2
+F005094,18102,"Lamb, steak, boneless, lean, grilled, no added fat",183.79541108986615,0,False,Lamb,Lean Meat,2,2,2
+F005097,18102,"Lamb, steak, boneless, semi-trimmed, raw",158.22179732313575,0,False,Lamb,Lamb,0,0,0
+F005096,18102,"Lamb, steak, boneless, semi-trimmed, grilled, no added fat",206.26195028680687,0,False,Lamb,Lamb,0,0,0
+F005099,18102,"Lamb, steak, boneless, untrimmed, raw",186.90248565965584,0,False,Lamb,Lamb,0,0,0
+F005098,18102,"Lamb, steak, boneless, untrimmed, grilled, no added fat",223.94837476099426,0,False,Lamb,Lamb,0,0,0
+F005139,18102,"Lamb, with bone, shin, lean, raw",114.0057361376673,0,False,Lamb,Lean Meat,2,2,2
+F005138,18102,"Lamb, with bone, shin, lean, casseroled, no added fat",180.44933078393882,0,False,Lamb,Lean Meat,2,2,2
+F005141,18102,"Lamb, with bone, shin, semi-trimmed, raw",147.46653919694072,0,False,Lamb,Lamb,0,0,0
+F005140,18102,"Lamb, with bone, shin, semi-trimmed, casseroled, no added fat",203.63288718929255,0,False,Lamb,Lamb,0,0,0
+F005143,18102,"Lamb, with bone, shin, untrimmed, raw",187.61950286806882,0,False,Lamb,Lamb,0,0,0
+F005142,18102,"Lamb, with bone, shin, untrimmed, casseroled, no added fat",230.64053537284894,0,False,Lamb,Lamb,0,0,0
+F005121,18102,"Lamb, stir-fry strips, lean, raw",126.19502868068834,0,False,Lamb,Lean Meat,2,2,2
+F005122,18102,"Lamb, stir-fry strips, lean, stir-fried, no added fat",182.36137667304016,0,False,Lamb,Lean Meat,2,2,2
+F005120,18102,"Lamb, stir-fry strips, lean, casseroled, no added fat",185.46845124282981,0,False,Lamb,Lean Meat,2,2,2
+F005125,18102,"Lamb, stir-fry strips, untrimmed, raw",138.1453154875717,0,False,Lamb,Lamb,0,0,0
+F005126,18102,"Lamb, stir-fry strips, untrimmed, stir-fried, no added fat",186.66347992351817,0,False,Lamb,Lamb,0,0,0
+F005124,18102,"Lamb, stir-fry strips, untrimmed, casseroled, no added fat",189.77055449330783,0,False,Lamb,Lamb,0,0,0
+F005977,18102,"Mutton, all cuts, separable fat, raw",602.7724665391969,0,False,Lamb,Lamb,0,0,0
+F005976,18102,"Mutton, all cuts, separable fat, cooked",643.8814531548757,0,False,Lamb,Lamb,0,0,0
+F005979,18102,"Mutton, boneless dice or strips, shoulder, lean, raw",123.80497131931166,0,False,Lamb,Lean Meat,2,2,2
+F005978,18102,"Mutton, boneless dice or strips, shoulder, lean, casseroled, no added fat",248.80497131931165,0,False,Lamb,Lean Meat,2,2,2
+F005981,18102,"Mutton, boneless dice or strips, shoulder, semi-trimmed, raw",162.04588910133842,0,False,Lamb,Lamb,0,0,0
+F005980,18102,"Mutton, boneless dice or strips, shoulder, semi-trimmed, casseroled, no added fat",266.491395793499,0,False,Lamb,Lamb,0,0,0
+F005983,18102,"Mutton, boneless dice or strips, shoulder, untrimmed, raw",171.36711281070745,0,False,Lamb,Lamb,0,0,0
+F005982,18102,"Mutton, boneless dice or strips, shoulder, untrimmed, casseroled, no added fat",271.7495219885277,0,False,Lamb,Lamb,0,0,0
+F005997,18102,"Mutton, roasting piece, with bone, leg, lean, raw",121.65391969407266,0,False,Lamb,Lean Meat,2,2,2
+F005998,18102,"Mutton, roasting piece, with bone, leg, lean, roasted, no added fat",189.2925430210325,0,False,Lamb,Lean Meat,2,2,2
+F005999,18102,"Mutton, roasting piece, with bone, leg, semi-trimmed, raw",151.52963671128106,0,False,Lamb,Lamb,0,0,0
+F006000,18102,"Mutton, roasting piece, with bone, leg, semi-trimmed, roasted, no added fat",219.64627151051624,0,False,Lamb,Lamb,0,0,0
+F006001,18102,"Mutton, roasting piece, with bone, leg, untrimmed, raw",193.83365200764817,0,False,Lamb,Lamb,0,0,0
+F006002,18102,"Mutton, roasting piece, with bone, leg, untrimmed, roasted, no added fat",261.2332695984704,0,False,Lamb,Lamb,0,0,0
+F004230,18202,"Goat, all cuts, separable fat, raw",443.35564053537286,0,False,,,0,0,0
+F004229,18202,"Goat, all cuts, separable fat, baked, no added fat",610.8986615678776,0,False,,,0,0,0
+F004233,18202,"Goat, forequarter, lean, raw",103.25047801147227,0,False,,,0,0,0
+F004232,18202,"Goat, forequarter, lean, baked, no added fat",161.5678776290631,0,False,,,0,0,0
+F004235,18202,"Goat, leg, lean, raw",108.98661567877629,0,False,,,0,0,0
+F004234,18202,"Goat, leg, lean, baked, no added fat",166.10898661567876,0,False,,,0,0,0
+F004237,18202,"Goat, loin, lean, raw",103.25047801147227,0,False,,,0,0,0
+F004236,18202,"Goat, loin, lean, baked, no added fat",146.2715105162524,0,False,,,0,0,0
+F004240,18202,"Goat, meat, all cuts, lean, raw",105.1625239005736,0,False,,,0,0,0
+F004238,18202,"Goat, meat, all cuts, lean, baked, no added fat",157.98279158699808,0,False,,,0,0,0
+F004239,18202,"Goat, meat, all cuts, lean, casseroled, no added fat",208.1739961759082,0,False,,,0,0,0
+F004243,18202,"Goat, meat, all cuts, untrimmed, raw",135.2772466539197,0,False,,,0,0,0
+F004242,18202,"Goat, meat, all cuts, untrimmed, casseroled, no added fat",241.63479923518165,0,False,,,0,0,0
+F004241,18202,"Goat, meat, all cuts, untrimmed, baked, no added fat",202.4378585086042,0,False,,,0,0,0
+F006875,18103,"Pork, butterfly steak, lean, raw",112.09369024856596,0,False,Pork,Lean Meat,2,2,2
+F006874,18103,"Pork, butterfly steak, lean, grilled, no added fat",156.78776290630975,0,False,Pork,Lean Meat,2,2,2
+F006866,18103,"Pork, butterfly steak, untrimmed, raw",153.68068833652006,0,False,Pork,Pork,0,0,0
+F006864,18103,"Pork, butterfly steak, untrimmed, grilled, no added fat",197.17973231357553,0,False,Pork,Pork,0,0,0
+F006883,18103,"Pork, diced, untrimmed, raw",119.98087954110898,0,False,Pork,Pork,0,0,0
+F006881,18103,"Pork, diced, untrimmed, fried, no added fat",154.63671128107075,0,False,Pork,Pork,0,0,0
+F006899,18103,"Pork, fillet, lean, raw",103.48948374760994,0,False,Pork,Lean Meat,2,2,2
+F006892,18103,"Pork, fillet, fully-trimmed, baked, no added fat",135.2772466539197,0,False,Pork,Pork,0,0,0
+F006906,18103,"Pork, forequarter (chop, roast, neck), separable fat, raw",488.0497131931166,0,False,Pork,Pork,0,0,0
+F006940,18103,"Pork, forequarter, separable fat, BBQ'd, no added fat",520.793499043977,0,False,Pork,Pork,0,0,0
+F006922,18103,"Pork, forequarter chop, lean, raw",113.76673040152963,0,False,Pork,Lean Meat,2,2,2
+F006921,18103,"Pork, forequarter chop, lean, BBQ'd, no added fat",162.52390057361376,0,False,Pork,Lean Meat,2,2,2
+F006919,18103,"Pork, forequarter chop, semi-trimmed, BBQ'd, no added fat",184.2734225621415,0,False,Pork,Pork,0,0,0
+F006910,18103,"Pork, forequarter chop, untrimmed, raw",187.61950286806882,0,False,Pork,Pork,0,0,0
+F006908,18103,"Pork, forequarter chop, untrimmed, BBQ'd, no added fat",236.13766730401528,0,False,Pork,Pork,0,0,0
+F006933,18103,"Pork, forequarter shoulder roast, lean, raw",106.83556405353728,0,False,Pork,Lean Meat,2,2,2
+F006932,18103,"Pork, forequarter shoulder roast, lean, BBQ'd, no added fat",157.2657743785851,0,False,Pork,Lean Meat,2,2,2
+F006931,18103,"Pork, forequarter shoulder roast, semi-trimmed, BBQ'd, no added fat",178.77629063097513,0,False,Pork,Pork,0,0,0
+F006929,18103,"Pork, forequarter shoulder roast, untrimmed, raw",182.12237093690248,0,False,Pork,Pork,0,0,0
+F006927,18103,"Pork, forequarter shoulder roast, untrimmed, BBQ'd, no added fat",215.34416826003823,0,False,Pork,Pork,0,0,0
+F006953,18103,"Pork, leg roast, untrimmed, raw",163.71892925430208,0,False,Pork,Pork,0,0,0
+F006951,18103,"Pork, leg roast, untrimmed, baked, no added fat",221.3193116634799,0,False,Pork,Pork,0,0,0
+F006965,18103,"Pork, leg steak (rump), separable fat, raw",622.131931166348,0,False,Pork,Pork,0,0,0
+F006964,18103,"Pork, leg steak (rump), separable fat, fried, no added fat",523.6615678776291,0,False,Pork,Pork,0,0,0
+F006963,18103,"Pork, leg steak (round, rump, topside, silverside), lean, raw",111.37667304015297,0,False,Pork,Lean Meat,2,2,2
+F006962,18103,"Pork, leg steak (round, rump, topside, silverside), lean, fried, no added fat",140.77437858508603,0,False,Pork,Lean Meat,2,2,2
+F006960,18103,"Pork, leg steak (round, rump, topside, silverside), untrimmed, raw",116.39579349904398,0,False,Pork,Pork,0,0,0
+F006959,18103,"Pork, leg steak (round, rump, topside, silverside), untrimmed, fried, no added fat",144.12045889101339,0,False,Pork,Pork,0,0,0
+F007016,18103,"Pork, loin chop, separable fat, raw",643.8814531548757,0,False,Pork,Pork,0,0,0
+F007015,18103,"Pork, loin chop, separable fat, BBQ'd, no added fat",660.8508604206501,0,False,Pork,Pork,0,0,0
+F007019,18103,"Pork, loin chop, lean, raw",110.18164435946463,0,False,Pork,Lean Meat,2,2,2
+F007017,18103,"Pork, loin chop, lean, BBQ'd, no added fat",164.19694072657742,0,False,Pork,Lean Meat,2,2,2
+F007014,18103,"Pork, loin chop, semi-trimmed, raw",136.95028680688335,0,False,Pork,Pork,0,0,0
+F007012,18103,"Pork, loin chop, semi-trimmed, BBQ'd, no added fat",189.05353728489484,0,False,Pork,Pork,0,0,0
+F006993,18103,"Pork, loin chop, untrimmed, raw",168.49904397705544,0,False,Pork,Pork,0,0,0
+F006991,18103,"Pork, loin chop, untrimmed, BBQ'd, no added fat",222.2753346080306,0,False,Pork,Pork,0,0,0
+F007028,18103,"Pork, loin cutlet, untrimmed, raw",201.48183556405354,0,False,Pork,Pork,0,0,0
+F007027,18103,"Pork, loin cutlet, untrimmed, fried, no added fat",296.36711281070745,0,False,Pork,Pork,0,0,0
+F007035,18103,"Pork, loin roast, separable fat, raw",702.9158699808795,0,False,Pork,Pork,0,0,0
+F007034,18103,"Pork, loin roast, separable fat, baked, no added fat",628.3460803059273,0,False,Pork,Pork,0,0,0
+F007037,18103,"Pork, loin roast, lean, raw",114.24474187380497,0,False,Pork,Lean Meat,2,2,2
+F007036,18103,"Pork, loin roast, lean, baked, no added fat",205.54493307839388,0,False,Pork,Lean Meat,2,2,2
+F007030,18103,"Pork, loin roast, untrimmed, raw",225.38240917782025,0,False,Pork,Pork,0,0,0
+F007029,18103,"Pork, loin roast, untrimmed, baked, no added fat",261.2332695984704,0,False,Pork,Pork,0,0,0
+F007046,18103,"Pork, medallion or loin steak, separable fat, raw",631.453154875717,0,False,Pork,Pork,0,0,0
+F007045,18103,"Pork, medallion or loin steak, separable fat, fried, no added fat",551.3862332695984,0,False,Pork,Pork,0,0,0
+F007049,18103,"Pork, medallion or loin steak, lean, raw",112.09369024856596,0,False,Pork,Lean Meat,2,2,2
+F007048,18103,"Pork, medallion or loin steak, lean, fried, no added fat",150.81261950286807,0,False,Pork,Lean Meat,2,2,2
+F007043,18103,"Pork, medallion or loin steak, untrimmed, raw",146.98852772466537,0,False,Pork,Pork,0,0,0
+F007042,18103,"Pork, medallion or loin steak, untrimmed, fried, no added fat",212.95411089866155,0,False,Pork,Pork,0,0,0
+F007057,18103,"Pork, mince, untrimmed, raw",173.04015296367112,0,False,Pork,Pork,0,0,0
+F007055,18103,"Pork, mince, as purchased, fried, no added fat",201.24282982791587,0,False,Pork,Pork,0,0,0
+F007074,18103,"Pork, round mini roast, separable fat, raw",440.24856596558317,0,False,Pork,Pork,0,0,0
+F007073,18103,"Pork, round mini roast, separable fat, baked, no added fat",468.6902485659656,0,False,Pork,Pork,0,0,0
+F007077,18103,"Pork, round mini roast, lean, raw",106.11854684512429,0,False,Pork,Lean Meat,2,2,2
+F007076,18103,"Pork, round mini roast, lean, baked, no added fat",163.0019120458891,0,False,Pork,Lean Meat,2,2,2
+F007072,18103,"Pork, round mini roast, untrimmed, raw",112.81070745697896,0,False,Pork,Pork,0,0,0
+F007071,18103,"Pork, round mini roast, untrimmed, baked, no added fat",167.06500956022944,0,False,Pork,Pork,0,0,0
+F007080,18103,"Pork, round steak, lean, raw",99.4263862332696,0,False,Pork,Lean Meat,2,2,2
+F007079,18103,"Pork, round steak, lean, fried, no added fat",134.56022944550668,0,False,Pork,Lean Meat,2,2,2
+F007085,18103,"Pork, rump steak, lean, raw",121.41491395793498,0,False,Pork,Lean Meat,2,2,2
+F007084,18103,"Pork, rump steak, lean, fried, no added fat",149.8565965583174,0,False,Pork,Lean Meat,2,2,2
+F007082,18103,"Pork, rump steak, untrimmed, raw",135.75525812619503,0,False,Pork,Pork,0,0,0
+F007081,18103,"Pork, rump steak, untrimmed, fried, no added fat",199.80879541108985,0,False,Pork,Pork,0,0,0
+F007092,18103,"Pork, scotch roast, separable fat, raw",507.64818355640534,0,False,Pork,Pork,0,0,0
+F007091,18103,"Pork, scotch roast, separable fat, baked, no added fat",496.17590822179733,0,False,Pork,Pork,0,0,0
+F007094,18103,"Pork, scotch roast, lean, raw",150.81261950286807,0,False,Pork,Lean Meat,2,2,2
+F007093,18103,"Pork, scotch roast, lean, baked, no added fat",230.40152963671127,0,False,Pork,Lean Meat,2,2,2
+F007089,18103,"Pork, scotch roast, untrimmed, raw",213.4321223709369,0,False,Pork,Pork,0,0,0
+F007087,18103,"Pork, scotch roast, untrimmed, baked, no added fat",244.7418738049713,0,False,Pork,Pork,0,0,0
+F007101,18103,"Pork, silverside steak, lean, raw",108.98661567877629,0,False,Pork,Lean Meat,2,2,2
+F007100,18103,"Pork, silverside steak, lean, fried, no added fat",139.81835564053537,0,False,Pork,Lean Meat,2,2,2
+F007098,18103,"Pork, silverside steak, untrimmed, raw",113.52772466539197,0,False,Pork,Pork,0,0,0
+F007117,18103,"Pork, spare ribs, untrimmed, raw",286.3288718929254,0,False,Pork,Pork,0,0,0
+F007113,18103,"Pork, spare ribs, untrimmed, baked, no added fat",397.4665391969407,0,False,Pork,Pork,0,0,0
+F007128,18103,"Pork, strips, untrimmed, raw",111.37667304015297,0,False,Pork,Pork,0,0,0
+F007127,18103,"Pork, strips, untrimmed, fried, no added fat",148.90057361376674,0,False,Pork,Pork,0,0,0
+F007132,18103,"Pork, topside steak, lean, raw",115.20076481835564,0,False,Pork,Lean Meat,2,2,2
+F007131,18103,"Pork, topside steak, lean, fried, no added fat",139.10133843212236,0,False,Pork,Lean Meat,2,2,2
+F007130,18103,"Pork, topside steak, untrimmed, fried, no added fat",139.34034416826003,0,False,Pork,Pork,0,0,0
+F002568,18301,"Chicken, barbecued, with skin",192.63862332695984,1.1,False,Chicken,Chicken,0,0,0
+F002594,18301,"Chicken, breast, lean flesh, raw",104.68451242829828,0,False,Chicken,Lean Meat,2,2,2
+F002590,18301,"Chicken, breast, lean flesh, baked, no added fat",152.24665391969407,0,False,Chicken,Lean Meat,2,2,2
+F002593,18301,"Chicken, breast, lean flesh, grilled, no added fat",142.92543021032503,0,False,Chicken,Lean Meat,2,2,2
+F002592,18301,"Chicken, breast, lean flesh, fried, no added fat",162.76290630975143,0,False,Chicken,Lean Meat,2,2,2
+F002591,18301,"Chicken, breast, lean flesh, casseroled, no added fat",142.44741873804972,0,False,Chicken,Lean Meat,2,2,2
+F002597,18301,"Chicken, breast, lean flesh, skin & fat, raw",164.4359464627151,0,False,Chicken,Lean Meat,2,2,2
+F002595,18301,"Chicken, breast, lean flesh, skin & fat, baked, no added fat",187.61950286806882,0,False,Chicken,Lean Meat,2,2,2
+F002596,18301,"Chicken, breast, lean flesh, skin & fat, casseroled, no added fat",167.54302103250478,0,False,Chicken,Lean Meat,2,2,2
+F002647,18301,"Chicken, drumstick, lean flesh, raw",117.59082217973231,0,False,Chicken,Lean Meat,2,2,2
+F002645,18301,"Chicken, drumstick, lean flesh, baked, no added fat",198.37476099426385,0,False,Chicken,Lean Meat,2,2,2
+F002646,18301,"Chicken, drumstick, lean flesh, casseroled, no added fat",174.4741873804971,0,False,Chicken,Lean Meat,2,2,2
+F002650,18301,"Chicken, drumstick, lean flesh, skin & fat, raw",154.1586998087954,0,False,Chicken,Lean Meat,2,2,2
+F002648,18301,"Chicken, drumstick, lean flesh, skin & fat, baked, no added fat",233.98661567877627,0,False,Chicken,Lean Meat,2,2,2
+F002649,18301,"Chicken, drumstick, lean flesh, skin & fat, casseroled, no added fat",208.65200764818354,0,False,Chicken,Lean Meat,2,2,2
+F002739,18301,"Chicken, mince, raw",135.51625239005736,0,False,Chicken,Chicken,0,0,0
+F002755,18903,"Chicken, nugget, purchased frozen, baked, no added fat",280.1147227533461,1.1,False,,,0,0,0
+F002752,18903,"Chicken, nugget, purchased from independent takeaway & fast food chain, fried, undefined oil",263.8623326959847,1.1,False,,,0,0,0
+F002751,18903,"Chicken, nugget, purchased from fast food chain, grilled",195.50669216061183,1.3,False,,,0,0,0
+F002769,18301,"Chicken, separable fat, composite, raw",571.7017208413001,0,False,Chicken,Chicken,0,0,0
+F002768,18301,"Chicken, separable fat, composite, cooked, no added fat",486.6156787762906,0,False,Chicken,Chicken,0,0,0
+F002773,18301,"Chicken, skin, composite, raw",362.09369024856596,0,False,Chicken,Chicken,0,0,0
+F002771,18301,"Chicken, skin, composite, baked, no added fat",434.51242829827913,0,False,Chicken,Chicken,0,0,0
+F002772,18301,"Chicken, skin, composite, casseroled, no added fat",416.3479923518164,0,False,Chicken,Chicken,0,0,0
+F002806,18301,"Chicken, thigh, lean flesh, raw",118.54684512428298,0,False,Chicken,Lean Meat,2,2,2
+F002804,18301,"Chicken, thigh, lean flesh, baked, no added fat",175.19120458891013,0,False,Chicken,Lean Meat,2,2,2
+F002805,18301,"Chicken, thigh, lean flesh, casseroled, no added fat",193.5946462715105,0,False,Chicken,Lean Meat,2,2,2
+F002809,18301,"Chicken, thigh, lean flesh, skin & fat, raw",224.66539196940727,0,False,Chicken,Lean Meat,2,2,2
+F002807,18301,"Chicken, thigh, lean flesh, skin & fat, baked, no added fat",226.33843212237093,0,False,Chicken,Lean Meat,2,2,2
+F002808,18301,"Chicken, thigh, lean flesh, skin & fat, casseroled, no added fat",239.96175908221795,0,False,Chicken,Lean Meat,2,2,2
+F002849,18301,"Chicken, wing, lean flesh, raw",112.33269598470363,0,False,Chicken,Lean Meat,2,2,2
+F002847,18301,"Chicken, wing, lean flesh, baked, no added fat",193.5946462715105,0,False,Chicken,Lean Meat,2,2,2
+F002848,18301,"Chicken, wing, lean flesh, casseroled, no added fat",191.20458891013382,0,False,Chicken,Lean Meat,2,2,2
+F002852,18301,"Chicken, wing, lean flesh, skin & fat, raw",219.1682600382409,0,False,Chicken,Lean Meat,2,2,2
+F002850,18301,"Chicken, wing, lean flesh, skin & fat, baked, no added fat",262.90630975143404,0,False,Chicken,Lean Meat,2,2,2
+F002851,18301,"Chicken, wing, lean flesh, skin & fat, casseroled, no added fat",255.019120458891,0,False,Chicken,Lean Meat,2,2,2
+F001922,18202,"Buffalo, swamp, cube roll, raw",121.17590822179731,0,False,,,0,0,0
+F001923,18202,"Buffalo, swamp, topside, raw",107.07456978967495,0,False,,,0,0,0
+F001920,18202,"Buffalo, riverine, cube roll, raw",155.35372848948373,0,False,,,0,0,0
+F001921,18202,"Buffalo, riverine, topside, raw",118.54684512428298,0,False,,,0,0,0
+F002205,18202,"Camel, cube roll, raw",150.5736137667304,0,False,,,0,0,0
+F002206,18202,"Camel, rump, raw",113.52772466539197,0,False,,,0,0,0
+F004790,18201,"Kangaroo, rump, raw",89.1491395793499,0,False,,,0,0,0
+F004789,18201,"Kangaroo, rump, baked, no added fat",159.8948374760994,0,False,,,0,0,0
+F004787,18201,"Kangaroo, loin fillet, raw",94.88527724665391,0,False,,,0,0,0
+F004786,18201,"Kangaroo, loin fillet, grilled, no added fat",135.2772466539197,0,False,,,0,0,0
+F004793,18201,"Kangaroo, tail, raw",91.06118546845124,0,False,,,0,0,0
+F004792,18201,"Kangaroo, tail, cooked, no added fat",110.89866156787762,0,False,,,0,0,0
+F007601,18202,"Rabbit, farmed, whole, raw",112.81070745697896,0,False,,,0,0,0
+F007602,18202,"Rabbit, flesh, casseroled, no added fat",170.1720841300191,0,False,,,0,0,0
+F002709,18401,"Chicken, liver, raw",111.37667304015297,0,False,,,0,0,0
+F002708,18401,"Chicken, liver, fried, added butter",177.5812619502868,0,False,,,0,0,0
+F005021,18401,"Lamb, liver, grilled, no added fat",196.46271510516252,0,False,,,0,0,0
+F000224,18601,"Bacon, middle rasher, separable lean, fried, no added fat",205.06692160611854,0,False,Processed Meat,Processed Meat,1,0,1
+F000228,18601,"Bacon, middle rasher, untrimmed, raw",313.09751434034416,0,False,Processed Meat,Processed Meat,1,0,1
+F000227,18601,"Bacon, middle rasher, untrimmed, fried, no added fat",417.5430210325048,0,False,Processed Meat,Processed Meat,1,0,1
+F000223,18601,"Bacon, middle rasher, separable fat, fried, no added fat",765.774378585086,0,False,Processed Meat,Processed Meat,1,0,1
+F000231,18601,"Bacon, shortcut, as purchased without rind, fried, no added fat",250.0,0,False,Processed Meat,Processed Meat,1,0,1
+F000544,18606,"Beef, corned, canned",228.7284894837476,0.7,False,Processed Meat,Processed Meat,1,0,1
+F001322,18606,"Braised steak & onions, canned",63.09751434034417,0.8,False,Processed Meat,Processed Meat,1,0,1
+F002756,18605,"Chicken, processed luncheon meat, low or reduced fat",112.81070745697896,0.2,False,Processed Meat,Processed Meat,1,0,1
+F004025,18502,"Frankfurt, cooked",251.19502868068832,1.8,False,,,0,0,0
+F004299,18602,"Ham, leg, lean",111.61567877629062,1.8,True,Processed Meat,Processed Meat,1,0,1
+F006675,13405,"Pie, steak & kidney, canned",165.63097514340345,0.9,False,Pastries,Pies,1,1,1
+F007459,18602,Prosciutto,292.5430210325048,0,False,Processed Meat,Processed Meat,1,0,1
+F008112,18501,"Sausage, beef, raw",235.8986615678776,0,False,,,0,0,0
+F008106,18501,"Sausage, beef, fried, no added fat",226.33843212237093,0.4,False,,,0,0,0
+F008107,18501,"Sausage, beef, grilled, no added fat",217.7342256214149,0.2,False,,,0,0,0
+F008119,18503,"Sausage, chicken, plain, fried, no added fat",396.7495219885277,0.6,False,,,0,0,0
+F008116,18503,"Sausage, chicken, flavoured, fried, no added fat",396.7495219885277,0.6,False,,,0,0,0
+F008126,18603,"Sausage, chorizo, uncooked",282.74378585086043,0.5,False,Processed Meat,Processed Meat,1,0,1
+F008125,18603,"Sausage, chorizo, fried, no added fat",297.5621414913958,0.5,False,Processed Meat,Processed Meat,1,0,1
+F008137,18501,"Sausage, lamb, plain, fried, no added fat",226.09942638623326,0.4,False,,,0,0,0
+F008136,18501,"Sausage, lamb, flavoured, fried, no added fat",226.09942638623326,0.4,False,,,0,0,0
+F008143,18501,"Sausage, pork, fried, no added fat",258.84321223709367,1.4,False,,,0,0,0
+F008740,18606,"Spam, canned",295.8891013384321,0,False,Processed Meat,Processed Meat,1,0,1
+F009450,18606,"Sausages & vegetables, canned",67.63862332695984,0.9,False,Processed Meat,Processed Meat,1,0,1
+F009452,18606,"Steak & vegetables, canned",61.66347992351816,1.2,True,Processed Meat,Processed Meat,1,0,1
+F002983,22203,"Coconut, fresh, mature fruit, flesh",333.65200764818354,8.1,True,Nut,Nut,0,2,0
+F002985,22203,"Coconut, fresh, young or immature, flesh",84.36902485659655,0.5,False,Nut,Nut,0,2,0
+F002984,22203,"Coconut, fresh, mature, water or juice",20.793499043977054,0,False,Nut,Nut,0,2,0
+F002986,22203,"Coconut, fresh, young or immature, water or juice",26.051625239005734,0,False,Nut,Nut,0,2,0
+F002987,22203,"Coconut, grated & desiccated",662.5239005736138,15.4,True,Nut,Nut,0,2,0
+F002982,22203,"Coconut, cream, regular fat",221.3193116634799,0,False,Nut,Nut,0,2,0
+F002991,22203,"Coconut, milk, canned, regular fat",151.2906309751434,0,False,Nut,Nut,0,2,0
+F002990,22203,"Coconut, milk, canned, reduced fat",70.02868068833652,0.1,False,Nut,Nut,0,2,0
+F006081,22204,"Nut, almond, with skin, raw, unsalted",570.0286806883365,10.9,True,Nut,Unsalted Nuts & Seeds,2,2,2
+F006082,22204,"Nut, almond, with skin, roasted, unsalted",588.1931166347993,10.9,True,Nut,Unsalted Nuts & Seeds,2,2,2
+F006077,22204,"Nut, almond meal",613.7667304015296,8.9,True,Nut,Nut,0,2,0
+F006087,22204,"Nut, brazil, raw or blanched, unsalted",689.7705544933078,8.5,False,Nut,Unsalted Nuts & Seeds,2,2,2
+F006088,22204,"Nut, cashew, raw, unsalted",607.3135755258126,5.9,False,Nut,Unsalted Nuts & Seeds,2,2,2
+F006090,22204,"Nut, cashew, roasted, salted",616.1567877629063,5.8,False,Nut,Nut,0,2,0
+F006095,22204,"Nut, chestnut, raw, unsalted",173.75717017208413,14.9,True,Nut,Unsalted Nuts & Seeds,2,2,2
+F006096,22204,"Nut, chestnut, roasted, unsalted",173.04015296367112,8.1,True,Nut,Unsalted Nuts & Seeds,2,2,2
+F006098,22204,"Nut, hazelnut, raw, unsalted",642.6864244741873,10.4,True,Nut,Unsalted Nuts & Seeds,2,2,2
+F006099,22204,"Nut, macadamia, raw, unsalted",721.3193116634799,6.4,False,Nut,Unsalted Nuts & Seeds,2,2,2
+F006107,22201,"Nut, peanut, with skin, raw, unsalted",567.8776290630975,8.2,True,Nut,Unsalted Nuts & Seeds,2,2,2
+F006108,22201,"Nut, peanut, with skin, roasted, with oil, salted",629.7801147227533,8.3,False,Nut,Nut,0,2,0
+F006109,22201,"Nut, peanut, without skin, roasted, with oil, salted",637.4282982791586,6.2,False,Nut,Nut,0,2,0
+F006110,22201,"Nut, peanut, without skin, roasted, with oil, unsalted",637.4282982791586,6.2,False,Nut,Unsalted Nuts & Seeds,2,2,2
+F006111,22204,"Nut, pecan, raw, unsalted",710.5640535372848,8.4,False,Nut,Unsalted Nuts & Seeds,2,2,2
+F006112,22204,"Nut, pine, raw, unsalted",699.0917782026769,5.1,False,Nut,Unsalted Nuts & Seeds,2,2,2
+F006113,22204,"Nut, pistachio, raw, unsalted",607.5525812619503,9,True,Nut,Unsalted Nuts & Seeds,2,2,2
+F006116,22204,"Nut, walnut, raw, unsalted",694.0726577437858,6.4,False,Nut,Unsalted Nuts & Seeds,2,2,2
+F008209,22101,"Seed, chia, dried",425.9082217973231,34.4,True,Nut,Unsalted Nuts & Seeds,2,2,2
+F008210,22101,"Seed, linseed or flaxseed",494.0248565965583,27.3,True,Nut,Unsalted Nuts & Seeds,2,2,2
+F008211,22101,"Seed, poppy",501.1950286806883,19.5,True,Nut,Unsalted Nuts & Seeds,2,2,2
+F008212,22101,"Seed, pumpkin, hulled & dried",579.3499043977055,6,False,Nut,Unsalted Nuts & Seeds,2,2,2
+F008215,22101,"Seed, sunflower",572.4187380497132,10.8,True,Nut,Unsalted Nuts & Seeds,2,2,2
+F009076,22102,"Tahini, sesame seed pulp",636.7112810707457,13.5,True,Nut,Nut,0,2,0
+F009533,22101,"Wattle seed (acacia), ground",270.07648183556404,54.2,True,Nut,Unsalted Nuts & Seeds,2,2,2
+F000386,15101,"Barramundi, aquacultured, fillet, raw",125.0,0,False,Seafood,Fish,2,0,0
+F000385,15101,"Barramundi, aquacultured, fillet, grilled, no added fat",171.36711281070745,0,False,Seafood,Fish,2,0,0
+F000387,15101,"Barramundi, aquacultured, fillet, steamed with no added fat",148.90057361376674,0,False,Seafood,Fish,2,0,0
+F000402,15101,"Bassa, fillet, raw",79.34990439770554,0,False,Seafood,Fish,2,0,0
+F000401,15101,"Bassa (basa), fillet, baked, no added fat",108.74760994263862,0,False,Seafood,Fish,2,0,0
+F000403,15101,"Bassa (basa), fillet, steamed, no added fat",94.64627151051624,0,False,Seafood,Fish,2,0,0
+F001277,15101,"Blue grenadier, flesh, raw",73.37476099426387,0,False,Seafood,Fish,2,0,0
+F001276,15101,"Blue grenadier, flesh, baked, no added fat",102.05544933078393,0,False,Seafood,Fish,2,0,0
+F001278,15101,"Blue grenadier, flesh, steamed, no added fat",95.36328871892925,0,False,Seafood,Fish,2,0,0
+F001884,15101,"Bream, fillet, raw",124.52198852772466,0,False,Seafood,Fish,2,0,0
+F001881,15101,"Bream, fillet, baked, no added fat",170.65009560229444,0,False,Seafood,Fish,2,0,0
+F001885,15101,"Bream, fillet, steamed, no added fat",138.8623326959847,0,False,Seafood,Fish,2,0,0
+F003973,15101,"Flathead, flesh, raw",94.40726577437859,0,False,Seafood,Fish,2,0,0
+F003970,15101,"Flathead, flesh, baked, no added fat",129.302103250478,0,False,Seafood,Fish,2,0,0
+F003974,15101,"Flathead, flesh, steamed, no added fat",116.39579349904398,0,False,Seafood,Fish,2,0,0
+F004202,15101,"Gemfish, flesh, raw",77.19885277246654,0,False,Seafood,Fish,2,0,0
+F004201,15101,"Gemfish, flesh, baked, no added fat",105.64053537284894,0,False,Seafood,Fish,2,0,0
+F004203,15101,"Gemfish, flesh, steamed, no added fat",123.56596558317399,0,False,Seafood,Fish,2,0,0
+F004811,15101,"Kingfish, yellowtail, aquacultured, fillet, with skin, raw",205.06692160611854,0,False,Seafood,Fish,2,0,0
+F004810,15101,"Kingfish, yellowtail, aquacultured, fillet, with skin, grilled, no added fat",280.83173996175907,0,False,Seafood,Fish,2,0,0
+F004812,15101,"Kingfish, yellowtail, aquacultured, fillet, with skin, steamed, no added fat",244.0248565965583,0,False,Seafood,Fish,2,0,0
+F005268,15101,"Mackerel, raw",134.08221797323137,0,False,Seafood,Fish,2,2,2
+F005267,15101,"Mackerel, grilled, no added fat",183.55640535372848,0,False,Seafood,Fish,2,2,2
+F005270,15101,"Mackerel, steamed, no added fat",159.65583173996174,0,False,Seafood,Fish,2,2,2
+F005659,15101,"Milkfish, aquacultured, flesh, raw",190.0095602294455,0,False,Seafood,Fish,2,0,0
+F005658,15101,"Milkfish, aquacultured, flesh, grilled, no added fat",260.2772466539197,0,False,Seafood,Fish,2,0,0
+F005660,15101,"Milkfish, aquacultured, flesh, steamed, no added fat",226.09942638623326,0,False,Seafood,Fish,2,0,0
+F005824,15101,"Morwong, fillet, raw",130.019120458891,0,False,Seafood,Fish,2,0,0
+F005823,15101,"Morwong, fillet, grilled, no added fat",178.05927342256214,0,False,Seafood,Fish,2,0,0
+F005825,15101,"Morwong, fillet, steamed, no added fat",126.19502868068834,0,False,Seafood,Fish,2,0,0
+F005922,15101,"Mullet, yelloweye, fillet, raw",131.21414913957935,0,False,Seafood,Fish,2,0,0
+F005921,15101,"Mullet, yelloweye, fillet, baked, no added fat",179.7323135755258,0,False,Seafood,Fish,2,0,0
+F005923,15101,"Mullet, yelloweye, fillet, steamed, no added fat",133.60420650095602,0,False,Seafood,Fish,2,0,0
+F005930,15101,"Mulloway, flesh, raw",103.96749521988528,0,False,Seafood,Fish,2,0,0
+F005926,15101,"Mulloway, flesh, baked, no added fat",142.20841300191205,0,False,Seafood,Fish,2,0,0
+F005932,15101,"Mulloway, flesh, steamed, no added fat",129.06309751434034,0,False,Seafood,Fish,2,0,0
+F007827,15101,"Salmon, Atlantic, fillet, raw",230.64053537284894,0,False,Seafood,Fish,2,2,2
+F007826,15101,"Salmon, Atlantic, fillet, grilled, no added fat",257.64818355640534,0,False,Seafood,Fish,2,2,2
+F007828,15101,"Salmon, Atlantic, fillet, steamed, no added fat",271.27151051625236,0,False,Seafood,Fish,2,2,2
+F007849,15101,"Salmon, Pacific King, fillet, skinless, raw",274.61759082217975,0,False,Seafood,Fish,2,2,2
+F007848,15101,"Salmon, Pacific King, fillet, skinless, grilled, no added fat",306.8833652007648,0,False,Seafood,Fish,2,2,2
+F007850,15101,"Salmon, Pacific King, fillet, steamed, no added fat",323.1357552581262,0,False,Seafood,Fish,2,2,2
+F007973,15101,"Sardine, Australian, whole, raw",105.64053537284894,0,False,Seafood,Fish,2,2,2
+F007972,15101,"Sardine, Australian, whole, fried, no added fat",106.11854684512429,0,False,Seafood,Fish,2,2,2
+F008775,15101,"Sprat, blue, wild caught, flesh, skin & bones, raw",90.34416826003823,0,False,Seafood,Fish,2,0,0
+F008774,15101,"Sprat, blue, wild caught, flesh, skin & bones, fried, no added fat",106.11854684512429,0,False,Seafood,Fish,2,0,0
+F008237,15101,"Shark, fillet, without skin, raw",103.96749521988528,0,False,Seafood,Fish,2,0,0
+F008236,15101,"Shark, fillet, without skin, baked, no added fat",142.20841300191205,0,False,Seafood,Fish,2,0,0
+F008238,15101,"Shark, fillet, without skin, steamed, no added fat",116.63479923518165,0,False,Seafood,Fish,2,0,0
+F008233,15501,"Shark, battered, deep-fried, takeaway outlet",260.51625239005733,1.3,False,Seafood,Deep Fried Foods,1,0,1
+F008263,15101,"Silver perch, aquacultured, raw",220.84130019120457,0,False,Seafood,Fish,2,0,0
+F008258,15101,"Silver perch, aquacultured, baked, no added fat",302.5812619502868,0,False,Seafood,Fish,2,0,0
+F008264,15101,"Silver perch, aquacultured, steamed, no added fat",262.90630975143404,0,False,Seafood,Fish,2,0,0
+F008359,15101,"Snapper, fillet, raw",96.79732313575525,0,False,Seafood,Fish,2,0,0
+F008358,15101,"Snapper, fillet, baked, no added fat",132.40917782026767,0,False,Seafood,Fish,2,0,0
+F008360,15101,"Snapper, fillet, steamed, no added fat",132.40917782026767,0,False,Seafood,Fish,2,0,0
+F009163,15101,"Tilapia, fillet, raw",114.0057361376673,0,False,Seafood,Fish,2,0,0
+F009161,15101,"Tilapia, fillet, baked, no added fat",156.3097514340344,0,False,Seafood,Fish,2,0,0
+F009164,15101,"Tilapia, fillet, steamed, no added fat",135.75525812619503,0,False,Seafood,Fish,2,0,0
+F009268,15101,"Trout, ocean, aquacultured, fillet, without skin, raw",288.00191204588907,0,False,Seafood,Fish,2,0,0
+F009267,15101,"Trout, ocean, aquacultured, fillet, without skin, baked, no added fat",394.5984703632887,0,False,Seafood,Fish,2,0,0
+F009269,15101,"Trout, ocean, aquacultured, fillet, without skin, steamed, no added fat",342.97323135755255,0,False,Seafood,Fish,2,0,0
+F009271,15101,"Trout, rainbow, aquacultured, raw",154.1586998087954,0,False,Seafood,Fish,2,0,0
+F009270,15101,"Trout, rainbow, aquacultured, baked, no added fat",211.04206500956022,0,False,Seafood,Fish,2,0,0
+F009273,15101,"Trout, rainbow, aquacultured, steamed, no added fat",183.3173996175908,0,False,Seafood,Fish,2,0,0
+F009303,15101,"Tuna, yellowfin, flesh, raw",103.96749521988528,0,False,Seafood,Fish,2,2,2
+F009302,15101,"Tuna, yellowfin, flesh, baked, no added fat",142.44741873804972,0,False,Seafood,Fish,2,2,2
+F009304,15101,"Tuna, yellowfin, flesh, steamed, no added fat",123.80497131931166,0,False,Seafood,Fish,2,2,2
+F009560,15101,"Whiting, King George, flesh, raw",86.52007648183556,0,False,Seafood,Fish,2,0,0
+F009557,15101,"Whiting, King George, flesh, baked, no added fat",123.56596558317399,0,False,Seafood,Fish,2,0,0
+F009561,15101,"Whiting, King George, flesh, steamed, no added fat",104.4455066921606,0,False,Seafood,Fish,2,0,0
+F003920,15302,"Fish, eel, raw",178.05927342256214,0,False,Seafood,Fish,2,0,0
+F003950,15501,"Fish, white flesh, battered, packaged frozen, baked, no added fat",195.98470363288718,0.5,False,Seafood,Seafood,0,0,0
+F003954,15501,"Fish, white flesh, crumbed, packaged frozen, baked, no added fat",204.5889101338432,0.5,False,Seafood,Seafood,0,0,0
+F003907,15501,"Fish, battered or crumbed, from takeaway outlet, deep fried, blended frying fat, ready to eat",240.4397705544933,0.1,False,Seafood,Deep Fried Foods,1,0,1
+F000002,15202,"Abalone, black lip, aquacultured, raw",79.34990439770554,0,False,Seafood,Seafood,0,0,0
+F000003,15202,"Abalone, black lip, wild, raw",90.82217973231357,0,False,Seafood,Seafood,0,0,0
+F000005,15202,"Abalone, green lip, aquacultured, raw",82.45697896749522,0,False,Seafood,Seafood,0,0,0
+F000006,15202,"Abalone, green lip, wild, raw",86.75908221797323,0,False,Seafood,Seafood,0,0,0
+F000004,15202,"Abalone, brown lip, wild, raw",84.13001912045888,0,False,Seafood,Seafood,0,0,0
+F003243,15201,"Crab, flesh, purchased steamed or boiled",88.4321223709369,0,False,Seafood,Seafood,0,0,0
+F005228,15201,"Lobster, southern rock, wild, flesh, raw",88.4321223709369,0,False,Seafood,Seafood,0,0,0
+F005227,15201,"Lobster, southern rock, wild, flesh, purchased steamed or boiled",98.23135755258126,0,False,Seafood,Seafood,0,0,0
+F005968,15202,"Mussel, blue, steamed",104.68451242829828,0,False,Seafood,Seafood,0,0,0
+F006150,15202,"Octopus, raw",69.78967495219885,0,False,Seafood,Seafood,0,0,0
+F006146,15202,"Octopus, boiled, no added fat",77.43785850860421,0,False,Seafood,Seafood,0,0,0
+F006288,15202,"Oyster, native, aquacultured, raw",45.650095602294456,0,False,Seafood,Seafood,0,0,0
+F006289,15202,"Oyster, Pacific, aquacultured, raw",66.68260038240918,0,False,Seafood,Seafood,0,0,0
+F006291,15202,"Oyster, Sydney rock, aquacultured, raw",71.22370936902486,0,False,Seafood,Seafood,0,0,0
+F006285,15202,"Oyster, aquacultured, raw",64.05353728489483,0,False,Seafood,Seafood,0,0,0
+F007422,15201,"Prawn, banana, wild, flesh, raw",59.03441682600382,0,False,Seafood,Seafood,0,0,0
+F007421,15201,"Prawn, banana, aquacultured, purchased cooked",102.2944550669216,0,False,Seafood,Seafood,0,0,0
+F007424,15201,"Prawn, brown tiger, wild, flesh, raw",103.25047801147227,0,False,Seafood,Seafood,0,0,0
+F007423,15201,"Prawn, black tiger, aquacultured, purchased cooked",91.53919694072657,0,False,Seafood,Seafood,0,0,0
+F007431,15201,"Prawn, endeavour, wild, flesh, raw",97.51434034416826,0,False,Seafood,Seafood,0,0,0
+F007451,15201,"Prawn, school, wild, flesh, raw",82.45697896749522,0,False,Seafood,Seafood,0,0,0
+F007454,15201,"Prawn, Western king, wild, flesh, raw",104.4455066921606,0,False,Seafood,Seafood,0,0,0
+F007433,15201,"Prawn, flesh, raw (green)",91.06118546845124,0,False,Seafood,Seafood,0,0,0
+F007432,15201,"Prawn, flesh, cooked from raw, no added fat",121.17590822179731,0,False,Seafood,Seafood,0,0,0
+F008166,15202,"Scallop, raw",83.89101338432123,0,False,Seafood,Seafood,0,0,0
+F008165,15202,"Scallop, fried, no added fat",104.92351816443595,0,False,Seafood,Seafood,0,0,0
+F008828,15202,"Squid or calamari, raw",78.39388145315488,0,False,Seafood,Seafood,0,0,0
+F008825,15202,"Squid or calamari, fried, no added fat",97.99235181644359,0,False,Seafood,Seafood,0,0,0
+F000074,15401,"Anchovy, canned in oil, drained",182.12237093690248,0,False,Seafood,Fish,2,0,0
+F003009,15102,"Cod, smoked, raw",85.08604206500955,0,False,Seafood,Fish,2,0,0
+F003003,15102,"Cod or hake, smoked, steamed",94.88527724665391,0,False,Seafood,Fish,2,0,0
+F003897,15501,"Fish finger, crumbed, purchased frozen, raw",220.84130019120457,1.1,False,Seafood,Seafood,0,0,0
+F003896,15501,"Fish finger, crumbed, purchased frozen, grilled, no added fat",250.95602294455065,1.2,False,Seafood,Seafood,0,0,0
+F007853,15401,"Salmon, pink, canned in brine, drained",138.38432122370935,0,False,Seafood,Fish,2,2,2
+F007847,15401,"Salmon, flavoured, canned, undrained",128.585086042065,0,False,Seafood,Fish,2,2,2
+F007860,15401,"Salmon, red, canned in brine, drained",147.46653919694072,0,False,Seafood,Fish,2,2,2
+F007864,15102,"Salmon, smoked, sliced",188.09751434034416,0,False,Seafood,Fish,2,2,2
+F009285,15401,"Tuna, canned in brine, drained",129.06309751434034,0,False,Seafood,Fish,2,2,2
+F009293,15401,"Tuna, flavoured, canned in oil, drained",137.90630975143404,0.3,False,Seafood,Fish,2,2,2
+F000333,28302,"Bar, muesli, plain or with dried fruit",386.71128107074566,6.2,True,,,0,0,0
+F000337,28303,"Bar, muesli, plain or with dried fruit, chocolate-coated",395.07648183556404,6.4,True,,,0,0,0
+F000339,28303,"Bar, muesli, plain or with dried fruit, yoghurt-coated",400.33460803059273,6.4,True,,,0,0,0
+F000344,28302,"Bar, muesli, with nuts",411.5678776290631,6.8,True,,,0,0,0
+F000368,28304,"Bar, snack, fruit filled, baked",334.6080305927342,4.5,False,,,0,0,0
+F003198,26201,"Corn chips, plain, toasted, salted",478.48948374760994,5,False,,,0,0,0
+F003802,26301,"Extruded snack, cheese flavoured",487.09369024856596,3.2,False,,,0,0,0
+F006030,26401,"Noodle snack, wheat, flavoured, dry",496.41491395793497,1.7,False,,,0,0,0
+F006844,26202,"Popcorn, commercial, butter flavoured, salted",490.67877629063094,8.8,True,,,0,0,0
+F007193,26101,"Potato crisps or chips, plain, salted",511.472275334608,3.2,False,Potato Snacks,Potato Snacks,1,1,1
+F007201,26101,"Potato crisps or chips, salt & vinegar flavoured",501.1950286806883,3.6,False,Potato Snacks,Potato Snacks,1,1,1
+F007189,26101,"Potato crisps or chips, flavoured (other than salt & vinegar)",500.0,3.6,False,Potato Snacks,Potato Snacks,1,1,1
+F007198,26101,"Potato crisps or chips, reformed, salted",536.5678776290631,4.4,False,Potato Snacks,Potato Snacks,1,1,1
+F007204,26101,"Potato straws, French fries, plain",517.4474187380497,3.2,False,Potato Snacks,Potato Snacks,1,1,1
+F009073,26201,"Taco shell, from corn flour, plain",465.5831739961759,7.3,True,,,0,0,0
+F008509,21201,"Soup, broth style, with meat, instant dry mix",322.65774378585087,4.3,False,,,0,0,0
+F008508,21201,"Soup, broth style, with meat and noodles, instant dry mix",365.67877629063094,2.2,False,,,0,0,0
+F008513,21301,"Soup, chicken & noodle, cup of soup, prepared from instant dry mix with water",19.120458891013385,0.3,True,,,0,0,0
+F008571,21202,"Soup, cream variety, instant dry mix",389.10133843212236,6.5,True,,,0,0,0
+F008670,21202,"Soup, vegetable, instant dry mix",287.04588910133845,3.3,False,,,0,0,0
+F008661,21202,"Soup, vegetable & noodle, instant dry mix",361.85468451242826,3.9,False,,,0,0,0
+F000279,28102,"Bar, cherry & coconut centre, dark chocolate-coated",426.62523900573615,4.7,False,Chocolate,Chocolate,1,1,1
+F000285,28102,"Bar, coconut cream centre, milk chocolate-coated",424.9521988527724,7.4,True,Chocolate,Chocolate,1,1,1
+F000296,28103,"Bar, honeycomb centre, milk chocolate-coated",423.51816443594646,0.3,False,Chocolate,Chocolate,1,1,1
+F000348,28103,"Bar, nougat & caramel centre, milk chocolate-coated",409.1778202676864,1.6,False,Chocolate,Chocolate,1,1,1
+F002916,28101,"Chocolate, compound, cooking",511.472275334608,4.6,False,Chocolate,Chocolate,1,1,1
+F002921,28101,"Chocolate, dark, high cocoa solids",526.2906309751434,1.2,False,Chocolate,Chocolate,1,1,1
+F002929,28101,"Chocolate, milk",520.793499043977,2.3,False,Chocolate,Chocolate,1,1,1
+F002934,28103,"Chocolate, milk, fondant or caramel filled",478.48948374760994,2,False,Chocolate,Chocolate,1,1,1
+F002937,28102,"Chocolate, milk, with dried fruit & nuts",489.7227533460803,3,False,Chocolate,Chocolate,1,1,1
+F002939,28102,"Chocolate, milk, with nuts",555.6883365200764,4.7,False,Chocolate,Chocolate,1,1,1
+F002946,28101,"Chocolate, white",543.2600382409178,0.2,False,Chocolate,Chocolate,1,1,1
+F003097,28102,"Confectionery, almond, chocolate-coated",528.2026768642447,3.6,False,Chocolate,Chocolate,1,1,1
+F003100,28103,"Confectionery, chocolate centre, sugar-coated",485.65965583173994,1.8,False,Chocolate,Chocolate,1,1,1
+F003105,28102,"Confectionery, dried fruit & nuts, chocolate-coated",484.2256214149139,3.8,False,Chocolate,Chocolate,1,1,1
+F003114,28102,"Confectionery, peanut, chocolate-coated",557.8393881453154,4.3,False,Chocolate,Chocolate,1,1,1
+F003118,28103,"Confectionery, sultana, chocolate-coated",440.96558317399615,2.6,False,Chocolate,Chocolate,1,1,1
+F004600,27201,"Jam, berry",262.90630975143404,1.6,False,,,0,0,0
+F004607,27201,"Jam, stone fruit",250.95602294455065,0.9,False,,,0,0,0
+F004604,27201,"Jam, plum",250.95602294455065,0.9,False,,,0,0,0
+F005421,27201,"Marmalade, orange",253.585086042065,0.8,False,,,0,0,0
+F008777,27204,"Spread, hazelnut & chocolate flavoured",524.1395793499044,3.7,False,,,0,0,0
+F002257,28401,"Caramels, soft & hard",387.189292543021,1.5,False,Lollies or Liquorice,Lollies or Liquorice,1,1,1
+F005214,28401,"Liquorice, black",321.4627151051625,3,False,Lollies or Liquorice,Lollies or Liquorice,1,1,1
+F005213,28401,"Liquorice, allsorts",358.0305927342256,1.2,False,Lollies or Liquorice,Lollies or Liquorice,1,1,1
+F005215,28103,"Liquorice, chocolate-coated",381.2141491395793,2.8,False,Chocolate,Chocolate,1,1,1
+F005235,28401,"Lolly, hard varieties",374.28298279158696,0,False,Lollies or Liquorice,Lollies or Liquorice,1,1,1
+F005236,28401,"Lolly, jelly varieties",322.65774378585087,0,False,Lollies or Liquorice,Lollies or Liquorice,1,1,1
+F005241,28401,"Lolly, mint flavoured, sugar sweetened",379.54110898661565,0,False,Lollies or Liquorice,Lollies or Liquorice,1,1,1
+F000144,24402,"Artichoke, globe, raw",34.655831739961755,8.1,True,Vegetable,Vegetable,2,2,2
+F000142,24402,"Artichoke, globe, boiled, drained",40.63097514340344,9.5,True,Vegetable,Vegetable,2,2,2
+F000146,24302,"Artichoke, jerusalem, peeled, raw",58.556405353728486,3,True,Vegetable,Vegetable,2,2,2
+F000145,24302,"Artichoke, jerusalem, peeled, boiled, drained",62.8585086042065,3.2,True,Vegetable,Vegetable,2,2,2
+F000141,24402,"Artichoke heart, canned in brine, drained",24.8565965583174,4.7,True,Vegetable,Vegetable,2,2,2
+F000155,24402,"Asparagus, green, raw",21.03250478011472,2.2,True,Vegetable,Vegetable,2,2,2
+F000151,24402,"Asparagus, green, boiled, drained",24.8565965583174,2.5,True,Vegetable,Vegetable,2,2,2
+F000149,24402,"Asparagus, canned in brine, drained",24.1395793499044,3.9,True,Vegetable,Vegetable,2,2,2
+F000162,24705,"Avocado, raw",138.38432122370935,7.5,True,Vegetable,Vegetable,2,0,2
+F000253,24402,"Bamboo shoot, canned in water, heated, drained",13.623326959847036,2.8,True,Vegetable,Vegetable,2,2,2
+F000396,24403,"Basil, green, raw",28.441682600382407,4.2,True,Vegetable,Vegetable,2,0,2
+F000419,24502,"Bean, broad, fresh, raw",56.16634799235182,7.1,True,Vegetable,Vegetable,2,0,2
+F000418,24502,"Bean, broad, fresh, boiled, drained",60.22944550669216,7.6,True,Vegetable,Vegetable,2,0,2
+F000422,24502,"Bean, butter, fresh, raw",24.8565965583174,2.3,True,Vegetable,Vegetable,2,0,2
+F000421,24502,"Bean, butter, fresh, boiled, drained",26.76864244741874,2.5,True,Vegetable,Vegetable,2,0,2
+F000431,24502,"Bean, green, fresh, raw",25.334608030592733,2.8,True,Vegetable,Vegetable,2,2,2
+F000430,24502,"Bean, green, fresh, boiled, drained",27.48565965583174,3,True,Vegetable,Vegetable,2,2,2
+F000434,24502,"Bean, green, frozen, boiled, drained",26.051625239005734,3.8,True,Vegetable,Vegetable,2,2,2
+F001015,24302,"Beetroot, fresh, purple, peeled, raw",48.040152963671126,3.5,True,Vegetable,Vegetable,2,2,2
+F001013,24302,"Beetroot, fresh, purple, peeled, baked, no added fat",58.79541108986616,4.3,True,Vegetable,Vegetable,2,2,2
+F001014,24302,"Beetroot, fresh, purple, peeled, boiled, drained",51.864244741873804,3.8,True,Vegetable,Vegetable,2,2,2
+F001010,24302,"Beetroot, canned in brine, drained",47.56214149139579,3.8,True,Vegetable,Vegetable,2,2,2
+F001301,24201,"Bok choy, raw",18.881453154875715,2.4,True,Vegetable,Vegetable,2,2,2
+F001300,24201,"Bok choy, fried, no added fat",27.007648183556405,3.5,True,Vegetable,Vegetable,2,2,2
+F001302,24201,"Bok choy, steamed",19.59847036328872,2.6,True,Vegetable,Vegetable,2,2,2
+F001905,24202,"Broccoli, fresh, raw",31.309751434034414,3.7,True,Vegetable,Vegetable,2,2,2
+F001904,24202,"Broccoli, fresh, microwaved",27.007648183556405,2.9,True,Vegetable,Vegetable,2,2,2
+F001900,24202,"Broccoli, fresh, boiled, drained",23.900573613766728,2.5,True,Vegetable,Vegetable,2,2,2
+F001899,24202,"Broccoli, fresh, baked, no added fat",38.24091778202677,4.5,True,Vegetable,Vegetable,2,2,2
+F001909,24202,"Broccolini, fresh, raw",29.15869980879541,2.5,True,Vegetable,Vegetable,2,2,2
+F001908,24202,"Broccolini, fresh, boiled, drained",30.353728489483746,2.6,True,Vegetable,Vegetable,2,2,2
+F001914,24201,"Brussels sprout, fresh, raw",35.85086042065009,4.5,True,Vegetable,Vegetable,2,0,2
+F001913,24201,"Brussels sprout, fresh, boiled, drained",37.284894837476095,4.7,True,Vegetable,Vegetable,2,0,2
+F001996,24201,"Cabbage, Chinese, raw",10.51625239005736,1.1,True,Vegetable,Vegetable,2,2,2
+F001993,24201,"Cabbage, Chinese, boiled, drained",10.994263862332696,1.1,True,Vegetable,Vegetable,2,2,2
+F001990,24201,"Cabbage, Chinese flowering, raw",16.96940726577438,2.8,True,Vegetable,Vegetable,2,2,2
+F001988,24201,"Cabbage, Chinese flowering, boiled, drained",17.68642447418738,2.9,True,Vegetable,Vegetable,2,2,2
+F001998,24201,"Cabbage, mustard, raw",18.40344168260038,1.8,True,Vegetable,Vegetable,2,2,2
+F001997,24201,"Cabbage, mustard, boiled, drained",19.120458891013385,1.9,True,Vegetable,Vegetable,2,2,2
+F002006,24201,"Cabbage, red, raw",29.15869980879541,3.4,True,Vegetable,Vegetable,2,2,2
+F002003,24201,"Cabbage, red, boiled, drained",30.353728489483746,3.5,True,Vegetable,Vegetable,2,2,2
+F002010,24201,"Cabbage, savoy, raw",21.510516252390058,2.3,True,Vegetable,Vegetable,2,2,2
+F002009,24201,"Cabbage, savoy, boiled, drained",22.22753346080306,2.4,True,Vegetable,Vegetable,2,2,2
+F002015,24201,"Cabbage, white, raw",21.749521988527725,2.4,True,Vegetable,Vegetable,2,2,2
+F002014,24201,"Cabbage, white, boiled, drained",22.705544933078393,2.4,True,Vegetable,Vegetable,2,2,2
+F002239,24705,"Capsicum, green, fresh, raw",20.076481835564053,2,True,Vegetable,Vegetable,2,0,2
+F002238,24705,"Capsicum, green, fresh, fried, no added fat",22.22753346080306,2.3,True,Vegetable,Vegetable,2,0,2
+F002247,24705,"Capsicum, red, fresh, raw",28.20267686424474,1.8,True,Vegetable,Vegetable,2,0,2
+F002246,24705,"Capsicum, red, fresh, fried, no added fat",31.548757170172085,2,True,Vegetable,Vegetable,2,0,2
+F002266,24301,"Carrot, baby, peeled, fresh, raw",32.026768642447415,3.3,True,Vegetable,Vegetable,2,0,2
+F002265,24301,"Carrot, baby, peeled, fresh, boiled, drained",34.41682600382409,3.5,True,Vegetable,Vegetable,2,0,2
+F002263,24301,"Carrot, baby, baked, no added fat",34.894837476099426,3.6,True,Vegetable,Vegetable,2,0,2
+F002276,24301,"Carrot, mature, peeled, fresh, raw",35.13384321223709,3.4,True,Vegetable,Vegetable,2,0,2
+F002274,24301,"Carrot, mature, peeled, fresh, baked, no added fat",42.782026768642446,4.1,True,Vegetable,Vegetable,2,0,2
+F002275,24301,"Carrot, mature, peeled, fresh, boiled, drained",32.98279158699809,3.3,True,Vegetable,Vegetable,2,0,2
+F002286,24302,"Cassava, peeled, fresh, raw",140.2963671128107,4.6,True,Vegetable,Vegetable,2,0,2
+F002285,24302,"Cassava, peeled, fresh, boiled, drained",151.05162523900572,5,True,Vegetable,Vegetable,2,0,2
+F002288,24302,"Cassava, white flesh, peeled, fresh, raw",153.91969407265773,4.6,True,Vegetable,Vegetable,2,0,2
+F002287,24302,"Cassava, white flesh, peeled, fresh, boiled, drained",165.39196940726578,4.9,True,Vegetable,Vegetable,2,0,2
+F002290,24302,"Cassava, yellow flesh, peeled, fresh, raw",126.91204588910134,4.7,True,Vegetable,Vegetable,2,0,2
+F002289,24302,"Cassava, yellow flesh, peeled, fresh, boiled, drained",136.472275334608,5.1,True,Vegetable,Vegetable,2,0,2
+F002378,24202,"Cauliflower, fresh, raw",24.378585086042065,1.2,True,Vegetable,Vegetable,2,2,2
+F002377,24202,"Cauliflower, fresh, boiled, drained",25.5736137667304,1.2,True,Vegetable,Vegetable,2,2,2
+F002384,24302,"Celeriac, peeled, raw",38.0019120458891,5.1,True,Vegetable,Vegetable,2,0,2
+F002383,24302,"Celeriac, peeled, boiled, drained",40.86998087954111,5.5,True,Vegetable,Vegetable,2,0,2
+F002390,24402,"Celery, fresh, raw",14.818355640535373,1.4,True,Vegetable,Vegetable,2,0,2
+F002389,24402,"Celery, fresh, fried, no added fat",18.164435946462714,1.8,True,Vegetable,Vegetable,2,0,2
+F002884,24302,"Chicory, raw",16.013384321223707,1.8,True,Vegetable,Vegetable,2,0,2
+F002883,24302,"Chicory, boiled, drained",18.881453154875715,2.1,True,Vegetable,Vegetable,2,0,2
+F002896,24705,"Chilli (chili), green, raw",43.26003824091778,12.9,True,Vegetable,Vegetable,2,0,2
+F002894,24705,"Chilli (chili), green, fried, no added fat",48.040152963671126,14.3,True,Vegetable,Vegetable,2,0,2
+F002901,24705,"Chilli (chili), red, raw",47.801147227533455,10.6,True,Vegetable,Vegetable,2,0,2
+F002900,24705,"Chilli (chili), red, fried, no added fat",53.05927342256214,11.8,True,Vegetable,Vegetable,2,0,2
+F002907,24403,"Chives, raw",28.680688336520074,4.7,True,Vegetable,Vegetable,2,0,2
+F002949,24705,"Choko, peeled, fresh, raw",20.793499043977054,1.4,True,Vegetable,Vegetable,2,2,2
+F002948,24705,"Choko, peeled, fresh, boiled, drained",24.617590822179732,1.7,True,Vegetable,Vegetable,2,2,2
+F003192,24403,"Coriander, fresh, leaves & stems",39.913957934990435,3.5,True,Vegetable,Vegetable,2,0,2
+F003209,24704,"Corn, fresh on cob, raw",87.47609942638623,3.8,True,Vegetable,Vegetable,2,0,2
+F003200,24704,"Corn, fresh on cob, boiled, drained",91.06118546845124,4,True,Vegetable,Vegetable,2,0,2
+F003220,24704,"Corn, kernels, canned in brine, drained",93.45124282982792,2.7,True,Vegetable,Vegetable,2,0,2
+F003202,24704,"Corn, kernels, purchased frozen, raw",93.21223709369025,2.5,True,Vegetable,Vegetable,2,0,2
+F003201,24704,"Corn, kernels, purchased frozen, boiled, drained",108.03059273422562,3.5,True,Vegetable,Vegetable,2,0,2
+F003319,24705,"Cucumber, common, peeled, raw",11.950286806883364,0.6,True,Vegetable,Vegetable,2,2,2
+F003320,24705,"Cucumber, common, unpeeled, raw",11.950286806883364,1.4,True,Vegetable,Vegetable,2,2,2
+F003321,24705,"Cucumber, Lebanese, unpeeled, raw",12.4282982791587,0.9,True,Vegetable,Vegetable,2,2,2
+F003324,24705,"Cucumber, telegraph, unpeeled, raw",13.38432122370937,0.9,True,Vegetable,Vegetable,2,2,2
+F003509,24403,"Dill, fresh, raw",40.63097514340344,3.3,True,Vegetable,Vegetable,2,0,2
+F003761,24705,"Eggplant, unpeeled, fresh, raw",22.22753346080306,2.4,True,Vegetable,Vegetable,2,2,2
+F003760,24705,"Eggplant, unpeeled, fresh, grilled, no added fat",31.548757170172085,3.5,True,Vegetable,Vegetable,2,2,2
+F003759,24705,"Eggplant, unpeeled, fresh, baked, no added fat",26.051625239005734,2.9,True,Vegetable,Vegetable,2,2,2
+F003784,24401,"Endive, fresh, raw",13.862332695984703,2.2,True,Vegetable,Vegetable,2,2,2
+F003820,24801,"Fennel, fresh, raw",21.988527724665392,1.8,True,Vegetable,Vegetable,2,0,2
+F003819,24801,"Fennel, fresh, boiled, drained",25.812619502868067,2.1,True,Vegetable,Vegetable,2,0,2
+F004193,24802,"Garlic, peeled, fresh, raw",124.76099426386233,16.9,True,Vegetable,Vegetable,2,0,2
+F004192,24802,"Garlic, peeled, fresh, fried, no added fat",201.24282982791587,27.3,True,Vegetable,Vegetable,2,0,2
+F004213,24302,"Ginger, peeled, fresh, raw",31.548757170172085,2.8,True,Vegetable,Vegetable,2,0,2
+F004212,24302,"Ginger, peeled, fresh, fried, no added fat",38.24091778202677,3.4,True,Vegetable,Vegetable,2,0,2
+F004781,24201,"Kale, raw",45.650095602294456,3.6,True,Vegetable,Vegetable,2,2,2
+F004820,24201,"Kohlrabi, peeled, fresh, raw",38.95793499043977,3.3,True,Vegetable,Vegetable,2,2,2
+F004819,24201,"Kohlrabi, peeled, fresh, boiled, drained",40.63097514340344,3.4,True,Vegetable,Vegetable,2,2,2
+F005164,24802,"Leek, fresh, raw",32.50478011472275,3.1,True,Vegetable,Vegetable,2,2,2
+F005163,24802,"Leek, fresh, fried, no added fat",39.19694072657744,3.7,True,Vegetable,Vegetable,2,2,2
+F005162,24802,"Leek, fresh, boiled, drained",36.089866156787764,3.4,True,Vegetable,Vegetable,2,2,2
+F005191,24401,"Lettuce, cos, raw",19.120458891013385,1.8,True,Vegetable,Vegetable,2,2,2
+F005192,24401,"Lettuce, iceberg, raw",9.082217973231357,1.4,True,Vegetable,Vegetable,2,2,2
+F005193,24401,"Lettuce, mignonette, raw",15.296367112810707,1.4,True,Vegetable,Vegetable,2,2,2
+F005513,24705,"Melon, bitter, fresh, raw",10.994263862332696,3.3,True,Vegetable,Vegetable,2,0,2
+F005514,24705,"Melon, hairy, fresh, raw",14.579349904397706,2.1,True,Vegetable,Vegetable,2,0,2
+F005700,24403,"Mint, fresh, raw",53.77629063097514,7.2,True,Vegetable,Vegetable,2,0,2
+F005813,24803,"Mixed vegetables, purchased frozen, carrot, corn & pea/bean, boiled, drained",44.69407265774378,5.9,True,Vegetable,Vegetable,2,0,2
+F005946,24703,"Mushroom, common, fresh, raw",20.554493307839387,1.4,True,Vegetable,Vegetable,2,2,2
+F005945,24703,"Mushroom, common, fresh, fried, no added fat",36.5678776290631,2.5,True,Vegetable,Vegetable,2,2,2
+F005949,24703,"Mushroom, common, vitamin D enhanced, fresh, raw",20.554493307839387,1.4,True,Vegetable,Vegetable,2,2,2
+F005948,24703,"Mushroom, common, vitamin D enhanced, fresh, fried, no added fat",36.5678776290631,2.5,True,Vegetable,Vegetable,2,2,2
+F006195,24705,"Okra, raw",26.76864244741874,3.7,True,Vegetable,Vegetable,2,2,2
+F006194,24705,"Okra, cooked, no added fat",28.91969407265774,4,True,Vegetable,Vegetable,2,2,2
+F006225,24802,"Onion, mature, brown skinned, peeled, raw",33.22179732313575,2.7,True,Vegetable,Vegetable,2,0,2
+F006224,24802,"Onion, mature, brown skinned, peeled, fresh, fried, no added fat",53.53728489483748,4.4,True,Vegetable,Vegetable,2,0,2
+F006243,24802,"Onion, mature, white skinned, peeled, fresh, raw",30.592734225621413,2.1,True,Vegetable,Vegetable,2,0,2
+F006242,24802,"Onion, mature, white skinned, peeled, fresh, fried, no added fat",48.51816443594646,3.3,True,Vegetable,Vegetable,2,0,2
+F006250,24802,"Onion, spring, fresh, raw",30.353728489483746,1.9,True,Vegetable,Vegetable,2,0,2
+F006249,24802,"Onion, spring, fresh, fried, no added fat",48.75717017208413,3.1,True,Vegetable,Vegetable,2,0,2
+F006321,24403,"Parsley, continental, fresh, raw",23.900573613766728,4.7,True,Vegetable,Vegetable,2,0,2
+F006322,24403,"Parsley, curly, fresh, raw",22.94455066921606,5.8,True,Vegetable,Vegetable,2,0,2
+F006328,24302,"Parsnip, peeled, fresh, raw",56.64435946462715,3.6,True,Vegetable,Vegetable,2,0,2
+F006326,24302,"Parsnip, peeled, fresh, baked, no added fat",69.07265774378585,4.5,True,Vegetable,Vegetable,2,0,2
+F006327,24302,"Parsnip, peeled, fresh, boiled, drained",60.94646271510516,3.9,True,Vegetable,Vegetable,2,0,2
+F006536,24501,"Pea, green, fresh, raw",70.26768642447418,5.6,True,Vegetable,Vegetable,2,0,2
+F006535,24501,"Pea, green, fresh, boiled, drained",59.99043977055449,5.2,True,Vegetable,Vegetable,2,0,2
+F006538,24501,"Pea, green, frozen, boiled, drained",62.380497131931165,6.1,True,Vegetable,Vegetable,2,0,2
+F007235,24102,"Potato, chips, regular, fast food outlet, deep fried, blended oil, salted",225.62141491395792,3,False,Potato Fries,Deep Fried Foods,1,0,1
+F007236,24102,"Potato, chips, regular, fast food outlet, deep fried, monounsaturated oil, salted",244.0248565965583,3,False,Potato Fries,Deep Fried Foods,1,0,1
+F007238,24102,"Potato, chips, regular, independent takeaway outlet, deep fried, blended oil, salted",238.2887189292543,3,False,Potato Fries,Deep Fried Foods,1,0,1
+F007242,24102,"Potato, chips, regular, purchased frozen, baked, no added fat",259.79923518164435,4.6,True,Potato Fries,Potato Fries,0,0,0
+F007247,24101,"Potato, coliban, peeled, raw",58.07839388145315,1.1,True,Vegetable,Vegetable,2,0,2
+F007244,24101,"Potato, coliban, peeled, baked, no added fat",87.95411089866157,1.7,True,Vegetable,Vegetable,2,0,2
+F007245,24101,"Potato, coliban, peeled, boiled, drained",55.927342256214146,2,True,Vegetable,Vegetable,2,0,2
+F007254,24101,"Potato, desiree, peeled, raw",57.36137667304015,1.7,True,Vegetable,Vegetable,2,0,2
+F007250,24101,"Potato, desiree, peeled, baked, no added fat",86.9980879541109,2.6,True,Vegetable,Vegetable,2,0,2
+F007252,24101,"Potato, desiree, peeled, boiled, drained",58.556405353728486,1.7,True,Vegetable,Vegetable,2,0,2
+F007308,24101,"Potato, new, peeled, raw",65.0095602294455,1.1,True,Vegetable,Vegetable,2,0,2
+F007305,24101,"Potato, new, peeled, baked, no added fat",98.7093690248566,1.7,True,Vegetable,Vegetable,2,0,2
+F007306,24101,"Potato, new, peeled, boiled, drained",67.39961759082217,2.3,True,Vegetable,Vegetable,2,0,2
+F007325,24101,"Potato, pale skin, peeled, raw",58.07839388145315,1.1,True,Vegetable,Vegetable,2,0,2
+F007314,24101,"Potato, pale skin, peeled, baked, no added fat",87.95411089866157,1.7,True,Vegetable,Vegetable,2,0,2
+F007320,24101,"Potato, pale skin, peeled, boiled, drained",63.81453154875717,2.1,True,Vegetable,Vegetable,2,0,2
+F007361,24101,"Potato, pontiac, peeled, raw",66.4435946462715,2.1,True,Vegetable,Vegetable,2,0,2
+F007358,24101,"Potato, pontiac, peeled, baked, no added fat",100.62141491395793,3.2,True,Vegetable,Vegetable,2,0,2
+F007359,24101,"Potato, pontiac, peeled, boiled, drained",67.63862332695984,2.1,True,Vegetable,Vegetable,2,0,2
+F007368,24101,"Potato, red skin, peeled, raw",57.36137667304015,1.7,True,Vegetable,Vegetable,2,0,2
+F007364,24101,"Potato, red skin, peeled, baked, no added fat",86.9980879541109,2.6,True,Vegetable,Vegetable,2,0,2
+F007366,24101,"Potato, red skin, peeled, boiled, drained",71.22370936902486,2.4,True,Vegetable,Vegetable,2,0,2
+F007386,24101,"Potato, sebago, peeled, raw",72.41873804971318,2.2,True,Vegetable,Vegetable,2,0,2
+F007383,24101,"Potato, sebago, peeled, baked, no added fat",109.94263862332696,3.3,True,Vegetable,Vegetable,2,0,2
+F007384,24103,"Potato, sebago, peeled, boiled, drained",72.65774378585085,2.5,True,Vegetable,Vegetable,2,0,2
+F007269,24102,"Potato, fries, fast food outlet, deep fried, monounsaturated oil, salted",316.20458891013385,3.1,False,Potato Fries,Deep Fried Foods,1,0,1
+F007279,24102,"Potato, fries, independent takeaway outlet, deep fried, blended oil, salted",325.2868068833652,3.1,False,Potato Fries,Deep Fried Foods,1,0,1
+F007535,24701,"Pumpkin, butternut, peeled, fresh, raw",45.172084130019115,1.8,True,Vegetable,Vegetable,2,0,2
+F007533,24701,"Pumpkin, butternut, peeled, fresh, baked, no added fat",53.05927342256214,2.1,True,Vegetable,Vegetable,2,0,2
+F007534,24701,"Pumpkin, butternut, peeled, fresh, boiled, drained",47.08413001912046,1.9,True,Vegetable,Vegetable,2,0,2
+F007540,24701,"Pumpkin, golden nugget, peeled, fresh, raw",29.636711281070745,1.1,True,Vegetable,Vegetable,2,0,2
+F007538,24701,"Pumpkin, golden nugget, peeled, fresh, baked, no added fat",34.894837476099426,1.3,True,Vegetable,Vegetable,2,0,2
+F007539,24701,"Pumpkin, golden nugget, peeled, fresh, boiled, drained",30.83173996175908,1.1,True,Vegetable,Vegetable,2,0,2
+F007545,24701,"Pumpkin, jarrahdale, peeled, fresh, raw",26.52963671128107,1.6,True,Vegetable,Vegetable,2,0,2
+F007543,24701,"Pumpkin, jarrahdale, peeled, fresh, baked, no added fat",31.309751434034414,1.9,True,Vegetable,Vegetable,2,0,2
+F007544,24701,"Pumpkin, jarrahdale, peeled, fresh, boiled, drained",27.724665391969406,1.7,True,Vegetable,Vegetable,2,0,2
+F007555,24701,"Pumpkin, peeled, fresh, raw",37.76290630975143,1.8,True,Vegetable,Vegetable,2,0,2
+F007553,24701,"Pumpkin, peeled, fresh, baked, no added fat",44.45506692160612,2.1,True,Vegetable,Vegetable,2,0,2
+F007554,24701,"Pumpkin, peeled, fresh, boiled, drained",39.19694072657744,1.9,True,Vegetable,Vegetable,2,0,2
+F007559,24701,"Pumpkin, Queensland blue, peeled, fresh, raw",49.7131931166348,2.7,True,Vegetable,Vegetable,2,0,2
+F007557,24701,"Pumpkin, Queensland blue, peeled, fresh, baked, no added fat",58.31739961759082,3.2,True,Vegetable,Vegetable,2,0,2
+F007558,24701,"Pumpkin, Queensland blue, peeled, fresh, boiled, drained",51.625239005736134,2.8,True,Vegetable,Vegetable,2,0,2
+F007606,24302,"Radish, red skinned, unpeeled, raw",14.818355640535373,1.1,True,Vegetable,Vegetable,2,2,2
+F007608,24302,"Radish, white skinned, peeled, raw",20.554493307839387,1.8,True,Vegetable,Vegetable,2,2,2
+F007712,24401,"Rocket, fresh, raw",21.749521988527725,2.4,True,Vegetable,Vegetable,2,0,2
+F007716,24403,"Rosemary, fresh, raw",94.88527724665391,14.1,True,Vegetable,Vegetable,2,0,2
+F008204,24404,"Seaweed, nori, dried",302.5812619502868,34.3,True,Vegetable,Vegetable,2,0,2
+F008203,24404,"Seaweed, boiled, drained",54.493307839388144,6.2,True,Vegetable,Vegetable,2,0,2
+F008227,24802,"Shallot, peeled, fresh, raw",25.5736137667304,2.9,True,Vegetable,Vegetable,2,0,2
+F008226,24802,"Shallot, peeled, fresh, fried, no added fat",41.10898661567877,4.7,True,Vegetable,Vegetable,2,0,2
+F008267,24401,"Silverbeet, fresh, raw",15.774378585086042,2,True,Vegetable,Vegetable,2,2,2
+F008266,24401,"Silverbeet, fresh, boiled, drained",18.40344168260038,2.3,True,Vegetable,Vegetable,2,2,2
+F008373,24501,"Snow pea, fresh, raw",37.523900573613766,2.6,True,Vegetable,Vegetable,2,0,2
+F008372,24501,"Snow pea, fresh, fried, no added fat",46.84512428298279,3.2,True,Vegetable,Vegetable,2,0,2
+F008371,24501,"Snow pea, fresh, boiled, drained",40.391969407265776,2.8,True,Vegetable,Vegetable,2,0,2
+F008749,24401,"Spinach, baby, fresh, raw",16.252390057361374,2.5,True,Vegetable,Vegetable,2,2,2
+F008761,24401,"Spinach, Mature English, fresh, raw",19.59847036328872,2.5,True,Vegetable,Vegetable,2,2,2
+F008760,24401,"Spinach, Mature English, fresh, boiled, drained",23.183556405353727,2.9,True,Vegetable,Vegetable,2,2,2
+F008763,24401,"Spinach, water, fresh, raw",26.2906309751434,2.8,True,Vegetable,Vegetable,2,2,2
+F008803,24503,"Sprout, alfalfa, fresh, raw",21.749521988527725,2.2,True,Vegetable,Vegetable,2,2,2
+F008806,24503,"Sprout, bean, fresh, raw",22.466539196940726,1.3,True,Vegetable,Vegetable,2,2,2
+F008811,24702,"Squash, button, fresh, raw",26.2906309751434,0.5,True,Vegetable,Vegetable,2,2,2
+F008810,24702,"Squash, button, fresh, boiled, drained",31.309751434034414,0.6,True,Vegetable,Vegetable,2,2,2
+F008813,24702,"Squash, scallopini, fresh, raw",20.076481835564053,0.5,True,Vegetable,Vegetable,2,2,2
+F008812,24702,"Squash, scallopini, fresh, boiled, drained",23.900573613766728,0.6,True,Vegetable,Vegetable,2,2,2
+F009021,24302,"Swede, peeled, fresh, raw",22.22753346080306,2.2,True,Vegetable,Vegetable,2,2,2
+F009020,24302,"Swede, peeled, fresh, boiled, drained",23.900573613766728,2.4,True,Vegetable,Vegetable,2,2,2
+F009035,24302,"Sweet potato, orange flesh, peeled, fresh, raw",70.02868068833652,2.6,True,Vegetable,Vegetable,2,0,2
+F009033,24302,"Sweet potato, orange flesh, peeled, fresh, baked, no added fat",85.32504780114722,3.1,True,Vegetable,Vegetable,2,0,2
+F009034,24302,"Sweet potato, orange flesh, peeled, fresh, boiled, drained",75.2868068833652,2.7,True,Vegetable,Vegetable,2,0,2
+F009081,16804,"Tamarind, paste, pure",250.4780114722753,5.1,True,Fruit,Fruit,2,2,2
+F009094,24302,"Taro, peeled, fresh, raw",112.09369024856596,3.5,True,Vegetable,Vegetable,2,0,2
+F009093,24302,"Taro, peeled, fresh, boiled, drained",120.45889101338432,3.8,True,Vegetable,Vegetable,2,0,2
+F009190,24601,"Tomato, cherry, raw",15.535372848948374,1.7,True,Vegetable,Vegetable,2,2,2
+F009193,24601,"Tomato, common, raw",17.447418738049713,1.1,True,Vegetable,Vegetable,2,2,2
+F009211,24601,"Tomato, roma, raw",17.68642447418738,1.2,True,Vegetable,Vegetable,2,2,2
+F009208,24602,"Tomato, paste, with added salt",66.20458891013384,3.5,True,Vegetable,Vegetable,2,2,2
+F009206,24602,"Tomato, paste, no added salt",63.5755258126195,3.6,True,Vegetable,Vegetable,2,2,2
+F009209,24602,"Tomato, puree, commercial",23.422562141491394,1.5,True,Vegetable,Vegetable,2,2,2
+F009217,24602,"Tomato, sundried",263.1453154875717,14.7,True,Vegetable,Vegetable,2,2,2
+F009222,24602,"Tomato, whole, canned in tomato juice, undrained",19.120458891013385,1,True,Vegetable,Vegetable,2,2,2
+F009221,24602,"Tomato, whole, canned in tomato juice, drained",21.03250478011472,1.3,True,Vegetable,Vegetable,2,2,2
+F009340,24302,"Turnip, white, peeled, fresh, raw",22.466539196940726,1.7,True,Vegetable,Vegetable,2,0,2
+F009339,24302,"Turnip, white, peeled, fresh, boiled, no added fat",24.1395793499044,1.8,True,Vegetable,Vegetable,2,0,2
+F009491,24401,"Vine leaf, grape, canned",60.70745697896749,9.9,True,Vegetable,Vegetable,2,0,2
+F009514,24801,"Water chestnut, peeled, canned, drained",52.34225621414914,2.7,True,Vegetable,Vegetable,2,2,2
+F009532,24401,"Watercress, raw",26.2906309751434,3.8,True,Vegetable,Vegetable,2,0,2
+F009604,24001,"Yam, wild harvested, cooked",70.74569789674952,2.1,True,Vegetable,Vegetable,2,0,2
+F009775,24702,"Zucchini, green skin, fresh, unpeeled, raw",15.535372848948374,1.1,True,Vegetable,Vegetable,2,0,2
+F009774,24702,"Zucchini, green skin, fresh, unpeeled, fried, no added fat",21.988527724665392,1.6,True,Vegetable,Vegetable,2,0,2
+F009773,24702,"Zucchini, green skin, fresh, unpeeled, boiled, drained",18.40344168260038,1.3,True,Vegetable,Vegetable,2,0,2
+F009766,24702,"Zucchini, golden, fresh, unpeeled, raw",18.642447418738048,1,True,Vegetable,Vegetable,2,0,2
+F009765,24702,"Zucchini, golden, fresh, unpeeled, fried, no added fat",26.52963671128107,1.4,True,Vegetable,Vegetable,2,0,2
+F009764,24702,"Zucchini, golden, fresh, unpeeled, boiled, drained",22.22753346080306,1.2,True,Vegetable,Vegetable,2,0,2

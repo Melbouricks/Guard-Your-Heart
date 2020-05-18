@@ -4,5 +4,9 @@ env/
 # contains vs code settings.json
 .vscode/
 
-# python interpreter cached
-__pycache__/
+# Interpreter cached
+__pycache__
+Guard_Your_Heart/__pycache__/
+
+# DS store file
+.DS_Store
