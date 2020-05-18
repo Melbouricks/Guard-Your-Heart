@@ -50,3 +50,15 @@
     opacity: 1;
     color: #e5bd95;
 }
+.proIndi {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+.proIndi2 {
+    width: 10px;
+    height: 10px;
+    background-color: #e5bd95;
+    border-radius: 50%;
+}
