@@ -37,15 +37,6 @@ def assessment():
     else:
         return redirect(url_for('initlogin'))
         
-# @app.route('/option')
-# def option():
-#     if 'user' in session:
-#         list_of_headings = Utill.metData()
-#         # print(list_of_headings)
-#         return render_template("option.html", activity_data=list_of_headings, route="option")
-#     else:
-#         return redirect(url_for('initlogin'))
-
 @app.route('/results', methods=['POST','GET'])
 def results():
     if 'user' in session:
@@ -122,6 +113,7 @@ def PA():
     if 'user' in session:
         if "data" in session:
             data = session['data'][1]
+            print(data)
             return render_template("PA.html", activity_entered=data, route="PA")
         else:
             return render_template('index.html', route="index")
