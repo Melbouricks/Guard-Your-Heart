@@ -1,5 +1,5 @@
 function nextQue(abc) {
-    console.log(abc);
+    // console.log(abc);
     var regex = /^\d+(\.\d{1})?$/;
     var reg_age = /^\d+$/;
     if (document.getElementById('age_que').style.display == 'block') {
@@ -31,7 +31,7 @@ function nextQue(abc) {
     } else if (document.getElementById('weight_que').style.display == 'block') {
         // min="40" max="230"
         var weight = document.getElementById("weight").value;
-        console.log(weight)
+        // console.log(weight)
         if (weight == null | weight == "") {
             alert("Weight should be integer");
         }
@@ -127,13 +127,13 @@ function nextQue(abc) {
     } else if (document.getElementById('alco_que').style.display == 'block') {
         document.getElementById('alco_que').style.display = 'none'
         document.getElementById('pa_que').style.display = 'block'
-        document.getElementById('submit_final').style.display = 'block'
+        // document.getElementById('submit_final').style.display = 'block'
         // document.getElementById('preview').style.display = 'block'
     }
 }
 
 function prevQue(abc) {
-    console.log(abc);
+    // console.log(abc);
     if (document.getElementById('height_que').style.display == 'block') {
         document.getElementById('height_que').style.display = 'none'
         document.getElementById('age_que').style.display = 'block'
@@ -161,7 +161,7 @@ function prevQue(abc) {
     } else if (document.getElementById('pa_que').style.display == 'block') {
         document.getElementById('alco_que').style.display = 'block'
         document.getElementById('pa_que').style.display = 'none'
-        document.getElementById('submit_final').style.display = 'none'
+        // document.getElementById('submit_final').style.display = 'none'
         // document.getElementById('preview').style.display = 'none'
     }
 }
@@ -185,7 +185,7 @@ function prevQue(abc) {
 function bpCheckFunction() {
     if (document.getElementById('bpyes').checked) {
         document.getElementById('bloodpressure').style.display = 'block';
-        console.log("bp")
+        // console.log("bp")
         document.getElementById('systolicbp').required = true
         document.getElementById('diastolicbp').required = true
     } else {
@@ -198,7 +198,7 @@ function bpCheckFunction() {
 function cholCheckFunction() {
     if (document.getElementById('cholyes').checked) {
         document.getElementById('cholestrol').style.display = 'block';
-        console.log('chol')
+        // console.log('chol')
         document.getElementById("totalcholes").required = true
     } else {
         document.getElementById('cholestrol').style.display = 'none';
@@ -209,7 +209,7 @@ function cholCheckFunction() {
 function sugarCheckFunction() {
     if (document.getElementById('sugaryes').checked) {
         document.getElementById('sugar').style.display = 'block';
-        console.log('gluc')
+        // console.log('gluc')
         document.getElementById('bloodsugar').required = true
     } else {
         document.getElementById('sugar').style.display = 'none';
@@ -253,7 +253,7 @@ function addFunction() {
                 var h31 = document.createElement("h3");
                 h31.className = "d-inline";
                 h31.innerHTML = activityname;
-                console.log(input1);
+                // console.log(input1);
                 var p1 = document.createElement("p");
                 p1.className = "d-md-none d-inline";
                 p1.innerHTML = "activity";
@@ -374,11 +374,11 @@ function formSubmit() {
         activityObject.days = columns[2].firstChild.innerHTML;
         activityList.push(activityObject);
     }
-    console.log(activityList);
+    // console.log(activityList);
 
     var formData = new FormData();
     var blob = new Blob([JSON.stringify(activityList, null, 2)], { type: 'application/json' });
     formData.append('activities', blob);
 
-    console.log(formData)
+    // console.log(formData)
 }
