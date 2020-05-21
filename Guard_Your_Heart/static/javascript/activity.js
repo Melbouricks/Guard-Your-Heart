@@ -69,6 +69,9 @@ function nextQue(abc) {
             else if (diastolicbp < 50 || diastolicbp > 150) {
                 alert("Diastolic Blood Pressure should be between 50 and 150");
             }
+            else if(parseFloat(diastolicbp) > parseFloat(systolicbp) || parseFloat(diastolicbp) == parseFloat(systolicbp)) {
+                alert("Diastolic Blood Pressure should be lower than Systolic Blood Pressure");
+            }
             else {
                 document.getElementById('bp_que').style.display = 'none'
                 document.getElementById('chol_que').style.display = 'block'

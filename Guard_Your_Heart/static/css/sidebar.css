@@ -21,7 +21,7 @@
   }
   
   .sidenav a:hover {
-    color: orange;
+    color: rgb(223, 88, 55);
   }
   
   .main {
@@ -34,6 +34,6 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-  @media all and (max-width: 480px) {
+  @media all and (max-width: 1350px) {
     .sidenav { display: none; }
   }

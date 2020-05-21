@@ -5,9 +5,6 @@
 <link rel="stylesheet" type="text/css" href="../static/css/ball.css">
 {% endblock %}
 
-{% block javascriptblock %}
-<script type="text/javascript" src="{{ url_for('static', filename='javascript/activity.js') }}"></script>
-{% endblock %}
 <style>
     .center1 {
         margin: 0 auto;
@@ -17,7 +14,7 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/home">Home</a></li>
         <li class="breadcrumb-item"><a href="{{ url_for('assessment')}}">Assessment</a></li>
-        <li class="breadcrumb-item"><a href="{{ url_for('results')}}">results</a></li>
+        <li class="breadcrumb-item"><a href="{{ url_for('results')}}">Results</a></li>
         <li class="breadcrumb-item active" aria-current="page">PhysicalActivity</li>
     </ol>
 </nav>
@@ -28,9 +25,9 @@
     <div class="row">
         <div class="col-lg-1">
             <div class="sidenav">
-                <a href="#heart" class="btn btn-warning my-2">Current Activity</a>
+                <a href="#heart" class="btn btn-warning my-2">Activities</a>
                 <a href="#feedbackContain" class="btn btn-warning my-2" id="feed">Feedback</a>
-                <a href="#sug" class="btn btn-warning my-2">Suggestion</a>
+                <a href="#sug" class="btn btn-warning my-2">Suggestions</a>
             </div>
         </div>
         <div class="col-lg-11">
@@ -92,15 +89,15 @@
                         <div class="container">
                             <h1 class="display-4 mb-3 theme-title2">Physical Activity Suggestions</h1>
                             <div class="row">
-                                <button type="button" class="btn btn-info mb-3 col-sm-3 mr-5" onclick="tableAjax(this)"
+                                <button type="button" class="btn btn-warning mb-3 col-sm-3 mr-5" onclick="tableAjax(this)"
                                     id="myButton1">See
                                     light activities here</button>
 
-                                <button type="button" class="btn btn-info mb-3 col-sm-3 mr-5" onclick="tableAjax(this)"
+                                <button type="button" class="btn btn-warning mb-3 col-sm-3 mr-5" onclick="tableAjax(this)"
                                     id="myButton2">See
                                     moderate
                                     activities here</button>
-                                <button type="button" class="btn btn-info mb-3 col-sm-3" onclick="tableAjax(this)"
+                                <button type="button" class="btn btn-warning mb-3 col-sm-3" onclick="tableAjax(this)"
                                     id="myButton3">See
                                     vigorous
                                     activities here</button>
@@ -129,9 +126,9 @@
                     <div class="container-fluid theme-box-light" style="border-radius: 10px;">
                         <div class="container-md my-5 py-5">
                             <div class="row">
-                                <div class="col-6"><a href="{{ url_for('results')}}" class="btn btn-info">Results</a>
+                                <div class="col-6"><a href="{{ url_for('results')}}" class="btn btn-warning">Results</a>
                                 </div>
-                                <div class="col-6"><a href="{{ url_for('diet')}}" class="btn btn-info"
+                                <div class="col-6"><a href="{{ url_for('diet')}}" class="btn btn-warning"
                                         style="float: right;">Diet</a></div>
                             </div>
                         </div>
@@ -379,7 +376,7 @@
     function addMsg(msg) {
         var feedback = document.getElementById("feedback");
         var div_msg = document.createElement("div");
-        div_msg.className = "row";
+        div_msg.className = "row px-3";
         var p_msg = document.createElement("p");
         p_msg.innerHTML = msg;
         p_msg.className = "lead text-justify py-2";

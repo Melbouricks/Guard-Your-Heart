@@ -5,9 +5,6 @@
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 {% endblock %} {% block content %}
 
-{% block javascriptblock %}
-<script type="text/javascript" src="../static/javascript/activity.js"></script>
-{% endblock %}
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/home">Home</a></li>
@@ -22,7 +19,7 @@
             <div class="sidenav">
                 <a href="#heart" class="btn btn-warning my-2">Risk</a>
                 <a href="#indi" class="btn btn-warning my-2">Indicators</a>
-                <a href="#act" class="btn btn-warning my-2">Current Activity</a>
+                <a href="#act" class="btn btn-warning my-2">Activities</a>
                 <a href="#style" class="btn btn-warning my-2">Life Style</a>
             </div>
         </div>
@@ -97,7 +94,7 @@
                             <div class="row d-flex align-items-baseline flex-wrap">
                                 <div class="col-md-4 px-4">
                                     <div class="d-flex flex-column text-right">
-                                        <h3>Sugar</h3>
+                                        <h3>Blood Sugar</h3>
                                         <p>Causes blockage in arteries</p>
                                     </div>
                                 </div>
@@ -168,7 +165,7 @@
                     <div class="container-fluid" style="background-color: white;">
                         <form id="paForm" action="{{ url_for('PA') }}" method="POST">
                             <div class="container" id="current_pa">
-                                <h1 class="display-4 pb-4 theme-title2">Your Current Activity</h1>
+                                <h1 class="display-4 pb-4 theme-title2">Your Current Activities</h1>
                                 <!-- heading-row -->
                                 <div class="row" id="row_heading">
                                     <div class="col-sm-6">
@@ -200,7 +197,7 @@
                                             <h5 class="card-title">Diet</h5>
                                             <p class="card-text">Healthy and Un-Healthy diet choices which can help you
                                                 ... </p>
-                                            <a href="{{ url_for('diet')}}" class="btn btn-info">Read here</a>
+                                            <a href="{{ url_for('diet')}}" class="btn btn-warning">Read here</a>
                                         </div>
                                     </div>
                                 </div>
@@ -212,7 +209,7 @@
                                             <h5 class="card-title">Physical Activity</h5>
                                             <p class="card-text">Physical activities which and help you ...</p>
                                             <!-- <a href="{{ url_for('PA')}}" class="btn btn-primary">Read here</a> -->
-                                            <button type="button" class="btn btn-info"
+                                            <button type="button" class="btn btn-warning"
                                                 onclick="document.getElementById('paForm').submit()">Read here</button>
                                         </div>
                                     </div>
