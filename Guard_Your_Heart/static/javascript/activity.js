@@ -42,7 +42,7 @@ var checkActivities=[]
 function checkData(temp) {
     console.log(temp);
     if (checkActivities.includes(temp)) {
-        alert('activity already added!');
+        alert('Activity already added!');
         return false
     } else {
         checkActivities.push(temp)

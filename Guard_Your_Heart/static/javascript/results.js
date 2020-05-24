@@ -1,95 +1,47 @@
-var current_pa = document.getElementById("current_pa");
+window.onload = function () {
+    var current_pa = document.getElementById("current_pa");
 
-var actGet = "{{activity_entered}}";
-if (actGet.length == 2) {
+    // console.log(actGet);
+
     var row_heading = document.getElementById("row_heading");
-    row_heading.style = "display:none"
-    var msg = document.createElement("h3");
-    msg.innerHTML = "You have not added any physical activities."
-    var msg2 = document.createElement("h3");
-    msg2.innerHTML = "Please visit the Physical Activity suggestions page."
-    current_pa.appendChild(msg);
-    current_pa.appendChild(msg2);
+        
+    if (actGet.length == 0) {
+        var msg = document.createElement("p");
+        msg.className = "lead text-justify";
+        msg.innerHTML = "You have not added any physical activities."
+        var msg2 = document.createElement("p");
+        msg2.className = "lead text-justify";
+        msg2.innerHTML = "Please visit the Physical Activity suggestions page."
+        current_pa.appendChild(msg);
+        current_pa.appendChild(msg2);
+    }
+    else {
+        row_heading.style = "";
+    }
+
+    for (var i = 0; i< actGet.length; i++){
+        var heading = actGet[i].heading;
+        // console.log(heading);
+        var minutes = actGet[i].minutes;
+        var days = actGet[i].daysperweek;
+        var intensity = actGet[i].intensity;
+        var tr = document.createElement("tr");
+        var td_heading = document.createElement("td");
+        var td_minutes = document.createElement("td");
+        var td_days = document.createElement("td");
+        var td_intensity = document.createElement("td");
+
+        td_heading.innerHTML = heading;
+        td_minutes.innerHTML = minutes;
+        td_days.innerHTML = days;
+        td_intensity.innerHTML = intensity;
+
+        tr.append(td_heading);
+        tr.append(td_minutes);
+        tr.append(td_days);
+        tr.append(td_intensity);
+
+        tbody_pa.append(tr);
+    }
+
 }
-
-var light_time = 0;
-var moderate_time = 0;
-var vigorous_time = 0;
-
-var flag_duraion = 0;
-var days_total = 0;
-
-{ % for activity_data in activity_entered % }
-var heading = "{{ activity_data.heading }}";
-var minutes = "{{ activity_data.minutes }}";
-var days = "{{ activity_data.daysperweek }}";
-var intensity = "{{ activity_data.intensity }}";
-// console.log("yyyy  "+intensity);
-
-var div_row = document.createElement("div");
-div_row.className = "row";
-
-// heading
-var div_heading = document.createElement("div");
-div_heading.className = "col-sm-6";
-var h5_heading = document.createElement("h5");
-h5_heading.innerHTML = heading;
-
-var input1 = document.createElement("input");
-input1.setAttribute("name", "activities");
-input1.type = "hidden";
-input1.value = heading;
-
-div_heading.appendChild(h5_heading);
-div_heading.appendChild(input1);
-
-// minutes
-var div_minutes = document.createElement("div");
-div_minutes.className = "col-sm-2";
-var h5_minutes = document.createElement("h5");
-h5_minutes.innerHTML = minutes;
-
-var input2 = document.createElement("input");
-input2.setAttribute("name", "minutes");
-input2.type = "hidden";
-input2.value = minutes;
-
-div_minutes.appendChild(h5_minutes);
-div_minutes.appendChild(input2);
-
-// days
-var div_days = document.createElement("div");
-div_days.className = "col-sm-2";
-var h5_days = document.createElement("h5");
-h5_days.innerHTML = days;
-
-var input3 = document.createElement("input");
-input3.setAttribute("name", "days");
-input3.type = "hidden";
-input3.value = days;
-
-div_days.appendChild(h5_days);
-div_days.appendChild(input3);
-
-// intensity
-var div_intensity = document.createElement("div");
-div_intensity.className = "col-sm-2";
-var h5_intensity = document.createElement("h5");
-h5_intensity.innerHTML = intensity;
-
-var input4 = document.createElement("input");
-input4.setAttribute("name", "intensity");
-input4.type = "hidden";
-input4.value = intensity;
-
-div_intensity.appendChild(h5_intensity);
-div_intensity.appendChild(input4);
-
-div_row.appendChild(div_heading);
-div_row.appendChild(div_minutes);
-div_row.appendChild(div_days);
-div_row.appendChild(div_intensity);
-
-current_pa.appendChild(div_row);
-
-{ % endfor % }
