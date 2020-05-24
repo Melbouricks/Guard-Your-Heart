@@ -3,11 +3,9 @@
 <link rel="stylesheet" type="text/css" href="../static/css/progressbar.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-{% endblock %} {% block content %}
+{% endblock %} 
 
-{% block javascriptblock %}
-<script type="text/javascript" src="../static/javascript/activity.js"></script>
-{% endblock %}
+{% block content %}
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/home">Home</a></li>
@@ -84,7 +82,7 @@
                                 <div class="col-md-4 px-4">
                                     {% if data.indicator[0] == 0 %}
                                     <i class="fas fa-question-circle d-inline pr-2" style="font-size:32px;"></i>
-                                    <p class="lead d-inline">Do not know</p>
+                                    <p class="lead d-inline">Unknown</p>
                                     {% elif data.cholestrol <=2 %}
                                     <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
                                     <p class="lead d-inline">Under Control</p>
@@ -98,7 +96,7 @@
                                 <div class="col-md-4 px-4">
                                     <div class="d-flex flex-column text-right">
                                         <h3>Sugar</h3>
-                                        <p>Causes blockage in arteries</p>
+                                        <p>Causes weight gain</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 px-4">
@@ -115,7 +113,7 @@
                                 <div class="col-md-4 px-4">
                                     {% if data.indicator[1] == 0 %}
                                     <i class="fas fa-question-circle d-inline pr-2" style="font-size:32px;"></i>
-                                    <p class="lead d-inline">Do not know</p>
+                                    <p class="lead d-inline">Unknown</p>
                                     {% elif data.gluc <=2 %}
                                     <i class="fa fa-check d-inline pr-2" style="font-size:32px;"></i>
                                     <p class="lead d-inline">Under Control</p>
@@ -129,7 +127,7 @@
                                 <div class="col-md-4 px-4">
                                     <div class="d-flex flex-column text-right">
                                         <h3>Body Mass Index (BMI)</h3>
-                                        <p>Causes blockage in arteries</p>
+                                        <p>High BMI increases CVD risk</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 px-4">
