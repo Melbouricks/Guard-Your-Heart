@@ -146,7 +146,9 @@ class Utill:
         daysperweek = request.form.getlist('days')
         intensity = ""
         df = pd.read_csv('Guard_Your_Heart/met2.csv')
-    
+
+        print(activities, minutes, daysperweek)
+
         data_list = []
         for i in range(len(activities)):
             intensity_int = df[df['activity']==activities[i]]['intensity'].item()
