@@ -329,6 +329,14 @@
 
     {% endfor %}
 
+    var flag_total_basic = 0;
+    if(moderate_time >= 150 | vigorous_time >= 75 | moderate_time + vigorous_time * 2 >= 150) {
+        flag_total_basic = 0;
+    }
+    else {
+        flag_total_basic = 1;
+    }
+
 
     var flag_total = 0;
     // check total time
@@ -338,6 +346,14 @@
     else {
         flag_total = 1;
     }
+
+
+    var flag_light = 0;
+
+    if (moderate_time == 0 && vigorous_time == 0 && light_time != 0){
+        flag_light = 1;
+    }
+
     var flag_days = 0;
     // check total days
     if (days_total < 3) {
@@ -345,19 +361,28 @@
     }
 
     var msg_duration = "Aerobic activity should be performed in bouts of at least 10 minutes duration. You should extend time duration for doing the activity.";
-    var msg_total = "For additional health benefits, older adults should increase their moderate-intensity aerobic physical activity to 300 minutes per week," +
-        "or engage in 150 minutes of vigorous-intensity aerobic physical activity per week, or an equivalent combination of moderate-and vigorous-intensity activity." +
+    var msg_light = "Any time or form of exercise is better than none, but to be healthier, please increase time doing moderate or vigorous intensity activity.";
+    var msg_total_basic = "Adults should do at least 150 minutes of moderate intensity aerobic physical activity throughout the week or do at least 75 minutes "+
+        "of vigorous intensity aerobic physical activity throughout the week or an equivalent combination of moderate and vigorous intensity activity.";
+    var msg_total = "For additional health benefits, older adults should increase their moderate intensity aerobic physical activity to 300 minutes per week," +
+        "or engage in 150 minutes of vigorous intensity aerobic physical activity per week, or an equivalent combination of moderate and vigorous intensity activity." +
         " For your own health, please increase the amount of physical activity.";
     var msg_days = "You should perform physical activity on 3 or more days per week to enhance balance and prevent falls."
     var msg_condition = "When you cannot do the recommended amounts of physical activity due to health conditions, " +
         "you should be as physically active as your abilities and conditions allow."
     var msg_congratulation = "Congratulations! You are doing physical activities very well! Please keep on it."
 
-    if (flag_duraion == 1 | flag_total == 1 | flag_days == 1) {
+    if (flag_duraion == 1 | flag_total == 1 | flag_days == 1 | flag_light == 1 | flag_total_basic == 1) {
         if (flag_duraion == 1) {
             addMsg(msg_duration);
         }
-        if (flag_total == 1) {
+        if (flag_light == 1) {
+            addMsg(msg_light);
+        }
+        if (flag_total_basic == 1) {
+            addMsg(msg_total_basic);
+        }
+        if (flag_total_basic == 0 && flag_total == 1) {
             addMsg(msg_total);
         }
         if (flag_days == 1) {
