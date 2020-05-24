@@ -86,12 +86,10 @@
      ;
  }
 
- /* .moveButton {
-     border-radius: 10px;
-     background-color: white;
- } */
- /* .formBack {
-     background-color: rgb(223, 88, 55);
-     height: 500px;
- } */
- 
+ .btn-warning {
+    color: white;
+ }
+
+ .btn-warning:hover {
+    color: rgb(223, 88, 55);
+ }

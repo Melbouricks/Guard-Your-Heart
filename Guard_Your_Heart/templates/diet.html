@@ -16,7 +16,7 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/home">Home</a></li>
         <li class="breadcrumb-item"><a href="{{ url_for('assessment')}}">Assessment</a></li>
-        <li class="breadcrumb-item"><a href="{{ url_for('results')}}">results</a></li>
+        <li class="breadcrumb-item"><a href="{{ url_for('results')}}">Results</a></li>
         <li class="breadcrumb-item active" aria-current="page">Diet</li>
     </ol>
 </nav>
@@ -26,8 +26,8 @@
         <div class="col-lg-1">
             <div class="sidenav">
                 <a href="#heart" class="btn btn-warning my-2">Indicator</a>
-                <a href="#heal" class="btn btn-warning my-2">Healthy food</a>
-                <a href="#unheal" class="btn btn-warning my-2">Unhealthy food</a>
+                <a href="#heal" class="btn btn-warning my-2">Healthy Food</a>
+                <a href="#unheal" class="btn btn-warning my-2">Unhealthy Food</a>
             </div>
         </div>
         <div class="col-lg-11">
@@ -42,7 +42,7 @@
                             <p>Find out dietary suggestions for you below</p>
                         </div>
                     </div>
-                    <div class="container-fluid theme-box-light" id="indi" style="border-radius: 20px;">
+                    <div class="container-fluid theme-box-light" id="indi" style="border-radius: 10px;">
                         <div class="container-md my-5 py-5 px-md-5">
                             <h1 class="display-4 pb-4 mb-5 theme-title1">
                                 Indicators
@@ -81,7 +81,7 @@
                             <div class="row d-flex align-items-baseline flex-wrap">
                                 <div class="col-md-4 px-4">
                                     <div class="d-flex flex-column text-right">
-                                        <h3>Sugar</h3>
+                                        <h3>Blood Sugar</h3>
                                         <p>Causes weight gain</p>
                                     </div>
                                 </div>
@@ -148,7 +148,7 @@
                         </div>
                     </div>
 
-                    <div class="container-fluid theme-box-light" style="border-radius: 20px;">
+                    <div class="container-fluid theme-box-light" style="border-radius: 10px;">
                         <div class="container theme-box-light" style="border-radius: 20px;" id="heal">
                             <h1 class="display-4 theme-title1 pt-5">Healthy Food Choices</h1>
                             <!-- Pics -->
@@ -163,7 +163,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container-fluid theme-box-light" style="border-radius: 20px;">
+                    <div class="container-fluid theme-box-light" style="border-radius: 10px;">
                         <div class="container theme-box-light mt-5" style="border-radius: 20px;" id="unheal">
                             <h1 class="display-4 theme-title1 pt-5 md-2">Unhealthy Food Choices</h1>
                             <!-- Pics -->
@@ -178,13 +178,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container-md my-5 py-5 theme-box-light" style="border-radius: 20px;">
+                    <div class="container-md my-5 py-5 theme-box-light" style="border-radius: 10px;">
                         <div class="row">
                             <div class="col-6">
-                                <a href="{{ url_for('results')}}" class="btn btn-info">Results</a>
+                                <a href="{{ url_for('results')}}" class="btn btn-warning">Results</a>
                             </div>
                             <div class="col-6">
-                                <a href="{{ url_for('PA')}}" class="btn btn-info" style="float: right;">Physical
+                                <a href="{{ url_for('PA')}}" class="btn btn-warning" style="float: right;">Physical
                                     Activity</a>
                             </div>
                         </div>
@@ -192,7 +192,10 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
 
 
-        {% endblock %}
+
+{% endblock %}
