@@ -3,38 +3,43 @@
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/radioinput.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/activitytable.css') }}">
 <link rel="stylesheet" type="text/css" href="../static/css/assessment.css">
-<!-- <script>
-    var activties = [];
-    console.log(activties);
-</script> -->
 <link rel="stylesheet" type="text/css" href="../static/css/dotnav.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 {% endblock %}
+
 {% block javascriptblock %}
-<script type="text/javascript" src="../static/javascript/activity.js"></script>
-{% endblock %} {% block content %}
+<script type="text/javascript">
+    // For converting python list object to JSON object...
+    // No need for running 2 for loops as done previously.
+    // global variable
+    var headings_array = {{ activity_data| tojson | safe }};
+</script>
+<script type="text/javascript" src="../static/javascript/activity.js?1"></script>
+<script type="text/javascript" src="../static/javascript/assessment.js"></script>
+{% endblock %}
+
+{% block content %}
 
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/home">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Assessment</li>
+        <li class="breadcrumb-item active" aria-current="page">Assess Your Risk</li>
     </ol>
 </nav>
-<!-- <div class="jumbotron jumbotron-fluid mb-0 theme-box-light">
+<div class="jumbotron mb-0 theme-box-light">
     <div class="container">
         <div class="row">
-            <div id="heart"></div>
-            <h1 class="display-3 theme-title2 inline onepage">Assess your CVD risk</h1>
+            <h1 class="display-4 theme-title2">Assess your CVD risk</h1>
         </div>
     </div>
-</div> -->
+</div>
 <!-- class="needs-validation"  -->
 <!-- onsubmit="checksubmit()" -->
 <!-- 
 <div class="container-fluid" style="background-color: wheat;"></div> -->
 
-<form action="{{ url_for('results') }}" method="post">
+<form action="{{ url_for('results') }}" method="post" onsubmit="return validateActivity()">
     <div class="container-fluid formBack" id="age_que" style="display: block;">
         <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center contentBack">
             <div class="row my-2" style="margin: 0 auto;">
@@ -57,7 +62,7 @@
                     <h1 class="display-4 pb-4 text-center theme-title1 mt-5">How old are you?</h1>
                     <div class="row">
                         <input class="col-md-4 form-control-lg theme-input mx-auto inputBorder" type="number" id="age"
-                            placeholder="Enter your age" name="age" min="35" max="105" required>
+                            placeholder="Enter your age" name="age" min="35" max="105" required autofocus>
                         <span id="error1"></span>
                     </div>
                 </div>
@@ -67,10 +72,12 @@
             <br>
             <div class="row">
                 <div class="col-6">
-                    <!-- <button class="button-prev-next" type="button" disabled>Back</button> -->
+                    <!-- <button class="button-prev-next" type="button" id='invisible' disabled name="back">Back</button> -->
                 </div>
-                <div class="col-6"><button class="button-prev-next" type="button" style="float: right;"
-                        onclick="nextQue('age')">Next</button></div>
+                <div class="col-6">
+                    <button class="button-prev-next" type="button" style="float: right;" id="ageNextButton"
+                        onclick="nextQue('age')" name="next">Next</button>
+                </div>
             </div>
         </div>
     </div>
@@ -105,9 +112,11 @@
             <br>
             <div class="row">
                 <div class="col-6"><button class="button-prev-next" type="button"
-                        onclick="prevQue('height')">Back</button></div>
-                <div class="col-6"><button class="button-prev-next" type="button" style="float: right;"
-                        onclick="nextQue('height')">Next</button></div>
+                        onclick="prevQue('height')" name="back">Back</button></div>
+                <div class="col-6">
+                    <button class="button-prev-next" type="button" style="float: right;" id="heightNextButton"
+                        onclick="nextQue('height')" name="next">Next</button>
+                </div>
             </div>
         </div>
     </div>
@@ -142,9 +151,11 @@
             <br>
             <div class="row">
                 <div class="col-6"><button class="button-prev-next moveButton" type="button"
-                        onclick="prevQue('weight')">Back</button></div>
-                <div class="col-6"><button class="button-prev-next moveButton" type="button" style="float: right;"
-                        onclick="nextQue('weight')">Next</button></div>
+                        onclick="prevQue('weight')" name="back">Back</button></div>
+                <div class="col-6">
+                    <button class="button-prev-next moveButton" type="button" style="float: right;" id="weightNextButton"
+                        onclick="nextQue('weight')" name="next">Next</button>
+                </div>
             </div>
         </div>
     </div>
@@ -192,9 +203,11 @@
             <br>
             <div class="row">
                 <div class="col-6"><button class="button-prev-next" type="button"
-                        onclick="prevQue('gender')">Back</button></div>
-                <div class="col-6"><button class="button-prev-next" type="button" style="float: right;"
-                        onclick="nextQue('age')">Next</button></div>
+                        onclick="prevQue('gender')" name="back">Back</button></div>
+                <div class="col-6">
+                    <button class="button-prev-next" type="button" style="float: right;" id="genderNextButton"
+                        onclick="nextQue('gender')" name="next">Next</button>
+                </div>
             </div>
         </div>
     </div>
@@ -268,9 +281,11 @@
             <br>
             <div class="row">
                 <div class="col-6"><button class="button-prev-next moveButton" type="button"
-                        onclick="prevQue('bp')">Back</button></div>
-                <div class="col-6"><button class="button-prev-next moveButton" type="button" style="float: right;"
-                        onclick="nextQue('age')">Next</button></div>
+                        onclick="prevQue('bp')" name="back">Back</button></div>
+                <div class="col-6">
+                    <button class="button-prev-next moveButton" type="button" style="float: right;" id="bpNextButton"
+                        onclick="nextQue('bp')" name="next">Next</button>
+                </div>
             </div>
         </div>
     </div>
@@ -319,7 +334,6 @@
                                             type="number" id="totalcholes" placeholder="2 - 10.5 mmol/L" min="2"
                                             max="10.5" name="totalcholes" step="0.1">
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -331,9 +345,11 @@
             <br>
             <div class="row">
                 <div class="col-6"><button class="button-prev-next moveButton" type="button"
-                        onclick="prevQue('chol')">Back</button></div>
-                <div class="col-6"><button class="button-prev-next moveButton" type="button" style="float: right;"
-                        onclick="nextQue('age')">Next</button></div>
+                        onclick="prevQue('chol')" name="back">Back</button></div>
+                <div class="col-6">
+                    <button class="button-prev-next moveButton" type="button" style="float: right;" id="cholesterolNextButton"
+                        onclick="nextQue('chol')" name="next">Next</button>
+                </div>
             </div>
         </div>
     </div>
@@ -393,9 +409,11 @@
             <br>
             <div class="row">
                 <div class="col-6"><button class="button-prev-next" type="button"
-                        onclick="prevQue('sugar')">Back</button></div>
-                <div class="col-6"><button class="button-prev-next" type="button" style="float: right;"
-                        onclick="nextQue('age')">Next</button></div>
+                        onclick="prevQue('sugar')" name="back">Back</button></div>
+                <div class="col-6">
+                    <button class="button-prev-next" type="button" style="float: right;" id="sugarNextButton"
+                        onclick="nextQue('sugar')" name="next">Next</button>
+                </div>
             </div>
         </div>
     </div>
@@ -443,9 +461,11 @@
             <br>
             <div class="row">
                 <div class="col-6"><button class="button-prev-next" type="button"
-                        onclick="prevQue('smoke')">Back</button></div>
-                <div class="col-6"><button class="button-prev-next" type="button" style="float: right;"
-                        onclick="nextQue('age')">Next</button></div>
+                        onclick="prevQue('smoke')" name="back">Back</button></div>
+                <div class="col-6">
+                    <button class="button-prev-next" type="button" style="float: right;" id="smokeNextButton"
+                        onclick="nextQue('smoke')" name="next">Next</button>
+                </div>
             </div>
         </div>
     </div>
@@ -493,9 +513,11 @@
             <br>
             <div class="row">
                 <div class="col-6"><button class="button-prev-next moveButton" type="button"
-                        onclick="prevQue('alco')">Back</button></div>
-                <div class="col-6"><button class="button-prev-next moveButton" type="button" style="float: right;"
-                        onclick="nextQue('age')">Next</button></div>
+                        onclick="prevQue('alco')" name="back">Back</button></div>
+                <div class="col-6">
+                    <button class="button-prev-next moveButton" type="button" style="float: right;" id="alcoholNextButton"
+                        onclick="nextQue('alco')" name="next">Next</button>
+                </div>
             </div>
         </div>
     </div>
@@ -540,8 +562,8 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <div id="activities" style="display:none">
-                            <div class="container d-md-table my-5" id="activitytable" name="activitytable">
+                        <div id="activities" style="display: none;">
+                            <div class="container d-none my-5" id="activitytable" name="activitytable">
                                 <div class="d-md-table-row d-none d-md-block theme-dark">
 
                                     <div class="d-md-table-cell activity-table-header">
@@ -563,24 +585,23 @@
                             </div>
                             <div class="row form-group">
                                 <select class="form-control selectpicker col-md-4" id="headings" data-live-search="true"
-                                    onchange="sub(this.value)">
+                                    onchange="sub(this.value)" title='Select an activity'>
                                 </select>
                                 <select class="form-control selectpicker col-md-4" data-live-search="true"
-                                    id="activityname">
+                                    id="activityname" title='Select a sub-activity'>
                                 </select>
 
                                 <input class="col-md-2 form-control-lg theme-input" type="number" id="kmsorhours"
-                                    placeholder="Minute?" name="kmsorhours">
+                                    placeholder="Minutes per day" name="kmsorhours">
 
                                 <input class="col-md-2 form-control-lg theme-input" type="number" id="daysperweek"
-                                    placeholder="Days/Week" name="daysperweek">
+                                    placeholder="Days per week" name="daysperweek">
                             </div>
                             <button type="button" class="btn btn-block addActBut col-sm-4 mx-auto mb-4 py-3"
-                                onclick="addFunction()">Add Activity
+                                onclick="addFunction()" id='addActivityButton'>Add Activity
                             </button>
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -589,8 +610,10 @@
             <br>
             <div class="row">
                 <div class="col-6"><button class="button-prev-next moveButton" type="button"
-                        onclick="prevQue('pa')">Back</button></div>
-                <div class="col-6"><input type="submit" class="button-prev-next" style="float: right;"></div>
+                        onclick="prevQue('pa')" name="back">Back</button></div>
+                <div class="col-6">
+                    <input type="submit" class="button-prev-next" style="float: right;" id="submitButton">
+                </div>
                 <!-- <button class="button-prev-next moveButton" type="button" style="float: right;"
                         disabled>Submit</button> -->
             </div>
@@ -601,66 +624,4 @@
         class="btn btn-block my-5 py-4 btn-lg theme-box-color theme-button-back theme-white theme-dark-button col-sm-4 mx-auto"
         value="Submit" id="submit_final" style="display: none; border-radius: 10px;"> -->
 </form>
-
-
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.my-select').selectpicker();
-
-    });
-
-    var headings_array = []
-    {% for activity_set in activity_data %}
-    var heading = "{{ activity_set.heading }}";
-    var activities_array = []
-    {% for activity_info in activity_set.activities %}
-    var activity = "{{ activity_info.activity }}";
-    var intensity = {{ activity_info.intensity }};
-    var met = {{ activity_info.met }};
-    activities_array.push({
-        "activity": activity,
-        "intensity": intensity,
-        "met": met
-    })
-    {% endfor %}
-    headings_array.push({
-        "heading": heading,
-        "activities": activities_array
-    })
-    {% endfor %}
-    // console.log(headings_array[0].heading);
-
-    var headings = document.getElementById("headings");
-    // var subheading = document.getElementById("subheading");
-    for (var i = 0; i < headings_array.length; i++) {
-        // console.log(headings_array[i].heading);
-        if (i == 0) {
-            headings.innerHTML += "<option>-Option-</option>";
-        }
-        headings.innerHTML += "<option value=" + i + ">" + headings_array[i].heading + "</option>";
-        // headings.add(new Option(headings_array[i],heading, i));
-    }
-
-    function sub(val) {
-        // console.log(val);
-        //console.log(headings_array[val].activities);
-        $("#activityname").html("").selectpicker('refresh');
-        var content_list = [];
-        for (var i = 0; i < headings_array[val].activities.length; i++) {
-            if (i == 0) {
-                content_list.push("<option>-Option-</option>");
-            }
-            var content = "";
-            content = "<option>" + headings_array[val].activities[i].activity + "</option>";
-            content_list.push(content);
-        }
-        var content_all = content_list.toString();
-        $("#activityname")
-            .html(content_all)
-            .selectpicker('refresh');
-    }
-</script>
-
-
 {% endblock %}
