@@ -1,20 +1,24 @@
+# importing required libs
 import pickle, json
 from sklearn.preprocessing import normalize
 import pandas as pd
 from Guard_Your_Heart.models import Assessment
 
+# creating class
 class Utill:
 
+    # Activity data
     def get_activity_data(activity_data):
         print(activity_data)
         print(type(activity_data))
 
-
+    # CVD risk prediction
     def predict_data(data_sample):
         
         # load model
         model = pickle.load(open('Guard_Your_Heart/logit_model.pkl', 'rb'))
 
+        # Making data frame for the model to give prediction
         cols = list(data_sample.keys())
         values = list(data_sample.values())
         df = pd.DataFrame(columns=cols)
@@ -24,7 +28,7 @@ class Utill:
 
         return risk_res
 
-
+    # data for Calculating CVD risk 
     def get_data(request):
         age = int(request.form.get('age'))
         gender = int(request.form.get('gender'))
@@ -61,10 +65,7 @@ class Utill:
         smoke = int(request.form.get('smoke'))
         alco = int(request.form.get('alcohol'))
         acti = int(request.form.get('activity'))
-
         bmi = weight/(height/100)**2
-
-        # activitytable = str(request.form.get('tabledata'))
 
         data_sample = {
             'age': age,
@@ -98,7 +99,7 @@ class Utill:
         print(Assessment.addData(da))
         return data_sample
 
-
+    # MET Data fuction 
     def metData():
         df = pd.read_csv('Guard_Your_Heart/met2.csv')
 
@@ -110,6 +111,7 @@ class Utill:
         # print(list_of_headings)
         return list_of_headings
 
+    # Filtering the MET data
     def filterData(request):
         filterData = request.form.get("butId")
         # print(filterData)
@@ -139,7 +141,7 @@ class Utill:
         # print(list_of_headings)
         return list_of_headings
    
-   
+   # Fuction for getting activities data from the users.
     def get_data_option(request):
         activities = request.form.getlist('activities')
         minutes = request.form.getlist('minutes')
@@ -168,3 +170,8 @@ class Utill:
             }
             data_list.append(data_temp)
         return data_list
+
+    # Getting Diet Data
+    def getDietData():
+        df = pd.read_csv('Guard_Your_Heart/food.csv')
+        return df

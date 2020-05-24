@@ -1,19 +1,22 @@
+# Importing the required libraries. 
 from flask import render_template, url_for, request, session, redirect
-from Guard_Your_Heart import app, df
+from Guard_Your_Heart import app
 from Guard_Your_Heart.utils import Utill 
 import json
 import random, string
 
 
+# Root Route 
 @app.route('/')
 def initlogin():
     return render_template("initlogin.html")
 
+# Initial login-check Route
 @app.route('/check-login',methods=['POST'])
 def checkLogin():
     if request.method == 'POST':
         session.permanent = True
-        session['user'] = ''.join(random.choice(string.ascii_lowercase) for i in range(8))
+        session['user'] = ''.join(random.choice(string.ascii_lowercase) for i in range(8)) # random 8 digit string for session id
         if request.form.get("password") == "teamb18":
             return redirect(url_for("index"))
     else:
@@ -22,6 +25,7 @@ def checkLogin():
 
     return render_template('initlogin.html')
 
+# Home Route
 @app.route('/home')
 def index():
     if 'user' in session:
@@ -29,21 +33,24 @@ def index():
     else:
         return redirect(url_for('initlogin'))
 
+# Assessment Route
 @app.route('/assessment')
 def assessment():
     if 'user' in session:
-        list_of_headings = Utill.metData()
+        list_of_headings = Utill.metData() # Getting MET data from file. 
         return render_template("assessment.html", activity_data=list_of_headings, route="assessment")
     else:
         return redirect(url_for('initlogin'))
-        
+
+# Results Route        
 @app.route('/results', methods=['POST','GET'])
 def results():
     if 'user' in session:
         if request.method == 'POST':
-            data_sample = Utill.get_data(request)
-            data_activity = Utill.get_data_option(request)
-            result = Utill.predict_data(data_sample)
+            data_sample = Utill.get_data(request) # Getting data into rquired format
+            data_activity = Utill.get_data_option(request) # data of the activities
+            result = Utill.predict_data(data_sample) # Getting CVD risk
+            # adding few data to data_sample and session to get data to other pages
             data_sample['res'] = result
             data_sample['indicator'] = [int(request.form.get("chol")),int(request.form.get("sugarradio"))]
             session['data'] = [data_sample,data_activity]
@@ -59,11 +66,13 @@ def results():
     else:
         return redirect(url_for('initlogin'))
 
+# Diet Route
 @app.route('/diet')
 def diet():
     if 'user' in session:
         data = session['indi']
         print(data)
+        df = Utill.getDietData()
         if data['cholestrol'] <= 2:
             # Normal Cholesterol
             if data['gluc'] <= 2:
@@ -107,7 +116,8 @@ def diet():
         return render_template("diet.html", route="diet", data=data, data1=dict1, data2=dict2)
     else:
         return redirect(url_for('initlogin'))
-    
+
+# Physical_Activity route    
 @app.route('/PA',methods=['POST','GET'])
 def PA():
     if 'user' in session:
@@ -120,7 +130,7 @@ def PA():
     else:
         return redirect(url_for('initlogin'))
     
-
+# Cardiovascular Route
 @app.route('/cardiovasculardisease')
 def cardiovasculardisease():
     if 'user' in session:
@@ -128,10 +138,16 @@ def cardiovasculardisease():
     else:
         return redirect(url_for('initlogin'))
 
-
+# Table Route
 @app.route('/tableAjax',methods=['POST'])
 def tableAjax():
     # data_sample = Utill.metData()
     data_sample = Utill.filterData(request)
     # print(data_sample)
     return json.dumps(data_sample)
+
+# 404 Error Handler
+@app.errorhandler(404)
+def invalid_route(e):
+    return render_template("404.html")
+
