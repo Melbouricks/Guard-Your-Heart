@@ -48,7 +48,11 @@ def results():
     if 'user' in session:
         if request.method == 'POST':
             data_sample = Utill.get_data(request) # Getting data into rquired format
-            data_activity = Utill.get_data_option(request) # data of the activities
+            # data of the activities
+            if data_sample['active'] != 0 :
+                data_activity = Utill.get_data_option(request) 
+            else:
+                data_activity = []
             result = Utill.predict_data(data_sample) # Getting CVD risk
             # adding few data to data_sample and session to get data to other pages
             data_sample['res'] = result

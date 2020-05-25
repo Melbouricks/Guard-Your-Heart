@@ -27,10 +27,11 @@ function activityCheckFunction() {
 }
 
 // function to delete the activity that is added for assessment
-function deleteFunction(tag) {
+function deleteFunction(tag, activ_name) {
     var row=tag.parentNode.parentNode;
     activityTable=row.parentNode;
     activityTable.removeChild(row);
+    checkActivities.pop(activ_name)
     if (activityTable.childElementCount<2) {
         activityTable.classList.remove('d-md-table');
         activityTable.classList.add('d-none');
@@ -128,7 +129,7 @@ function addFunction() {
 
                     var div41=document.createElement("div");
                     div41.className="d-flex w-25";
-                    div41.onclick=function () { deleteFunction(div41); }
+                    div41.onclick=function () { deleteFunction(div41, activityname); }
                     var itag=document.createElement("i");
                     itag.className="fas fa-trash";
                     itag.style.fontSize="30px";
