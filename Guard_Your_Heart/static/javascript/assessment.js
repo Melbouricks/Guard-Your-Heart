@@ -358,10 +358,10 @@ function nextQue(abc) {
         var age = document.getElementById("age").value;
 
         if (age == null | age == "" | reg_age.test(age) == false) {
-            alert("Please enter valid age!");
+            alert("Please enter valid age");
         }
         else if (age < 35 || age > 105) {
-            alert("Age can only be between 35 and 105!")
+            alert("Age can only be between 35 and 105")
         } else {
             document.getElementById('age_que').style.display = 'none';
             document.getElementById('height_que').style.display = 'block';
@@ -372,10 +372,10 @@ function nextQue(abc) {
         // min="90" max="230"
         var height = document.getElementById("height").value;
         if (height == null | height == "" | reg_age.test(height) == false) {
-            alert("Please enter valid height!");
+            alert("Please enter valid height");
         }
         else if (height < 90 || height > 230) {
-            alert("Height can only be between 90 and 230 cms!")
+            alert("Height can only be between 90 and 230 cms")
         }
         else {
             document.getElementById('height_que').style.display = 'none';
@@ -390,10 +390,10 @@ function nextQue(abc) {
             alert("Please fill in your weight!");
         }
         else if (weight < 40 || weight > 230) {
-            alert("Weight can only be between 40 and 230 kgs!")
+            alert("Weight can only be between 40 and 230 kgs")
         }
         else if (regex.test(weight) == false) {
-            alert("Weight should have up to one decimal point!")
+            alert("Weight should have up to one decimal point")
         }
         else {
             document.getElementById('weight_que').style.display = 'none';
@@ -434,6 +434,9 @@ function nextQue(abc) {
             }
             else if (diastolicbp < 50 || diastolicbp > 150) {
                 alert("Diastolic Blood Pressure should be between 50 and 150");
+            }
+            else if (parseFloat(diastolicbp) > parseFloat(systolicbp) || parseFloat(diastolicbp) == parseFloat(systolicbp) ){
+                alert("Diastolic Blood Pressure should be lower than Systolic Blood Pressure")
             }
             else {
                 document.getElementById('bp_que').style.display = 'none';
