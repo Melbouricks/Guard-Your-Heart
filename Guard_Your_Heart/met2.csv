@@ -1,38 +1,38 @@
 ,code,met,heading,activity,intensity
-0,1009,8.5,bicycling,"bicycling, mountain, general",3
-1,1015,7.5,bicycling,"bicycling, general",3
-2,3010,5.0,dancing,"ballet, modern, or jazz, general, rehearsal or class",2
-3,3015,7.3,dancing,"aerobic, general",3
-4,3019,8.5,dancing,"bench step class, general",3
-5,3031,7.8,dancing,"general dancing (e.g., disco, folk, Irish step dancing, line dancing, polka, contra, country)",3
-6,3038,11.3,dancing,"ballroom dancing, competitive, general",3
-7,4001,3.5,fishing and hunting,"fishing, general",2
-8,4062,3.5,fishing and hunting,"fishing, dip net, setting net and retrieving fish, general",2
-9,4063,3.8,fishing and hunting,"fishing, set net, setting net and retrieving fish, general",2
-10,4064,3.0,fishing and hunting,"fishing, fishing wheel, setting net and retrieving fish, general",2
-11,4100,5.0,fishing and hunting,"hunting, general",2
-12,4124,2.0,fishing and hunting,"trapping game, general",1
-13,8095,5.5,lawn and garden,"mowing lawn, general",2
-14,12020,7.0,running,"jogging, general",3
-15,15360,8.0,sports,"hockey, ice, general",3
-16,15370,5.5,sports,"horseback riding, general",2
-17,15470,4.0,sports,"moto-cross, off-road motor sports, all-terrain vehicle, general",2
-18,15551,11.8,sports,"rope jumping, moderate pace, 100-120 skips/min, general, 2 foot skip, plain bounce",3
-19,15652,7.3,sports,"squash, general",3
-20,15670,3.0,sports,"tai chi, qi gong, general",2
-21,15675,7.3,sports,"tennis, general",3
-22,15720,3.0,sports,"volleyball, non-competitive, 6 - 9 member team, general",2
-23,15731,7.0,sports,"wallyball, general",3
-24,17025,8.3,walking,"carrying load upstairs, general",3
-25,17110,6.5,walking,"race walking",3			
-26,17165,3,walking,"walking the dog",2			
-27,17250,3.5,walking,"walking, for pleasure, work break",2
-28,17260,4.8,walking,"walking, grass track",2
-29,18220,3.0,water activities,"surfing, body or board, general",2
-30,18250,9.5,water activities,"swimming, backstroke, general, training or competition",3
-31,18260,10.3,water activities,"swimming, breaststroke, general, training or competition",3
-32,18270,13.8,water activities,"swimming, butterfly, general",3
-33,18310,6.0,water activities,"swimming, leisurely, not lap swimming, general",0
-34,18320,7.0,water activities,"swimming, sidestroke, general",3
-35,18352,2.3,water activities,"tubing, floating on a river, general",1
-36,19075,7.0,winter activities,"skiing, general",3
+0,1009,8.5,Bicycling,"Bicycling, mountain, general",3
+1,1015,7.5,Bicycling,"Bicycling, general",3
+2,3010,5.0,Dancing,"Ballet, modern, or jazz, general, rehearsal or class",2
+3,3015,7.3,Dancing,"Aerobic, general",3
+4,3019,8.5,Dancing,"Bench step class, general",3
+5,3031,7.8,Dancing,"General dancing (e.g., disco, folk, Irish step dancing, line dancing, polka, contra, country)",3
+6,3038,11.3,Dancing,"Ballroom dancing, competitive, general",3
+7,4001,3.5,Fishing and Hunting,"Fishing, general",2
+8,4062,3.5,Fishing and Hunting,"Fishing, dip net, setting net and retrieving fish, general",2
+9,4063,3.8,Fishing and Hunting,"Fishing, set net, setting net and retrieving fish, general",2
+10,4064,3.0,Fishing and Hunting,"Fishing, fishing wheel, setting net and retrieving fish, general",2
+11,4100,5.0,Fishing and Hunting,"Hunting, general",2
+12,4124,2.0,Fishing and Hunting,"Trapping game, general",1
+13,8095,5.5,Lawn and Garden,"Mowing lawn, general",2
+14,12020,7.0,Running,"Jogging, general",3
+15,15360,8.0,Sports,"Hockey, ice, general",3
+16,15370,5.5,Sports,"Horseback riding",2
+17,15470,4.0,Sports,"Moto-cross",2
+18,15551,11.8,Sports,"Rope jumping",3
+19,15652,7.3,Sports,"Squash, general",3
+20,15670,3.0,Sports,"Tai chi, qi gong, general",2
+21,15675,7.3,Sports,"Tennis, general",3
+22,15720,3.0,Sports,"Volleyball",2
+23,15731,7.0,Sports,"Wallyball, general",3
+24,17025,8.3,Walking,"Carrying load upstairs, general",3
+25,17110,6.5,Walking,"Race walking",3			
+26,17165,3,Walking,"Walking the dog",2			
+27,17250,3.5,Walking,"Walking, for pleasure, work break",2
+28,17260,4.8,Walking,"Walking, grass track",2
+29,18220,3.0,Water activities,"Surfing, body or board, general",2
+30,18250,9.5,Water activities,"Swimming, backstroke, general",3
+31,18260,10.3,Water activities,"Swimming, breaststroke, general",3
+32,18270,13.8,Water activities,"Swimming, butterfly, general",3
+33,18310,6.0,Water activities,"Swimming, leisurely, not lap swimming, general",0
+34,18320,7.0,Water activities,"Swimming, sidestroke, general",3
+35,18352,2.3,Water activities,"Tubing, floating on a river, general",1
+36,19075,7.0,Winter activities,"Skiing, general",3

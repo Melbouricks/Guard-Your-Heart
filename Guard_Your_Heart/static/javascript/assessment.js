@@ -55,7 +55,7 @@ window.onload = function () {
                 // Cancel the default action, if needed
                 event.preventDefault();
                 // Trigger the button element with a click
-                console.log(this)
+                // console.log(this)
                 this.click()
             }
         });
@@ -351,7 +351,7 @@ window.onload = function () {
 
 // Next button click function
 function nextQue(abc) {
-    console.log("next button on: "+abc);
+    // console.log("next button on: "+abc);
     var regex = /^\d+(\.\d{1})?$/;
     var reg_age = /^\d+$/;
     if (document.getElementById('age_que').style.display == 'block') {
@@ -545,7 +545,7 @@ function nextQue(abc) {
 
 // Back button click function
 function prevQue(abc) {
-    console.log("back button on: "+abc);
+    // console.log("back button on: "+abc);
     if (document.getElementById('height_que').style.display == 'block') {
         document.getElementById('height_que').style.display = 'none';
         document.getElementById('age_que').style.display = 'block';
