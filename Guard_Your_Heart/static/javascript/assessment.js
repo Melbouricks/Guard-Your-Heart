@@ -358,7 +358,7 @@ function nextQue(abc) {
         var age = document.getElementById("age").value;
 
         if (age == null | age == "" | reg_age.test(age) == false) {
-            alert("Age should be an integer!");
+            alert("Please enter valid age!");
         }
         else if (age < 35 || age > 105) {
             alert("Age can only be between 35 and 105!")
@@ -372,7 +372,7 @@ function nextQue(abc) {
         // min="90" max="230"
         var height = document.getElementById("height").value;
         if (height == null | height == "" | reg_age.test(height) == false) {
-            alert("Height should be an integer!");
+            alert("Please enter valid height!");
         }
         else if (height < 90 || height > 230) {
             alert("Height can only be between 90 and 230 cms!")
@@ -424,13 +424,13 @@ function nextQue(abc) {
 
             // console.log(regex.test(systolicbp))
             if (regex.test(systolicbp) == false) {
-                alert("Systolic Blood Pressure should be integer or decimal step by 0.1");
+                alert("Systolic Blood Pressure should be numeric or decimal step by 0.1");
             }
             else if (systolicbp < 70 || systolicbp > 228) {
                 alert("Systolic Blood Pressure should be between 70 and 228");
             }
             else if (regex.test(diastolicbp) == false) {
-                alert("Diastolic Blood Pressure should be integer or decimal step by 0.1");
+                alert("Diastolic Blood Pressure should be numeric or decimal step by 0.1");
             }
             else if (diastolicbp < 50 || diastolicbp > 150) {
                 alert("Diastolic Blood Pressure should be between 50 and 150");
@@ -468,7 +468,7 @@ function nextQue(abc) {
             var totalcholes = document.getElementById("totalcholes").value;
             // min="2" max="10.5"
             if (regex.test(totalcholes) == false) {
-                alert("Cholestrol should be integer or decimal step by 0.1");
+                alert("Cholestrol should be numeric or decimal step by 0.1");
             }
             else if (totalcholes < 2 || totalcholes > 10.5) {
                 alert("Cholestrol should be between 2 and 10.5");
@@ -505,7 +505,7 @@ function nextQue(abc) {
             var bloodsugar = document.getElementById("bloodsugar").value;
             // min="1" max="17.4"
             if (regex.test(bloodsugar) == false) {
-                alert("Sugar should be integer or decimal step by 0.1");
+                alert("Sugar should be numeric or decimal step by 0.1");
             }
             else if (bloodsugar < 1 || bloodsugar > 17.4) {
                 alert("Sugar should be between 1 and 17.4");

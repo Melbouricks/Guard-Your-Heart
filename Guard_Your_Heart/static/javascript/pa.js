@@ -156,7 +156,7 @@ window.onload = function () {
     var msg_days = "You should perform physical activity on 3 or more days per week to enhance balance and prevent falls."
     var msg_condition = "When you cannot do the recommended amounts of physical activity due to health conditions, " +
         "you should be as physically active as your abilities and conditions allow."
-    var msg_congratulation = "Congratulations! You are doing physical activities very well! Please keep on it."
+    var msg_congratulation = "Congratulations! You are doing physical activities very well! Please keep it up."
 
     if (flag_duraion == 1 | flag_total == 1 | flag_days == 1 | flag_light == 1 | flag_total_basic == 1) {
         if (flag_duraion == 1) {
