@@ -22,7 +22,7 @@ window.onload = function () {
     for (var i = 0; i< actGet.length; i++){
         var heading = actGet[i].heading;
         // console.log(heading);
-        var minutes = actGet[i].minutes;
+        var minutes = actGet[i].minutes * 60;
         var days = actGet[i].daysperweek;
         var intensity = actGet[i].intensity;
         var tr = document.createElement("tr");

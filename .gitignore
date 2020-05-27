@@ -10,3 +10,6 @@ Guard_Your_Heart/__pycache__/
 
 # DS store file
 .DS_Store
+
+# __init__.pyc
+Guard_Your_Heart/__init__.pyc
