@@ -54,15 +54,6 @@
     pointer-events: none;
 }
 
-.steps-underline {
-    border-bottom: 5px solid red;
-}
-
-.step-border {
-    border-bottom: 2px solid red;
-    border-top: 2px solid red;
-}
-
 .step-picture {
     background-position: 50% 50%;
     background-repeat: no-repeat;

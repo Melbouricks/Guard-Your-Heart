@@ -1,7 +1,7 @@
 .theme-color {
     /* color: #F7882F; */
     /* color: rgb(223, 88, 55); */
-    color: rgb(185, 18, 51);
+    color: rgb(200, 16, 46);
 }
 .theme-dark {
     color: #101B2B;
@@ -17,7 +17,7 @@
 .theme-box-color {
     /* background-color: #F7882F ; */
     /* background-color: rgb(223, 88, 55) ; */
-    background-color: rgb(185, 18, 51);
+    background-color: rgb(200, 16, 46);
 }
 .theme-box-dark {
     /* dcc7aa */
@@ -43,7 +43,7 @@
     border-radius: 0;
 }
 .theme-dark-button:hover {
-    color: rgb(185, 18, 51);
+    color: rgb(200, 16, 46);
 }
 
 .theme-color-button {
@@ -59,7 +59,7 @@
     border-color: #101B2B;
 }
 .theme-title1 {
-    color:rgb(185, 18, 51);
+    color:rgb(200, 16, 46);
 }
 .theme-title2 {
     color:#e5bd95;
@@ -70,10 +70,10 @@
 }
 
 .breadcrumb >.active {
-    color: rgb(185, 18, 51);
+    color: rgb(200, 16, 46);
  }
  .breadcrumb >.active a {
-    color: rgb(185, 18, 51);
+    color: rgb(200, 16, 46);
  }
  .breadcrumb {
     background-color: white;
@@ -91,7 +91,6 @@
 
  .tryBack {
      background-color: rgb(223, 88, 55);
-     ;
  }
 
  .btn-warning {
