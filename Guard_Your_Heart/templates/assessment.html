@@ -19,6 +19,10 @@
 <script type="text/javascript" src="../static/javascript/assessment.js"></script>
 {% endblock %}
 
+{% block titleblock %} 
+  <title>Assess Your Risk - Guard Your Heart</title>
+{% endblock %}
+
 {% block content %}
 
 <nav aria-label="breadcrumb">
@@ -41,7 +45,7 @@
 
 <form action="{{ url_for('results') }}" method="post" onsubmit="return validateActivity()">
     <div class="container-fluid formBack" id="age_que" style="display: block;">
-        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center contentBack">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center theme-box-color contentBack">
             <div class="row my-2" style="margin: 0 auto;">
                 <div class="proIndi2 mr-2"></div>
                 <div class="proIndi mr-2"></div>
@@ -82,7 +86,7 @@
         </div>
     </div>
     <div class="container-fluid" id="height_que" style="display: none;">
-        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center contentBack">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center theme-box-color contentBack">
             <div class="row my-2" style="margin: 0 auto;">
                 <div class="proIndi mr-2"></div>
                 <div class="proIndi2 mr-2"></div>
@@ -121,7 +125,7 @@
         </div>
     </div>
     <div class="container-fluid" id="weight_que" style="display: none;">
-        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center contentBack">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center theme-box-color contentBack">
             <div class="row my-2" style="margin: 0 auto;">
                 <div class="proIndi mr-2"></div>
                 <div class="proIndi mr-2"></div>
@@ -160,7 +164,7 @@
         </div>
     </div>
     <div class="container-fluid" id="gender_que" style="display: none;">
-        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center contentBack">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center theme-box-color contentBack">
             <div class="row my-2" style="margin: 0 auto;">
                 <div class="proIndi mr-2"></div>
                 <div class="proIndi mr-2"></div>
@@ -213,7 +217,7 @@
     </div>
 
     <div class="container-fluid" id="bp_que" style="display: none;">
-        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center contentBack">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center theme-box-color contentBack">
             <div class="row my-2" style="margin: 0 auto;">
                 <div class="proIndi mr-2"></div>
                 <div class="proIndi mr-2"></div>
@@ -290,7 +294,7 @@
         </div>
     </div>
     <div class="container-fluid " id="chol_que" style="display: none;">
-        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center contentBack">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center theme-box-color contentBack">
             <div class="row my-2" style="margin: 0 auto;">
                 <div class="proIndi mr-2"></div>
                 <div class="proIndi mr-2"></div>
@@ -354,7 +358,7 @@
         </div>
     </div>
     <div class="container-fluid" id="sugar_que" style="display: none;">
-        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center contentBack">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center theme-box-color contentBack">
             <div class="row my-2" style="margin: 0 auto;">
                 <div class="proIndi mr-2"></div>
                 <div class="proIndi mr-2"></div>
@@ -418,7 +422,7 @@
         </div>
     </div>
     <div class="container-fluid" id="smoke_que" style="display: none;">
-        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center contentBack">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center theme-box-color contentBack">
             <div class="row my-2" style="margin: 0 auto;">
                 <div class="proIndi mr-2"></div>
                 <div class="proIndi mr-2"></div>
@@ -470,7 +474,7 @@
         </div>
     </div>
     <div class="container-fluid" id="alco_que" style="display: none;">
-        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center contentBack" id="alco">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center theme-box-color contentBack" id="alco">
             <div class="row my-2" style="margin: 0 auto;">
                 <div class="proIndi mr-2"></div>
                 <div class="proIndi mr-2"></div>
@@ -522,7 +526,7 @@
         </div>
     </div>
     <div class="container-fluid" id="pa_que" style="display: none;">
-        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center contentBack" id="pa">
+        <div class="container-md my-5 py-5 px-md-5 d-flex flex-column justify-content-center theme-box-color contentBack" id="pa">
             <div class="row my-2" style="margin: 0 auto;">
                 <div class="proIndi mr-2"></div>
                 <div class="proIndi mr-2"></div>
@@ -627,7 +631,7 @@
                                         </select>
                                     </div>
                             </div>
-                            <button type="button" class="btn btn-block addActBut col-sm-4 mx-auto mb-4 py-3"
+                            <button type="button" class="btn btn-block theme-white theme-box-color theme-color-button col-sm-4 mx-auto mb-4 py-3"
                                 onclick="addFunction()" id='addActivityButton'>Add Activity
                             </button>
                         </div>

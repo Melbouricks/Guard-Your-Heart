@@ -1,5 +1,5 @@
-@media (min-width: 768px) {
-    /* CSS that should be displayed if width is more than or equal to 768px (md) goes here */
+@media only screen and (min-width: 768px) {
+    /* CSS that should be displayed if width is 768px (md) or more goes here */
 
     .activity-table-header {
         border-bottom: 1px solid #101B2B;
