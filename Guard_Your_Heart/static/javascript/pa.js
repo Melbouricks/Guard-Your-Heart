@@ -155,7 +155,7 @@ window.onload = function () {
     var msg_light = "Any time or form of exercise is better than none, but to be healthier, please increase time doing moderate or vigorous intensity activity.";
     var msg_total_basic = "Adults should do at least 150 minutes of moderate intensity physical activity throughout the week or do at least 75 minutes " +
         "of vigorous intensity physical activity throughout the week or an equivalent combination of moderate and vigorous intensity activity.";
-    var msg_health = "Congratulations! You already have a healthy life style!"
+    var msg_health = "Congratulations! You already have the adequate activity levels."
     var msg_total = "For additional health benefits, older adults should increase their moderate intensity physical activity to 300 minutes per week," +
         " or engage in 150 minutes of vigorous intensity physical activity per week, or an equivalent combination of moderate and vigorous intensity activity." +
         " We recommend increasing the amount of activity.";

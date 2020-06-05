@@ -1,0 +1,31 @@
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap breakpoints
+*/
+/* Extra-Small devices (less than 576px) */
+.logo-img {
+    width: auto;
+    height: 28px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) {  
+    .logo-img {
+        width: auto;
+        height: 40px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {  
+    .logo-img {
+        width: auto;
+        height: 48px;
+    }
+}

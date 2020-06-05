@@ -6,6 +6,10 @@
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 {% endblock %} 
 
+{% block titleblock %} 
+  <title>Diet - Guard Your Heart</title>
+{% endblock %}
+
 {% block content %}
 <style>
     .center1 {
@@ -156,12 +160,22 @@
                         <div class="container theme-box-light" style="border-radius: 20px;" id="heal">
                             <h1 class="display-4 theme-title1 pt-5">Healthy Food Choices</h1>
                             <!-- Pics -->
-                            <div class="row">
+                            <!-- <div class="row"> -->
                                 <!-- item -->
-                                {% for item in data1.keys() %}
+                                <!-- {% for item in data1.keys() %}
                                 <div class="col-md-2 pr-md-3 py-5 theme-box-light">
                                     <img class="img-fluid mx-auto d-block" src="../static/images/{{ item }}.jpg">
                                     <div class="text-center" style="background-color:lightgray;">{{ item }}</div>
+                                </div>
+                                {% endfor %}
+                            </div> -->
+                            <div class="d-flex flex-wrap">
+                                {% for item in data1.keys() %}
+                                <div class="theme-box-color theme-white mb-3 mr-3 rounded-lg" style="max-width: 150px; ">
+                                    <img class="img-fluid rounded-top" src="../static/images/{{ item }}.jpg">
+                                    <div class="p-2">                                        
+                                        <p class="m-0">{{ item }}</p>
+                                    </div>
                                 </div>
                                 {% endfor %}
                             </div>
@@ -171,12 +185,22 @@
                         <div class="container theme-box-light mt-5" style="border-radius: 20px;" id="unheal">
                             <h1 class="display-4 theme-title1 pt-5 md-2">Unhealthy Food Choices</h1>
                             <!-- Pics -->
-                            <div class="row">
+                            <!-- <div class="row"> -->
                                 <!-- item -->
-                                {% for item in data2.keys() %}
+                                <!-- {% for item in data2.keys() %}
                                 <div class="col-md-2 pr-md-3 py-5 theme-box-light">
                                     <img class="img-fluid mx-auto d-block" src="../static/images/{{ item }}.jpg">
                                     <div class="text-center" style="background-color:lightgray;">{{ item }}</div>
+                                </div>
+                                {% endfor %}
+                            </div> -->
+                            <div class="d-flex flex-wrap">
+                                {% for item in data2.keys() %}
+                                <div class="theme-box-color theme-white mb-3 mr-3 rounded-lg" style="max-width: 150px; ">
+                                    <img class="img-fluid rounded-top" src="../static/images/{{ item }}.jpg">
+                                    <div class="p-2">                                        
+                                        <p class="m-0">{{ item }}</p>
+                                    </div>
                                 </div>
                                 {% endfor %}
                             </div>
