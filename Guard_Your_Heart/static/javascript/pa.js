@@ -11,10 +11,15 @@ window.onload = function () {
         var msg2 = document.createElement("p");
         msg2.className = "lead text-justify"
         msg2.innerHTML = "We found some activities you may interested in, please scroll down and check."
+        var msg3 = document.createElement("p");
+        msg3.className = "lead text-justify"
+        msg3.innerHTML = "Adults should do at least 150 minutes of moderate intensity physical activity throughout the week or do at least 75 minutes " +
+        "of vigorous intensity physical activity throughout the week or an equivalent combination of moderate and vigorous intensity activity.";
         document.getElementById("feedbackContain").style.display = "none";
         document.getElementById("feed").style.display = "none";
         current_pa.appendChild(msg);
         current_pa.appendChild(msg2);
+        current_pa.appendChild(msg3);
     }
     else {
         row_heading.style = "";
@@ -150,9 +155,10 @@ window.onload = function () {
     var msg_light = "Any time or form of exercise is better than none, but to be healthier, please increase time doing moderate or vigorous intensity activity.";
     var msg_total_basic = "Adults should do at least 150 minutes of moderate intensity physical activity throughout the week or do at least 75 minutes " +
         "of vigorous intensity physical activity throughout the week or an equivalent combination of moderate and vigorous intensity activity.";
+    var msg_health = "Congratulations! You already have a healthy life style!"
     var msg_total = "For additional health benefits, older adults should increase their moderate intensity physical activity to 300 minutes per week," +
-        "or engage in 150 minutes of vigorous intensity physical activity per week, or an equivalent combination of moderate and vigorous intensity activity." +
-        "We recommend increasing the amount of activity.";
+        " or engage in 150 minutes of vigorous intensity physical activity per week, or an equivalent combination of moderate and vigorous intensity activity." +
+        " We recommend increasing the amount of activity.";
     var msg_days = "You should perform physical activity on 3 or more days per week to enhance balance and prevent falls."
     var msg_condition = "When you cannot do the recommended amounts of physical activity due to health conditions, " +
         "you should be as physically active as your abilities and conditions allow."
@@ -169,6 +175,7 @@ window.onload = function () {
             addMsg(msg_total_basic);
         }
         if (flag_total_basic == 0 && flag_total == 1) {
+            addMsg(msg_health);
             addMsg(msg_total);
         }
         if (flag_days == 1) {
