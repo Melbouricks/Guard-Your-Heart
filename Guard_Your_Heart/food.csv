@@ -552,7 +552,7 @@ F000436,25101,"Bean, haricot, dried",291.5869980879541,18.5,True,Legumes & Pulse
 F000437,25101,"Bean, haricot, dried, boiled, drained",110.89866156787762,8.8,True,Legumes & Pulses,Legumes & Pulses,2,0,2
 F000441,25101,"Bean, lima, dried",310.4684512428298,17.7,True,Legumes & Pulses,Legumes & Pulses,2,0,2
 F000442,25101,"Bean, lima, dried, boiled, drained",84.8470363288719,5.3,True,Legumes & Pulses,Legumes & Pulses,2,0,2
-F000446,24502,"Bean, mung, whole, dried, uncooked",315.4875717017208,13.7,True,Vegetables,Starchy Vegetables,2,2,2
+F000446,24502,"Bean, mung, whole, dried, uncooked",315.4875717017208,13.7,True,Vegetables,Non-Starchy Vegetables,2,2,2
 F000449,25101,"Bean, red kidney, dried",298.9961759082218,21.5,True,Legumes & Pulses,Legumes & Pulses,2,0,2
 F000451,25101,"Bean, red kidney, dried, boiled, drained",91.30019120458891,7.2,True,Legumes & Pulses,Legumes & Pulses,2,0,2
 F000453,24502,"Bean, red kidney, fresh, raw",134.08221797323137,9.1,True,Vegetables,Vegetables,2,0,2
@@ -1196,51 +1196,51 @@ F005215,28103,"Liquorice, chocolate-coated",381.2141491395793,2.8,False,Chocolat
 F005235,28401,"Lolly, hard varieties",374.28298279158696,0,False,Lollies or Liquorice,Lollies or Liquorice,1,1,1
 F005236,28401,"Lolly, jelly varieties",322.65774378585087,0,False,Lollies or Liquorice,Lollies or Liquorice,1,1,1
 F005241,28401,"Lolly, mint flavoured, sugar sweetened",379.54110898661565,0,False,Lollies or Liquorice,Lollies or Liquorice,1,1,1
-F000144,24402,"Artichoke, globe, raw",34.655831739961755,8.1,True,Vegetables,Starchy Vegetables,2,2,2
-F000142,24402,"Artichoke, globe, boiled, drained",40.63097514340344,9.5,True,Vegetables,Starchy Vegetables,2,2,2
-F000146,24302,"Artichoke, jerusalem, peeled, raw",58.556405353728486,3,True,Vegetables,Starchy Vegetables,2,2,2
-F000145,24302,"Artichoke, jerusalem, peeled, boiled, drained",62.8585086042065,3.2,True,Vegetables,Starchy Vegetables,2,2,2
-F000141,24402,"Artichoke heart, canned in brine, drained",24.8565965583174,4.7,True,Vegetables,Starchy Vegetables,2,2,2
-F000155,24402,"Asparagus, green, raw",21.03250478011472,2.2,True,Vegetables,Starchy Vegetables,2,2,2
-F000151,24402,"Asparagus, green, boiled, drained",24.8565965583174,2.5,True,Vegetables,Starchy Vegetables,2,2,2
-F000149,24402,"Asparagus, canned in brine, drained",24.1395793499044,3.9,True,Vegetables,Starchy Vegetables,2,2,2
+F000144,24402,"Artichoke, globe, raw",34.655831739961755,8.1,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F000142,24402,"Artichoke, globe, boiled, drained",40.63097514340344,9.5,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F000146,24302,"Artichoke, jerusalem, peeled, raw",58.556405353728486,3,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F000145,24302,"Artichoke, jerusalem, peeled, boiled, drained",62.8585086042065,3.2,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F000141,24402,"Artichoke heart, canned in brine, drained",24.8565965583174,4.7,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F000155,24402,"Asparagus, green, raw",21.03250478011472,2.2,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F000151,24402,"Asparagus, green, boiled, drained",24.8565965583174,2.5,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F000149,24402,"Asparagus, canned in brine, drained",24.1395793499044,3.9,True,Vegetables,Non-Starchy Vegetables,2,2,2
 F000162,24705,"Avocado, raw",138.38432122370935,7.5,True,Vegetables,Vegetables,2,0,2
-F000253,24402,"Bamboo shoot, canned in water, heated, drained",13.623326959847036,2.8,True,Vegetables,Starchy Vegetables,2,2,2
+F000253,24402,"Bamboo shoot, canned in water, heated, drained",13.623326959847036,2.8,True,Vegetables,Non-Starchy Vegetables,2,2,2
 F000396,24403,"Basil, green, raw",28.441682600382407,4.2,True,Vegetables,Vegetables,2,0,2
 F000419,24502,"Bean, broad, fresh, raw",56.16634799235182,7.1,True,Vegetables,Vegetables,2,0,2
 F000418,24502,"Bean, broad, fresh, boiled, drained",60.22944550669216,7.6,True,Vegetables,Vegetables,2,0,2
 F000422,24502,"Bean, butter, fresh, raw",24.8565965583174,2.3,True,Vegetables,Vegetables,2,0,2
 F000421,24502,"Bean, butter, fresh, boiled, drained",26.76864244741874,2.5,True,Vegetables,Vegetables,2,0,2
-F000431,24502,"Bean, green, fresh, raw",25.334608030592733,2.8,True,Vegetables,Starchy Vegetables,2,2,2
-F000430,24502,"Bean, green, fresh, boiled, drained",27.48565965583174,3,True,Vegetables,Starchy Vegetables,2,2,2
-F000434,24502,"Bean, green, frozen, boiled, drained",26.051625239005734,3.8,True,Vegetables,Starchy Vegetables,2,2,2
-F001015,24302,"Beetroot, fresh, purple, peeled, raw",48.040152963671126,3.5,True,Vegetables,Starchy Vegetables,2,2,2
-F001013,24302,"Beetroot, fresh, purple, peeled, baked, no added fat",58.79541108986616,4.3,True,Vegetables,Starchy Vegetables,2,2,2
-F001014,24302,"Beetroot, fresh, purple, peeled, boiled, drained",51.864244741873804,3.8,True,Vegetables,Starchy Vegetables,2,2,2
-F001010,24302,"Beetroot, canned in brine, drained",47.56214149139579,3.8,True,Vegetables,Starchy Vegetables,2,2,2
-F001301,24201,"Bok choy, raw",18.881453154875715,2.4,True,Vegetables,Starchy Vegetables,2,2,2
-F001300,24201,"Bok choy, fried, no added fat",27.007648183556405,3.5,True,Vegetables,Starchy Vegetables,2,2,2
-F001302,24201,"Bok choy, steamed",19.59847036328872,2.6,True,Vegetables,Starchy Vegetables,2,2,2
-F001905,24202,"Broccoli, fresh, raw",31.309751434034414,3.7,True,Vegetables,Starchy Vegetables,2,2,2
-F001904,24202,"Broccoli, fresh, microwaved",27.007648183556405,2.9,True,Vegetables,Starchy Vegetables,2,2,2
-F001900,24202,"Broccoli, fresh, boiled, drained",23.900573613766728,2.5,True,Vegetables,Starchy Vegetables,2,2,2
-F001899,24202,"Broccoli, fresh, baked, no added fat",38.24091778202677,4.5,True,Vegetables,Starchy Vegetables,2,2,2
-F001909,24202,"Broccolini, fresh, raw",29.15869980879541,2.5,True,Vegetables,Starchy Vegetables,2,2,2
-F001908,24202,"Broccolini, fresh, boiled, drained",30.353728489483746,2.6,True,Vegetables,Starchy Vegetables,2,2,2
+F000431,24502,"Bean, green, fresh, raw",25.334608030592733,2.8,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F000430,24502,"Bean, green, fresh, boiled, drained",27.48565965583174,3,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F000434,24502,"Bean, green, frozen, boiled, drained",26.051625239005734,3.8,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001015,24302,"Beetroot, fresh, purple, peeled, raw",48.040152963671126,3.5,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001013,24302,"Beetroot, fresh, purple, peeled, baked, no added fat",58.79541108986616,4.3,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001014,24302,"Beetroot, fresh, purple, peeled, boiled, drained",51.864244741873804,3.8,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001010,24302,"Beetroot, canned in brine, drained",47.56214149139579,3.8,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001301,24201,"Bok choy, raw",18.881453154875715,2.4,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001300,24201,"Bok choy, fried, no added fat",27.007648183556405,3.5,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001302,24201,"Bok choy, steamed",19.59847036328872,2.6,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001905,24202,"Broccoli, fresh, raw",31.309751434034414,3.7,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001904,24202,"Broccoli, fresh, microwaved",27.007648183556405,2.9,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001900,24202,"Broccoli, fresh, boiled, drained",23.900573613766728,2.5,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001899,24202,"Broccoli, fresh, baked, no added fat",38.24091778202677,4.5,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001909,24202,"Broccolini, fresh, raw",29.15869980879541,2.5,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001908,24202,"Broccolini, fresh, boiled, drained",30.353728489483746,2.6,True,Vegetables,Non-Starchy Vegetables,2,2,2
 F001914,24201,"Brussels sprout, fresh, raw",35.85086042065009,4.5,True,Vegetables,Vegetables,2,0,2
 F001913,24201,"Brussels sprout, fresh, boiled, drained",37.284894837476095,4.7,True,Vegetables,Vegetables,2,0,2
-F001996,24201,"Cabbage, Chinese, raw",10.51625239005736,1.1,True,Vegetables,Starchy Vegetables,2,2,2
-F001993,24201,"Cabbage, Chinese, boiled, drained",10.994263862332696,1.1,True,Vegetables,Starchy Vegetables,2,2,2
-F001990,24201,"Cabbage, Chinese flowering, raw",16.96940726577438,2.8,True,Vegetables,Starchy Vegetables,2,2,2
-F001988,24201,"Cabbage, Chinese flowering, boiled, drained",17.68642447418738,2.9,True,Vegetables,Starchy Vegetables,2,2,2
-F001998,24201,"Cabbage, mustard, raw",18.40344168260038,1.8,True,Vegetables,Starchy Vegetables,2,2,2
-F001997,24201,"Cabbage, mustard, boiled, drained",19.120458891013385,1.9,True,Vegetables,Starchy Vegetables,2,2,2
-F002006,24201,"Cabbage, red, raw",29.15869980879541,3.4,True,Vegetables,Starchy Vegetables,2,2,2
-F002003,24201,"Cabbage, red, boiled, drained",30.353728489483746,3.5,True,Vegetables,Starchy Vegetables,2,2,2
-F002010,24201,"Cabbage, savoy, raw",21.510516252390058,2.3,True,Vegetables,Starchy Vegetables,2,2,2
-F002009,24201,"Cabbage, savoy, boiled, drained",22.22753346080306,2.4,True,Vegetables,Starchy Vegetables,2,2,2
-F002015,24201,"Cabbage, white, raw",21.749521988527725,2.4,True,Vegetables,Starchy Vegetables,2,2,2
-F002014,24201,"Cabbage, white, boiled, drained",22.705544933078393,2.4,True,Vegetables,Starchy Vegetables,2,2,2
+F001996,24201,"Cabbage, Chinese, raw",10.51625239005736,1.1,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001993,24201,"Cabbage, Chinese, boiled, drained",10.994263862332696,1.1,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001990,24201,"Cabbage, Chinese flowering, raw",16.96940726577438,2.8,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001988,24201,"Cabbage, Chinese flowering, boiled, drained",17.68642447418738,2.9,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001998,24201,"Cabbage, mustard, raw",18.40344168260038,1.8,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F001997,24201,"Cabbage, mustard, boiled, drained",19.120458891013385,1.9,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F002006,24201,"Cabbage, red, raw",29.15869980879541,3.4,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F002003,24201,"Cabbage, red, boiled, drained",30.353728489483746,3.5,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F002010,24201,"Cabbage, savoy, raw",21.510516252390058,2.3,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F002009,24201,"Cabbage, savoy, boiled, drained",22.22753346080306,2.4,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F002015,24201,"Cabbage, white, raw",21.749521988527725,2.4,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F002014,24201,"Cabbage, white, boiled, drained",22.705544933078393,2.4,True,Vegetables,Non-Starchy Vegetables,2,2,2
 F002239,24705,"Capsicum, green, fresh, raw",20.076481835564053,2,True,Vegetables,Vegetables,2,0,2
 F002238,24705,"Capsicum, green, fresh, fried, no added fat",22.22753346080306,2.3,True,Vegetables,Vegetables,2,0,2
 F002247,24705,"Capsicum, red, fresh, raw",28.20267686424474,1.8,True,Vegetables,Vegetables,2,0,2
@@ -1257,8 +1257,8 @@ F002288,24302,"Cassava, white flesh, peeled, fresh, raw",153.91969407265773,4.6,
 F002287,24302,"Cassava, white flesh, peeled, fresh, boiled, drained",165.39196940726578,4.9,True,Vegetables,Vegetables,2,0,2
 F002290,24302,"Cassava, yellow flesh, peeled, fresh, raw",126.91204588910134,4.7,True,Vegetables,Vegetables,2,0,2
 F002289,24302,"Cassava, yellow flesh, peeled, fresh, boiled, drained",136.472275334608,5.1,True,Vegetables,Vegetables,2,0,2
-F002378,24202,"Cauliflower, fresh, raw",24.378585086042065,1.2,True,Vegetables,Starchy Vegetables,2,2,2
-F002377,24202,"Cauliflower, fresh, boiled, drained",25.5736137667304,1.2,True,Vegetables,Starchy Vegetables,2,2,2
+F002378,24202,"Cauliflower, fresh, raw",24.378585086042065,1.2,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F002377,24202,"Cauliflower, fresh, boiled, drained",25.5736137667304,1.2,True,Vegetables,Non-Starchy Vegetables,2,2,2
 F002384,24302,"Celeriac, peeled, raw",38.0019120458891,5.1,True,Vegetables,Vegetables,2,0,2
 F002383,24302,"Celeriac, peeled, boiled, drained",40.86998087954111,5.5,True,Vegetables,Vegetables,2,0,2
 F002390,24402,"Celery, fresh, raw",14.818355640535373,1.4,True,Vegetables,Vegetables,2,0,2
@@ -1270,48 +1270,48 @@ F002894,24705,"Chilli (chili), green, fried, no added fat",48.040152963671126,14
 F002901,24705,"Chilli (chili), red, raw",47.801147227533455,10.6,True,Vegetables,Vegetables,2,0,2
 F002900,24705,"Chilli (chili), red, fried, no added fat",53.05927342256214,11.8,True,Vegetables,Vegetables,2,0,2
 F002907,24403,"Chives, raw",28.680688336520074,4.7,True,Vegetables,Vegetables,2,0,2
-F002949,24705,"Choko, peeled, fresh, raw",20.793499043977054,1.4,True,Vegetables,Starchy Vegetables,2,2,2
-F002948,24705,"Choko, peeled, fresh, boiled, drained",24.617590822179732,1.7,True,Vegetables,Starchy Vegetables,2,2,2
+F002949,24705,"Choko, peeled, fresh, raw",20.793499043977054,1.4,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F002948,24705,"Choko, peeled, fresh, boiled, drained",24.617590822179732,1.7,True,Vegetables,Non-Starchy Vegetables,2,2,2
 F003192,24403,"Coriander, fresh, leaves & stems",39.913957934990435,3.5,True,Vegetables,Vegetables,2,0,2
 F003209,24704,"Corn, fresh on cob, raw",87.47609942638623,3.8,True,Vegetables,Vegetables,2,0,2
 F003200,24704,"Corn, fresh on cob, boiled, drained",91.06118546845124,4,True,Vegetables,Vegetables,2,0,2
 F003220,24704,"Corn, kernels, canned in brine, drained",93.45124282982792,2.7,True,Vegetables,Vegetables,2,0,2
 F003202,24704,"Corn, kernels, purchased frozen, raw",93.21223709369025,2.5,True,Vegetables,Vegetables,2,0,2
 F003201,24704,"Corn, kernels, purchased frozen, boiled, drained",108.03059273422562,3.5,True,Vegetables,Vegetables,2,0,2
-F003319,24705,"Cucumber, common, peeled, raw",11.950286806883364,0.6,True,Vegetables,Starchy Vegetables,2,2,2
-F003320,24705,"Cucumber, common, unpeeled, raw",11.950286806883364,1.4,True,Vegetables,Starchy Vegetables,2,2,2
-F003321,24705,"Cucumber, Lebanese, unpeeled, raw",12.4282982791587,0.9,True,Vegetables,Starchy Vegetables,2,2,2
-F003324,24705,"Cucumber, telegraph, unpeeled, raw",13.38432122370937,0.9,True,Vegetables,Starchy Vegetables,2,2,2
+F003319,24705,"Cucumber, common, peeled, raw",11.950286806883364,0.6,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F003320,24705,"Cucumber, common, unpeeled, raw",11.950286806883364,1.4,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F003321,24705,"Cucumber, Lebanese, unpeeled, raw",12.4282982791587,0.9,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F003324,24705,"Cucumber, telegraph, unpeeled, raw",13.38432122370937,0.9,True,Vegetables,Non-Starchy Vegetables,2,2,2
 F003509,24403,"Dill, fresh, raw",40.63097514340344,3.3,True,Vegetables,Vegetables,2,0,2
-F003761,24705,"Eggplant, unpeeled, fresh, raw",22.22753346080306,2.4,True,Vegetables,Starchy Vegetables,2,2,2
-F003760,24705,"Eggplant, unpeeled, fresh, grilled, no added fat",31.548757170172085,3.5,True,Vegetables,Starchy Vegetables,2,2,2
-F003759,24705,"Eggplant, unpeeled, fresh, baked, no added fat",26.051625239005734,2.9,True,Vegetables,Starchy Vegetables,2,2,2
-F003784,24401,"Endive, fresh, raw",13.862332695984703,2.2,True,Vegetables,Starchy Vegetables,2,2,2
+F003761,24705,"Eggplant, unpeeled, fresh, raw",22.22753346080306,2.4,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F003760,24705,"Eggplant, unpeeled, fresh, grilled, no added fat",31.548757170172085,3.5,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F003759,24705,"Eggplant, unpeeled, fresh, baked, no added fat",26.051625239005734,2.9,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F003784,24401,"Endive, fresh, raw",13.862332695984703,2.2,True,Vegetables,Non-Starchy Vegetables,2,2,2
 F003820,24801,"Fennel, fresh, raw",21.988527724665392,1.8,True,Vegetables,Vegetables,2,0,2
 F003819,24801,"Fennel, fresh, boiled, drained",25.812619502868067,2.1,True,Vegetables,Vegetables,2,0,2
 F004193,24802,"Garlic, peeled, fresh, raw",124.76099426386233,16.9,True,Vegetables,Vegetables,2,0,2
 F004192,24802,"Garlic, peeled, fresh, fried, no added fat",201.24282982791587,27.3,True,Vegetables,Vegetables,2,0,2
 F004213,24302,"Ginger, peeled, fresh, raw",31.548757170172085,2.8,True,Vegetables,Vegetables,2,0,2
 F004212,24302,"Ginger, peeled, fresh, fried, no added fat",38.24091778202677,3.4,True,Vegetables,Vegetables,2,0,2
-F004781,24201,"Kale, raw",45.650095602294456,3.6,True,Vegetables,Starchy Vegetables,2,2,2
-F004820,24201,"Kohlrabi, peeled, fresh, raw",38.95793499043977,3.3,True,Vegetables,Starchy Vegetables,2,2,2
-F004819,24201,"Kohlrabi, peeled, fresh, boiled, drained",40.63097514340344,3.4,True,Vegetables,Starchy Vegetables,2,2,2
-F005164,24802,"Leek, fresh, raw",32.50478011472275,3.1,True,Vegetables,Starchy Vegetables,2,2,2
-F005163,24802,"Leek, fresh, fried, no added fat",39.19694072657744,3.7,True,Vegetables,Starchy Vegetables,2,2,2
-F005162,24802,"Leek, fresh, boiled, drained",36.089866156787764,3.4,True,Vegetables,Starchy Vegetables,2,2,2
-F005191,24401,"Lettuce, cos, raw",19.120458891013385,1.8,True,Vegetables,Starchy Vegetables,2,2,2
-F005192,24401,"Lettuce, iceberg, raw",9.082217973231357,1.4,True,Vegetables,Starchy Vegetables,2,2,2
-F005193,24401,"Lettuce, mignonette, raw",15.296367112810707,1.4,True,Vegetables,Starchy Vegetables,2,2,2
+F004781,24201,"Kale, raw",45.650095602294456,3.6,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F004820,24201,"Kohlrabi, peeled, fresh, raw",38.95793499043977,3.3,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F004819,24201,"Kohlrabi, peeled, fresh, boiled, drained",40.63097514340344,3.4,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F005164,24802,"Leek, fresh, raw",32.50478011472275,3.1,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F005163,24802,"Leek, fresh, fried, no added fat",39.19694072657744,3.7,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F005162,24802,"Leek, fresh, boiled, drained",36.089866156787764,3.4,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F005191,24401,"Lettuce, cos, raw",19.120458891013385,1.8,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F005192,24401,"Lettuce, iceberg, raw",9.082217973231357,1.4,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F005193,24401,"Lettuce, mignonette, raw",15.296367112810707,1.4,True,Vegetables,Non-Starchy Vegetables,2,2,2
 F005513,24705,"Melon, bitter, fresh, raw",10.994263862332696,3.3,True,Vegetables,Vegetables,2,0,2
 F005514,24705,"Melon, hairy, fresh, raw",14.579349904397706,2.1,True,Vegetables,Vegetables,2,0,2
 F005700,24403,"Mint, fresh, raw",53.77629063097514,7.2,True,Vegetables,Vegetables,2,0,2
 F005813,24803,"Mixed vegetables, purchased frozen, carrot, corn & pea/bean, boiled, drained",44.69407265774378,5.9,True,Vegetables,Vegetables,2,0,2
-F005946,24703,"Mushroom, common, fresh, raw",20.554493307839387,1.4,True,Vegetables,Starchy Vegetables,2,2,2
-F005945,24703,"Mushroom, common, fresh, fried, no added fat",36.5678776290631,2.5,True,Vegetables,Starchy Vegetables,2,2,2
-F005949,24703,"Mushroom, common, vitamin D enhanced, fresh, raw",20.554493307839387,1.4,True,Vegetables,Starchy Vegetables,2,2,2
-F005948,24703,"Mushroom, common, vitamin D enhanced, fresh, fried, no added fat",36.5678776290631,2.5,True,Vegetables,Starchy Vegetables,2,2,2
-F006195,24705,"Okra, raw",26.76864244741874,3.7,True,Vegetables,Starchy Vegetables,2,2,2
-F006194,24705,"Okra, cooked, no added fat",28.91969407265774,4,True,Vegetables,Starchy Vegetables,2,2,2
+F005946,24703,"Mushroom, common, fresh, raw",20.554493307839387,1.4,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F005945,24703,"Mushroom, common, fresh, fried, no added fat",36.5678776290631,2.5,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F005949,24703,"Mushroom, common, vitamin D enhanced, fresh, raw",20.554493307839387,1.4,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F005948,24703,"Mushroom, common, vitamin D enhanced, fresh, fried, no added fat",36.5678776290631,2.5,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F006195,24705,"Okra, raw",26.76864244741874,3.7,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F006194,24705,"Okra, cooked, no added fat",28.91969407265774,4,True,Vegetables,Non-Starchy Vegetables,2,2,2
 F006225,24802,"Onion, mature, brown skinned, peeled, raw",33.22179732313575,2.7,True,Vegetables,Vegetables,2,0,2
 F006224,24802,"Onion, mature, brown skinned, peeled, fresh, fried, no added fat",53.53728489483748,4.4,True,Vegetables,Vegetables,2,0,2
 F006243,24802,"Onion, mature, white skinned, peeled, fresh, raw",30.592734225621413,2.1,True,Vegetables,Vegetables,2,0,2
@@ -1368,50 +1368,50 @@ F007554,24701,"Pumpkin, peeled, fresh, boiled, drained",39.19694072657744,1.9,Tr
 F007559,24701,"Pumpkin, Queensland blue, peeled, fresh, raw",49.7131931166348,2.7,True,Vegetables,Vegetables,2,0,2
 F007557,24701,"Pumpkin, Queensland blue, peeled, fresh, baked, no added fat",58.31739961759082,3.2,True,Vegetables,Vegetables,2,0,2
 F007558,24701,"Pumpkin, Queensland blue, peeled, fresh, boiled, drained",51.625239005736134,2.8,True,Vegetables,Vegetables,2,0,2
-F007606,24302,"Radish, red skinned, unpeeled, raw",14.818355640535373,1.1,True,Vegetables,Starchy Vegetables,2,2,2
-F007608,24302,"Radish, white skinned, peeled, raw",20.554493307839387,1.8,True,Vegetables,Starchy Vegetables,2,2,2
+F007606,24302,"Radish, red skinned, unpeeled, raw",14.818355640535373,1.1,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F007608,24302,"Radish, white skinned, peeled, raw",20.554493307839387,1.8,True,Vegetables,Non-Starchy Vegetables,2,2,2
 F007712,24401,"Rocket, fresh, raw",21.749521988527725,2.4,True,Vegetables,Vegetables,2,0,2
 F007716,24403,"Rosemary, fresh, raw",94.88527724665391,14.1,True,Vegetables,Vegetables,2,0,2
 F008204,24404,"Seaweed, nori, dried",302.5812619502868,34.3,True,Vegetables,Vegetables,2,0,2
 F008203,24404,"Seaweed, boiled, drained",54.493307839388144,6.2,True,Vegetables,Vegetables,2,0,2
 F008227,24802,"Shallot, peeled, fresh, raw",25.5736137667304,2.9,True,Vegetables,Vegetables,2,0,2
 F008226,24802,"Shallot, peeled, fresh, fried, no added fat",41.10898661567877,4.7,True,Vegetables,Vegetables,2,0,2
-F008267,24401,"Silverbeet, fresh, raw",15.774378585086042,2,True,Vegetables,Starchy Vegetables,2,2,2
-F008266,24401,"Silverbeet, fresh, boiled, drained",18.40344168260038,2.3,True,Vegetables,Starchy Vegetables,2,2,2
+F008267,24401,"Silverbeet, fresh, raw",15.774378585086042,2,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F008266,24401,"Silverbeet, fresh, boiled, drained",18.40344168260038,2.3,True,Vegetables,Non-Starchy Vegetables,2,2,2
 F008373,24501,"Snow pea, fresh, raw",37.523900573613766,2.6,True,Vegetables,Vegetables,2,0,2
 F008372,24501,"Snow pea, fresh, fried, no added fat",46.84512428298279,3.2,True,Vegetables,Vegetables,2,0,2
 F008371,24501,"Snow pea, fresh, boiled, drained",40.391969407265776,2.8,True,Vegetables,Vegetables,2,0,2
-F008749,24401,"Spinach, baby, fresh, raw",16.252390057361374,2.5,True,Vegetables,Starchy Vegetables,2,2,2
-F008761,24401,"Spinach, Mature English, fresh, raw",19.59847036328872,2.5,True,Vegetables,Starchy Vegetables,2,2,2
-F008760,24401,"Spinach, Mature English, fresh, boiled, drained",23.183556405353727,2.9,True,Vegetables,Starchy Vegetables,2,2,2
-F008763,24401,"Spinach, water, fresh, raw",26.2906309751434,2.8,True,Vegetables,Starchy Vegetables,2,2,2
-F008803,24503,"Sprout, alfalfa, fresh, raw",21.749521988527725,2.2,True,Vegetables,Starchy Vegetables,2,2,2
-F008806,24503,"Sprout, bean, fresh, raw",22.466539196940726,1.3,True,Vegetables,Starchy Vegetables,2,2,2
-F008811,24702,"Squash, button, fresh, raw",26.2906309751434,0.5,True,Vegetables,Starchy Vegetables,2,2,2
-F008810,24702,"Squash, button, fresh, boiled, drained",31.309751434034414,0.6,True,Vegetables,Starchy Vegetables,2,2,2
-F008813,24702,"Squash, scallopini, fresh, raw",20.076481835564053,0.5,True,Vegetables,Starchy Vegetables,2,2,2
-F008812,24702,"Squash, scallopini, fresh, boiled, drained",23.900573613766728,0.6,True,Vegetables,Starchy Vegetables,2,2,2
-F009021,24302,"Swede, peeled, fresh, raw",22.22753346080306,2.2,True,Vegetables,Starchy Vegetables,2,2,2
-F009020,24302,"Swede, peeled, fresh, boiled, drained",23.900573613766728,2.4,True,Vegetables,Starchy Vegetables,2,2,2
+F008749,24401,"Spinach, baby, fresh, raw",16.252390057361374,2.5,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F008761,24401,"Spinach, Mature English, fresh, raw",19.59847036328872,2.5,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F008760,24401,"Spinach, Mature English, fresh, boiled, drained",23.183556405353727,2.9,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F008763,24401,"Spinach, water, fresh, raw",26.2906309751434,2.8,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F008803,24503,"Sprout, alfalfa, fresh, raw",21.749521988527725,2.2,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F008806,24503,"Sprout, bean, fresh, raw",22.466539196940726,1.3,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F008811,24702,"Squash, button, fresh, raw",26.2906309751434,0.5,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F008810,24702,"Squash, button, fresh, boiled, drained",31.309751434034414,0.6,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F008813,24702,"Squash, scallopini, fresh, raw",20.076481835564053,0.5,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F008812,24702,"Squash, scallopini, fresh, boiled, drained",23.900573613766728,0.6,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F009021,24302,"Swede, peeled, fresh, raw",22.22753346080306,2.2,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F009020,24302,"Swede, peeled, fresh, boiled, drained",23.900573613766728,2.4,True,Vegetables,Non-Starchy Vegetables,2,2,2
 F009035,24302,"Sweet potato, orange flesh, peeled, fresh, raw",70.02868068833652,2.6,True,Vegetables,Vegetables,2,0,2
 F009033,24302,"Sweet potato, orange flesh, peeled, fresh, baked, no added fat",85.32504780114722,3.1,True,Vegetables,Vegetables,2,0,2
 F009034,24302,"Sweet potato, orange flesh, peeled, fresh, boiled, drained",75.2868068833652,2.7,True,Vegetables,Vegetables,2,0,2
 F009081,16804,"Tamarind, paste, pure",250.4780114722753,5.1,True,Fruits,Fruits,2,2,2
 F009094,24302,"Taro, peeled, fresh, raw",112.09369024856596,3.5,True,Vegetables,Vegetables,2,0,2
 F009093,24302,"Taro, peeled, fresh, boiled, drained",120.45889101338432,3.8,True,Vegetables,Vegetables,2,0,2
-F009190,24601,"Tomato, cherry, raw",15.535372848948374,1.7,True,Vegetables,Starchy Vegetables,2,2,2
-F009193,24601,"Tomato, common, raw",17.447418738049713,1.1,True,Vegetables,Starchy Vegetables,2,2,2
-F009211,24601,"Tomato, roma, raw",17.68642447418738,1.2,True,Vegetables,Starchy Vegetables,2,2,2
-F009208,24602,"Tomato, paste, with added salt",66.20458891013384,3.5,True,Vegetables,Starchy Vegetables,2,2,2
-F009206,24602,"Tomato, paste, no added salt",63.5755258126195,3.6,True,Vegetables,Starchy Vegetables,2,2,2
-F009209,24602,"Tomato, puree, commercial",23.422562141491394,1.5,True,Vegetables,Starchy Vegetables,2,2,2
-F009217,24602,"Tomato, sundried",263.1453154875717,14.7,True,Vegetables,Starchy Vegetables,2,2,2
-F009222,24602,"Tomato, whole, canned in tomato juice, undrained",19.120458891013385,1,True,Vegetables,Starchy Vegetables,2,2,2
-F009221,24602,"Tomato, whole, canned in tomato juice, drained",21.03250478011472,1.3,True,Vegetables,Starchy Vegetables,2,2,2
+F009190,24601,"Tomato, cherry, raw",15.535372848948374,1.7,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F009193,24601,"Tomato, common, raw",17.447418738049713,1.1,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F009211,24601,"Tomato, roma, raw",17.68642447418738,1.2,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F009208,24602,"Tomato, paste, with added salt",66.20458891013384,3.5,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F009206,24602,"Tomato, paste, no added salt",63.5755258126195,3.6,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F009209,24602,"Tomato, puree, commercial",23.422562141491394,1.5,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F009217,24602,"Tomato, sundried",263.1453154875717,14.7,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F009222,24602,"Tomato, whole, canned in tomato juice, undrained",19.120458891013385,1,True,Vegetables,Non-Starchy Vegetables,2,2,2
+F009221,24602,"Tomato, whole, canned in tomato juice, drained",21.03250478011472,1.3,True,Vegetables,Non-Starchy Vegetables,2,2,2
 F009340,24302,"Turnip, white, peeled, fresh, raw",22.466539196940726,1.7,True,Vegetables,Vegetables,2,0,2
 F009339,24302,"Turnip, white, peeled, fresh, boiled, no added fat",24.1395793499044,1.8,True,Vegetables,Vegetables,2,0,2
 F009491,24401,"Vine leaf, grape, canned",60.70745697896749,9.9,True,Vegetables,Vegetables,2,0,2
-F009514,24801,"Water chestnut, peeled, canned, drained",52.34225621414914,2.7,True,Vegetables,Starchy Vegetables,2,2,2
+F009514,24801,"Water chestnut, peeled, canned, drained",52.34225621414914,2.7,True,Vegetables,Non-Starchy Vegetables,2,2,2
 F009532,24401,"Watercress, raw",26.2906309751434,3.8,True,Vegetables,Vegetables,2,0,2
 F009604,24001,"Yam, wild harvested, cooked",70.74569789674952,2.1,True,Vegetables,Vegetables,2,0,2
 F009775,24702,"Zucchini, green skin, fresh, unpeeled, raw",15.535372848948374,1.1,True,Vegetables,Vegetables,2,0,2
